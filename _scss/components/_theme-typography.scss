@@ -1,0 +1,207 @@
+$container-buffer-size: 100px;
+$grid-float-breakpoint: 767px;
+$font-size: 16px;
+$line-height: $font-size * 1.5;
+$type-spacing: $font-size;
+$type-spacing-lg: $font-size * 2;
+
+.type-spacing-top { margin-top:$type-spacing; }
+.type-spacing-bottom { margin-bottom:$type-spacing; }
+.type-spacing-top-lg { margin-top:$type-spacing-lg; }
+.type-spacing-bottom-lg { margin-bottom:$type-spacing-lg; }
+.type-spacing-clear-top, .copy.type-spacing-clear-top { margin-top: 0; }
+.type-spacing-clear-bottom, .copy.type-spacing-clear-bottom { margin-bottom: 0; }
+
+// Typography is built on the following
+// Ratio - 1.25 or 4:5 or major 3rd
+// http://www.modularscale.com/?16&px&1.25&web&text
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  font-size: $font-size;
+  line-height: $line-height;
+  color: black;
+  background: $gray-lightest;
+}
+
+.type-specimens {
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 30em;
+  }
+}
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  font-family: brandon-grotesque,Arial,Helvetica,sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,.h1 {
+  font-size: 39.063px;
+  font-weight: 900;
+}
+h2,.h2 {
+  font-size: 31.25px;
+}
+h3,.h3 {
+  font-size: 25px;
+}
+h4,.h4 {
+  font-size: 20px;
+  letter-spacing: .02em;
+}
+h5,.h5 {
+  font-size: 16px;
+  // font-weight: 900;
+  letter-spacing: .05em;
+}
+h6,.h6 {
+  font-size: 12.8px;
+  font-weight: 900;
+  letter-spacing: .07em;
+  line-height: 1.3;
+}
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  &.uppercase {
+    text-transform: uppercase;
+    letter-spacing: .1em; 
+    line-height: 1.3;
+  }
+}
+h1,.h1 {
+  &.uppercase {
+  	font-size: 39.063px;
+  font-weight: 900;
+  }
+}
+h2,.h2 {
+  &.uppercase {
+  	font-size: 31.25px;
+  }
+}
+h3,.h3 {
+  &.uppercase {
+  	font-size: 25px;
+    letter-spacing: .08em;
+  } 
+}
+h4,.h4 {
+  &.uppercase {
+  	font-size: 20px;
+    letter-spacing: .08em;
+    line-height: 1.45;
+  }
+}
+h5,.h5 {
+  &.uppercase {
+  	font-size: 16px;
+    font-weight: 900;
+    letter-spacing: .13em;
+    line-height: 1.6;
+  }
+}
+h6,.h6 {
+  &.uppercase {
+  	font-size: 12.8px;
+    font-weight: 900;
+    letter-spacing: .14em;
+    line-height: 1.7;
+  }
+}
+
+
+
+p {
+  // margin-bottom: $type-spacing;
+  @extend .type-spacing-bottom;
+}
+
+p.small {
+  font-size: 12.8px;
+  letter-spacing: .03em;
+  line-height: 1.7;
+}
+
+ul {
+  // margin-bottom: $type-spacing;
+  @extend .type-spacing-bottom;
+  padding-left: 2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// to make type more flexible, margins only get added to type when the context--content is used
+// reference: http://rizzo.lonelyplanet.com/styleguide/design-elements/typography
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  &.copy {
+    @extend .type-spacing-top-lg;
+    @extend .type-spacing-bottom;
+  }
+  +h1,+.h1,
+  +h2,+.h2,
+  +h3,+.h3,
+  +h4,+.h4,
+  +h5,+.h5,
+  +h6,+.h6 {
+    &.copy {
+      margin-top: 0;
+    }
+  }
+}
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  &.copy {
+    color: $gray-darkest;
+  }
+}
+
+img {
+  &.copy {
+    display: block;
+    margin-top: $type-spacing-lg; 
+    margin-bottom: $type-spacing-lg;
+  }
+}
+p, ul, ol, table {
+  & + img {
+    &.copy {
+    // margin-top: $type-spacing; // margins don't collapse between p and img so we need to remove the extra space by using the base $type-spacing
+    }
+  }
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+
