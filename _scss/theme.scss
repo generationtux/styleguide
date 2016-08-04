@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// Define our own variables
+// -----------------------------------------------------------------------------
+@import "components/variables-theme";
+
+// -----------------------------------------------------------------------------
+// Load bootstrap helpers. 
+//    This is not full bootstrap, just the little bits we're referencing in our own scss
+//    Lets us use bootstap specific mixins and variables in our own theme files
+// -----------------------------------------------------------------------------
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/buttons";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "mixins/bootstrap-resets";
+
+// -----------------------------------------------------------------------------
+// Bourbon
+// -----------------------------------------------------------------------------
+@import "../node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+
+// -----------------------------------------------------------------------------
+// Theme - our own custom styles
+// -----------------------------------------------------------------------------
+// grab our mixins
+
+// grab our components where we override and/or extend bootstrap
+
+
+// -----------------------------------------------------------------------------
+// More style stuff. 
+//    Write loose styles here. Break code out into components 
+//    when it becomes structured enough.
+// -----------------------------------------------------------------------------
