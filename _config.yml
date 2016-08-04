@@ -25,3 +25,12 @@ github_username:
 # Build settings
 markdown: kramdown
 theme: minima
+
+exclude: 
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - npm-debug.log
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
