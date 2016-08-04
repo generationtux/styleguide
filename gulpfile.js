@@ -138,31 +138,32 @@ gulp.task('validate', function () {
 
 // -----------------------------------------------------------------------------
 // Deploy
+// ssh deploy functions - not setup so commenting out for future use
 // -----------------------------------------------------------------------------
-gulp.task('deploy:staging', function() {
-  rsync({
-  ssh: true,
-  src: ['./_site/'],
-  dest: 'doe@doe1915.com:/opt/sites/5788.doe1915.com/current',
-  recursive: true,
-  delete: true,
-  args: ['--verbose']
-  }, function(error, stdout, stderr, cmd) {
-    gutil.log(stdout);
-  });
-});
-gulp.task('deploy:master', function() {
-  rsync({
-  ssh: true,
-  src: ['./_site/'],
-  dest: 'doe@doe1915.com:/opt/sites/carrier.doe1915.com/current',
-  recursive: true,
-  delete: true,
-  args: ['--verbose']
-  }, function(error, stdout, stderr, cmd) {
-    gutil.log(stdout);
-  });
-});
+// gulp.task('deploy:staging', function() {
+//   rsync({
+//   ssh: true,
+//   src: ['./_site/'],
+//   dest: '',
+//   recursive: true,
+//   delete: true,
+//   args: ['--verbose']
+//   }, function(error, stdout, stderr, cmd) {
+//     gutil.log(stdout);
+//   });
+// });
+// gulp.task('deploy:master', function() {
+//   rsync({
+//   ssh: true,
+//   src: ['./_site/'],
+//   dest: '',
+//   recursive: true,
+//   delete: true,
+//   args: ['--verbose']
+//   }, function(error, stdout, stderr, cmd) {
+//     gutil.log(stdout);
+//   });
+// });
 
 // -----------------------------------------------------------------------------
 // Default
