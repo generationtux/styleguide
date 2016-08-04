@@ -1,0 +1,241 @@
+.type-spacing-top {
+  margin-top: 16px; }
+
+.type-spacing-bottom, p, ul, h1.copy, .h1.copy,
+h2.copy, .h2.copy,
+h3.copy, .h3.copy,
+h4.copy, .h4.copy,
+h5.copy, .h5.copy,
+h6.copy, .h6.copy {
+  margin-bottom: 16px; }
+
+.type-spacing-top-lg, h1.copy, .h1.copy,
+h2.copy, .h2.copy,
+h3.copy, .h3.copy,
+h4.copy, .h4.copy,
+h5.copy, .h5.copy,
+h6.copy, .h6.copy {
+  margin-top: 32px; }
+
+.type-spacing-bottom-lg {
+  margin-bottom: 32px; }
+
+.type-spacing-clear-top, .copy.type-spacing-clear-top {
+  margin-top: 0; }
+
+.type-spacing-clear-bottom, .copy.type-spacing-clear-bottom {
+  margin-bottom: 0; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  background: #f3f3f3; }
+
+.type-specimens h1, .type-specimens h2, .type-specimens h3, .type-specimens h4, .type-specimens h5, .type-specimens h6 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 30em; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: brandon-grotesque,Arial,Helvetica,sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+h1, .h1 {
+  font-size: 39.063px;
+  font-weight: 900; }
+
+h2, .h2 {
+  font-size: 31.25px; }
+
+h3, .h3 {
+  font-size: 25px; }
+
+h4, .h4 {
+  font-size: 20px;
+  letter-spacing: .02em; }
+
+h5, .h5 {
+  font-size: 16px;
+  letter-spacing: .05em; }
+
+h6, .h6 {
+  font-size: 12.8px;
+  font-weight: 900;
+  letter-spacing: .07em;
+  line-height: 1.3; }
+
+h1.uppercase, .h1.uppercase,
+h2.uppercase, .h2.uppercase,
+h3.uppercase, .h3.uppercase,
+h4.uppercase, .h4.uppercase,
+h5.uppercase, .h5.uppercase,
+h6.uppercase, .h6.uppercase {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  line-height: 1.3; }
+
+h1.uppercase, .h1.uppercase {
+  font-size: 39.063px;
+  font-weight: 900; }
+
+h2.uppercase, .h2.uppercase {
+  font-size: 31.25px; }
+
+h3.uppercase, .h3.uppercase {
+  font-size: 25px;
+  letter-spacing: .08em; }
+
+h4.uppercase, .h4.uppercase {
+  font-size: 20px;
+  letter-spacing: .08em;
+  line-height: 1.45; }
+
+h5.uppercase, .h5.uppercase {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  line-height: 1.6; }
+
+h6.uppercase, .h6.uppercase {
+  font-size: 12.8px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  line-height: 1.7; }
+
+p.small {
+  font-size: 12.8px;
+  letter-spacing: .03em;
+  line-height: 1.7; }
+
+ul {
+  padding-left: 2em; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1 + h1.copy, h1 + .h1.copy,
+h1 + h2.copy, h1 + .h2.copy,
+h1 + h3.copy, h1 + .h3.copy,
+h1 + h4.copy, h1 + .h4.copy,
+h1 + h5.copy, h1 + .h5.copy,
+h1 + h6.copy, h1 + .h6.copy, .h1 + h1.copy, .h1 + .h1.copy,
+.h1 + h2.copy, .h1 + .h2.copy,
+.h1 + h3.copy, .h1 + .h3.copy,
+.h1 + h4.copy, .h1 + .h4.copy,
+.h1 + h5.copy, .h1 + .h5.copy,
+.h1 + h6.copy, .h1 + .h6.copy,
+h2 + h1.copy,
+h2 + .h1.copy,
+h2 + h2.copy,
+h2 + .h2.copy,
+h2 + h3.copy,
+h2 + .h3.copy,
+h2 + h4.copy,
+h2 + .h4.copy,
+h2 + h5.copy,
+h2 + .h5.copy,
+h2 + h6.copy,
+h2 + .h6.copy, .h2 + h1.copy, .h2 + .h1.copy,
+.h2 + h2.copy, .h2 + .h2.copy,
+.h2 + h3.copy, .h2 + .h3.copy,
+.h2 + h4.copy, .h2 + .h4.copy,
+.h2 + h5.copy, .h2 + .h5.copy,
+.h2 + h6.copy, .h2 + .h6.copy,
+h3 + h1.copy,
+h3 + .h1.copy,
+h3 + h2.copy,
+h3 + .h2.copy,
+h3 + h3.copy,
+h3 + .h3.copy,
+h3 + h4.copy,
+h3 + .h4.copy,
+h3 + h5.copy,
+h3 + .h5.copy,
+h3 + h6.copy,
+h3 + .h6.copy, .h3 + h1.copy, .h3 + .h1.copy,
+.h3 + h2.copy, .h3 + .h2.copy,
+.h3 + h3.copy, .h3 + .h3.copy,
+.h3 + h4.copy, .h3 + .h4.copy,
+.h3 + h5.copy, .h3 + .h5.copy,
+.h3 + h6.copy, .h3 + .h6.copy,
+h4 + h1.copy,
+h4 + .h1.copy,
+h4 + h2.copy,
+h4 + .h2.copy,
+h4 + h3.copy,
+h4 + .h3.copy,
+h4 + h4.copy,
+h4 + .h4.copy,
+h4 + h5.copy,
+h4 + .h5.copy,
+h4 + h6.copy,
+h4 + .h6.copy, .h4 + h1.copy, .h4 + .h1.copy,
+.h4 + h2.copy, .h4 + .h2.copy,
+.h4 + h3.copy, .h4 + .h3.copy,
+.h4 + h4.copy, .h4 + .h4.copy,
+.h4 + h5.copy, .h4 + .h5.copy,
+.h4 + h6.copy, .h4 + .h6.copy,
+h5 + h1.copy,
+h5 + .h1.copy,
+h5 + h2.copy,
+h5 + .h2.copy,
+h5 + h3.copy,
+h5 + .h3.copy,
+h5 + h4.copy,
+h5 + .h4.copy,
+h5 + h5.copy,
+h5 + .h5.copy,
+h5 + h6.copy,
+h5 + .h6.copy, .h5 + h1.copy, .h5 + .h1.copy,
+.h5 + h2.copy, .h5 + .h2.copy,
+.h5 + h3.copy, .h5 + .h3.copy,
+.h5 + h4.copy, .h5 + .h4.copy,
+.h5 + h5.copy, .h5 + .h5.copy,
+.h5 + h6.copy, .h5 + .h6.copy,
+h6 + h1.copy,
+h6 + .h1.copy,
+h6 + h2.copy,
+h6 + .h2.copy,
+h6 + h3.copy,
+h6 + .h3.copy,
+h6 + h4.copy,
+h6 + .h4.copy,
+h6 + h5.copy,
+h6 + .h5.copy,
+h6 + h6.copy,
+h6 + .h6.copy, .h6 + h1.copy, .h6 + .h1.copy,
+.h6 + h2.copy, .h6 + .h2.copy,
+.h6 + h3.copy, .h6 + .h3.copy,
+.h6 + h4.copy, .h6 + .h4.copy,
+.h6 + h5.copy, .h6 + .h5.copy,
+.h6 + h6.copy, .h6 + .h6.copy {
+  margin-top: 0; }
+
+h4.copy, .h4.copy,
+h5.copy, .h5.copy,
+h6.copy, .h6.copy {
+  color: #404042; }
+
+img.copy {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px; }
+
+hr {
+  margin: 3rem 0; }

@@ -27,7 +27,7 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   color: black;
-  background: $gray-lightest;
+  background: $gray-lighter;
 }
 
 .type-specimens {
@@ -181,7 +181,7 @@ h4,.h4,
 h5,.h5,
 h6,.h6 {
   &.copy {
-    color: $gray-darkest;
+    color: $gray-darker;
   }
 }
 
