@@ -20,7 +20,7 @@
     "jquery.scrollto": "^2.1.2",
     "pump": "^1.0.1",
     "rsyncwrapper": "^0.4.3",
-    "scrollmagic": "git+https://git@github.com/janpaepke/ScrollMagic#v2.0.5"
+    "scrollmagic": "^2.0.5"
   },
   "repository": {
     "type": "git",
