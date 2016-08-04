@@ -106,8 +106,12 @@ gulp.task('copy-fonts', function(){
 // -----------------------------------------------------------------------------
 gulp.task('watch', function () {
   gulp.watch('_js/*.js', ['js']);
-  gulp.watch('_scss/*.scss', ['sass','sass-bootstrap']);
-  gulp.watch('_scss/**/*.scss', ['sass','sass-bootstrap']);
+  gulp.watch([
+    '_scss/bootstrap-custom.scss',
+    '_scss/components/_variables-theme.scss',
+    '_scss/components/_bootstrap-resets.scss'
+  ], ['sass-bootstrap']);
+  gulp.watch('_scss/**/*.scss', ['sass']);
   gulp.watch([
     '**/*.html', 
     '**/*.md', 
