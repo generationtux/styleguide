@@ -1,4 +1,6 @@
 // uses mixins/theme-vertical-spacing to build out all the vertical spacing classes
+// will build classes that use the bootstrap grid naming convention
+// ex: .vspace-md-top-lg will give the html element a TOP margin of LARGE for a min-width MEDIUM SCREEN size
 
 @include make-vertical-spaces("xs");
 @include make-vertical-spaces("sm");
