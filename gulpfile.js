@@ -174,4 +174,4 @@ gulp.task('validate', function () {
 //    * Default task, running just `gulp` will compile the sass,
 //    * compile the jekyll site, launch BrowserSync & watch files.
 // -----------------------------------------------------------------------------
-gulp.task('default', ['browser-sync', 'copy-fonts', 'watch']);
+gulp.task('default', ['browser-sync', 'copy-fonts', 'sass-bootstrap', 'sass', 'watch']);
