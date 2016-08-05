@@ -1,0 +1,42 @@
+
+.container {
+  background: #fff;
+}
+.bg-placeholder {
+  $placeholder-bg: #e6e6e6;
+  background-color: $placeholder-bg;
+  background-image: linear-gradient(transparentize($placeholder-bg,.1), transparentize($placeholder-bg,.1)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-378/placeholder-no-bg.svg);
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+// for adding full bleed background image to container
+// add background-image style inline so it can be easily controlled through a cms
+.container-bg-image {
+  background-size: cover;
+  background-position: left top;
+  @media(min-width: $grid-float-breakpoint) {
+    background-position: center top;
+  }
+}
+// class for adding vertical space to containers
+// these shouldn't need an important declaration but someone used it to override bootstrap so now i have to as well
+.container.container-buffer {
+  padding-top: $container-buffer-size / 2 !important;
+  padding-bottom: $container-buffer-size / 2 !important;
+  @media(min-width: $grid-float-breakpoint) {
+    padding-top: $container-buffer-size !important;
+    padding-bottom: $container-buffer-size !important;
+  }
+}
+// keep same whitespace rhythm when buffer containers stack up
+.container.container-buffer + .container.container-buffer {
+  margin-top: -$container-buffer-size/2;
+  @media(min-width: $grid-float-breakpoint) {
+    margin-top: -$container-buffer-size;
+  }
+}
+// keep same whitespace rhythm when buffer containers stack up
+.container.container-buffer.container-bg + .container.container-buffer,
+.container.container-buffer + .container.container-buffer.container-bg {
+  margin-top: 0;
+}

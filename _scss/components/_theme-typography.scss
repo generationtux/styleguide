@@ -1,9 +1,4 @@
-$container-buffer-size: 100px;
-$grid-float-breakpoint: 767px;
-$font-size: 16px;
-$line-height: $font-size * 1.5;
-$type-spacing: $font-size;
-$type-spacing-lg: $font-size * 2;
+
 
 .type-spacing-top { margin-top:$type-spacing; }
 .type-spacing-bottom { margin-bottom:$type-spacing; }
@@ -24,8 +19,8 @@ body {
   font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 400; 
-  font-size: $font-size;
-  line-height: $line-height;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   color: black;
   background: white;
 }
@@ -201,7 +196,17 @@ p, ul, ol, table {
 }
 
 hr {
-  margin: 3rem 0;
+  margin: $type-spacing-xl 0;
 }
+
+
+
+img.text-center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+
 
 

@@ -20,13 +20,29 @@
 // -----------------------------------------------------------------------------
 // Theme - our own custom styles
 // -----------------------------------------------------------------------------
+$type-spacing-xs: $font-size-base/4;
+$type-spacing-sm: $font-size-base/2;
+$type-spacing: $font-size-base;
+$type-spacing-lg: $font-size-base * 2;
+$type-spacing-xl: $font-size-base * 4;
+$container-buffer-size: $type-spacing-xl;
+
 // grab our mixins
 
 // grab our components where we override and/or extend bootstrap
 @import "components/theme-typography";
+@import "components/theme-containers";
 
 // -----------------------------------------------------------------------------
 // More style stuff. 
 //    Write loose styles here. Break code out into components 
 //    when it becomes structured enough.
 // -----------------------------------------------------------------------------
+
+.styleguide-label {
+  position: absolute;
+  // background: red;
+  opacity: .1;
+  @include transform(rotate(-90deg) translate(-100%,-300%) );
+  @include transform-origin(left top);
+}
