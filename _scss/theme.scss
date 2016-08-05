@@ -51,6 +51,29 @@ $container-buffer-size: $type-spacing-xl;
   }
 }
 
+.color-swatches {
+	list-style-type: none;
+	padding-left: 0;
+	li {
+		width: 64px;
+		height: 64px;
+		margin-right: 8px;
+		background-color: $gray-light;
+	}
+	li:nth-child(1)  { background-color: $brand-teal; }
+	li:nth-child(2)  { background-color: $brand-teal-darker; }
+	li:nth-child(3)  { background-color: $brand-teal-lighter; }
+	li:nth-child(4)  { background-color: $brand-red; }
+	li:nth-child(5)  { background-color: $brand-black; }
+	li:nth-child(6)  { background-color: $brand-gray-darker; }
+	li:nth-child(7)  { background-color: $brand-gray-dark; }
+	li:nth-child(8)  { background-color: $brand-gray; }
+	li:nth-child(9)  { background-color: $brand-gray-light; }
+	li:nth-child(10) { background-color: $brand-gray-lighter; }
+	li:nth-child(11) { background-color: $brand-white; }
+}
+
 .navbar-brand.h6.uppercase {
 	line-height: 1.32;
 }
+

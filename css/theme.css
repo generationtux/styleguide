@@ -403,5 +403,36 @@ img.text-center {
       -o-transform-origin: left top;
       transform-origin: left top; } }
 
+.color-swatches {
+  list-style-type: none;
+  padding-left: 0; }
+  .color-swatches li {
+    width: 64px;
+    height: 64px;
+    margin-right: 8px;
+    background-color: #e6e6e6; }
+  .color-swatches li:nth-child(1) {
+    background-color: #03bbac; }
+  .color-swatches li:nth-child(2) {
+    background-color: #039aa8; }
+  .color-swatches li:nth-child(3) {
+    background-color: #03e6ca; }
+  .color-swatches li:nth-child(4) {
+    background-color: #d74c4e; }
+  .color-swatches li:nth-child(5) {
+    background-color: #000000; }
+  .color-swatches li:nth-child(6) {
+    background-color: #404042; }
+  .color-swatches li:nth-child(7) {
+    background-color: #888888; }
+  .color-swatches li:nth-child(8) {
+    background-color: #cccccc; }
+  .color-swatches li:nth-child(9) {
+    background-color: #e6e6e6; }
+  .color-swatches li:nth-child(10) {
+    background-color: #f3f3f3; }
+  .color-swatches li:nth-child(11) {
+    background-color: #ffffff; }
+
 .navbar-brand.h6.uppercase {
   line-height: 1.32; }
