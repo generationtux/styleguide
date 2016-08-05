@@ -21,12 +21,18 @@
         .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
         .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
 
+        .vspace-#{$browserSize}-top-clear { margin-top: 0; }
+        .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
+
         // create bottom classes
         .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
         .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
         .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
         .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
         .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+
+        .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
+        .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
     }
     @if $browserSize == "sm" {
         @media(min-width:$screen-sm-min){
@@ -37,12 +43,19 @@
             .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
             .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
 
+            .vspace-#{$browserSize}-top-clear { margin-top: 0; }
+            .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
+
+
             // create bottom classes
             .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
             .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
             .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
             .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
             .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+
+            .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
+            .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
         }
     }
     @if $browserSize == "md" {
@@ -54,12 +67,18 @@
             .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
             .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
 
+            .vspace-#{$browserSize}-top-clear { margin-top: 0; }
+            .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
+
             // create bottom classes
             .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
             .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
             .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
             .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
             .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+
+            .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
+            .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
         }
     }
     @if $browserSize == "lg" {
@@ -71,15 +90,20 @@
             .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
             .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
 
+            .vspace-#{$browserSize}-top-clear { margin-top: 0; }
+            .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
+
             // create bottom classes
             .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
             .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
             .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
             .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
             .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+
+            .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
+            .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
         }
     }
-    
 }
 
 
