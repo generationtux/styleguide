@@ -402,3 +402,6 @@ img.text-center {
       -ms-transform-origin: left top;
       -o-transform-origin: left top;
       transform-origin: left top; } }
+
+.navbar-brand.h6.uppercase {
+  line-height: 1.32; }
