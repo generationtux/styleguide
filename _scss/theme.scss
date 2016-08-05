@@ -40,9 +40,11 @@ $container-buffer-size: $type-spacing-xl;
 // -----------------------------------------------------------------------------
 
 .styleguide-label {
-  position: absolute;
   opacity: .2;
-  left: 0;
-  @include transform(rotate(-90deg) translate(-100%,0%) );
-  @include transform-origin(left top);
+  @media(min-width: $grid-float-breakpoint) {
+  	position: absolute;
+	  left: 0;
+	  @include transform(rotate(-90deg) translate(-100%,0%) );
+	  @include transform-origin(left top);	
+  }
 }

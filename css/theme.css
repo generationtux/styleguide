@@ -291,16 +291,18 @@ img.text-center {
   margin-top: 0; }
 
 .styleguide-label {
-  position: absolute;
-  opacity: .2;
-  left: 0;
-  -webkit-transform: rotate(-90deg) translate(-100%, 0%);
-  -moz-transform: rotate(-90deg) translate(-100%, 0%);
-  -ms-transform: rotate(-90deg) translate(-100%, 0%);
-  -o-transform: rotate(-90deg) translate(-100%, 0%);
-  transform: rotate(-90deg) translate(-100%, 0%);
-  -webkit-transform-origin: left top;
-  -moz-transform-origin: left top;
-  -ms-transform-origin: left top;
-  -o-transform-origin: left top;
-  transform-origin: left top; }
+  opacity: .2; }
+  @media (min-width: 768px) {
+    .styleguide-label {
+      position: absolute;
+      left: 0;
+      -webkit-transform: rotate(-90deg) translate(-100%, 0%);
+      -moz-transform: rotate(-90deg) translate(-100%, 0%);
+      -ms-transform: rotate(-90deg) translate(-100%, 0%);
+      -o-transform: rotate(-90deg) translate(-100%, 0%);
+      transform: rotate(-90deg) translate(-100%, 0%);
+      -webkit-transform-origin: left top;
+      -moz-transform-origin: left top;
+      -ms-transform-origin: left top;
+      -o-transform-origin: left top;
+      transform-origin: left top; } }
