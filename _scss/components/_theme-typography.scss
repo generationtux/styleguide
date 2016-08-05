@@ -1,36 +1,29 @@
 
+.type-spacing-xs-top    { margin-top:    $type-spacing-xs }
+.type-spacing-xs-bottom { margin-bottom: $type-spacing-xs }
+.type-spacing-sm-top    { margin-top:    $type-spacing-sm }
+.type-spacing-sm-bottom { margin-bottom: $type-spacing-sm }
+.type-spacing-top       { margin-top:    $type-spacing }
+.type-spacing-bottom    { margin-bottom: $type-spacing }
+.type-spacing-lg-top    { margin-top:    $type-spacing-lg }
+.type-spacing-lg-bottom { margin-bottom: $type-spacing-lg }
+.type-spacing-xl-top    { margin-top:    $type-spacing-xl }
+.type-spacing-xl-bottom { margin-bottom: $type-spacing-xl }
 
-.type-spacing-top { margin-top:$type-spacing; }
-.type-spacing-bottom { margin-bottom:$type-spacing; }
-.type-spacing-top-lg { margin-top:$type-spacing-lg; }
-.type-spacing-bottom-lg { margin-bottom:$type-spacing-lg; }
 .type-spacing-clear-top, .copy.type-spacing-clear-top { margin-top: 0; }
 .type-spacing-clear-bottom, .copy.type-spacing-clear-bottom { margin-bottom: 0; }
+
 
 // Typography is built on the following
 // Ratio - 1.25 or 4:5 or major 3rd
 // http://www.modularscale.com/?16&px&1.25&web&text
 
-html {
-  font-size: 16px;
-}
-
 body {
   font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 400; 
-  font-size: $font-size-base;
-  line-height: $line-height-base;
   color: black;
   background: white;
-}
-
-.type-specimens {
-  h1,h2,h3,h4,h5,h6 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    max-width: 30em;
-  }
 }
 
 h1,.h1,
@@ -128,8 +121,7 @@ h6,.h6 {
 
 
 p {
-  // margin-bottom: $type-spacing;
-  @extend .type-spacing-bottom;
+  margin-bottom: $type-spacing;
 }
 
 p.small {
@@ -139,9 +131,13 @@ p.small {
 }
 
 ul {
-  // margin-bottom: $type-spacing;
-  @extend .type-spacing-bottom;
+  margin-bottom: $type-spacing;
   padding-left: 2em;
+}
+
+hr {
+  margin-top: $type-spacing;
+  margin-bottom: $type-spacing;
 }
 
 img {
@@ -158,8 +154,8 @@ h4,.h4,
 h5,.h5,
 h6,.h6 {
   &.copy {
-    @extend .type-spacing-top-lg;
-    @extend .type-spacing-bottom;
+    margin-top: $type-spacing-lg;
+    margin-bottom: $type-spacing;
   }
   +h1,+.h1,
   +h2,+.h2,
@@ -193,10 +189,6 @@ p, ul, ol, table {
     // margin-top: $type-spacing; // margins don't collapse between p and img so we need to remove the extra space by using the base $type-spacing
     }
   }
-}
-
-hr {
-  margin: $type-spacing-xl 0;
 }
 
 

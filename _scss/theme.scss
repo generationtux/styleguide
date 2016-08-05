@@ -41,8 +41,8 @@ $container-buffer-size: $type-spacing-xl;
 
 .styleguide-label {
   position: absolute;
-  // background: red;
-  opacity: .1;
-  @include transform(rotate(-90deg) translate(-100%,-300%) );
+  opacity: .2;
+  left: 0;
+  @include transform(rotate(-90deg) translate(-100%,0%) );
   @include transform-origin(left top);
 }

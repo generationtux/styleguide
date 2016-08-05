@@ -1,24 +1,32 @@
+.type-spacing-xs-top {
+  margin-top: 3.5px; }
+
+.type-spacing-xs-bottom {
+  margin-bottom: 3.5px; }
+
+.type-spacing-sm-top {
+  margin-top: 7px; }
+
+.type-spacing-sm-bottom {
+  margin-bottom: 7px; }
+
 .type-spacing-top {
   margin-top: 14px; }
 
-.type-spacing-bottom, p, ul, h1.copy, .h1.copy,
-h2.copy, .h2.copy,
-h3.copy, .h3.copy,
-h4.copy, .h4.copy,
-h5.copy, .h5.copy,
-h6.copy, .h6.copy {
+.type-spacing-bottom {
   margin-bottom: 14px; }
 
-.type-spacing-top-lg, h1.copy, .h1.copy,
-h2.copy, .h2.copy,
-h3.copy, .h3.copy,
-h4.copy, .h4.copy,
-h5.copy, .h5.copy,
-h6.copy, .h6.copy {
+.type-spacing-lg-top {
   margin-top: 28px; }
 
-.type-spacing-bottom-lg {
+.type-spacing-lg-bottom {
   margin-bottom: 28px; }
+
+.type-spacing-xl-top {
+  margin-top: 56px; }
+
+.type-spacing-xl-bottom {
+  margin-bottom: 56px; }
 
 .type-spacing-clear-top, .copy.type-spacing-clear-top {
   margin-top: 0; }
@@ -26,22 +34,12 @@ h6.copy, .h6.copy {
 .type-spacing-clear-bottom, .copy.type-spacing-clear-bottom {
   margin-bottom: 0; }
 
-html {
-  font-size: 16px; }
-
 body {
   font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.42857;
   color: black;
   background: white; }
-
-.type-specimens h1, .type-specimens h2, .type-specimens h3, .type-specimens h4, .type-specimens h5, .type-specimens h6 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  max-width: 30em; }
 
 h1, .h1,
 h2, .h2,
@@ -117,17 +115,34 @@ h6.uppercase, .h6.uppercase {
   letter-spacing: .14em;
   line-height: 1.7; }
 
+p {
+  margin-bottom: 14px; }
+
 p.small {
   font-size: 12.8px;
   letter-spacing: .03em;
   line-height: 1.7; }
 
 ul {
+  margin-bottom: 14px;
   padding-left: 2em; }
+
+hr {
+  margin-top: 14px;
+  margin-bottom: 14px; }
 
 img {
   max-width: 100%;
   height: auto; }
+
+h1.copy, .h1.copy,
+h2.copy, .h2.copy,
+h3.copy, .h3.copy,
+h4.copy, .h4.copy,
+h5.copy, .h5.copy,
+h6.copy, .h6.copy {
+  margin-top: 28px;
+  margin-bottom: 14px; }
 
 h1 + h1.copy, h1 + .h1.copy,
 h1 + h2.copy, h1 + .h2.copy,
@@ -237,9 +252,6 @@ img.copy {
   margin-top: 28px;
   margin-bottom: 28px; }
 
-hr {
-  margin: 56px 0; }
-
 img.text-center {
   margin-left: auto;
   margin-right: auto; }
@@ -280,12 +292,13 @@ img.text-center {
 
 .styleguide-label {
   position: absolute;
-  opacity: .1;
-  -webkit-transform: rotate(-90deg) translate(-100%, -300%);
-  -moz-transform: rotate(-90deg) translate(-100%, -300%);
-  -ms-transform: rotate(-90deg) translate(-100%, -300%);
-  -o-transform: rotate(-90deg) translate(-100%, -300%);
-  transform: rotate(-90deg) translate(-100%, -300%);
+  opacity: .2;
+  left: 0;
+  -webkit-transform: rotate(-90deg) translate(-100%, 0%);
+  -moz-transform: rotate(-90deg) translate(-100%, 0%);
+  -ms-transform: rotate(-90deg) translate(-100%, 0%);
+  -o-transform: rotate(-90deg) translate(-100%, 0%);
+  transform: rotate(-90deg) translate(-100%, 0%);
   -webkit-transform-origin: left top;
   -moz-transform-origin: left top;
   -ms-transform-origin: left top;
