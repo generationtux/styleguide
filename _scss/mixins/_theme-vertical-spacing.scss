@@ -1,16 +1,5 @@
-// @mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
-//   @for $i from (1 + 1) through $grid-columns {
-//     $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
-//   }
-//   #{$list} {
-//     position: relative;
-//     // Prevent columns from collapsing when empty
-//     min-height: 1px;
-//     // Inner gutter via padding
-//     padding-left:  ceil(($grid-gutter-width / 2));
-//     padding-right: floor(($grid-gutter-width / 2));
-//   }
-// }
+// this needs to be reeeeeeefactored!!
+// but I'm lazy so I'll do it later
 
 @mixin make-vertical-spaces($browserSize:"sm") {
     @if $browserSize == "xs" {
@@ -105,23 +94,3 @@
         }
     }
 }
-
-
-// @mixin make-vertical-spaces($i: 1, $browserSize) {
-//     @for $i from 1 through 5 {
-//         // create top classes
-//         .vspace-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-//         .vspace-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-//         .vspace-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-//         .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-//         .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-//     }
-//     @for $i from 1 through 5 {
-//         // create bottom classes
-//         .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-//         .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-//         .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-//         .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-//         .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-//     }
-// }
