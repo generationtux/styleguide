@@ -410,6 +410,7 @@ img.text-center {
     width: 64px;
     height: 64px;
     margin-right: 8px;
+    margin-bottom: 8px;
     background-color: #e6e6e6; }
   .color-swatches li:nth-child(1) {
     background-color: #03bbac; }
