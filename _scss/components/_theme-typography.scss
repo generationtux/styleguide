@@ -3,8 +3,8 @@
 .type-spacing-xs-bottom { margin-bottom: $type-spacing-xs }
 .type-spacing-sm-top    { margin-top:    $type-spacing-sm }
 .type-spacing-sm-bottom { margin-bottom: $type-spacing-sm }
-.type-spacing-top       { margin-top:    $type-spacing }
-.type-spacing-bottom    { margin-bottom: $type-spacing }
+.type-spacing-top       { margin-top:    $type-spacing-md }
+.type-spacing-bottom    { margin-bottom: $type-spacing-md }
 .type-spacing-lg-top    { margin-top:    $type-spacing-lg }
 .type-spacing-lg-bottom { margin-bottom: $type-spacing-lg }
 .type-spacing-xl-top    { margin-top:    $type-spacing-xl }
@@ -121,7 +121,7 @@ h6,.h6 {
 
 
 p {
-  margin-bottom: $type-spacing;
+  margin-bottom: $type-spacing-md;
 }
 
 p.small {
@@ -131,13 +131,13 @@ p.small {
 }
 
 ul {
-  margin-bottom: $type-spacing;
+  margin-bottom: $type-spacing-md;
   padding-left: 2em;
 }
 
 hr {
-  margin-top: $type-spacing;
-  margin-bottom: $type-spacing;
+  margin-top: $type-spacing-md;
+  margin-bottom: $type-spacing-md;
 }
 
 img {
@@ -155,7 +155,7 @@ h5,.h5,
 h6,.h6 {
   &.copy {
     margin-top: $type-spacing-lg;
-    margin-bottom: $type-spacing;
+    margin-bottom: $type-spacing-md;
   }
   +h1,+.h1,
   +h2,+.h2,
@@ -186,7 +186,7 @@ img {
 p, ul, ol, table {
   & + img {
     &.copy {
-    // margin-top: $type-spacing; // margins don't collapse between p and img so we need to remove the extra space by using the base $type-spacing
+    // margin-top: $type-spacing-md; // margins don't collapse between p and img so we need to remove the extra space by using the base $type-spacing
     }
   }
 }

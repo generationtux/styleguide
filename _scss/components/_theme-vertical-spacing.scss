@@ -1,0 +1,7 @@
+// uses mixins/theme-vertical-spacing to build out all the vertical spacing classes
+
+@include make-vertical-spaces("xs");
+@include make-vertical-spaces("sm");
+@include make-vertical-spaces("md");
+@include make-vertical-spaces("lg");
+@include make-vertical-spaces("xl");

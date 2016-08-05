@@ -8,7 +8,7 @@
 //    This is not full bootstrap, just the little bits we're referencing in our own scss
 //    Lets us use bootstap specific mixins and variables in our own theme files
 // -----------------------------------------------------------------------------
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/buttons";
+// @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/buttons";
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "components/bootstrap-resets";
 
@@ -22,16 +22,18 @@
 // -----------------------------------------------------------------------------
 $type-spacing-xs: $font-size-base/4;
 $type-spacing-sm: $font-size-base/2;
-$type-spacing: $font-size-base;
+$type-spacing-md: $font-size-base;
 $type-spacing-lg: $font-size-base * 2;
 $type-spacing-xl: $font-size-base * 4;
 $container-buffer-size: $type-spacing-xl;
 
 // grab our mixins
+@import "mixins/theme-vertical-spacing";
 
 // grab our components where we override and/or extend bootstrap
 @import "components/theme-typography";
 @import "components/theme-containers";
+@import "components/theme-vertical-spacing";
 
 // -----------------------------------------------------------------------------
 // More style stuff. 
@@ -48,3 +50,4 @@ $container-buffer-size: $type-spacing-xl;
 	  @include transform-origin(left top);	
   }
 }
+
