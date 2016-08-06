@@ -186,6 +186,40 @@ $(function () {
   // -----------------------------------------------------------------------------
   $('[data-toggle="tooltip"]').tooltip();
 
+
+  // -----------------------------------------------------------------------------
+  // copy & paste
+  // -----------------------------------------------------------------------------
+  var swatches = document.querySelectorAll('.color-swatches li'), i;
+
+  for (i = 0; i < swatches.length; ++i) {
+    swatches[i].addEventListener('click', copyToClipboard, true); 
+  }
+
+  function copyToClipboard(e) {
+    // Select the swatch p text   
+    var text = e.target.querySelector('p');
+
+    var range = document.createRange();  
+    range.selectNode(text);  
+    window.getSelection().addRange(range);  
+
+    try {  
+      // Now that we've selected the anchor text, execute the copy command  
+      var successful = document.execCommand('copy');  
+      var msg = successful ? 'successful' : 'unsuccessful';  
+      console.log('Copy text command was ' + msg);  
+    } catch(err) {  
+      console.log('Oops, unable to copy');  
+    }  
+
+    // Remove the selections - NOTE: Should use
+    // removeRange(range) when it is supported  
+    window.getSelection().removeAllRanges();  
+  }
+
+
+
 });
 
 })(jQuery, window, document);
