@@ -12,35 +12,30 @@ var w3cjs       = require('gulp-w3cjs');
 var htmlhint    = require("gulp-htmlhint");
 var pump        = require('pump')
 
-var messages = {
-  jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
-
 // -----------------------------------------------------------------------------
 //  Build the Jekyll Site
 // -----------------------------------------------------------------------------
-gulp.task('jekyll-build', function (done) {
-  browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
-    .on('close', done);
+gulp.task('jekyll-serve', function() {
+  const jekyll = cp.spawn('jekyll', ['serve',
+    '--watch',
+    '--incremental',
+    '--drafts'
+  ]);
 });
 
 // -----------------------------------------------------------------------------
-// Rebuild Jekyll & do page reload
+// use browser sync to reload the browser
 // -----------------------------------------------------------------------------
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('browser-reload', function () {
   browserSync.reload();
 });
 
 // -----------------------------------------------------------------------------
 // Wait for jekyll-build, then launch the Server
 // -----------------------------------------------------------------------------
-gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['jekyll-serve','sass','sass-bootstrap', 'js'], function() {
   browserSync({
-    server: {
-      baseDir: '_site'
-    },
-    notify: false
+    proxy: "http://127.0.0.1:4000/styleguide/"
   });
 });
 
@@ -113,10 +108,10 @@ gulp.task('watch', function () {
   ], ['sass-bootstrap']);
   gulp.watch('_scss/**/*.scss', ['sass']);
   gulp.watch([
-    '**/*.html', 
-    '**/*.md', 
-    '!_site/**/*'
-  ], ['jekyll-rebuild']);
+    '_site/**/*',
+    '!_site/css/**/*', // ignore because css is already getting live injected
+    '!_site/js/**/*' // ignore because js is already getting live injected
+  ], ['browser-reload']);
 });
 
 // -----------------------------------------------------------------------------
@@ -127,51 +122,13 @@ gulp.task('bootlint', function() {
     .pipe(bootlint());
 });
 
-// -----------------------------------------------------------------------------
-// W3C Validation
-// ----------------------------------------------------------------------------- 
-// gulp.task('validate', function () {
-//   return gulp.src('_site/**/*.html')
-//     .pipe(htmlhint())
-//     .pipe(htmlhint.reporter);
-// });
-gulp.task('validate', function () {
-  return gulp.src(['_site/**/*.html', '!_site/documentation/urls/index.html'])
-    .pipe(w3cjs());
-});
 
-// -----------------------------------------------------------------------------
-// Deploy
-// ssh deploy functions - not setup so commenting out for future use
-// -----------------------------------------------------------------------------
-// gulp.task('deploy:staging', function() {
-//   rsync({
-//   ssh: true,
-//   src: ['./_site/'],
-//   dest: '',
-//   recursive: true,
-//   delete: true,
-//   args: ['--verbose']
-//   }, function(error, stdout, stderr, cmd) {
-//     gutil.log(stdout);
-//   });
-// });
-// gulp.task('deploy:master', function() {
-//   rsync({
-//   ssh: true,
-//   src: ['./_site/'],
-//   dest: '',
-//   recursive: true,
-//   delete: true,
-//   args: ['--verbose']
-//   }, function(error, stdout, stderr, cmd) {
-//     gutil.log(stdout);
-//   });
-// });
 
 // -----------------------------------------------------------------------------
 // Default
 //    * Default task, running just `gulp` will compile the sass,
 //    * compile the jekyll site, launch BrowserSync & watch files.
 // -----------------------------------------------------------------------------
-gulp.task('default', ['browser-sync', 'copy-fonts', 'sass-bootstrap', 'sass', 'watch']);
+// gulp.task('default', ['browser-sync', 'copy-fonts', 'sass-bootstrap', 'sass', 'watch']);
+gulp.task('default', ['browser-sync','copy-fonts','watch']);
+
