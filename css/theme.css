@@ -435,7 +435,7 @@ img.text-center {
       display: inline-block;
       padding: 8px 16px;
       box-shadow: 0 6px 6px -2px rgba(0, 0, 0, 0.2), 0 16px 16px -2px rgba(0, 0, 0, 0.2);
-      opacity: .1;
+      opacity: 0;
       -webkit-transform: translate(-50%, 100%);
       -moz-transform: translate(-50%, 100%);
       -ms-transform: translate(-50%, 100%);
