@@ -410,30 +410,40 @@ img.text-center {
     width: 64px;
     height: 64px;
     margin-right: 8px;
-    margin-bottom: 8px;
-    background-color: #e6e6e6; }
-  .color-swatches li:nth-child(1) {
-    background-color: #03bbac; }
-  .color-swatches li:nth-child(2) {
-    background-color: #039aa8; }
-  .color-swatches li:nth-child(3) {
-    background-color: #03e6ca; }
-  .color-swatches li:nth-child(4) {
-    background-color: #d74c4e; }
-  .color-swatches li:nth-child(5) {
-    background-color: #000000; }
-  .color-swatches li:nth-child(6) {
-    background-color: #404042; }
-  .color-swatches li:nth-child(7) {
-    background-color: #888888; }
-  .color-swatches li:nth-child(8) {
-    background-color: #cccccc; }
-  .color-swatches li:nth-child(9) {
-    background-color: #e6e6e6; }
-  .color-swatches li:nth-child(10) {
-    background-color: #f3f3f3; }
-  .color-swatches li:nth-child(11) {
-    background-color: #ffffff; }
+    margin-bottom: 8px; }
 
-.navbar-brand.h6.uppercase {
+.bg-brand-teal {
+  background-color: #03bbac; }
+
+.bg-brand-teal-darker {
+  background-color: #039aa8; }
+
+.bg-brand-teal-lighter {
+  background-color: #03e6ca; }
+
+.bg-brand-red {
+  background-color: #d74c4e; }
+
+.bg-brand-black {
+  background-color: #000000; }
+
+.bg-brand-gray-darker {
+  background-color: #404042; }
+
+.bg-brand-gray-dark {
+  background-color: #888888; }
+
+.bg-brand-gray {
+  background-color: #cccccc; }
+
+.bg-brand-gray-light {
+  background-color: #e6e6e6; }
+
+.bg-brand-gray-lighter {
+  background-color: #f3f3f3; }
+
+.bg-brand-white {
+  background-color: #ffffff; }
+
+.clr-brand-uppercase {
   line-height: 1.32; }
