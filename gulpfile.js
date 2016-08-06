@@ -49,7 +49,7 @@ gulp.task('js', function(cb) {
         'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         'node_modules/jquery.scrollto/jquery.scrollTo.js',
         'node_modules/jquery.localscroll/jquery.localScroll.min.js',
-        'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+        'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
         '_js/*.js'
       ]),
       concat('app.js'),
