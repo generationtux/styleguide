@@ -55,10 +55,18 @@ $container-buffer-size: $type-spacing-xl;
 	list-style-type: none;
 	padding-left: 0;
 	li {
-		width: 64px;
-		height: 64px;
+		width: 128px;
+		height: 128px;
 		margin-right: 8px;
 		margin-bottom: 8px;
+		position: relative;
+		div {
+			background-color: rgba(255,255,255,.7);
+			padding: 4px 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
 	}
 }
 .bg-brand-teal  { background-color: $brand-teal; }

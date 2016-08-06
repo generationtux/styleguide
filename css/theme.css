@@ -407,10 +407,17 @@ img.text-center {
   list-style-type: none;
   padding-left: 0; }
   .color-swatches li {
-    width: 64px;
-    height: 64px;
+    width: 128px;
+    height: 128px;
     margin-right: 8px;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    position: relative; }
+    .color-swatches li div {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 4px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
 
 .bg-brand-teal {
   background-color: #03bbac; }
