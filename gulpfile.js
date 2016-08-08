@@ -10,7 +10,13 @@ var gutil       = require('gulp-util');
 var bootlint    = require('gulp-bootlint');
 var w3cjs       = require('gulp-w3cjs');
 var htmlhint    = require("gulp-htmlhint");
-var pump        = require('pump')
+var pump        = require('pump');
+
+// toggle css build type
+// true  == bootstrap custom build and theme style gets combined into one file
+// false == bootstrap and theme get built out separately
+// need to also update the head.html file to load the proper stylesheets
+var combineBootstrapAndTheme = true;
 
 // -----------------------------------------------------------------------------
 //  Build the Jekyll Site
@@ -33,11 +39,20 @@ gulp.task('browser-reload', function () {
 // -----------------------------------------------------------------------------
 // Wait for jekyll-build, then launch the Server
 // -----------------------------------------------------------------------------
-gulp.task('browser-sync', ['jekyll-serve','sass','sass-bootstrap', 'js'], function() {
-  browserSync({
-    proxy: "http://127.0.0.1:4000/styleguide/"
+if (combineBootstrapAndTheme == false) {
+  gulp.task('browser-sync', ['jekyll-serve','sass','sass-bootstrap', 'js'], function() {
+    browserSync({
+      proxy: "http://127.0.0.1:4000/styleguide/"
+    });
   });
-});
+} else {
+  gulp.task('browser-sync', ['jekyll-serve','sass-all', 'js'], function() {
+    browserSync({
+      proxy: "http://127.0.0.1:4000/styleguide/"
+    });
+  });
+}
+
 
 // -----------------------------------------------------------------------------
 // Concat & uglify files from _js & node_modules into both _site/js (for live injecting) and site (for future jekyll builds)
@@ -85,6 +100,17 @@ gulp.task('sass', function () {
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('css'));
 });
+gulp.task('sass-all', function () {
+  return gulp.src('_scss/all.scss')
+    .pipe(sass({
+      includePaths: ['scss'],
+      onError: browserSync.notify
+    }))
+    .pipe(gulp.dest('_site/css'))
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('css'));
+});
+
 
 // -----------------------------------------------------------------------------
 // Copy assets to a usable place for Jekyll
@@ -101,12 +127,27 @@ gulp.task('copy-fonts', function(){
 // -----------------------------------------------------------------------------
 gulp.task('watch', function () {
   gulp.watch('_js/*.js', ['js']);
-  gulp.watch([
-    '_scss/bootstrap-custom.scss',
-    '_scss/components/_variables-theme.scss',
-    '_scss/components/_bootstrap-resets.scss'
-  ], ['sass-bootstrap']);
-  gulp.watch('_scss/**/*.scss', ['sass']);
+
+  if (combineBootstrapAndTheme == false) {
+
+    gulp.watch([
+      '_scss/bootstrap-custom.scss',
+      '_scss/components/_variables-theme.scss',
+      '_scss/components/_bootstrap-resets.scss'
+    ], ['sass-bootstrap']);
+    gulp.watch('_scss/**/*.scss', ['sass']);
+
+  } else {
+
+    gulp.watch([
+      '_scss/bootstrap-custom.scss',
+      '_scss/components/_variables-theme.scss',
+      '_scss/components/_bootstrap-resets.scss',
+      '_scss/**/*.scss'
+    ], ['sass-all']);
+
+  }
+
   gulp.watch([
     '_site/**/*',
     '!_site/css/**/*', // ignore because css is already getting live injected
