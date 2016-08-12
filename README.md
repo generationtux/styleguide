@@ -6,3 +6,4 @@
 * cd into the site directory
 * run ```npm install```
 * run ```bundle install```
+* run ```gulp```
