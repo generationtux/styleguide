@@ -21,12 +21,21 @@ var combineBootstrapAndTheme = true;
 // -----------------------------------------------------------------------------
 //  Build the Jekyll Site
 // -----------------------------------------------------------------------------
-gulp.task('jekyll-serve', function() {
+gulp.task('jekyll', () => {
   const jekyll = cp.spawn('jekyll', ['serve',
     '--watch',
     '--incremental',
     '--drafts'
   ]);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
 });
 
 // -----------------------------------------------------------------------------
@@ -40,13 +49,13 @@ gulp.task('browser-reload', function () {
 // Wait for jekyll-build, then launch the Server
 // -----------------------------------------------------------------------------
 if (combineBootstrapAndTheme == false) {
-  gulp.task('browser-sync', ['jekyll-serve','sass','sass-bootstrap', 'js'], function() {
+  gulp.task('browser-sync', ['jekyll','sass','sass-bootstrap', 'js'], function() {
     browserSync({
       proxy: "http://127.0.0.1:4000/styleguide/"
     });
   });
 } else {
-  gulp.task('browser-sync', ['jekyll-serve','sass-all', 'js'], function() {
+  gulp.task('browser-sync', ['jekyll','sass-all', 'js'], function() {
     browserSync({
       proxy: "http://127.0.0.1:4000/styleguide/"
     });
