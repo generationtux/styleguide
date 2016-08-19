@@ -1,0 +1,6 @@
+.align-vertical {
+  @media( min-width:$grid-float-breakpoint ) {
+    @include display(flex);
+    @include align-items(center);    
+  }
+}
