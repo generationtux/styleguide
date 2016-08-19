@@ -1,0 +1,32 @@
+// Mixin for generating new styles
+// based on bootstraps _theme.scss file
+@mixin btn-styles($btn-color: #555, $border-color: $btn-default-border) {
+  border-color: $border-color;
+  @include transition(all .2s ease);
+
+  &:hover,
+  &:focus  {
+    background-color: $btn-color;
+    border-color: $border-color;
+    @include shadow-depth(3);
+  }
+
+  &:active,
+  &.active {
+    background-color: darken($btn-color, 12%);
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: darken($btn-color, 12%);
+    }
+  }
+}
+

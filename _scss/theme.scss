@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // Define our own variables
 // -----------------------------------------------------------------------------
-@import "components/variables-theme";
+@import "components/theme-variables";
 
 // -----------------------------------------------------------------------------
 // Load bootstrap helpers. 
@@ -29,12 +29,15 @@ $container-buffer-size: $type-spacing-xl;
 
 // grab our mixins
 @import "mixins/theme-vertical-spacing";
+@import "mixins/theme-shadows";
+@import "mixins/theme-buttons";
 
 // grab our components where we override and/or extend bootstrap
 @import "components/theme-typography";
 @import "components/theme-containers";
 @import "components/theme-vertical-spacing";
 @import "components/theme-align";
+@import "components/theme-buttons";
 
 // -----------------------------------------------------------------------------
 // More style stuff. 
