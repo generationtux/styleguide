@@ -5,9 +5,9 @@
 // new style for hollow buttons
 .btn-hollow-default { 
   // button-variant is a bootstrap mixin. takes color, background, border as variables
-  @include button-variant($brand-black, white, $brand-black); 
+  @include button-variant($brand-default, white, $brand-default); 
   // btn-styles is a theme specific mixin. takes background, border color as variables
-  @include btn-styles(white, $brand-black);
+  @include btn-styles(white, $brand-default);
 }
 .btn-hollow-primary { 
   @include button-variant($brand-primary, white, $brand-primary); 
@@ -37,9 +37,9 @@
 // new style for hollow buttons
 .btn-hollow-transparent-default { 
   // button-variant is a bootstrap mixin. takes color, background, border as variables
-  @include button-variant($brand-black, transparent, $brand-black); 
+  @include button-variant($brand-default, transparent, $brand-default); 
   // btn-styles is a theme specific mixin. takes background, border color as variables
-  @include btn-styles(transparent, $brand-black);
+  @include btn-styles(transparent, $brand-default);
 }
 .btn-hollow-transparent-primary { 
   @include button-variant($brand-primary, transparent, $brand-primary); 
@@ -77,7 +77,7 @@
 }
 
 // Apply the mixin to the buttons
-.btn-default { @include btn-styles($brand-black, $brand-black); }
+.btn-default { @include btn-styles($brand-default, $brand-default); }
 .btn-primary { @include btn-styles($brand-primary, $brand-primary); }
 .btn-success { @include btn-styles($brand-success, $brand-success); }
 .btn-info    { @include btn-styles($brand-info, $brand-info); }
