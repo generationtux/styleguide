@@ -5,31 +5,63 @@
 // new style for hollow buttons
 .btn-hollow-default { 
   // button-variant is a bootstrap mixin. takes color, background, border as variables
-  @include button-variant($gray-light, transparent, $gray-light); 
+  @include button-variant($brand-black, white, $brand-black); 
   // btn-styles is a theme specific mixin. takes background, border color as variables
-  @include btn-styles(transparent, $gray-light);
+  @include btn-styles(white, $brand-black);
 }
 .btn-hollow-primary { 
+  @include button-variant($brand-primary, white, $brand-primary); 
+  @include btn-styles(white, $brand-primary);
+}
+.btn-hollow-success { 
+  @include button-variant($brand-success, white, $brand-success); 
+  @include btn-styles(white, $brand-success);
+}
+.btn-hollow-info    { 
+  @include button-variant($brand-info, white, $brand-info); 
+  @include btn-styles(white, $brand-info);
+}
+.btn-hollow-warning { 
+  @include button-variant($brand-warning, white, $brand-warning); 
+  @include btn-styles(white, $brand-warning);
+}
+.btn-hollow-danger  { 
+  @include button-variant($brand-danger, white, $brand-danger); 
+  @include btn-styles(white, $brand-danger);
+}
+.btn-hollow-inverse {
+  @include button-variant(white, white, white); 
+  @include btn-styles(white, white); 
+}
+
+// new style for hollow buttons
+.btn-hollow-transparent-default { 
+  // button-variant is a bootstrap mixin. takes color, background, border as variables
+  @include button-variant($brand-black, transparent, $brand-black); 
+  // btn-styles is a theme specific mixin. takes background, border color as variables
+  @include btn-styles(transparent, $brand-black);
+}
+.btn-hollow-transparent-primary { 
   @include button-variant($brand-primary, transparent, $brand-primary); 
   @include btn-styles(transparent, $brand-primary);
 }
-.btn-hollow-success { 
+.btn-hollow-transparent-success { 
   @include button-variant($brand-success, transparent, $brand-success); 
   @include btn-styles(transparent, $brand-success);
 }
-.btn-hollow-info    { 
+.btn-hollow-transparent-info    { 
   @include button-variant($brand-info, transparent, $brand-info); 
   @include btn-styles(transparent, $brand-info);
 }
-.btn-hollow-warning { 
+.btn-hollow-transparent-warning { 
   @include button-variant($brand-warning, transparent, $brand-warning); 
   @include btn-styles(transparent, $brand-warning);
 }
-.btn-hollow-danger  { 
+.btn-hollow-transparent-danger  { 
   @include button-variant($brand-danger, transparent, $brand-danger); 
   @include btn-styles(transparent, $brand-danger);
 }
-.btn-hollow-inverse {
+.btn-hollow-transparent-inverse {
   @include button-variant(white, transparent, white); 
   @include btn-styles(transparent, white); 
 }
@@ -45,7 +77,7 @@
 }
 
 // Apply the mixin to the buttons
-.btn-default { @include btn-styles(white); }
+.btn-default { @include btn-styles($brand-black, $brand-black); }
 .btn-primary { @include btn-styles($brand-primary, $brand-primary); }
 .btn-success { @include btn-styles($brand-success, $brand-success); }
 .btn-info    { @include btn-styles($brand-info, $brand-info); }
