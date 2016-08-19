@@ -8,18 +8,18 @@
 // //
 // //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              black;
+$gray-base:              $brand-black;
 $gray-darker:            $brand-gray-darker;
 $gray-dark:              $brand-gray-dark;
 $gray:                   $brand-gray;
 $gray-light:             $brand-gray-light;
 $gray-lighter:           $brand-gray-lighter;
 
-// $brand-primary:         darken(#428bca, 6.5%); // #337ab7
-// $brand-success:         #5cb85c;
-// $brand-info:            #5bc0de;
-// $brand-warning:         #f0ad4e;
-// $brand-danger:          #d9534f;
+$brand-primary:         $brand-teal;
+$brand-success:         $brand-teal-lighter;
+$brand-info:            $brand-teal-darker;
+$brand-warning:         $brand-orange;
+$brand-danger:          $brand-red;
 
 
 // //== Scaffolding
