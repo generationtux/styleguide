@@ -3,6 +3,7 @@
 @mixin btn-styles($btn-color: #555, $border-color: $btn-default-border) {
   background-color: $btn-color;
   border-color: $border-color;
+  color: $border-color;
   @include transition(all .2s ease);
 
   
@@ -14,6 +15,12 @@
       border-color: $border-color;
       color: $btn-color;
     }
+    &:active,
+    &.active,
+    &:focus:active {
+      background-color: desaturate( darken($border-color, 7%), 7% );
+      color: white;
+    }
   }
   @elseif ($btn-color == $border-color) {
     color: white;
@@ -21,6 +28,12 @@
     &:focus  {
       background-color: white;
       border-color: $btn-color;
+      color: $btn-color;
+    }
+    &:active,
+    &.active,
+    &:focus:active {
+      background-color: $brand-gray-lighter;
       color: $btn-color;
     }
   }
@@ -32,12 +45,15 @@
       color: white;
       // @include shadow-depth(3);
     }
+    &:active,
+    &.active,
+    &:focus:active {
+      background-color: desaturate( darken($border-color, 7%), 7% );
+      color: white;
+    }
   }
 
-  &:active,
-  &.active {
-    background-color: darken($btn-color, 12%);
-  }
+  
 
   &.disabled,
   &[disabled],
@@ -48,7 +64,8 @@
     &.focus,
     &:active,
     &.active {
-      background-color: darken($btn-color, 12%);
+      background-color: $brand-gray-lighter;
+      color: black;
     }
   }
 }
