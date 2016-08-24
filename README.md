@@ -1,4 +1,6 @@
-# Read Me
+# Generation Tux Style Guide
+
+<https://generationtux.github.io/styleguide/>
 
 ## Setup
 * This site uses Jekyll so you'll need to isntall that. Info here: <https://jekyllrb.com/>
