@@ -47,7 +47,6 @@
   @include btn-styles(transparent, $brand-danger);
 }
 .btn-hollow-transparent-inverse {
-  @include button-variant(white, transparent, white); 
   @include btn-styles(transparent, white); 
 }
 

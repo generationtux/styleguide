@@ -6558,47 +6558,12 @@ img.text-center {
     color: black; }
 
 .btn-hollow-transparent-inverse {
-  color: white;
-  background-color: transparent;
-  border-color: white;
   background-color: transparent;
   border-color: white;
   color: white;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
-  .btn-hollow-transparent-inverse:focus, .btn-hollow-transparent-inverse.focus {
-    color: white;
-    background-color: transparent;
-    border-color: #bfbfbf; }
-  .btn-hollow-transparent-inverse:hover {
-    color: white;
-    background-color: transparent;
-    border-color: #e0e0e0; }
-  .btn-hollow-transparent-inverse:active, .btn-hollow-transparent-inverse.active,
-  .open > .btn-hollow-transparent-inverse.dropdown-toggle {
-    color: white;
-    background-color: transparent;
-    border-color: #e0e0e0; }
-    .btn-hollow-transparent-inverse:active:hover, .btn-hollow-transparent-inverse:active:focus, .btn-hollow-transparent-inverse:active.focus, .btn-hollow-transparent-inverse.active:hover, .btn-hollow-transparent-inverse.active:focus, .btn-hollow-transparent-inverse.active.focus,
-    .open > .btn-hollow-transparent-inverse.dropdown-toggle:hover,
-    .open > .btn-hollow-transparent-inverse.dropdown-toggle:focus,
-    .open > .btn-hollow-transparent-inverse.dropdown-toggle.focus {
-      color: white;
-      background-color: transparent;
-      border-color: #bfbfbf; }
-  .btn-hollow-transparent-inverse:active, .btn-hollow-transparent-inverse.active,
-  .open > .btn-hollow-transparent-inverse.dropdown-toggle {
-    background-image: none; }
-  .btn-hollow-transparent-inverse.disabled:hover, .btn-hollow-transparent-inverse.disabled:focus, .btn-hollow-transparent-inverse.disabled.focus, .btn-hollow-transparent-inverse[disabled]:hover, .btn-hollow-transparent-inverse[disabled]:focus, .btn-hollow-transparent-inverse[disabled].focus,
-  fieldset[disabled] .btn-hollow-transparent-inverse:hover,
-  fieldset[disabled] .btn-hollow-transparent-inverse:focus,
-  fieldset[disabled] .btn-hollow-transparent-inverse.focus {
-    background-color: transparent;
-    border-color: white; }
-  .btn-hollow-transparent-inverse .badge {
-    color: transparent;
-    background-color: white; }
   .btn-hollow-transparent-inverse:hover, .btn-hollow-transparent-inverse:focus {
     background-color: white;
     border-color: transparent;
