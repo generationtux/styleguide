@@ -15,6 +15,6 @@
 	* You will see errors like:
 		* WARN  TCPServer Error: Address already in use - bind(2)
 		* Jekyll: jekyll 3.2.1 | Error:  Address already in use - bind(2)
-	* You can fix by doing:
+	* You can fix with these steps:
 		* run ``` pkill -f jekyll ```
 		* then re-run ``` gulp ```
