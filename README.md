@@ -11,7 +11,7 @@
 * run ```gulp```
 
 ## Know Issues
-* sometime Gulp will quit and leave the Jekyll server running
+* sometimes Gulp will quit and leave the Jekyll server running
 	* You will see errors like:
 		* WARN  TCPServer Error: Address already in use - bind(2)
 		* Jekyll: jekyll 3.2.1 | Error:  Address already in use - bind(2)
