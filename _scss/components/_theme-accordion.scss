@@ -1,0 +1,90 @@
+
+$btn-size: 24px;
+$btn-offset: 5px;
+
+.panel-theme-accordion {
+  padding: 10px 0;
+  box-shadow: none;
+  .panel-heading {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    a.collapsed {
+      color: $brand-teal;
+    }
+  }  
+  .panel-title {
+    position: relative;
+    padding-left: $btn-size * 1.5;
+  }
+  .panel-body {
+    border: none !important;
+    position: relative;
+    padding-top: 24px;
+    // padding-bottom: 32px;
+    padding-left: $btn-size * 2;
+    &:before {
+      content:"";
+      width: 2px;
+      height: 100%;
+      display: block;
+      position: absolute;
+      left: $btn-size / 2;
+      top: 0;
+      background-color: $brand-gray-light;
+      @include transform(translate(-50%,0));
+    }
+    &:after {
+      content:"";
+      width: $btn-size/2;
+      height: 2px;
+      position: absolute;
+      left: $btn-size/4;
+      bottom: 0;
+      background-color: $brand-gray-light;
+    }
+  }
+}
+.plus-icon {
+  display: block;
+  width: $btn-size;
+  height: $btn-size;
+  background: $brand-gray-light;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -2px; // helps visually center icon vertically
+  border-radius: 50%;
+  @include transform(translate(0%,-50%));
+  @include transition(all .3s ease);
+  &:before,&:after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%,-50%));
+    @include transition(transform .3s ease);
+  }
+  &:after {
+    @include transform(translate(-50%,-50%) rotate(0deg));
+  }
+  &:before {
+    @include transform(translate(-50%,-50%) rotate(180deg));
+  }
+}
+.collapsed {
+  .plus-icon {
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 0%;
+    &:after {
+      @include transform(translate(-50%,-50%) rotate(-90deg));
+    }
+    &:before {
+      @include transform(translate(-50%,-50%) rotate(0deg));
+    }
+  }  
+}
