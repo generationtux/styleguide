@@ -190,18 +190,28 @@ $(function () {
   // -----------------------------------------------------------------------------
   // copy & paste
   // -----------------------------------------------------------------------------
-  var swatches = document.querySelectorAll('.color-swatches li'), i;
 
-  for (i = 0; i < swatches.length; ++i) {
-    swatches[i].addEventListener('click', copyToClipboard, true); 
+  // structure for copy and paste:
+  // wrapper element with .copy-to-clipboard class
+  // 1 child element, usually a button, responsible for activating copy and paste with .clipboard-init class
+  // 1 child element with the content to be copied with class .clipboard-content
+
+  var codeCopy = document.querySelectorAll('.copy-to-clipboard'), i;
+  for (i = 0; i < codeCopy.length; ++i) {
+    var copyInit = codeCopy[i].querySelector(".clipboard-init");
+    copyInit.addEventListener('click', function(){
+      var copyContent = this.parentNode.querySelector(".clipboard-content");
+      copyToClipboardCode(copyContent); 
+    }, true); 
   }
 
-  function copyToClipboard(e) {
-    // Select the swatch p text   
-    var text = e.target.querySelector('p');
+  function copyToClipboardCode(copyContent) {
+    // sometime the ranges don't get cleared properly
+    // so we make sure they are clear before making a new one
+    window.getSelection().removeAllRanges();  
 
     var range = document.createRange();  
-    range.selectNode(text);  
+    range.selectNode(copyContent);  
     window.getSelection().addRange(range);  
 
     try {  
@@ -217,6 +227,11 @@ $(function () {
     // removeRange(range) when it is supported  
     window.getSelection().removeAllRanges();  
   }
+
+
+
+
+
 
 
 

@@ -6875,27 +6875,22 @@ img.text-center {
     margin-bottom: 8px;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease; }
-    .color-swatches li div {
+    .color-swatches li p {
       background-color: rgba(255, 255, 255, 0.7);
       padding: 4px 0;
       position: absolute;
       bottom: 0;
       width: 100%; }
-    .color-swatches li:after {
-      content: "Copy to Clipboard";
+    .color-swatches li .btn {
       position: absolute;
       top: 50%;
       margin: auto;
-      background: white;
-      border-radius: 3px;
       font-size: 12.8px;
       line-height: 1.3;
       display: inline-block;
-      padding: 8px 16px;
       box-shadow: 0 6px 6px -2px rgba(0, 0, 0, 0.2), 0 16px 16px -2px rgba(0, 0, 0, 0.2);
       opacity: 0;
       -webkit-transform: translate(-50%, 100%);
@@ -6906,15 +6901,13 @@ img.text-center {
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-    .color-swatches li:hover:after {
+    .color-swatches li:hover .btn {
       opacity: 1;
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-    .color-swatches li:active {
-      opacity: .5; }
 
 .bg-brand-teal {
   background-color: #03bbac; }
@@ -6953,4 +6946,6 @@ img.text-center {
   line-height: 1.32; }
 
 pre {
-  padding: 32px; }
+  padding: 32px;
+  max-height: 300px;
+  border-radius: 0; }
