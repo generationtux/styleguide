@@ -6052,10 +6052,29 @@ img.text-center {
 
 .container-bg-image {
   background-size: cover;
-  background-position: left top; }
+  background-position: left top;
+  position: relative; }
   @media (min-width: 768px) {
     .container-bg-image {
       background-position: center top; } }
+
+.container-callout {
+  position: relative; }
+
+@media (min-width: 768px) {
+  .callout-caption-center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%); } }
+
+@media (min-width: 768px) {
+  .callout-caption-top {
+    position: absolute;
+    top: 10%; } }
 
 .container.container-buffer {
   padding-top: 32px !important;
