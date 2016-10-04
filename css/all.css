@@ -1070,10 +1070,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #000000;
+  color: #03bbac;
   text-decoration: none; }
   a:hover, a:focus {
-    color: black;
+    color: #027067;
     text-decoration: underline; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -3049,7 +3049,7 @@ fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-link {
-  color: #000000;
+  color: #03bbac;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled],
@@ -3060,7 +3060,7 @@ fieldset[disabled] a.btn {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: black;
+    color: #027067;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
@@ -3561,7 +3561,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #f3f3f3;
-    border-color: #000000; }
+    border-color: #03bbac; }
   .nav .nav-divider {
     height: 1px;
     margin: 7px 0;
@@ -4081,7 +4081,7 @@ tbody.collapse.in {
       padding: 16px 32px;
       line-height: 1.5;
       text-decoration: none;
-      color: #000000;
+      color: #03bbac;
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
@@ -4098,7 +4098,7 @@ tbody.collapse.in {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 2;
-    color: black;
+    color: #027067;
     background-color: #f3f3f3;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -4266,7 +4266,7 @@ a.label:hover, a.label:focus {
     padding: 1px 5px; }
   .list-group-item.active > .badge,
   .nav-pills > .active > a > .badge {
-    color: #000000;
+    color: #03bbac;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
@@ -4339,7 +4339,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #000000; }
+  border-color: #03bbac; }
 
 .alert {
   padding: 15px;
