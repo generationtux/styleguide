@@ -26,6 +26,11 @@ github_username:
 markdown: kramdown
 # theme: minima
 
+
+collections:
+  - modules
+
+
 exclude: 
   - node_modules
   - gulpfile.js
