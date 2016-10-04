@@ -6858,47 +6858,10 @@ img.text-center {
       -o-transform-origin: left top;
       transform-origin: left top; } }
 
-.color-swatches {
-  list-style-type: none;
-  padding-left: 0; }
-  .color-swatches li {
-    width: 128px;
-    height: 128px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-    .color-swatches li p {
-      background-color: rgba(255, 255, 255, 0.7);
-      padding: 4px 0;
-      position: absolute;
-      bottom: 0;
-      width: 100%; }
-    .color-swatches li .btn {
-      position: absolute;
-      top: 50%;
-      margin: auto;
-      display: inline-block;
-      box-shadow: 0 6px 6px -2px rgba(0, 0, 0, 0.2), 0 16px 16px -2px rgba(0, 0, 0, 0.2);
-      opacity: 0;
-      -webkit-transform: translate(-50%, 100%);
-      -moz-transform: translate(-50%, 100%);
-      -ms-transform: translate(-50%, 100%);
-      -o-transform: translate(-50%, 100%);
-      transform: translate(-50%, 100%);
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-    .color-swatches li:hover .btn {
-      opacity: 1;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+.color-swatch {
+  width: 100%;
+  height: 0;
+  padding-bottom: 120%; }
 
 .bg-brand-teal {
   background-color: #03bbac; }
