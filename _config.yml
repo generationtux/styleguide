@@ -28,6 +28,7 @@ markdown: kramdown
 
 
 collections:
+  - atoms
   - modules
 
 
