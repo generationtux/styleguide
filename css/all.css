@@ -5911,7 +5911,7 @@ p.small {
   letter-spacing: .03em;
   line-height: 1.7; }
 
-ul {
+ul, ol {
   margin-bottom: 16px;
   padding-left: 2em; }
 
