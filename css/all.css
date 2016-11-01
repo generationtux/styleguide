@@ -6245,6 +6245,25 @@ img.text-center {
     align-items: center;
     -ms-flex-align: center; } }
 
+@media (min-width: 768px) {
+  .align-vertical-bottom {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end; } }
+
 .btn {
   white-space: normal;
   font-family: brandon-grotesque, Arial, Helvetica, sans-serif;

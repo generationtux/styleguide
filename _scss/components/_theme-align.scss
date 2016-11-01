@@ -4,3 +4,10 @@
     @include align-items(center);    
   }
 }
+
+.align-vertical-bottom {
+  @media( min-width:$grid-float-breakpoint ) {
+    @include display(flex);
+    @include align-items(flex-end);    
+  }
+}
