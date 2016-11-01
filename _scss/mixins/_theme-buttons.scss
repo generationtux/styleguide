@@ -8,7 +8,22 @@
 
   
 
-  @if ($btn-color == white) {
+  @if (lightness($border-color) > 80) {
+    color: $gray-base;
+    &:hover,
+    &:focus  {
+      background-color: darken($border-color,15%);
+      border-color: darken($border-color,15%);
+      color: $gray-base;
+    }
+    &:active,
+    &.active,
+    &:focus:active {
+      background-color: desaturate( darken($border-color, 7%), 7% );
+      color: white;
+    }
+  }
+  @elseif ($btn-color == white) {
     &:hover,
     &:focus  {
       background-color: $border-color;

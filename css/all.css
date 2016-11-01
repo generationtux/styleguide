@@ -6264,17 +6264,18 @@ img.text-center {
 
 .btn-hollow-default {
   background-color: white;
-  border-color: #888888;
-  color: #888888;
+  border-color: #e6e6e6;
+  color: #e6e6e6;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  color: #000000; }
   .btn-hollow-default:hover, .btn-hollow-default:focus {
-    background-color: #888888;
-    border-color: #888888;
-    color: white; }
+    background-color: silver;
+    border-color: silver;
+    color: #000000; }
   .btn-hollow-default:active, .btn-hollow-default.active, .btn-hollow-default:focus:active {
-    background-color: #767676;
+    background-color: #d4d4d4;
     color: white; }
   .btn-hollow-default.disabled, .btn-hollow-default.disabled:hover, .btn-hollow-default.disabled:focus, .btn-hollow-default.disabled.focus, .btn-hollow-default.disabled:active, .btn-hollow-default.disabled.active, .btn-hollow-default[disabled], .btn-hollow-default[disabled]:hover, .btn-hollow-default[disabled]:focus, .btn-hollow-default[disabled].focus, .btn-hollow-default[disabled]:active, .btn-hollow-default[disabled].active,
   fieldset[disabled] .btn-hollow-default,
@@ -6408,17 +6409,18 @@ img.text-center {
 
 .btn-hollow-transparent-default {
   background-color: transparent;
-  border-color: #888888;
-  color: #888888;
+  border-color: #e6e6e6;
+  color: #e6e6e6;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  color: #000000; }
   .btn-hollow-transparent-default:hover, .btn-hollow-transparent-default:focus {
-    background-color: #888888;
-    border-color: transparent;
-    color: white; }
+    background-color: silver;
+    border-color: silver;
+    color: #000000; }
   .btn-hollow-transparent-default:active, .btn-hollow-transparent-default.active, .btn-hollow-transparent-default:focus:active {
-    background-color: #767676;
+    background-color: #d4d4d4;
     color: white; }
   .btn-hollow-transparent-default.disabled, .btn-hollow-transparent-default.disabled:hover, .btn-hollow-transparent-default.disabled:focus, .btn-hollow-transparent-default.disabled.focus, .btn-hollow-transparent-default.disabled:active, .btn-hollow-transparent-default.disabled.active, .btn-hollow-transparent-default[disabled], .btn-hollow-transparent-default[disabled]:hover, .btn-hollow-transparent-default[disabled]:focus, .btn-hollow-transparent-default[disabled].focus, .btn-hollow-transparent-default[disabled]:active, .btn-hollow-transparent-default[disabled].active,
   fieldset[disabled] .btn-hollow-transparent-default,
@@ -6556,11 +6558,12 @@ img.text-center {
   color: white;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  color: #000000; }
   .btn-hollow-transparent-inverse:hover, .btn-hollow-transparent-inverse:focus {
-    background-color: white;
-    border-color: transparent;
-    color: white; }
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    color: #000000; }
   .btn-hollow-transparent-inverse:active, .btn-hollow-transparent-inverse.active, .btn-hollow-transparent-inverse:focus:active {
     background-color: #ededed;
     color: white; }
@@ -6582,20 +6585,20 @@ img.text-center {
     text-decoration: underline; }
 
 .btn-default {
-  background-color: #888888;
-  border-color: #888888;
-  color: #888888;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+  color: #e6e6e6;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  color: white; }
+  color: #000000; }
   .btn-default:hover, .btn-default:focus {
-    background-color: white;
-    border-color: #888888;
-    color: #888888; }
+    background-color: silver;
+    border-color: silver;
+    color: #000000; }
   .btn-default:active, .btn-default.active, .btn-default:focus:active {
-    background-color: #f3f3f3;
-    color: #888888; }
+    background-color: #d4d4d4;
+    color: white; }
   .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active,
   fieldset[disabled] .btn-default,
   fieldset[disabled] .btn-default:hover,
