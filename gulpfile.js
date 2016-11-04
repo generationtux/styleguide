@@ -126,7 +126,7 @@ gulp.task('sass-all', function () {
 // -----------------------------------------------------------------------------
 gulp.task('copy-fonts', function(){
   return gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/**/*')
-  .pipe(copy('fonts'));
+  .pipe(copy('fonts',{prefix:5}));
 });
 
 // -----------------------------------------------------------------------------
