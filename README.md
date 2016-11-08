@@ -8,7 +8,7 @@
 * cd into the site directory
 * run ```npm install```
 * run ```bundle install```
-* run ```gulp```
+* run ```bundle exec gulp```
 
 ## Know Issues
 * sometimes Gulp will quit and leave the Jekyll server running
@@ -17,4 +17,4 @@
 		* Jekyll: jekyll 3.2.1 | Error:  Address already in use - bind(2)
 	* You can fix with these steps:
 		* run ``` pkill -f jekyll ```
-		* then re-run ``` gulp ```
+		* then re-run ``` bundle exec gulp ```
