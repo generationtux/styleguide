@@ -6,33 +6,35 @@
 	.h1,.h2,.h3,.h4,.h5,.h6 {
 		line-height: 16px !important;
 	}
-	.navbar-nav {
-		& > li > a {
-			position: relative;
-			&:after {
-				content: "";
-				width: 100%;
-				height: 4px;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				background-color: $brand-gray-darker;
-				opacity: .2;
-				@include transform( scaleX(0) );
-				@include transition( all .2s ease );
-				@include transform-origin(left center);
-			}
-			&:hover {
+	@media(min-width: $grid-float-breakpoint) {
+		.navbar-nav {
+			& > li > a {
+				position: relative;
 				&:after {
-					@include transform( scaleX(1) );
-					opacity: 1;
+					content: "";
+					width: 100%;
+					height: 4px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					background-color: $brand-gray-darker;
+					opacity: .2;
+					@include transform( scaleX(0) );
+					@include transition( all .2s ease );
+					@include transform-origin(left center);
+				}
+				&:hover {
+					&:after {
+						@include transform( scaleX(1) );
+						opacity: 1;
+					}
 				}
 			}
-		}
-		.active {
-			a {
-				&:after {
-					@include transform( scaleX(1) );
+			.active {
+				a {
+					&:after {
+						@include transform( scaleX(1) );
+					}
 				}
 			}
 		}
