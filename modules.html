@@ -41,16 +41,21 @@ permalink: /modules/
 <div class="container">
 {% endif %}
 
+{% if page.container-type contains "none" %}
+  {{ page.content }}
+{% else %}
   <div class="row">
     <div class="col-sm-12">
       {{ page.content }}
     </div>
   </div><!-- /row -->
+{% endif %}
 
 {% if page.container-type contains "none" %}
 {% else %}
 </div> <!-- /container -->
 {% endif %}
+
 
 <div class="container">
   <hr class="vspace-xs-top-lg vspace-xs-btm-lg">
