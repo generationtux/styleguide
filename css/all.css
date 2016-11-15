@@ -7044,7 +7044,7 @@ img.text-center {
       width: 100%;
       height: 4px;
       position: absolute;
-      bottom: 0;
+      bottom: -2px;
       left: 0;
       background-color: #404042;
       opacity: .2;
