@@ -34,10 +34,23 @@ permalink: /atoms/
         <p>For more information on {{ page.title }} visit the <a href="{{ page.bootstrap-link}}">Bootstap Reference</a></p>
       {% endif %}
 
-      {{ page.content }}
     </div>
   </div>
 </div>
+
+{% if page.container-type contains "none" %}
+{% elsif page.container-type contains "fluid" %}
+<div class="container-fluid">
+{% else %}
+<div class="container">
+{% endif %}
+
+{{ page.content }}
+
+{% if page.container-type contains "none" %}
+{% else %}
+</div> <!-- /container -->
+{% endif %}
 
 {% endfor %}
    
