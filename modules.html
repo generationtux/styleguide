@@ -34,24 +34,36 @@ permalink: /modules/
 </div>
 
 
+{% if page.container-type contains "none" %}
+{% elsif page.container-type contains "fluid" %}
+<div class="container-fluid">
+{% else %}
 <div class="container">
+{% endif %}
+
   <div class="row">
     <div class="col-sm-12">
       {{ page.content }}
-      <hr class="vspace-xs-top-lg vspace-xs-btm-lg">
-      <h3 class="copy uppercase">Markup:</h3>
-      <div class="copy-to-clipboard">
-        <div class="clipboard-content">
-          {% highlight html %} {{ page.content }} {% endhighlight %}
-        </div>
-        <div class="clipboard-init btn btn-primary vspace-xs-btm-md">Copy to Clipboard</div>
-      </div>
-
-      </pre>
     </div>
-  </div>
-</div>
+  </div><!-- /row -->
 
+{% if page.container-type contains "none" %}
+{% else %}
+</div> <!-- /container -->
+{% endif %}
+
+<div class="container">
+  <hr class="vspace-xs-top-lg vspace-xs-btm-lg">
+  <h3 class="copy uppercase">Markup:</h3>
+  <div class="copy-to-clipboard">
+    <div class="clipboard-content">
+      {% highlight html %} {{ page.content }} {% endhighlight %}
+    </div>
+    <div class="clipboard-init btn btn-primary vspace-xs-btm-md">Copy to Clipboard</div>
+  </div>
+
+  </pre>
+</div><!-- /container -->
 
 
 {% endfor %}
