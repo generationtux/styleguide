@@ -7030,7 +7030,7 @@ img.text-center {
 .navbar-default .h1, .navbar-default .h2, .navbar-default .h3, .navbar-default .h4, .navbar-default .h5, .navbar-default .h6 {
   line-height: 16px !important; }
 
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav > li > a {
   padding-left: 0;
   padding-right: 0;
   margin-left: 16px;

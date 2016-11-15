@@ -8,7 +8,7 @@
 		line-height: 16px !important;
 	}
 	.navbar-nav {
-		li a {
+		& > li > a {
 			padding-left: 0;
 			padding-right: 0;
 			margin-left: 16px;
