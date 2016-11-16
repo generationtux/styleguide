@@ -368,20 +368,20 @@ $container-lg:                 $container-large-desktop;
 // //##
 
 // // Basics of a navbar
-$navbar-height:                    90px;
+$navbar-height:                    80px;
 // $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             0;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
 // $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
 // $navbar-collapse-max-height:       340px;
 
-// $navbar-default-color:             #777;
+$navbar-default-color:             $gray-base;
 $navbar-default-bg:                #fff;
 // $navbar-default-border:            darken($navbar-default-bg, 6.5%);
 
 // // Navbar links
-// $navbar-default-link-color:                #777;
-// $navbar-default-link-hover-color:          #333;
+$navbar-default-link-color:                $gray-base;
+$navbar-default-link-hover-color:          $gray-base;
 // $navbar-default-link-hover-bg:             transparent;
 // $navbar-default-link-active-color:         #555;
 $navbar-default-link-active-bg:            $navbar-default-bg;
@@ -394,9 +394,9 @@ $navbar-default-link-active-bg:            $navbar-default-bg;
 // $navbar-default-brand-hover-bg:            transparent;
 
 // // Navbar toggle
-// $navbar-default-toggle-hover-bg:           #ddd;
-// $navbar-default-toggle-icon-bar-bg:        #888;
-// $navbar-default-toggle-border-color:       #ddd;
+$navbar-default-toggle-hover-bg:           $gray;
+$navbar-default-toggle-icon-bar-bg:        $gray-base;
+$navbar-default-toggle-border-color:       transparent;
 
 
 // //=== Inverted navbar

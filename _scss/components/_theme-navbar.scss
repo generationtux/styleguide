@@ -2,6 +2,12 @@
 	border: none;
 	margin-bottom: 0;
 }
+.navbar-toggle {
+	.icon-bar {
+		width: 16px;
+		border-radius: 0;
+	}
+}
 .navbar-default {
 	h1,h2,h3,h4,h5,h6,
 	.h1,.h2,.h3,.h4,.h5,.h6 {
