@@ -100,9 +100,9 @@
 			a {
 				background-color: transparent;
 				color: $brand-info;
-				&:hover {
+				&:hover, &:active, &:focus {
 					background-color: transparent;
-					color: black;
+					color: $brand-info;
 				}
 			}
 		}

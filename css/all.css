@@ -7102,9 +7102,9 @@ img.text-center {
   .navbar-subnav .navbar-nav .active a {
     background-color: transparent;
     color: #146c8e; }
-    .navbar-subnav .navbar-nav .active a:hover {
+    .navbar-subnav .navbar-nav .active a:hover, .navbar-subnav .navbar-nav .active a:active, .navbar-subnav .navbar-nav .active a:focus {
       background-color: transparent;
-      color: black; }
+      color: #146c8e; }
   .navbar-subnav .navbar-collapse {
     border-top-color: #e6e6e6; }
 
