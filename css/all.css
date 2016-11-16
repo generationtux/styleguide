@@ -7044,8 +7044,6 @@ img.text-center {
         bottom: 0;
         left: 16px;
         right: 16px;
-        background-color: #404042;
-        opacity: .2;
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
         -ms-transform: scaleX(0);
@@ -7075,7 +7073,9 @@ img.text-center {
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a:after {
-    background-color: #404042; } }
+    background-color: #cccccc; }
+  .navbar-default .navbar-nav .active a:hover:after {
+    background-color: #888888; } }
 
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a:after {
