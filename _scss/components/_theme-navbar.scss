@@ -20,7 +20,7 @@
 				position: relative;
 				&:after {
 					content: "";
-					height: 2px;
+					height: 1px;
 					position: absolute;
 					bottom: 0;
 					left: 16px;
@@ -52,12 +52,20 @@
 		.navbar-nav {
 			& > li > a {
 				&:after {
-					background-color: $brand-gray;
+					background-color: $gray-base;
+				}
+				&:active,&:focus {
+					background-color: $brand-gray-lighter;
 				}
 			}
 			.active {
 				a:hover:after {
-					background-color: $brand-gray-dark;
+					background-color: $brand-gray;
+				}
+			}
+			.active a {
+				&:active,&:focus {
+					background-color: $brand-gray-lighter;
 				}
 			}
 		}

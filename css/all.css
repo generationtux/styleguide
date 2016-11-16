@@ -7039,7 +7039,7 @@ img.text-center {
       position: relative; }
       .navbar .navbar-nav > li > a:after {
         content: "";
-        height: 2px;
+        height: 1px;
         position: absolute;
         bottom: 0;
         left: 16px;
@@ -7073,9 +7073,13 @@ img.text-center {
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a:after {
-    background-color: #cccccc; }
+    background-color: #000000; }
+  .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #f3f3f3; }
   .navbar-default .navbar-nav .active a:hover:after {
-    background-color: #888888; } }
+    background-color: #cccccc; }
+  .navbar-default .navbar-nav .active a:active, .navbar-default .navbar-nav .active a:focus {
+    background-color: #f3f3f3; } }
 
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a:after {
