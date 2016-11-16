@@ -84,8 +84,10 @@
 		.navbar-nav {
 			& > li > a {
 				&:after {
-					background-color: white;
-					opacity: .7;
+					background-color: $brand-gray-lighter;
+					height: 3px;
+					bottom: -1px;
+					z-index: 10;
 				}
 			}
 		}

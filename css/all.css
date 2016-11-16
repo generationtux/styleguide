@@ -7089,8 +7089,10 @@ img.text-center {
 
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a:after {
-    background-color: white;
-    opacity: .7; } }
+    background-color: #f3f3f3;
+    height: 3px;
+    bottom: -1px;
+    z-index: 10; } }
 
 .navbar-subnav {
   border-top: 1px solid #cccccc;
