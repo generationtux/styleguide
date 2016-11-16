@@ -50,11 +50,11 @@
 	@media(min-width: $screen-lg-min) {
 		.navbar-nav {
 			& > li > a {
-				padding-left: 24px;
-				padding-right: 24px;
+				padding-left: 16px;
+				padding-right: 16px;
 				&:after {
-					left: 24px;
-					right: 24px;
+					left: 16px;
+					right: 16px;
 				}
 			}
 		}

@@ -7073,11 +7073,11 @@ img.text-center {
       transform: scaleX(1); } }
   @media (min-width: 1200px) {
     .navbar .navbar-nav > li > a {
-      padding-left: 24px;
-      padding-right: 24px; }
+      padding-left: 16px;
+      padding-right: 16px; }
       .navbar .navbar-nav > li > a:after {
-        left: 24px;
-        right: 24px; } }
+        left: 16px;
+        right: 16px; } }
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a:after {
