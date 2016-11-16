@@ -3948,7 +3948,7 @@ tbody.collapse.in {
       color: #000000;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
+    color: #000000;
     background-color: #fff; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
@@ -3964,7 +3964,7 @@ tbody.collapse.in {
     border-color: #eeeeee; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #fff;
-    color: #555; }
+    color: #000000; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #000000; }
@@ -3972,7 +3972,7 @@ tbody.collapse.in {
         color: #000000;
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #555;
+      color: #000000;
       background-color: #fff; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
@@ -7091,11 +7091,20 @@ img.text-center {
   border-top: 1px solid #cccccc;
   min-height: auto;
   background-color: #f3f3f3; }
-  .navbar-subnav li a {
+  .navbar-subnav .navbar-nav li a {
     padding-top: 16px;
-    padding-bottom: 16px; }
-    .navbar-subnav li a:after {
+    padding-bottom: 16px;
+    color: #888888; }
+    .navbar-subnav .navbar-nav li a:after {
       display: none; }
+    .navbar-subnav .navbar-nav li a:hover {
+      color: #000000; }
+  .navbar-subnav .navbar-nav .active a {
+    background-color: transparent;
+    color: black; }
+    .navbar-subnav .navbar-nav .active a:hover {
+      background-color: transparent;
+      color: black; }
   .navbar-subnav .navbar-collapse {
     border-top-color: #e6e6e6; }
 
