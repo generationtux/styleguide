@@ -7225,6 +7225,13 @@ img.text-center {
 .shadow-depth-5 {
   box-shadow: 0 15px 12px rgba(0, 0, 0, 0.22), 0 19px 38px rgba(0, 0, 0, 0.3); }
 
+.caret {
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
 .styleguide-label {
   opacity: .2; }
   @media (min-width: 768px) {
