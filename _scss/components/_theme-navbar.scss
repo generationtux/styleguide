@@ -68,17 +68,12 @@
 					background-color: $gray-base;
 				}
 				&:active,&:focus {
-					background-color: $brand-gray-lighter;
-				}
-			}
-			.active {
-				a:hover:after {
-					background-color: $brand-gray;
+					color: $brand-info;
 				}
 			}
 			.active a {
-				&:active,&:focus {
-					background-color: $brand-gray-lighter;
+				&:hover:after {
+					background-color: $brand-gray;
 				}
 			}
 		}
@@ -111,11 +106,7 @@
 		}
 		.active {
 			a {
-				background-color: transparent;
 				color: $brand-info;
-				&:hover, &:active, &:focus {
-					background-color: transparent;
-				}
 			}
 		}
 	}

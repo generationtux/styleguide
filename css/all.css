@@ -3949,7 +3949,7 @@ tbody.collapse.in {
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #000000;
-    background-color: #fff; }
+    background-color: transparent; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
@@ -3963,7 +3963,7 @@ tbody.collapse.in {
   .navbar-default .navbar-form {
     border-color: #eeeeee; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #fff;
+    background-color: transparent;
     color: #000000; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -3973,7 +3973,7 @@ tbody.collapse.in {
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #000000;
-      background-color: #fff; }
+      background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; } }
@@ -7083,11 +7083,9 @@ img.text-center {
   .navbar-default .navbar-nav > li > a:after {
     background-color: #000000; }
   .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-    background-color: #f3f3f3; }
+    color: #176280; }
   .navbar-default .navbar-nav .active a:hover:after {
-    background-color: #cccccc; }
-  .navbar-default .navbar-nav .active a:active, .navbar-default .navbar-nav .active a:focus {
-    background-color: #f3f3f3; } }
+    background-color: #cccccc; } }
 
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a:after {
@@ -7104,10 +7102,7 @@ img.text-center {
     .navbar-subnav .navbar-nav li a:after {
       display: none; }
   .navbar-subnav .navbar-nav .active a {
-    background-color: transparent;
     color: #176280; }
-    .navbar-subnav .navbar-nav .active a:hover, .navbar-subnav .navbar-nav .active a:active, .navbar-subnav .navbar-nav .active a:focus {
-      background-color: transparent; }
   .navbar-subnav .navbar-collapse {
     border-top-color: #e6e6e6; }
 
