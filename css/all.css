@@ -7043,8 +7043,8 @@ img.text-center {
         height: 1px;
         position: absolute;
         bottom: 0;
-        left: 16px;
-        right: 16px;
+        left: 8px;
+        right: 8px;
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
         -ms-transform: scaleX(0);
@@ -7074,7 +7074,10 @@ img.text-center {
   @media (min-width: 1200px) {
     .navbar .navbar-nav > li > a {
       padding-left: 24px;
-      padding-right: 24px; } }
+      padding-right: 24px; }
+      .navbar .navbar-nav > li > a:after {
+        left: 24px;
+        right: 24px; } }
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > li > a:after {
