@@ -14,14 +14,6 @@
 	.glyphicon {
 		line-height: 0;
 	}
-	.navbar-nav {
-		& > li > a {
-			// padding-left: 0;
-			// padding-right: 0;
-			// margin-left: 16px;
-			// margin-right: 16px;
-		}
-	}
 	@media(min-width: $grid-float-breakpoint) {
 		.navbar-nav {
 			& > li > a {
