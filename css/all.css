@@ -7088,6 +7088,8 @@ img.text-center {
     padding-bottom: 16px; }
     .navbar-subnav li a:after {
       display: none; }
+  .navbar-subnav .navbar-collapse {
+    border-top-color: #e6e6e6; }
 
 .panel-theme-accordion {
   padding: 10px 0;
