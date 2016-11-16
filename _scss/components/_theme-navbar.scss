@@ -6,7 +6,6 @@
 }
 .navbar {
 	border: none;
-	margin-bottom: 0;
 	h1,h2,h3,h4,h5,h6,
 	.h1,.h2,.h3,.h4,.h5,.h6 {
 		line-height: 16px !important;
@@ -18,6 +17,8 @@
 		.navbar-nav {
 			& > li > a {
 				position: relative;
+				padding-left: 8px;
+				padding-right: 8px;
 				&:after {
 					content: "";
 					height: 1px;
@@ -43,6 +44,14 @@
 						@include transform( scaleX(1) );
 					}
 				}
+			}
+		}
+	}
+	@media(min-width: $screen-lg-min) {
+		.navbar-nav {
+			& > li > a {
+				padding-left: 24px;
+				padding-right: 24px;
 			}
 		}
 	}
