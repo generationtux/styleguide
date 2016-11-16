@@ -380,7 +380,7 @@ $navbar-default-bg:                #fff;
 // $navbar-default-border:            darken($navbar-default-bg, 6.5%);
 
 // // Navbar links
-$navbar-default-link-color:                $gray-base;
+$navbar-default-link-color:                $gray-dark;
 $navbar-default-link-hover-color:          $gray-base;
 // $navbar-default-link-hover-bg:             transparent;
 $navbar-default-link-active-color:         $gray-base;
@@ -389,7 +389,7 @@ $navbar-default-link-active-bg:            $navbar-default-bg;
 // $navbar-default-link-disabled-bg:          transparent;
 
 // // Navbar brand label
-// $navbar-default-brand-color:               $navbar-default-link-color;
+$navbar-default-brand-color:               $gray-base;
 // $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%);
 // $navbar-default-brand-hover-bg:            transparent;
 

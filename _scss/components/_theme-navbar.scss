@@ -20,7 +20,7 @@
 				position: relative;
 				&:after {
 					content: "";
-					height: 4px;
+					height: 2px;
 					position: absolute;
 					bottom: 0;
 					left: 16px;
@@ -84,12 +84,8 @@
 		li a {
 			padding-top: 16px;
 			padding-bottom: 16px;
-			color: $brand-gray-dark;
 			&:after {
 				display: none;
-			}
-			&:hover {
-				color: $gray-base;
 			}
 		}
 		.active {
@@ -98,7 +94,6 @@
 				color: $brand-info;
 				&:hover, &:active, &:focus {
 					background-color: transparent;
-					color: $brand-info;
 				}
 			}
 		}
