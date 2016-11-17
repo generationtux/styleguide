@@ -5838,6 +5838,16 @@ button.close {
  * @requires {function} top-shadow
  * @requires {function} bottom-shadow
  */
+@font-face {
+  font-family: 'DomD Reg';
+  src: url("../fonts/DomDWeb-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/DomDWeb-Regular.woff2") format("woff2"), url("../fonts/DomDWeb-Regular.woff") format("woff"); }
+
+.domd {
+  font-family: 'DomD Reg', georgia, serif;
+  font-weight: 400; }
+
 body {
   font-family: "roboto", sans-serif;
   font-style: normal;
