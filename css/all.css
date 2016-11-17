@@ -7105,7 +7105,7 @@ img.text-center {
     z-index: 10; } }
 
 .navbar-subnav {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
   min-height: auto;
   background-color: #f3f3f3; }
   .navbar-subnav .navbar-nav li a {
