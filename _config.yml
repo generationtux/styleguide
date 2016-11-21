@@ -28,8 +28,17 @@ markdown: kramdown
 
 
 collections:
-  - atoms
-  - modules
+  atoms:
+  modules:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: modules
+    values:
+      layout: modules
 
 
 exclude: 
