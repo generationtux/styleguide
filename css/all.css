@@ -7250,6 +7250,19 @@ img.text-center {
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%); }
 
+.breadcrumb {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid #f3f3f3;
+  border-left: 0;
+  border-right: 0;
+  padding-left: 0;
+  padding-right: 0; }
+  .breadcrumb a {
+    color: black; }
+  .breadcrumb .active {
+    color: #cccccc; }
+
 .styleguide-label {
   opacity: .2; }
   @media (min-width: 768px) {

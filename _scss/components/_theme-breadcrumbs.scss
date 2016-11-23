@@ -1,0 +1,15 @@
+.breadcrumb {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid $brand-gray-lighter;
+  border-left: 0;
+  border-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  a {
+    color: black;
+  }
+  .active {
+    color: $brand-gray;
+  }
+}
