@@ -99,7 +99,7 @@ gulp.task('sass-bootstrap', function () {
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('css'));
 });
-gulp.task('sass', function () {
+gulp.task('sass-theme', function () {
   return gulp.src('_scss/theme.scss')
     .pipe(sass({
       includePaths: ['scss'],
@@ -144,7 +144,7 @@ gulp.task('watch', function () {
       '_scss/components/_variables-theme.scss',
       '_scss/components/_bootstrap-resets.scss'
     ], ['sass-bootstrap']);
-    gulp.watch('_scss/**/*.scss', ['sass']);
+    gulp.watch('_scss/**/*.scss', ['sass-theme']);
 
   } else {
 
