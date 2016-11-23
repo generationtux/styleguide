@@ -48,19 +48,12 @@ gulp.task('browser-reload', function () {
 // -----------------------------------------------------------------------------
 // Wait for jekyll-build, then launch the Server
 // -----------------------------------------------------------------------------
-if (combineBootstrapAndTheme == false) {
-  gulp.task('browser-sync', ['jekyll','sass','sass-bootstrap', 'js'], function() {
-    browserSync({
-      proxy: "http://127.0.0.1:4000/styleguide/"
-    });
+gulp.task('browser-sync', ['jekyll','sass-bootstrap','sass-theme','sass-all','js'], function() {
+  browserSync({
+    proxy: "http://127.0.0.1:4000/styleguide/"
   });
-} else {
-  gulp.task('browser-sync', ['jekyll','sass-all', 'js'], function() {
-    browserSync({
-      proxy: "http://127.0.0.1:4000/styleguide/"
-    });
-  });
-}
+});
+
 
 
 // -----------------------------------------------------------------------------
@@ -137,25 +130,12 @@ gulp.task('copy-fonts', function(){
 gulp.task('watch', function () {
   gulp.watch('_js/*.js', ['js']);
 
-  if (combineBootstrapAndTheme == false) {
-
-    gulp.watch([
-      '_scss/bootstrap-custom.scss',
-      '_scss/components/_variables-theme.scss',
-      '_scss/components/_bootstrap-resets.scss'
-    ], ['sass-bootstrap']);
-    gulp.watch('_scss/**/*.scss', ['sass-theme']);
-
-  } else {
-
-    gulp.watch([
-      '_scss/bootstrap-custom.scss',
-      '_scss/components/_variables-theme.scss',
-      '_scss/components/_bootstrap-resets.scss',
-      '_scss/**/*.scss'
-    ], ['sass-all']);
-
-  }
+  gulp.watch([
+    '_scss/bootstrap-custom.scss',
+    '_scss/components/_variables-theme.scss',
+    '_scss/components/_bootstrap-resets.scss',
+    '_scss/**/*.scss'
+  ], ['sass-bootstrap','sass-theme','sass-all']);
 
   gulp.watch([
     '_site/**/*',
