@@ -1,3 +1,6 @@
+.promo-banner {
+  background-color: $brand-gray-lighter;
+}
 .navbar-toggle {
 	.icon-bar {
 		width: 16px;
@@ -5,7 +8,6 @@
 	}
 }
 .navbar {
-	border: none;
 	h1,h2,h3,h4,h5,h6,
 	.h1,.h2,.h3,.h4,.h5,.h6 {
 		line-height: 16px !important;
@@ -14,18 +16,16 @@
 		line-height: 0;
 	}
 	@media(min-width: $grid-float-breakpoint) {
-		.navbar-nav {
+		.main-nav-items {
 			& > li > a {
 				position: relative;
-				padding-left: 8px;
-				padding-right: 8px;
 				&:after {
 					content: "";
 					height: 1px;
 					position: absolute;
-					bottom: 0;
-					left: 8px;
-					right: 8px;
+					bottom: -1px; // to offset the navbar border
+					left: 16px;
+					right: 16px;
 					// opacity: .2;
 					@include transform( scaleX(0) );
 					@include transition( all .2s ease );
@@ -47,22 +47,18 @@
 			}
 		}
 	}
-	@media(min-width: $screen-lg-min) {
-		.navbar-nav {
-			& > li > a {
-				padding-left: 16px;
-				padding-right: 16px;
-				&:after {
-					left: 16px;
-					right: 16px;
-				}
-			}
-		}
+}
+.main-nav-items {
+	@media (min-width: $screen-sm-min) {
+		margin-top: -40px;
+	}
+	@media (min-width: $screen-md-min) {
+		margin-top: 0px;
 	}
 }
 .navbar-default {
 	@media(min-width: $grid-float-breakpoint) {
-		.navbar-nav {
+		.main-nav-items {
 			& > li > a {
 				&:after {
 					background-color: $gray-base;
@@ -81,7 +77,7 @@
 }
 .navbar-inverse {
 	@media(min-width: $grid-float-breakpoint) {
-		.navbar-nav {
+		.main-nav-items {
 			& > li > a {
 				&:after {
 					background-color: $brand-gray-lighter;
@@ -94,14 +90,13 @@
 	}
 }
 
-.navbar-subnav {
-	border-top: 1px solid $brand-gray-light;
+.navbar-sub {
+	// border-top: 1px solid $brand-gray-light;
+	border: none;
 	min-height: auto;
 	background-color: $brand-gray-lighter;
 	.navbar-nav {
 		li a {
-			padding-top: 16px;
-			padding-bottom: 16px;
 			&:after {
 				display: none;
 			}
@@ -114,5 +109,11 @@
 	}
 	.navbar-collapse {
 		border-top-color: $brand-gray-light;
+	}
+	@media (min-width: $screen-sm-min){
+		li a {
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
 	}
 }

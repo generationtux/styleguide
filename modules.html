@@ -66,15 +66,17 @@ permalink: /modules/
 </div><!-- /container -->
 
 <div class="container pusher-xs-top-lg">
-  <h3 class="copy uppercase">Markup:</h3>
-  <div class="copy-to-clipboard">
-    <div class="clipboard-content">
-      {% highlight html %} {{ page.content }} {% endhighlight %}
+  <div class="row">
+  <div class="col-xs-11 col-sm-10">
+    <h3 class="copy uppercase">Markup:</h3>
+    <div class="copy-to-clipboard">
+      <div class="clipboard-content">
+        {% highlight html %} {{ page.content }} {% endhighlight %}
+      </div>
+      <div class="clipboard-init btn btn-primary vspace-xs-btm-md">Copy to Clipboard</div>
     </div>
-    <div class="clipboard-init btn btn-primary vspace-xs-btm-md">Copy to Clipboard</div>
-  </div>
-
-  </pre>
+  </div><!-- /col -->
+  </div><!-- /row -->
 </div><!-- /container -->
 
 
