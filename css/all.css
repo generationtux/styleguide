@@ -1256,7 +1256,7 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #e6e6e6; }
+  color: #cccccc; }
 
 .text-primary {
   color: #000000; }
@@ -1415,7 +1415,7 @@ blockquote {
     display: block;
     font-size: 80%;
     line-height: 1.5;
-    color: #e6e6e6; }
+    color: #cccccc; }
     blockquote footer:before,
     blockquote small:before,
     blockquote .small:before {
@@ -2024,7 +2024,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #e6e6e6;
+  color: #cccccc;
   text-align: left; }
 
 th {
