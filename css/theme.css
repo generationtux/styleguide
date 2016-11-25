@@ -1447,6 +1447,9 @@ img.text-center {
   .breadcrumb .active {
     color: #cccccc; }
 
+blockquote {
+  border: none; }
+
 .styleguide-label {
   opacity: .2; }
   @media (min-width: 768px) {
