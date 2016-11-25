@@ -128,7 +128,7 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-  &.copy {
+  &.context--copy {
     margin-top: $type-spacing-lg;
     margin-bottom: $type-spacing-md;
   }
@@ -138,7 +138,7 @@ h6,.h6 {
   +h4,+.h4,
   +h5,+.h5,
   +h6,+.h6 {
-    &.copy {
+    &.context--copy {
       margin-top: 0;
     }
   }
@@ -146,13 +146,13 @@ h6,.h6 {
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-  &.copy {
+  &.context--copy {
     color: $gray-darker;
   }
 }
 
 img {
-  &.copy {
+  &.context--copy {
     display: block;
     margin-top: $type-spacing-lg; 
     margin-bottom: $type-spacing-lg;
@@ -160,7 +160,7 @@ img {
 }
 p, ul, ol, table {
   & + img {
-    &.copy {
+    &.context--copy {
     // margin-top: $type-spacing-md; // margins don't collapse between p and img so we need to remove the extra space by using the base $type-spacing
     }
   }
