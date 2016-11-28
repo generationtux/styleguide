@@ -37,26 +37,29 @@
   } 
 }
 
-
-// class for adding vertical space to containers
-// these shouldn't need an important declaration but someone used it to override bootstrap so now i have to as well
-.container.container-buffer {
-  padding-top: $container-buffer-size / 2 !important;
-  padding-bottom: $container-buffer-size / 2 !important;
-  @media(min-width: $grid-float-breakpoint) {
-    padding-top: $container-buffer-size !important;
-    padding-bottom: $container-buffer-size !important;
+.callout-bg-offset-left {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    background-color: $brand-gray-lighter;
   }
 }
-// keep same whitespace rhythm when buffer containers stack up
-.container.container-buffer + .container.container-buffer {
-  margin-top: -$container-buffer-size/2;
-  @media(min-width: $grid-float-breakpoint) {
-    margin-top: -$container-buffer-size;
+.callout-bg-offset-right {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    background-color: $brand-gray-lighter;
   }
-}
-// keep same whitespace rhythm when buffer containers stack up
-.container.container-buffer.container-bg + .container.container-buffer,
-.container.container-buffer + .container.container-buffer.container-bg {
-  margin-top: 0;
 }

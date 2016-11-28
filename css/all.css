@@ -6085,23 +6085,29 @@ img.text-center {
     position: absolute;
     top: 10%; } }
 
-.container.container-buffer {
-  padding-top: 32px !important;
-  padding-bottom: 32px !important; }
-  @media (min-width: 768px) {
-    .container.container-buffer {
-      padding-top: 64px !important;
-      padding-bottom: 64px !important; } }
+.callout-bg-offset-left {
+  position: relative; }
+  .callout-bg-offset-left:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    background-color: #f3f3f3; }
 
-.container.container-buffer + .container.container-buffer {
-  margin-top: -32px; }
-  @media (min-width: 768px) {
-    .container.container-buffer + .container.container-buffer {
-      margin-top: -64px; } }
-
-.container.container-buffer.container-bg + .container.container-buffer,
-.container.container-buffer + .container.container-buffer.container-bg {
-  margin-top: 0; }
+.callout-bg-offset-right {
+  position: relative; }
+  .callout-bg-offset-right:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    background-color: #f3f3f3; }
 
 .vspace-xs-top-xs {
   margin-top: 4px; }
