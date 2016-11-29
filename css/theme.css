@@ -1066,6 +1066,31 @@ img.text-center {
     box-shadow: none;
     text-decoration: underline; }
 
+.btn-white {
+  background-color: white;
+  border-color: white;
+  color: white;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #000000; }
+  .btn-white:hover, .btn-white:focus {
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    color: #000000; }
+  .btn-white:active, .btn-white.active, .btn-white:focus:active {
+    background-color: #ededed;
+    color: white; }
+  .btn-white.disabled, .btn-white.disabled:hover, .btn-white.disabled:focus, .btn-white.disabled.focus, .btn-white.disabled:active, .btn-white.disabled.active, .btn-white[disabled], .btn-white[disabled]:hover, .btn-white[disabled]:focus, .btn-white[disabled].focus, .btn-white[disabled]:active, .btn-white[disabled].active,
+  fieldset[disabled] .btn-white,
+  fieldset[disabled] .btn-white:hover,
+  fieldset[disabled] .btn-white:focus,
+  fieldset[disabled] .btn-white.focus,
+  fieldset[disabled] .btn-white:active,
+  fieldset[disabled] .btn-white.active {
+    background-color: #f3f3f3;
+    color: black; }
+
 .btn-default {
   background-color: #e6e6e6;
   border-color: #e6e6e6;

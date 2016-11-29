@@ -73,6 +73,7 @@
 }
 
 // Apply the mixin to the buttons
+.btn-white { @include btn-styles(white, white); }
 .btn-default { @include btn-styles($brand-default, $brand-default); }
 .btn-primary { @include btn-styles($brand-primary, $brand-primary); }
 .btn-success { @include btn-styles($brand-success, $brand-success); }
