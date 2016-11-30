@@ -1481,6 +1481,22 @@ img.text-center {
 blockquote {
   border: none; }
 
+.panel {
+  margin-bottom: 32px; }
+
+.panel-naked {
+  box-shadow: none; }
+  .panel-naked .panel-heading,
+  .panel-naked .panel-body,
+  .panel-naked .panel-footer {
+    border: none; }
+
+.panel-group .panel-naked .panel-collapse > .panel-body {
+  border: none; }
+
+.table > thead > tr > th {
+  border-bottom: 1px solid #404042; }
+
 .styleguide-label {
   opacity: .2; }
   @media (min-width: 768px) {

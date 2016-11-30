@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// Panels
+// -----------------------------------------------------------------------------
+.panel {
+	margin-bottom: $type-spacing-lg;
+}
+.panel-naked {
+    box-shadow: none;
+
+    .panel-heading,
+    .panel-body,
+    .panel-footer {
+        border: none;
+    }
+}
+
+.panel-group .panel-naked .panel-collapse > .panel-body {
+    border: none;
+}
