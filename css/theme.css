@@ -819,17 +819,17 @@ img.text-center {
 
 .btn-hollow-info {
   background-color: white;
-  border-color: #176280;
-  color: #176280;
+  border-color: #245980;
+  color: #245980;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-info:hover, .btn-hollow-info:focus {
-    background-color: #176280;
-    border-color: #176280;
+    background-color: #245980;
+    border-color: #245980;
     color: white; }
   .btn-hollow-info:active, .btn-hollow-info.active, .btn-hollow-info:focus:active {
-    background-color: #16495e;
+    background-color: #214560;
     color: white; }
   .btn-hollow-info.disabled, .btn-hollow-info.disabled:hover, .btn-hollow-info.disabled:focus, .btn-hollow-info.disabled.focus, .btn-hollow-info.disabled:active, .btn-hollow-info.disabled.active, .btn-hollow-info[disabled], .btn-hollow-info[disabled]:hover, .btn-hollow-info[disabled]:focus, .btn-hollow-info[disabled].focus, .btn-hollow-info[disabled]:active, .btn-hollow-info[disabled].active,
   fieldset[disabled] .btn-hollow-info,
@@ -964,17 +964,17 @@ img.text-center {
 
 .btn-hollow-transparent-info {
   background-color: transparent;
-  border-color: #176280;
-  color: #176280;
+  border-color: #245980;
+  color: #245980;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-transparent-info:hover, .btn-hollow-transparent-info:focus {
-    background-color: #176280;
+    background-color: #245980;
     border-color: transparent;
     color: white; }
   .btn-hollow-transparent-info:active, .btn-hollow-transparent-info.active, .btn-hollow-transparent-info:focus:active {
-    background-color: #16495e;
+    background-color: #214560;
     color: white; }
   .btn-hollow-transparent-info.disabled, .btn-hollow-transparent-info.disabled:hover, .btn-hollow-transparent-info.disabled:focus, .btn-hollow-transparent-info.disabled.focus, .btn-hollow-transparent-info.disabled:active, .btn-hollow-transparent-info.disabled.active, .btn-hollow-transparent-info[disabled], .btn-hollow-transparent-info[disabled]:hover, .btn-hollow-transparent-info[disabled]:focus, .btn-hollow-transparent-info[disabled].focus, .btn-hollow-transparent-info[disabled]:active, .btn-hollow-transparent-info[disabled].active,
   fieldset[disabled] .btn-hollow-transparent-info,
@@ -1167,20 +1167,20 @@ img.text-center {
     color: black; }
 
 .btn-info {
-  background-color: #176280;
-  border-color: #176280;
-  color: #176280;
+  background-color: #245980;
+  border-color: #245980;
+  color: #245980;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: white; }
   .btn-info:hover, .btn-info:focus {
     background-color: white;
-    border-color: #176280;
-    color: #176280; }
+    border-color: #245980;
+    color: #245980; }
   .btn-info:active, .btn-info.active, .btn-info:focus:active {
     background-color: #f3f3f3;
-    color: #176280; }
+    color: #245980; }
   .btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, .btn-info[disabled]:active, .btn-info[disabled].active,
   fieldset[disabled] .btn-info,
   fieldset[disabled] .btn-info:hover,
@@ -1310,7 +1310,7 @@ img.text-center {
   .navbar-default .main-nav-items > li > a:after {
     background-color: #000000; }
   .navbar-default .main-nav-items > li > a:active, .navbar-default .main-nav-items > li > a:focus {
-    color: #176280; }
+    color: #245980; }
   .navbar-default .main-nav-items .active a:hover:after {
     background-color: #cccccc; } }
 
@@ -1328,7 +1328,7 @@ img.text-center {
   .navbar-sub .navbar-nav li a:after {
     display: none; }
   .navbar-sub .navbar-nav .active a {
-    color: #176280; }
+    color: #245980; }
   .navbar-sub .navbar-collapse {
     border-top-color: #e6e6e6; }
   @media (min-width: 768px) {
@@ -1529,7 +1529,10 @@ blockquote {
   background-color: #03e6ca; }
 
 .bg-brand-blue {
-  background-color: #176280; }
+  background-color: #245980; }
+
+.bg-brand-green {
+  background-color: #3f6758; }
 
 .bg-brand-red {
   background-color: #d74c4e; }
