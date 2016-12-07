@@ -1,18 +1,51 @@
 // Theme variables
 
-$brand-teal:#03bbac;
-$brand-teal-darker:#039aa8;
-$brand-teal-lighter:#03e6ca;
-$brand-green:#3f6758;
+// primary brand colors
+$brand-black:#000000;
+
 $brand-blue:#176280;
 $brand-blue:#245984;
 $brand-blue:#245980;
+// $brand-blue:#2b5e82;
+
+
+// utility colors
+$brand-green:#94d1a6;
+$brand-green:#8fbc9b;
+$brand-green:#88b492;
+$brand-green:#85ad8e;
+$brand-green:#84a48a;
+$brand-green:#7cab85;
+
 $brand-red:#d74c4e;
+$brand-red:#ca5553;
+$brand-red:#c65553;
+$brand-red:#b85351;
+$brand-red:#b64b49;
+$brand-red:#b34e4d;
+$brand-red:#af5755;
+$brand-red:#b45250;
+
 $brand-yellow:#fbc369;
-$brand-black:#000000;
+$brand-yellow:#f4ca85;
+$brand-yellow:#f2cb8c;
+$brand-yellow:#f1c783;
+$brand-yellow:#dfc59a;
+$brand-yellow:#dccba8;
+
+
+// grayscale
 $brand-gray-darker:#404042;
 $brand-gray-dark:#888888;
 $brand-gray:#cccccc;
 $brand-gray-light:#e6e6e6;
 $brand-gray-lighter:#f3f3f3;
 $brand-white:#ffffff;
+
+
+
+// legacy colors
+
+$brand-teal:#03bbac;
+$brand-teal-darker:#039aa8;
+$brand-teal-lighter:#03e6ca;
