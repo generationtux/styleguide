@@ -1140,7 +1140,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: brandon-grotesque, Arial, Helvetica, sans-serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.16;
   color: inherit; }
   h1 small,
   h1 .small, h2 small,
@@ -5846,7 +5846,9 @@ button.close {
 
 .domd {
   font-family: 'DomD Reg', georgia, serif;
-  font-weight: 400; }
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0; }
 
 body {
   font-family: "roboto", sans-serif;
@@ -5861,56 +5863,73 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
+  letter-spacing: .1em;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0; }
 
 h1, .h1 {
-  font-size: 39.063px;
+  font-size: 24px;
   font-weight: 900; }
+  @media (min-width: 768px) {
+    h1, .h1 {
+      font-size: 30px; } }
+  @media (min-width: 992px) {
+    h1, .h1 {
+      font-size: 39.063px; } }
 
 h2, .h2 {
-  font-size: 31.25px; }
+  font-size: 20px; }
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 25px; } }
+  @media (min-width: 992px) {
+    h2, .h2 {
+      font-size: 31.25px; } }
 
 h3, .h3 {
-  font-size: 25px; }
+  font-size: 18px;
+  letter-spacing: .08em; }
+  @media (min-width: 768px) {
+    h3, .h3 {
+      font-size: 22px; } }
+  @media (min-width: 992px) {
+    h3, .h3 {
+      font-size: 25px; } }
 
 h4, .h4 {
-  font-size: 20px;
-  letter-spacing: .02em; }
+  font-size: 16px;
+  letter-spacing: .08em;
+  line-height: 1.45; }
+  @media (min-width: 768px) {
+    h4, .h4 {
+      font-size: 18px; } }
+  @media (min-width: 992px) {
+    h4, .h4 {
+      font-size: 20px; } }
 
 h5, .h5 {
-  font-size: 16px;
-  letter-spacing: .05em; }
+  font-size: 14px;
+  letter-spacing: .13em;
+  line-height: 1.6; }
+  @media (min-width: 768px) {
+    h5, .h5 {
+      font-size: 16px; } }
 
 h6, .h6 {
   font-size: 12.8px;
-  letter-spacing: .07em;
-  line-height: 1.3; }
-
-h1.uppercase, .h1.uppercase,
-h2.uppercase, .h2.uppercase,
-h3.uppercase, .h3.uppercase,
-h4.uppercase, .h4.uppercase,
-h5.uppercase, .h5.uppercase,
-h6.uppercase, .h6.uppercase {
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  line-height: 1.3; }
-
-h3.uppercase, .h3.uppercase {
-  letter-spacing: .08em; }
-
-h4.uppercase, .h4.uppercase {
-  letter-spacing: .08em;
-  line-height: 1.45; }
-
-h5.uppercase, .h5.uppercase {
-  letter-spacing: .13em;
-  line-height: 1.6; }
-
-h6.uppercase, .h6.uppercase {
   letter-spacing: .12em;
   line-height: 1.5; }
+
+h4.lowercase, h4.normalcase, .h4.lowercase, .h4.normalcase {
+  letter-spacing: .02em; }
+
+h5.lowercase, h5.normalcase, .h5.lowercase, .h5.normalcase {
+  letter-spacing: .05em; }
+
+h6.lowercase, h6.normalcase, .h6.lowercase, .h6.normalcase {
+  letter-spacing: .07em;
+  line-height: 1.3; }
 
 p {
   margin-bottom: 16px; }
@@ -5928,9 +5947,10 @@ hr {
   margin-top: 16px;
   margin-bottom: 16px; }
 
-img {
-  max-width: 100%;
-  height: auto; }
+.text-center ul,
+.text-center ol {
+  text-align: left;
+  display: inline-block; }
 
 h1.context--copy, .h1.context--copy,
 h2.context--copy, .h2.context--copy,
@@ -6052,6 +6072,19 @@ img.context--copy {
 img.text-center {
   margin-left: auto;
   margin-right: auto; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.normalcase {
+  text-transform: none;
+  letter-spacing: 0; }
 
 .bg-placeholder {
   background-color: #e6e6e6;

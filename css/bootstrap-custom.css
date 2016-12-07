@@ -1140,7 +1140,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: brandon-grotesque, Arial, Helvetica, sans-serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.16;
   color: inherit; }
   h1 small,
   h1 .small, h2 small,
