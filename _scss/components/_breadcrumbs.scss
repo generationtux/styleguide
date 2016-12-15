@@ -1,15 +1,16 @@
 .breadcrumb {
   border-radius: 0;
   background-color: transparent;
-  border: 1px solid $gray-lighter;
-  border-left: 0;
-  border-right: 0;
+  border-bottom: 1px solid $gray;
   padding-left: 0;
   padding-right: 0;
   a {
     color: black;
   }
   .active {
-    color: $gray;
+    color: $gray-darker;
+  }
+  > li + li:before {
+    color: $gray-darker;
   }
 }

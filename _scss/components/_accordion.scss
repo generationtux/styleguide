@@ -1,28 +1,34 @@
-
+// -----------------------------------------------------------------------------
+// Accordion
+// -----------------------------------------------------------------------------
 $btn-size: 24px;
 $btn-offset: 5px;
 
 .panel-theme-accordion {
   padding: 10px 0;
   box-shadow: none;
+
   .panel-heading {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
+
     a.collapsed {
       color: $brand-info;
     }
   }  
+
   .panel-title {
     position: relative;
     padding-left: $btn-size * 1.5;
   }
+
   .panel-body {
     border: none !important;
     position: relative;
     padding-top: 24px;
-    // padding-bottom: 32px;
     padding-left: $btn-size * 2;
+
     &:before {
       content:"";
       width: 2px;
@@ -34,6 +40,7 @@ $btn-offset: 5px;
       background-color: $gray-light;
       @include transform(translate(-50%,0));
     }
+
     &:after {
       content:"";
       width: $btn-size/2;
@@ -43,8 +50,13 @@ $btn-offset: 5px;
       bottom: 0;
       background-color: $gray-light;
     }
+
+    ul {
+      padding-left: 1em;
+    }
   }
 }
+
 .plus-icon {
   display: block;
   width: $btn-size;
@@ -57,9 +69,10 @@ $btn-offset: 5px;
   border-radius: 50%;
   @include transform(translate(0%,-50%));
   @include transition(all .3s ease);
+
   &:before,&:after {
     content: "";
-    width: 50%;
+    width: 10px;
     height: 2px;
     background-color: black;
     position: absolute;
@@ -68,21 +81,26 @@ $btn-offset: 5px;
     @include transform(translate(-50%,-50%));
     @include transition(transform .3s ease);
   }
+
   &:after {
     @include transform(translate(-50%,-50%) rotate(0deg));
   }
+
   &:before {
     @include transform(translate(-50%,-50%) rotate(180deg));
   }
 }
+
 .collapsed {
   .plus-icon {
     background-color: transparent;
     cursor: pointer;
     border-radius: 0%;
+
     &:after {
       @include transform(translate(-50%,-50%) rotate(-90deg));
     }
+
     &:before {
       @include transform(translate(-50%,-50%) rotate(0deg));
     }

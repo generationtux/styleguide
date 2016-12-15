@@ -1,5 +1,6 @@
 .btn {
   @extend .h6;
+  line-height: 1;
 }
 .btn-lg {
   font-size: 16px;
@@ -11,59 +12,49 @@
   font-size: 10.24px;
 }
 
-
 // new style for hollow buttons
-.btn-hollow-default { 
-  // btn-styles is a theme specific mixin. takes background, border color as variables
+.btn-hollow-default {
   @include btn-styles(white, $brand-default);
 }
-.btn-hollow-primary { 
+.btn-hollow-primary {
   @include btn-styles(white, $brand-primary);
 }
-.btn-hollow-success { 
+.btn-hollow-success {
   @include btn-styles(white, $brand-success);
 }
-.btn-hollow-info    { 
+.btn-hollow-info    {
   @include btn-styles(white, $brand-info);
 }
-.btn-hollow-warning { 
+.btn-hollow-warning {
   @include btn-styles(white, $brand-warning);
 }
-.btn-hollow-danger  { 
+.btn-hollow-danger  {
   @include btn-styles(white, $brand-danger);
 }
+.btn-hollow-inverse {
+  @include btn-styles(white, white);
+}
 
-// new style for hollow buttons
-.btn-hollow-transparent-default { 
-  // btn-styles is a theme specific mixin. takes background, border color as variables
-  @include btn-styles(transparent, $brand-default);
-}
-.btn-hollow-transparent-primary { 
-  @include btn-styles(transparent, $brand-primary);
-}
-.btn-hollow-transparent-success { 
-  @include btn-styles(transparent, $brand-success);
-}
-.btn-hollow-transparent-info    { 
-  @include btn-styles(transparent, $brand-info);
-}
-.btn-hollow-transparent-warning { 
-  @include btn-styles(transparent, $brand-warning);
-}
-.btn-hollow-transparent-danger  { 
-  @include btn-styles(transparent, $brand-danger);
-}
-.btn-hollow-transparent-inverse {
-  @include btn-styles(transparent, white); 
-}
+// style for hollow buttons
+.btn-hollow-transparent-default { @include btn-styles(transparent, $brand-default); }
+.btn-hollow-transparent-primary { @include btn-styles(transparent, $brand-primary); }
+.btn-hollow-transparent-success { @include btn-styles(transparent, $brand-success); }
+.btn-hollow-transparent-info    { @include btn-styles(transparent, $brand-info); }
+.btn-hollow-transparent-warning { @include btn-styles(transparent, $brand-warning); }
+.btn-hollow-transparent-danger  { @include btn-styles(transparent, $brand-danger); }
+.btn-hollow-transparent-inverse { @include btn-styles(transparent, white);  }
 
 // gets same typography as buttons with no border, padding or other decoration
 .btn-naked {
+  color: $brand-default;
+  background-color: transparent;
   border: none;
   padding: 0;
+
   &:hover,&:active,&:focus {
     box-shadow: none;
     text-decoration: underline;
+    color: $gray-darker;
   }
 }
 
@@ -81,8 +72,18 @@
   &:focus  {
     background-color: $brand-warning;
   }
+
   &:active,
   &.active {
     background-color: darken($brand-warning, 12%);
   }
 }
+
+.btn.pull-left {
+  margin-right: 1em;
+}
+
+.btn.pull-right {
+  margin-left: 1em;
+}
+

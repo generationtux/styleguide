@@ -1,6 +1,6 @@
-.shadow-depth-0 { @include shadow-depth(0); }
-.shadow-depth-1 { @include shadow-depth(1); }
-.shadow-depth-2 { @include shadow-depth(2); }
-.shadow-depth-3 { @include shadow-depth(3); }
-.shadow-depth-4 { @include shadow-depth(4); }
-.shadow-depth-5 { @include shadow-depth(5); }
+.shadow-level-0 { @include shadow-level(0); }
+.shadow-level-1 { @include shadow-level(1); }
+.shadow-level-2 { @include shadow-level(2); }
+.shadow-level-3 { @include shadow-level(3); }
+.shadow-level-4 { @include shadow-level(4); }
+.shadow-level-5 { @include shadow-level(5); }

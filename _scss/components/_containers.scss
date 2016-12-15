@@ -1,16 +1,66 @@
+// -----------------------------------------------------------------------------
+// Containers
+// -----------------------------------------------------------------------------
 
-.container {
-  // background: #fff;
+// -----------------------------------------------------------------------------
+// Visual Styles
+// -----------------------------------------------------------------------------
+.container-bordered {
+    border-top: 1px solid $gray-lighter;
+    border-bottom: 1px solid $gray-lighter;
 }
-.bg-placeholder {
-  $placeholder-bg: #e6e6e6;
-  background-color: $placeholder-bg;
-  background-image: linear-gradient(transparentize($placeholder-bg,.1), transparentize($placeholder-bg,.1)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-378/placeholder-no-bg.svg);
-  background-position: center center !important;
-  background-repeat: no-repeat;
+
+.container-bordered-top {
+    border-top: 1px solid $gray-lighter;
 }
-// for adding full bleed background image to container
-// add background-image style inline so it can be easily controlled through a cms
+
+.container-bordered-bottom {
+    border-bottom: 1px solid $gray-lighter;
+}
+
+// shadows that make the container looked indented
+@mixin indent($direction) {
+    content: "";
+    position: absolute;
+    height: 44px;
+    left: 0;
+    width: 100%;
+    z-index: 9000;
+    background: linear-gradient(to $direction, rgba(0, 0, 0, 0.09) 0, transparent 100%); 
+}
+
+.container-indented {
+    position: relative;
+
+    &:before {
+        top: 0;
+        @include indent(bottom);
+    }
+
+    &:after {
+        bottom: 0;
+        @include indent(top);
+    }
+}
+
+.container-indented-top {
+    position: relative;
+
+    &:before {
+        top: 0;
+        @include indent(bottom);
+    }
+}
+
+.container-bottom {
+    position: relative;
+
+    &:after {
+        bottom: 0;
+        @include indent(top);
+    }
+}
+
 .container-bg-image {
   background-size: cover;
   background-position: left top;
@@ -18,23 +68,6 @@
   @media(min-width: $grid-float-breakpoint) {
     background-position: center top;
   }
-}
-.container-callout {
-  position: relative; 
-}
-.callout-caption-center {
-  @media(min-width: $grid-float-breakpoint) {
-    position: absolute;
-    top: 50%;
-    @include transform(translate(0,-50%));
-  } 
-}
-.callout-caption-top {
-  @media(min-width: $grid-float-breakpoint) {
-    position: absolute;
-    top: 10%;
-    // @include transform(translate(0,-50%));
-  } 
 }
 
 .callout-bg-offset-left {
@@ -62,4 +95,23 @@
     width: 75%;
     background-color: $gray-lighter;
   }
+}
+
+
+.container.container-hero,
+.container-fluid.container-hero {
+    background: linear-gradient(to right, white 50%, $gray-lighter 50%);
+    @media(min-width: $screen-md-min) {
+        > .row {
+            max-width: 2000px;
+            margin-left: auto;
+            margin-right: auto;
+            min-height: calc(100vh - 96px);
+            .container-hero-image {
+                img {
+                    max-height: 75vh;
+                }
+            }
+        }
+    }
 }

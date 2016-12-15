@@ -2,20 +2,15 @@
 // Typography
 // -----------------------------------------------------------------------------
 
-// Typography is built on the following
-// Ratio - 1.25 or 4:5 or major 3rd
-// http://www.modularscale.com/?16&px&1.25&web&text
-
 $brandon-grotesque-font-stack: "brandon-grotesque", Arial, Helvetica, sans-serif;
 $roboto-font-stack: "Roboto", sans-serif;
 $line-height: 1.642;
 
 body {
-  font-family: "roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400; 
-  color: black;
-  background: white;
+    font-family: $roboto-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
 .domd {
@@ -42,7 +37,6 @@ h6,.h6 {
 
 h1, .h1 {
     font-size: 24px;
-    font-weight: 900;
     @media(min-width: $screen-sm-min) {
       font-size: 30px;
     }
@@ -112,7 +106,6 @@ h6,.h6 {
   }
 }
 
-
 p {
   margin-bottom: $type-spacing-md;
 }
@@ -132,11 +125,30 @@ hr {
   margin-top: $type-spacing-md;
   margin-bottom: $type-spacing-md;
 }
+hr.hr-small {
+  width: 32px;
+  border-top: 1px solid black;
+  margin-left: 0;
+  margin-top: $type-spacing-lg;
+  margin-bottom: $type-spacing-lg;
+}
 
 .text-center ul,
 .text-center ol {
     text-align: left;
     display: inline-block;
+}
+
+.page-header {
+    margin-top: 0.4em;
+    margin-bottom: 0.75em;
+    border-bottom: 1px solid $gray-light;
+}
+
+.strong {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $brandon-grotesque-font-stack;
 }
 
 // to make type more flexible, margins only get added to type when the context--copy is used
@@ -178,11 +190,6 @@ img {
   }
 }
 
-img.text-center {
-  margin-left:auto;
-  margin-right:auto;
-}
-
 
 // -----------------------------------------------------------------------------
 // Case
@@ -203,6 +210,18 @@ img.text-center {
     text-transform: none;
     letter-spacing: 0;
 }
+
+.link-style {
+  color: $brand-info;
+  cursor: pointer;
+  &:hover {
+    color: darken($brand-info, 20%);
+  }
+}
+.link-style-clear {
+  color: $gray-base;
+}
+
 
 // -----------------------------------------------------------------------------
 // Hero Titles
