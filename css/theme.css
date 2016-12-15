@@ -820,6 +820,21 @@ img.text-center {
   .copy.buffer-lg-btm-clear {
     padding-bottom: 0; } }
 
+.no-margin {
+  margin: 0; }
+
+.no-margin-top {
+  margin-top: 0; }
+
+.no-margin-right {
+  margin-right: 0; }
+
+.no-margin-bottom {
+  margin-bottom: 0; }
+
+.no-margin-left {
+  margin-left: 0; }
+
 @media (min-width: 768px) {
   .align-vertical {
     display: -webkit-box;
