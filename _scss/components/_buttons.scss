@@ -1,13 +1,8 @@
 .btn {
-  white-space: normal;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  font-size: $font-size-h6;
-  text-transform: uppercase;
-  letter-spacing: .14em;
+  @extend .h6;
 }
 .btn-lg {
-  font-size: $font-size-h5;
+  font-size: 16px;
 }
 .btn-sm {
   font-size: 10.24px;
