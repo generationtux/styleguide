@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // Define our own variables
 // -----------------------------------------------------------------------------
-@import "components/theme-variables";
+@import "components/variables";
 
 // -----------------------------------------------------------------------------
 // Load bootstrap helpers. 
@@ -28,24 +28,24 @@ $type-spacing-xl: $font-size-base * 4;
 $container-buffer-size: $type-spacing-xl;
 
 // grab our mixins
-@import "mixins/theme-vertical-spacing";
-@import "mixins/theme-shadows";
-@import "mixins/theme-buttons";
+@import "mixins/vertical-spacing";
+@import "mixins/shadows";
+@import "mixins/buttons";
 
 // grab our components where we override and/or extend bootstrap
-@import "components/theme-typography";
-@import "components/theme-containers";
-@import "components/theme-vertical-spacing";
-@import "components/theme-align";
-@import "components/theme-buttons";
-@import "components/theme-navbar";
-@import "components/theme-accordion";
-@import "components/theme-shadows";
-@import "components/theme-glyphs";
-@import "components/theme-breadcrumbs";
-@import "components/theme-blockquote";
-@import "components/theme-panels";
-@import "components/theme-tables";
+@import "components/typography";
+@import "components/containers";
+@import "components/vertical-spacing";
+@import "components/align";
+@import "components/buttons";
+@import "components/navbar";
+@import "components/accordion";
+@import "components/shadows";
+@import "components/glyphs";
+@import "components/breadcrumbs";
+@import "components/blockquote";
+@import "components/panels";
+@import "components/tables";
 
 // -----------------------------------------------------------------------------
 // More style stuff. 
