@@ -24,7 +24,6 @@ var combineBootstrapAndTheme = true;
 gulp.task('jekyll', () => {
   const jekyll = cp.spawn('jekyll', ['serve',
     '--watch',
-    '--incremental',
     '--drafts'
   ]);
 
@@ -53,8 +52,6 @@ gulp.task('browser-sync', ['jekyll','sass-bootstrap','sass-theme','sass-all','js
     proxy: "http://127.0.0.1:4000/styleguide/"
   });
 });
-
-
 
 // -----------------------------------------------------------------------------
 // Concat & uglify files from _js & node_modules into both _site/js (for live injecting) and site (for future jekyll builds)
@@ -152,8 +149,6 @@ gulp.task('bootlint', function() {
     .pipe(bootlint());
 });
 
-
-
 // -----------------------------------------------------------------------------
 // Default
 //    * Default task, running just `gulp` will compile the sass,
@@ -161,4 +156,3 @@ gulp.task('bootlint', function() {
 // -----------------------------------------------------------------------------
 // gulp.task('default', ['browser-sync', 'copy-fonts', 'sass-bootstrap', 'sass', 'watch']);
 gulp.task('default', ['browser-sync','copy-fonts','watch']);
-
