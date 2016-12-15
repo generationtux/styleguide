@@ -8,19 +8,19 @@
 // //
 // //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              $brand-black;
-$gray-darker:            $brand-gray-darker;
-$gray-dark:              $brand-gray-dark;
-$gray:                   $brand-gray;
-$gray-light:             $brand-gray-light;
-$gray-lighter:           $brand-gray-lighter;
+$gray-base:             #000;
+$gray-darker:           #404042;
+$gray-dark:             #888888;
+$gray:                  #cccccc;
+$gray-light:            #e6e6e6;
+$gray-lighter:          #f3f3f3;
 
-$brand-default:         $brand-gray-light;
-$brand-primary:         $brand-black;
-$brand-success:         $brand-green;
-$brand-info:            $brand-blue;
-$brand-warning:         $brand-yellow;
-$brand-danger:          $brand-red;
+$brand-default:         $gray-light;
+$brand-primary:         $gray-base;
+$brand-success:         #7cab85;
+$brand-info:            #2c5877;
+$brand-warning:         #dccba8;
+$brand-danger:          #b45250;
 
 
 // //== Scaffolding
@@ -33,7 +33,7 @@ $brand-danger:          $brand-red;
 $text-color:            $gray-base;
 
 // //** Global textual link color.
-$link-color:            lighten($brand-blue,30%);
+$link-color:            lighten($brand-info,30%);
 // //** Link hover color set via `darken()` function.
 $link-hover-color:      lighten($link-color, 10%);
 // //** Link hover decoration.

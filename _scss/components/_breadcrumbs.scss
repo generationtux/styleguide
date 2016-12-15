@@ -1,7 +1,7 @@
 .breadcrumb {
   border-radius: 0;
   background-color: transparent;
-  border: 1px solid $brand-gray-lighter;
+  border: 1px solid $gray-lighter;
   border-left: 0;
   border-right: 0;
   padding-left: 0;
@@ -10,6 +10,6 @@
     color: black;
   }
   .active {
-    color: $brand-gray;
+    color: $gray;
   }
 }

@@ -1,23 +1,7 @@
 // Theme variables
-
-// primary brand colors
-$brand-black:#000000;
-$brand-blue:#2c5877;
-
-// utility colors
-$brand-green:#7cab85;
-$brand-red:#b45250;
-$brand-yellow:#dccba8;
-
-// grayscale
-$brand-gray-darker:#404042;
-$brand-gray-dark:#888888;
-$brand-gray:#cccccc;
-$brand-gray-light:#e6e6e6;
-$brand-gray-lighter:#f3f3f3;
-$brand-white:#ffffff;
-
-// legacy colors
-$brand-teal:#03bbac;
-$brand-teal-darker:#039aa8;
-$brand-teal-lighter:#03e6ca;
+$type-spacing-xs: $font-size-base/4;
+$type-spacing-sm: $font-size-base/2;
+$type-spacing-md: $font-size-base;
+$type-spacing-lg: $font-size-base * 2;
+$type-spacing-xl: $font-size-base * 4;
+$container-buffer-size: $type-spacing-xl;

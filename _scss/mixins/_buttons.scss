@@ -48,7 +48,7 @@
     &:active,
     &.active,
     &:focus:active {
-      background-color: $brand-gray-lighter;
+      background-color: $gray-lighter;
       color: $btn-color;
     }
   }
@@ -79,7 +79,7 @@
     &.focus,
     &:active,
     &.active {
-      background-color: $brand-gray-lighter;
+      background-color: $gray-lighter;
       color: black;
     }
   }

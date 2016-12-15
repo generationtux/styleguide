@@ -1,5 +1,5 @@
 .promo-banner {
-  background-color: $brand-gray-lighter;
+  background-color: $gray-lighter;
 }
 .navbar-toggle {
 	.icon-bar {
@@ -69,7 +69,7 @@
 			}
 			.active a {
 				&:hover:after {
-					background-color: $brand-gray;
+					background-color: $gray;
 				}
 			}
 		}
@@ -80,7 +80,7 @@
 		.main-nav-items {
 			& > li > a {
 				&:after {
-					background-color: $brand-gray-lighter;
+					background-color: $gray-lighter;
 					height: 3px;
 					bottom: -1px;
 					z-index: 10;
@@ -91,10 +91,10 @@
 }
 
 .navbar-sub {
-	// border-top: 1px solid $brand-gray-light;
+	// border-top: 1px solid $gray-light;
 	border: none;
 	min-height: auto;
-	background-color: $brand-gray-lighter;
+	background-color: $gray-lighter;
 	.navbar-nav {
 		li a {
 			&:after {
@@ -108,7 +108,7 @@
 		}
 	}
 	.navbar-collapse {
-		border-top-color: $brand-gray-light;
+		border-top-color: $gray-light;
 	}
 	@media (min-width: $screen-sm-min){
 		li a {

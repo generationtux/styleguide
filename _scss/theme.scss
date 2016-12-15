@@ -1,9 +1,4 @@
 // -----------------------------------------------------------------------------
-// Define our own variables
-// -----------------------------------------------------------------------------
-@import "components/variables";
-
-// -----------------------------------------------------------------------------
 // Load bootstrap helpers. 
 //    This is not full bootstrap, just the little bits we're referencing in our own scss
 //    Lets us use bootstap specific mixins and variables in our own theme files
@@ -20,12 +15,7 @@
 // -----------------------------------------------------------------------------
 // Theme - our own custom styles
 // -----------------------------------------------------------------------------
-$type-spacing-xs: $font-size-base/4;
-$type-spacing-sm: $font-size-base/2;
-$type-spacing-md: $font-size-base;
-$type-spacing-lg: $font-size-base * 2;
-$type-spacing-xl: $font-size-base * 4;
-$container-buffer-size: $type-spacing-xl;
+@import "components/variables";
 
 // grab our mixins
 @import "mixins/vertical-spacing";
@@ -68,20 +58,18 @@ $container-buffer-size: $type-spacing-xl;
 	width: 100%;
 	height: 100px;
 }
-.bg-brand-teal  { background-color: $brand-teal; }
-.bg-brand-teal-darker  { background-color: $brand-teal-darker; }
-.bg-brand-teal-lighter  { background-color: $brand-teal-lighter; }
-.bg-brand-blue  { background-color: $brand-blue; }
-.bg-brand-green  { background-color: $brand-green; }
-.bg-brand-red  { background-color: $brand-red; }
-.bg-brand-yellow  { background-color: $brand-yellow; }
-.bg-brand-black  { background-color: $brand-black; }
-.bg-brand-gray-darker  { background-color: $brand-gray-darker; }
-.bg-brand-gray-dark  { background-color: $brand-gray-dark; }
-.bg-brand-gray  { background-color: $brand-gray; }
-.bg-brand-gray-light  { background-color: $brand-gray-light; }
-.bg-brand-gray-lighter { background-color: $brand-gray-lighter; }
-.bg-brand-white { background-color: $brand-white; }
+
+.bg-brand-blue  { background-color: $brand-info; }
+.bg-brand-green  { background-color: $brand-success; }
+.bg-brand-red  { background-color: $brand-danger; }
+.bg-brand-yellow  { background-color: $brand-warning; }
+.bg-brand-black  { background-color: $gray-base; }
+.bg-brand-gray-darker  { background-color: $gray-darker; }
+.bg-brand-gray-dark  { background-color: $gray-dark; }
+.bg-brand-gray  { background-color: $gray; }
+.bg-brand-gray-light  { background-color: $gray-light; }
+.bg-brand-gray-lighter { background-color: $gray-lighter; }
+.bg-brand-white { background-color: white; }
 
 .clr-brand-uppercase {
 	line-height: 1.32;
