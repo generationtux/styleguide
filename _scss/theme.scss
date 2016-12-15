@@ -33,6 +33,7 @@ $container-buffer-size: $type-spacing-xl;
 @import "mixins/buttons";
 
 // grab our components where we override and/or extend bootstrap
+@import "components/fonts";
 @import "components/typography";
 @import "components/containers";
 @import "components/vertical-spacing";

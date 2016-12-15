@@ -1,0 +1,39 @@
+
+// Set environment var for proper font loading
+// True for styleguide, False for Production
+$env-styleguide: true;
+
+
+$font-url-styleguide: "../fonts/";
+$font-url-production: "../../fonts/";
+$font-url: $font-url-production;
+@if ($env-styleguide == true) {
+	$font-url: $font-url-styleguide;
+}
+
+
+@font-face {
+	font-family: 'DomD Reg';
+	src: url($font-url+'DomDWeb-Regular.eot'); /* IE9 Compat Modes */
+	src: url($font-url+'DomDWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	   url($font-url+'DomDWeb-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+@font-face {
+	font-family: 'icomoon-20161125';
+	src:url($font-url+'icomoon-20161125.eot?byysie');
+	src:url($font-url+'icomoon-20161125.eot?#iefixbyysie') format('embedded-opentype'),
+		url($font-url+'icomoon-20161125.woff?byysie') format('woff'),
+		url($font-url+'icomoon-20161125.ttf?byysie') format('truetype'),
+		url($font-url+'icomoon-20161125.svg?byysie#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url($font-url+"glyphicons-halflings-regular.eot");
+	src: url($font-url+"glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
+		 url($font-url+"glyphicons-halflings-regular.woff2") format("woff2"), 
+		 url($font-url+"glyphicons-halflings-regular.woff") format("woff"), 
+		 url($font-url+"glyphicons-halflings-regular.ttf") format("truetype"), 
+		 url($font-url+"glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); 
+}
