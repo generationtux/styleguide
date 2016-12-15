@@ -1,15 +1,6 @@
 // uses mixins/theme-vertical-spacing to build out all the vertical spacing classes
 // will build classes that use the bootstrap grid naming convention
-// ex: .vspace-md-top-lg will give the html element a TOP margin of LARGE for a min-width MEDIUM SCREEN size
-
-// this will be depricated 
-// being replaced with make-vertical-pusher
-@include make-vertical-spaces("xs");
-@include make-vertical-spaces("sm");
-@include make-vertical-spaces("md");
-@include make-vertical-spaces("lg");
-@include make-vertical-spaces("xl");
-@include make-vertical-spaces("clear");
+// ex: .pusher-md-top-lg will give the html element a TOP margin of LARGE for a min-width MEDIUM SCREEN size
 
 // for on demand margin
 @include make-vertical-pusher("xs");
@@ -17,7 +8,17 @@
 @include make-vertical-pusher("md");
 @include make-vertical-pusher("lg");
 @include make-vertical-pusher("xl");
+@include make-vertical-pusher("xxl");
 @include make-vertical-pusher("clear");
+
+// for on demand margin
+@include make-vertical-puller("xs");
+@include make-vertical-puller("sm");
+@include make-vertical-puller("md");
+@include make-vertical-puller("lg");
+@include make-vertical-puller("xl");
+@include make-vertical-puller("xxl");
+@include make-vertical-puller("clear");
 
 // for on demand padding
 @include make-vertical-buffer("xs");
@@ -25,4 +26,5 @@
 @include make-vertical-buffer("md");
 @include make-vertical-buffer("lg");
 @include make-vertical-buffer("xl");
+@include make-vertical-buffer("xxl");
 @include make-vertical-buffer("clear");

@@ -1,98 +1,3 @@
-@mixin make-vertical-spaces($browserSize:"sm") {
-    @if $browserSize == "xs" {
-        // create top classes
-        .vspace-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-        .vspace-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-        .vspace-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-        .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-        .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-
-        .vspace-#{$browserSize}-top-clear { margin-top: 0; }
-        .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
-
-        // create bottom classes
-        .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-        .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-        .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-        .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-        .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-
-        .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-        .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-    }
-    @if $browserSize == "sm" {
-        @media(min-width:$screen-sm-min){
-            // create top classes
-            .vspace-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-            .vspace-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-            .vspace-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-            .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-            .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-
-            .vspace-#{$browserSize}-top-clear { margin-top: 0; }
-            .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
-
-
-            // create bottom classes
-            .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-            .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-            .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-            .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-            .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-
-            .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-            .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-        }
-    }
-    @if $browserSize == "md" {
-        @media(min-width:$screen-md-min){
-            // create top classes
-            .vspace-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-            .vspace-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-            .vspace-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-            .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-            .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-
-            .vspace-#{$browserSize}-top-clear { margin-top: 0; }
-            .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
-
-            // create bottom classes
-            .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-            .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-            .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-            .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-            .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-
-            .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-            .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-        }
-    }
-    @if $browserSize == "lg" {
-        @media(min-width:$screen-lg-min){
-            // create top classes
-            .vspace-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-            .vspace-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-            .vspace-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-            .vspace-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-            .vspace-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-
-            .vspace-#{$browserSize}-top-clear { margin-top: 0; }
-            .copy.vspace-#{$browserSize}-top-clear { margin-top: 0; }
-
-            // create bottom classes
-            .vspace-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-            .vspace-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-            .vspace-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-            .vspace-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-            .vspace-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-
-            .vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-            .copy.vspace-#{$browserSize}-btm-clear { margin-bottom: 0; }
-        }
-    }
-}
-
-
 @mixin make-vertical-pusher($browserSize:"sm") {
     @if $browserSize == "xs" {
         // create top classes
@@ -101,6 +6,7 @@
         .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
         .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
         .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
+        .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
 
         .pusher-#{$browserSize}-top-clear { margin-top: 0; }
         .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
@@ -111,6 +17,7 @@
         .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
         .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
         .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+        .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
 
         .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
         .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
@@ -123,6 +30,7 @@
             .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
             .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
             .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
+            .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
 
             .pusher-#{$browserSize}-top-clear { margin-top: 0; }
             .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
@@ -134,6 +42,7 @@
             .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
             .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
             .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+            .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
 
             .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
             .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
@@ -147,6 +56,7 @@
             .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
             .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
             .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
+            .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
 
             .pusher-#{$browserSize}-top-clear { margin-top: 0; }
             .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
@@ -157,6 +67,7 @@
             .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
             .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
             .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+            .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
 
             .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
             .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
@@ -170,6 +81,7 @@
             .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
             .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
             .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
+            .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
 
             .pusher-#{$browserSize}-top-clear { margin-top: 0; }
             .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
@@ -180,9 +92,114 @@
             .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
             .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
             .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
+            .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
 
             .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
             .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
+        }
+    }
+}
+
+
+
+@mixin make-vertical-puller($browserSize:"sm") {
+    @if $browserSize == "xs" {
+        // create top classes
+        .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
+        .puller-#{$browserSize}-top-sm { margin-top: -$type-spacing-sm; }
+        .puller-#{$browserSize}-top-md { margin-top: -$type-spacing-md; }
+        .puller-#{$browserSize}-top-lg { margin-top: -$type-spacing-lg; }
+        .puller-#{$browserSize}-top-xl { margin-top: -$type-spacing-xl; }
+        .puller-#{$browserSize}-top-xxl { margin-top: -$type-spacing-xl*2; }
+
+        .puller-#{$browserSize}-top-clear { margin-top: 0; }
+        .copy.puller-#{$browserSize}-top-clear { margin-top: 0; }
+
+        // create bottom classes
+        .puller-#{$browserSize}-btm-xs { margin-bottom: -$type-spacing-xs; }
+        .puller-#{$browserSize}-btm-sm { margin-bottom: -$type-spacing-sm; }
+        .puller-#{$browserSize}-btm-md { margin-bottom: -$type-spacing-md; }
+        .puller-#{$browserSize}-btm-lg { margin-bottom: -$type-spacing-lg; }
+        .puller-#{$browserSize}-btm-xl { margin-bottom: -$type-spacing-xl; }
+        .puller-#{$browserSize}-btm-xxl { margin-bottom: -$type-spacing-xl*2; }
+
+        .puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
+        .copy.puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
+    }
+    @if $browserSize == "sm" {
+        @media(min-width:$screen-sm-min){
+            // create top classes
+            .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
+            .puller-#{$browserSize}-top-sm { margin-top: -$type-spacing-sm; }
+            .puller-#{$browserSize}-top-md { margin-top: -$type-spacing-md; }
+            .puller-#{$browserSize}-top-lg { margin-top: -$type-spacing-lg; }
+            .puller-#{$browserSize}-top-xl { margin-top: -$type-spacing-xl; }
+            .puller-#{$browserSize}-top-xxl { margin-top: -$type-spacing-xl*2; }
+
+            .puller-#{$browserSize}-top-clear { margin-top: 0; }
+            .copy.puller-#{$browserSize}-top-clear { margin-top: 0; }
+
+
+            // create bottom classes
+            .puller-#{$browserSize}-btm-xs { margin-bottom: -$type-spacing-xs; }
+            .puller-#{$browserSize}-btm-sm { margin-bottom: -$type-spacing-sm; }
+            .puller-#{$browserSize}-btm-md { margin-bottom: -$type-spacing-md; }
+            .puller-#{$browserSize}-btm-lg { margin-bottom: -$type-spacing-lg; }
+            .puller-#{$browserSize}-btm-xl { margin-bottom: -$type-spacing-xl; }
+            .puller-#{$browserSize}-btm-xxl { margin-bottom: -$type-spacing-xl*2; }
+
+            .puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
+            .copy.puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
+        }
+    }
+    @if $browserSize == "md" {
+        @media(min-width:$screen-md-min){
+            // create top classes
+            .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
+            .puller-#{$browserSize}-top-sm { margin-top: -$type-spacing-sm; }
+            .puller-#{$browserSize}-top-md { margin-top: -$type-spacing-md; }
+            .puller-#{$browserSize}-top-lg { margin-top: -$type-spacing-lg; }
+            .puller-#{$browserSize}-top-xl { margin-top: -$type-spacing-xl; }
+            .puller-#{$browserSize}-top-xxl { margin-top: -$type-spacing-xl*2; }
+
+            .puller-#{$browserSize}-top-clear { margin-top: 0; }
+            .copy.puller-#{$browserSize}-top-clear { margin-top: 0; }
+
+            // create bottom classes
+            .puller-#{$browserSize}-btm-xs { margin-bottom: -$type-spacing-xs; }
+            .puller-#{$browserSize}-btm-sm { margin-bottom: -$type-spacing-sm; }
+            .puller-#{$browserSize}-btm-md { margin-bottom: -$type-spacing-md; }
+            .puller-#{$browserSize}-btm-lg { margin-bottom: -$type-spacing-lg; }
+            .puller-#{$browserSize}-btm-xl { margin-bottom: -$type-spacing-xl; }
+            .puller-#{$browserSize}-btm-xxl { margin-bottom: -$type-spacing-xl*2; }
+
+            .puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
+            .copy.puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
+        }
+    }
+    @if $browserSize == "lg" {
+        @media(min-width:$screen-lg-min){
+            // create top classes
+            .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
+            .puller-#{$browserSize}-top-sm { margin-top: -$type-spacing-sm; }
+            .puller-#{$browserSize}-top-md { margin-top: -$type-spacing-md; }
+            .puller-#{$browserSize}-top-lg { margin-top: -$type-spacing-lg; }
+            .puller-#{$browserSize}-top-xl { margin-top: -$type-spacing-xl; }
+            .puller-#{$browserSize}-top-xxl { margin-top: -$type-spacing-xl*2; }
+
+            .puller-#{$browserSize}-top-clear { margin-top: 0; }
+            .copy.puller-#{$browserSize}-top-clear { margin-top: 0; }
+
+            // create bottom classes
+            .puller-#{$browserSize}-btm-xs { margin-bottom: -$type-spacing-xs; }
+            .puller-#{$browserSize}-btm-sm { margin-bottom: -$type-spacing-sm; }
+            .puller-#{$browserSize}-btm-md { margin-bottom: -$type-spacing-md; }
+            .puller-#{$browserSize}-btm-lg { margin-bottom: -$type-spacing-lg; }
+            .puller-#{$browserSize}-btm-xl { margin-bottom: -$type-spacing-xl; }
+            .puller-#{$browserSize}-btm-xxl { margin-bottom: -$type-spacing-xl*2; }
+
+            .puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
+            .copy.puller-#{$browserSize}-btm-clear { margin-bottom: 0; }
         }
     }
 }
@@ -197,6 +214,7 @@
         .buffer-#{$browserSize}-top-md { padding-top: $type-spacing-md; }
         .buffer-#{$browserSize}-top-lg { padding-top: $type-spacing-lg; }
         .buffer-#{$browserSize}-top-xl { padding-top: $type-spacing-xl; }
+        .buffer-#{$browserSize}-top-xxl { padding-top: $type-spacing-xl*2; }
 
         .buffer-#{$browserSize}-top-clear { padding-top: 0; }
         .copy.buffer-#{$browserSize}-top-clear { padding-top: 0; }
@@ -207,6 +225,7 @@
         .buffer-#{$browserSize}-btm-md { padding-bottom: $type-spacing-md; }
         .buffer-#{$browserSize}-btm-lg { padding-bottom: $type-spacing-lg; }
         .buffer-#{$browserSize}-btm-xl { padding-bottom: $type-spacing-xl; }
+        .buffer-#{$browserSize}-btm-xxl { padding-bottom: $type-spacing-xl*2; }
 
         .buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
         .copy.buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
@@ -219,6 +238,7 @@
             .buffer-#{$browserSize}-top-md { padding-top: $type-spacing-md; }
             .buffer-#{$browserSize}-top-lg { padding-top: $type-spacing-lg; }
             .buffer-#{$browserSize}-top-xl { padding-top: $type-spacing-xl; }
+            .buffer-#{$browserSize}-top-xxl { padding-top: $type-spacing-xl*2; }
 
             .buffer-#{$browserSize}-top-clear { padding-top: 0; }
             .copy.buffer-#{$browserSize}-top-clear { padding-top: 0; }
@@ -230,6 +250,7 @@
             .buffer-#{$browserSize}-btm-md { padding-bottom: $type-spacing-md; }
             .buffer-#{$browserSize}-btm-lg { padding-bottom: $type-spacing-lg; }
             .buffer-#{$browserSize}-btm-xl { padding-bottom: $type-spacing-xl; }
+            .buffer-#{$browserSize}-btm-xxl { padding-bottom: $type-spacing-xl*2; }
 
             .buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
             .copy.buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
@@ -243,6 +264,7 @@
             .buffer-#{$browserSize}-top-md { padding-top: $type-spacing-md; }
             .buffer-#{$browserSize}-top-lg { padding-top: $type-spacing-lg; }
             .buffer-#{$browserSize}-top-xl { padding-top: $type-spacing-xl; }
+            .buffer-#{$browserSize}-top-xxl { padding-top: $type-spacing-xl*2; }
 
             .buffer-#{$browserSize}-top-clear { padding-top: 0; }
             .copy.buffer-#{$browserSize}-top-clear { padding-top: 0; }
@@ -253,6 +275,7 @@
             .buffer-#{$browserSize}-btm-md { padding-bottom: $type-spacing-md; }
             .buffer-#{$browserSize}-btm-lg { padding-bottom: $type-spacing-lg; }
             .buffer-#{$browserSize}-btm-xl { padding-bottom: $type-spacing-xl; }
+            .buffer-#{$browserSize}-btm-xxl { padding-bottom: $type-spacing-xl*2; }
 
             .buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
             .copy.buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
@@ -266,6 +289,7 @@
             .buffer-#{$browserSize}-top-md { padding-top: $type-spacing-md; }
             .buffer-#{$browserSize}-top-lg { padding-top: $type-spacing-lg; }
             .buffer-#{$browserSize}-top-xl { padding-top: $type-spacing-xl; }
+            .buffer-#{$browserSize}-top-xxl { padding-top: $type-spacing-xl*2; }
 
             .buffer-#{$browserSize}-top-clear { padding-top: 0; }
             .copy.buffer-#{$browserSize}-top-clear { padding-top: 0; }
@@ -276,6 +300,7 @@
             .buffer-#{$browserSize}-btm-md { padding-bottom: $type-spacing-md; }
             .buffer-#{$browserSize}-btm-lg { padding-bottom: $type-spacing-lg; }
             .buffer-#{$browserSize}-btm-xl { padding-bottom: $type-spacing-xl; }
+            .buffer-#{$browserSize}-btm-xxl { padding-bottom: $type-spacing-xl*2; }
 
             .buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
             .copy.buffer-#{$browserSize}-btm-clear { padding-bottom: 0; }
