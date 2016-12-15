@@ -1,6 +1,3 @@
-// this needs to be reeeeeeefactored!!
-// but I'm lazy so I'll do it later
-
 @mixin make-vertical-spaces($browserSize:"sm") {
     @if $browserSize == "xs" {
         // create top classes
