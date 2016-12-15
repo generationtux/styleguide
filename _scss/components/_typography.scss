@@ -1,13 +1,14 @@
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
 // Typography is built on the following
 // Ratio - 1.25 or 4:5 or major 3rd
 // http://www.modularscale.com/?16&px&1.25&web&text
 
-.domd {
-  font-family: 'DomD Reg', georgia, serif;
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0;
-}
+$brandon-grotesque-font-stack: "brandon-grotesque", Arial, Helvetica, sans-serif;
+$roboto-font-stack: "Roboto", sans-serif;
+$line-height: 1.642;
 
 body {
   font-family: "roboto", sans-serif;
@@ -15,6 +16,13 @@ body {
   font-weight: 400; 
   color: black;
   background: white;
+}
+
+.domd {
+  font-family: 'DomD Reg', georgia, serif;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 h1,.h1,
@@ -191,4 +199,40 @@ img.text-center {
 .normalcase {
     text-transform: none;
     letter-spacing: 0;
+}
+
+// -----------------------------------------------------------------------------
+// Hero Titles
+// -----------------------------------------------------------------------------
+@mixin hero-title-base() {
+    &:after {
+        content: '';
+        width: 27%;
+        height: 0.12em;
+        background-color: $brand-black;
+        display: block;
+        margin: 0.5em auto 0.6em;
+    }
+}
+
+.hero-title {
+    @include hero-title-base;
+}
+
+.hero-title-left {
+    @include hero-title-base;
+    text-align: left;
+
+    &:after {
+        margin-left: 0;
+    }
+}
+
+.hero-title-right {
+    @include hero-title-base;
+    text-align: right;
+
+    &:after {
+        margin-right: 0;
+    }
 }
