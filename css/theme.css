@@ -1722,6 +1722,14 @@ img.context--copy {
 
 blockquote {
   border: none; }
+  blockquote footer:before, blockquote small:before, blockquote .small:before {
+    content: "";
+    width: 32px;
+    height: 1px;
+    margin-right: 8px;
+    background-color: #D5C197;
+    display: inline-block;
+    vertical-align: middle; }
 
 .panel {
   margin-bottom: 32px; }
