@@ -1256,7 +1256,7 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #cccccc; }
+  color: #888888; }
 
 .text-primary {
   color: #000; }
@@ -1334,7 +1334,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 7px;
   margin: 32px 0 16px;
-  border-bottom: 1px solid #f3f3f3; }
+  border-bottom: 1px solid #fafafa; }
 
 ul,
 ol {
@@ -1404,7 +1404,7 @@ blockquote {
   padding: 8px 16px;
   margin: 0 0 16px;
   font-size: 20px;
-  border-left: 5px solid #f3f3f3; }
+  border-left: 5px solid #fafafa; }
   blockquote p:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
@@ -1425,7 +1425,7 @@ blockquote {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #f3f3f3;
+  border-right: 5px solid #fafafa;
   border-left: 0;
   text-align: right; }
   .blockquote-reverse footer:before,
@@ -2024,7 +2024,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #cccccc;
+  color: #888888;
   text-align: left; }
 
 th {
@@ -2335,7 +2335,7 @@ output {
     background-color: transparent; }
   .form-control[disabled], .form-control[readonly],
   fieldset[disabled] .form-control {
-    background-color: #f3f3f3;
+    background-color: #fafafa;
     opacity: 1; }
   .form-control[disabled],
   fieldset[disabled] .form-control {
@@ -3470,7 +3470,7 @@ tbody.collapse.in {
   line-height: 1;
   color: #404042;
   text-align: center;
-  background-color: #f3f3f3;
+  background-color: #fafafa;
   border: 1px solid #ccc;
   border-radius: 0px; }
   .input-group-addon.input-sm,
@@ -3551,7 +3551,7 @@ tbody.collapse.in {
       padding: 8px 16px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: #f3f3f3; }
+        background-color: #fafafa; }
     .nav > li.disabled > a {
       color: #e6e6e6; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
@@ -3560,7 +3560,7 @@ tbody.collapse.in {
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #f3f3f3;
+    background-color: #fafafa;
     border-color: #c6ab73; }
   .nav .nav-divider {
     height: 1px;
@@ -3581,7 +3581,7 @@ tbody.collapse.in {
       border: 1px solid transparent;
       border-radius: 0px 0px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #f3f3f3 #f3f3f3 #ddd; }
+        border-color: #fafafa #fafafa #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #cccccc;
       background-color: #fff;
@@ -4099,7 +4099,7 @@ tbody.collapse.in {
   .pagination > li > span:focus {
     z-index: 2;
     color: #d5c197;
-    background-color: #f3f3f3;
+    background-color: #fafafa;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
   .pagination > .active > span,
@@ -4175,7 +4175,7 @@ tbody.collapse.in {
     .pager li > a:hover,
     .pager li > a:focus {
       text-decoration: none;
-      background-color: #f3f3f3; }
+      background-color: #fafafa; }
   .pager .next > a,
   .pager .next > span {
     float: right; }
@@ -4285,7 +4285,7 @@ a.badge:hover, a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #f3f3f3; }
+  background-color: #fafafa; }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
@@ -4294,7 +4294,7 @@ a.badge:hover, a.badge:focus {
     font-size: 24px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #dadada; }
+    border-top-color: #e1e1e1; }
   .container .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 0px;
@@ -4563,7 +4563,7 @@ button.list-group-item {
   text-align: left; }
 
 .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
-  background-color: #f3f3f3;
+  background-color: #fafafa;
   color: #e6e6e6;
   cursor: not-allowed; }
   .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading {

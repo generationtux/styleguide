@@ -13,7 +13,7 @@ $gray-darker:            #404042;
 $gray-dark:              #888888;
 $gray:                   #cccccc;
 $gray-light:             #e6e6e6;
-$gray-lighter:           #f3f3f3;
+$gray-lighter:           #fafafa;
 
 $brand-default:         $gray-light;
 $brand-primary:         $gray-base;
@@ -860,7 +860,7 @@ $breadcrumb-padding-horizontal: 16px;
 // //** Horizontal offset for forms and lists.
 // $component-offset-horizontal: 180px;
 // //** Text muted color
-$text-muted:                  $gray;
+$text-muted:                  $gray-dark;
 // //** Abbreviations and acronyms border color
 // $abbr-border-color:           $gray-light;
 // //** Headings small color
