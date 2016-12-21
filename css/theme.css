@@ -294,7 +294,7 @@ img.context--copy {
   letter-spacing: 0; }
 
 .link-style {
-  color: #c6ab73;
+  color: #b8964e;
   cursor: pointer; }
   .link-style:hover {
     color: #b8964e; }
@@ -1568,7 +1568,7 @@ img.context--copy {
   .navbar-sub .navbar-nav li a:after {
     display: none; }
   .navbar-sub .navbar-nav .active a {
-    color: #c6ab73; }
+    color: #b8964e; }
   .navbar-sub .navbar-collapse {
     border-top-color: #e6e6e6; }
   @media (min-width: 768px) {
@@ -1584,7 +1584,7 @@ img.context--copy {
     padding-bottom: 0;
     padding-left: 0; }
     .panel-theme-accordion .panel-heading a.collapsed {
-      color: #c6ab73; }
+      color: #b8964e; }
   .panel-theme-accordion .panel-title {
     position: relative;
     padding-left: 36px; }
