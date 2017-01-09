@@ -335,14 +335,14 @@ img.context--copy {
     margin-right: 0; }
 
 .container-bordered {
-  border-top: 1px solid #fafafa;
-  border-bottom: 1px solid #fafafa; }
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f8f8f8; }
 
 .container-bordered-top {
-  border-top: 1px solid #fafafa; }
+  border-top: 1px solid #f8f8f8; }
 
 .container-bordered-bottom {
-  border-bottom: 1px solid #fafafa; }
+  border-bottom: 1px solid #f8f8f8; }
 
 .container-indented {
   position: relative; }
@@ -407,7 +407,7 @@ img.context--copy {
     bottom: 0;
     left: 0;
     width: 75%;
-    background-color: #fafafa; }
+    background-color: #f8f8f8; }
 
 .callout-bg-offset-right {
   position: relative; }
@@ -419,11 +419,11 @@ img.context--copy {
     bottom: 0;
     right: 0;
     width: 75%;
-    background-color: #fafafa; }
+    background-color: #f8f8f8; }
 
 .container.container-hero,
 .container-fluid.container-hero {
-  background: linear-gradient(to right, white 50%, #fafafa 50%); }
+  background: linear-gradient(to right, white 50%, #f8f8f8 50%); }
   @media (min-width: 992px) {
     .container.container-hero > .row,
     .container-fluid.container-hero > .row {
@@ -972,7 +972,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-default.focus,
   fieldset[disabled] .btn-hollow-default:active,
   fieldset[disabled] .btn-hollow-default.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-primary {
@@ -996,7 +996,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-primary.focus,
   fieldset[disabled] .btn-hollow-primary:active,
   fieldset[disabled] .btn-hollow-primary.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-success {
@@ -1020,7 +1020,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-success.focus,
   fieldset[disabled] .btn-hollow-success:active,
   fieldset[disabled] .btn-hollow-success.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-info {
@@ -1044,7 +1044,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-info.focus,
   fieldset[disabled] .btn-hollow-info:active,
   fieldset[disabled] .btn-hollow-info.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-warning {
@@ -1068,7 +1068,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-warning.focus,
   fieldset[disabled] .btn-hollow-warning:active,
   fieldset[disabled] .btn-hollow-warning.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-danger {
@@ -1092,7 +1092,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-danger.focus,
   fieldset[disabled] .btn-hollow-danger:active,
   fieldset[disabled] .btn-hollow-danger.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-inverse {
@@ -1117,7 +1117,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-inverse.focus,
   fieldset[disabled] .btn-hollow-inverse:active,
   fieldset[disabled] .btn-hollow-inverse.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-transparent-default {
@@ -1142,7 +1142,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-transparent-default.focus,
   fieldset[disabled] .btn-hollow-transparent-default:active,
   fieldset[disabled] .btn-hollow-transparent-default.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-transparent-primary {
@@ -1166,7 +1166,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-transparent-primary.focus,
   fieldset[disabled] .btn-hollow-transparent-primary:active,
   fieldset[disabled] .btn-hollow-transparent-primary.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-transparent-success {
@@ -1190,7 +1190,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-transparent-success.focus,
   fieldset[disabled] .btn-hollow-transparent-success:active,
   fieldset[disabled] .btn-hollow-transparent-success.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-transparent-info {
@@ -1214,7 +1214,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-transparent-info.focus,
   fieldset[disabled] .btn-hollow-transparent-info:active,
   fieldset[disabled] .btn-hollow-transparent-info.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-transparent-warning {
@@ -1238,7 +1238,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-transparent-warning.focus,
   fieldset[disabled] .btn-hollow-transparent-warning:active,
   fieldset[disabled] .btn-hollow-transparent-warning.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-transparent-danger {
@@ -1262,7 +1262,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-transparent-danger.focus,
   fieldset[disabled] .btn-hollow-transparent-danger:active,
   fieldset[disabled] .btn-hollow-transparent-danger.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-hollow-transparent-inverse {
@@ -1287,7 +1287,7 @@ img.context--copy {
   fieldset[disabled] .btn-hollow-transparent-inverse.focus,
   fieldset[disabled] .btn-hollow-transparent-inverse:active,
   fieldset[disabled] .btn-hollow-transparent-inverse.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-naked {
@@ -1322,7 +1322,7 @@ img.context--copy {
   fieldset[disabled] .btn-white.focus,
   fieldset[disabled] .btn-white:active,
   fieldset[disabled] .btn-white.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-default {
@@ -1347,7 +1347,7 @@ img.context--copy {
   fieldset[disabled] .btn-default.focus,
   fieldset[disabled] .btn-default:active,
   fieldset[disabled] .btn-default.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-primary {
@@ -1363,7 +1363,7 @@ img.context--copy {
     border-color: #000;
     color: #000; }
   .btn-primary:active, .btn-primary.active, .btn-primary:focus:active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: #000; }
   .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active,
   fieldset[disabled] .btn-primary,
@@ -1372,7 +1372,7 @@ img.context--copy {
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] .btn-primary:active,
   fieldset[disabled] .btn-primary.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-success {
@@ -1388,7 +1388,7 @@ img.context--copy {
     border-color: #7cab85;
     color: #7cab85; }
   .btn-success:active, .btn-success.active, .btn-success:focus:active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: #7cab85; }
   .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active,
   fieldset[disabled] .btn-success,
@@ -1397,7 +1397,7 @@ img.context--copy {
   fieldset[disabled] .btn-success.focus,
   fieldset[disabled] .btn-success:active,
   fieldset[disabled] .btn-success.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-info {
@@ -1413,7 +1413,7 @@ img.context--copy {
     border-color: #D5C197;
     color: #D5C197; }
   .btn-info:active, .btn-info.active, .btn-info:focus:active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: #D5C197; }
   .btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, .btn-info[disabled]:active, .btn-info[disabled].active,
   fieldset[disabled] .btn-info,
@@ -1422,7 +1422,7 @@ img.context--copy {
   fieldset[disabled] .btn-info.focus,
   fieldset[disabled] .btn-info:active,
   fieldset[disabled] .btn-info.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-warning {
@@ -1438,7 +1438,7 @@ img.context--copy {
     border-color: #dccba8;
     color: #dccba8; }
   .btn-warning:active, .btn-warning.active, .btn-warning:focus:active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: #dccba8; }
   .btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active,
   fieldset[disabled] .btn-warning,
@@ -1447,7 +1447,7 @@ img.context--copy {
   fieldset[disabled] .btn-warning.focus,
   fieldset[disabled] .btn-warning:active,
   fieldset[disabled] .btn-warning.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .btn-danger {
@@ -1463,7 +1463,7 @@ img.context--copy {
     border-color: #b45250;
     color: #b45250; }
   .btn-danger:active, .btn-danger.active, .btn-danger:focus:active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: #b45250; }
   .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active,
   fieldset[disabled] .btn-danger,
@@ -1472,7 +1472,7 @@ img.context--copy {
   fieldset[disabled] .btn-danger.focus,
   fieldset[disabled] .btn-danger:active,
   fieldset[disabled] .btn-danger.active {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     color: black; }
 
 .nav-pills .btn-warning:hover, .nav-pills .btn-warning:focus {
@@ -1488,7 +1488,7 @@ img.context--copy {
   margin-left: 1em; }
 
 .promo-banner {
-  background-color: #fafafa; }
+  background-color: #f8f8f8; }
 
 .navbar-toggle .icon-bar {
   width: 16px;
@@ -1556,7 +1556,7 @@ img.context--copy {
 
 @media (min-width: 768px) {
   .navbar-inverse .main-nav-items > li > a:after {
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     height: 3px;
     bottom: -1px;
     z-index: 10; } }
@@ -1564,7 +1564,7 @@ img.context--copy {
 .navbar-sub {
   border: none;
   min-height: auto;
-  background-color: #fafafa; }
+  background-color: #f8f8f8; }
   .navbar-sub .navbar-nav li a:after {
     display: none; }
   .navbar-sub .navbar-nav .active a {
@@ -1796,7 +1796,7 @@ blockquote {
   background-color: #e6e6e6; }
 
 .bg-brand-gray-lighter {
-  background-color: #fafafa; }
+  background-color: #f8f8f8; }
 
 .bg-brand-white {
   background-color: white; }
