@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Computes a top-shadow for a card effect.
  *
@@ -38,12 +39,6 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased; }
 
-.domd {
-  font-family: 'DomD Reg', georgia, serif;
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0; }
-
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -53,19 +48,35 @@ h6, .h6, .btn {
   font-family: "brandon-grotesque", Arial, Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: .1em;
-  line-height: 1.3;
+  line-height: 1.2;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0; }
 
+.domd, ol.fancy-list > li:before {
+  font-family: 'DomD Reg', georgia, serif;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0; }
+
 h1, .h1 {
   font-size: 24px; }
+  h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
+    line-height: 1.1; }
   @media (min-width: 768px) {
     h1, .h1 {
       font-size: 30px; } }
   @media (min-width: 992px) {
     h1, .h1 {
       font-size: 39.063px; } }
+  @media (min-width: 1200px) {
+    h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
+      font-size: 50px; } }
+  @media (min-width: 1600px) {
+    h1, .h1 {
+      font-size: 39.063px; }
+      h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
+        font-size: 65px; } }
 
 h2, .h2 {
   font-size: 20px; }
@@ -302,6 +313,17 @@ img.context--copy {
 .link-style-clear {
   color: #000; }
 
+.text-truncate,
+.text-overflow {
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: "…";
+  -webkit-text-overflow: clip;
+  -webkit-text-overflow: ellipsis;
+  -webkit-text-overflow: "…";
+  white-space: nowrap;
+  overflow: hidden; }
+
 .hero-title:after {
   content: '';
   width: 27%;
@@ -333,6 +355,55 @@ img.context--copy {
     margin: 0.5em auto 0.6em; }
   .hero-title-right:after {
     margin-right: 0; }
+
+.list-inline {
+  margin-left: -8px; }
+  .list-inline > li {
+    padding-left: 8px;
+    padding-right: 8px; }
+
+ol.fancy-list {
+  counter-reset: li;
+  /* Initiate a counter */
+  margin-left: 2em;
+  /* Remove the default left margin */
+  padding-left: 0;
+  /* Remove the default left padding */ }
+  ol.fancy-list > li {
+    position: relative;
+    /* Create a positioning context */
+    margin: 0;
+    /* Give each list item a left margin to make room for the numbers */
+    padding: 0px 0px 16px;
+    /* Add some spacing around the content */
+    list-style: none;
+    /* Disable the normal item numbering */ }
+    ol.fancy-list > li:before {
+      font-size: 25px;
+      line-height: 1;
+      color: #cccccc;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      content: counter(li, decimal-leading-zero);
+      /* Use the counter as content */
+      counter-increment: li;
+      /* Increment the counter by 1 */
+      /* Position and style the number */
+      position: relative;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      min-width: 1.8em;
+      /* Some space between the number and the content in browsers that support
+         generated content but not positioning it (Camino 2 is one example) */ }
+    ol.fancy-list > li a {
+      vertical-align: middle; }
+  ol.fancy-list li ol,
+  ol.fancy-list li ul {
+    margin-top: 6px; }
+  ol.fancy-list ol ol li:last-child {
+    margin-bottom: 0; }
 
 .container-bordered {
   border-top: 1px solid #f8f8f8;
