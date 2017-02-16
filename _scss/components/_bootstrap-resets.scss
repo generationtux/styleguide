@@ -359,9 +359,9 @@ $grid-gutter-width:         32px;
 
 // // Large screen / wide desktop
 // $container-large-desktop:      (1056 + $grid-gutter-width);
-$container-large-desktop:      1344px;
+$container-large-desktop:      1200px;
 // //** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop;
+$container-lg:                 $container-large-desktop + $grid-gutter-width;
 
 
 // //== Navbar
