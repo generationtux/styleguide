@@ -5,7 +5,7 @@ $btn-size: 24px;
 $btn-offset: 5px;
 
 .panel-theme-accordion {
-  padding: 10px 0;
+  padding: 4px 0;
   box-shadow: none;
 
   .panel-heading {
@@ -20,13 +20,14 @@ $btn-offset: 5px;
 
   .panel-title {
     position: relative;
-    padding-left: $btn-size * 1.5;
+    padding-left: $btn-size * 2;
   }
 
   .panel-body {
     border: none !important;
     position: relative;
-    padding-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 1px; // need some padding to prevent margin collapse
     padding-left: $btn-size * 2;
 
     &:before {
