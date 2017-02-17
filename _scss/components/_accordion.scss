@@ -20,7 +20,7 @@ $btn-offset: 5px;
 
   .panel-title {
     position: relative;
-    padding-left: $btn-size * 2;
+    padding-left: 40px;
   }
 
   .panel-body {
@@ -28,16 +28,16 @@ $btn-offset: 5px;
     position: relative;
     padding-top: 16px;
     padding-bottom: 1px; // need some padding to prevent margin collapse
-    padding-left: $btn-size * 2;
+    padding-left: 40px;
 
     &:before {
       content:"";
       width: 2px;
-      height: 100%;
+      height: calc(100% + 6px);
       display: block;
       position: absolute;
       left: $btn-size / 2;
-      top: 0;
+      bottom: 0;
       background-color: $gray-light;
       @include transform(translate(-50%,0));
     }
@@ -66,7 +66,6 @@ $btn-offset: 5px;
   position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -2px; // helps visually center icon vertically
   border-radius: 50%;
   @include transform(translate(0%,-50%));
   @include transition(all .3s ease);
