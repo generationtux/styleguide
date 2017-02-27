@@ -1,5 +1,5 @@
 {
-  "name": "gentux-pattern-library",
+  "name": "gentux-style-guide",
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
@@ -24,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/generationtux/styleguide"
   },
-  "author": "Generation Tux",
-  "license": "ISC",
-  "homepage": ""
+  "author": "Gentux",
+  "license": "MIT",
+  "homepage": "https://generationtux.github.io/styleguide/"
 }
