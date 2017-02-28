@@ -12,11 +12,6 @@ var w3cjs       = require('gulp-w3cjs');
 var htmlhint    = require("gulp-htmlhint");
 var pump        = require('pump');
 
-// toggle css build type
-// true  == bootstrap custom build and theme style gets combined into one file
-// false == bootstrap and theme get built out separately
-// need to also update the head.html file to load the proper stylesheets
-var combineBootstrapAndTheme = true;
 
 // -----------------------------------------------------------------------------
 //  Build the Jekyll Site
