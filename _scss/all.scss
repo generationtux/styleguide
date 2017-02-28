@@ -1,3 +1,14 @@
+// Set environment var for proper font loading
+// True for styleguide, False for Production
+$env-styleguide: true;
+
+$font-url-styleguide: "../fonts/";
+$font-url-production: "../../fonts/";
+$font-url: $font-url-production;
+@if ($env-styleguide == true) {
+	$font-url: $font-url-styleguide;
+}
+
 
 @import "bootstrap-custom";
 @import "theme";

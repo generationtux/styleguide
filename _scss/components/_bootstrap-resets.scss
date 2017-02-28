@@ -84,7 +84,7 @@ $headings-line-height:    1.16;
 // // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
 // $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/");
-$icon-font-path: "../fonts/";
+$icon-font-path: $font-url;
 
 // //** File name for all font files.
 // $icon-font-name:          "glyphicons-halflings-regular";

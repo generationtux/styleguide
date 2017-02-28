@@ -42,7 +42,7 @@ gulp.task('browser-reload', function () {
 // -----------------------------------------------------------------------------
 // Wait for jekyll-build, then launch the Server
 // -----------------------------------------------------------------------------
-gulp.task('browser-sync', ['jekyll','sass-bootstrap','sass-theme','sass-all','js'], function() {
+gulp.task('browser-sync', ['jekyll','sass-all','js'], function() {
   browserSync({
     proxy: "http://127.0.0.1:4000/styleguide/"
   });
@@ -74,26 +74,6 @@ gulp.task('js', function(cb) {
 // -----------------------------------------------------------------------------
 //  Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
 // -----------------------------------------------------------------------------
-gulp.task('sass-bootstrap', function () {
-  return gulp.src('_scss/bootstrap-custom.scss')
-    .pipe(sass({
-      includePaths: ['scss'],
-      onError: browserSync.notify
-    }))
-    .pipe(gulp.dest('_site/css'))
-    .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('css'));
-});
-gulp.task('sass-theme', function () {
-  return gulp.src('_scss/theme.scss')
-    .pipe(sass({
-      includePaths: ['scss'],
-      onError: browserSync.notify
-    }))
-    .pipe(gulp.dest('_site/css'))
-    .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('css'));
-});
 gulp.task('sass-all', function () {
   return gulp.src('_scss/all.scss')
     .pipe(sass({
@@ -127,7 +107,7 @@ gulp.task('watch', function () {
     '_scss/components/_variables-theme.scss',
     '_scss/components/_bootstrap-resets.scss',
     '_scss/**/*.scss'
-  ], ['sass-bootstrap','sass-theme','sass-all']);
+  ], ['sass-all']);
 
   gulp.watch([
     '_site/**/*',
