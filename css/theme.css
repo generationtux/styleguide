@@ -69,7 +69,7 @@ h1, .h1 {
   @media (min-width: 992px) {
     h1, .h1 {
       font-size: 39.063px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1264px) {
     h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
       font-size: 50px; } }
   @media (min-width: 1600px) {
@@ -622,7 +622,7 @@ ol.fancy-list {
   .copy.pusher-md-btm-clear {
     margin-bottom: 0; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1264px) {
   .pusher-lg-top-xs {
     margin-top: 4px; }
   .pusher-lg-top-sm {
@@ -772,7 +772,7 @@ ol.fancy-list {
   .copy.puller-md-btm-clear {
     margin-bottom: 0; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1264px) {
   .puller-lg-top-xs {
     margin-top: -4px; }
   .puller-lg-top-sm {
@@ -922,7 +922,7 @@ ol.fancy-list {
   .copy.buffer-md-btm-clear {
     padding-bottom: 0; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1264px) {
   .buffer-lg-top-xs {
     padding-top: 4px; }
   .buffer-lg-top-sm {
@@ -1648,7 +1648,7 @@ ol.fancy-list {
       padding-bottom: 24px; } }
 
 .panel-theme-accordion {
-  padding: 10px 0;
+  padding: 4px 0;
   box-shadow: none; }
   .panel-theme-accordion .panel-heading {
     padding-top: 0;
@@ -1658,20 +1658,21 @@ ol.fancy-list {
       color: #b8964e; }
   .panel-theme-accordion .panel-title {
     position: relative;
-    padding-left: 36px; }
+    padding-left: 40px; }
   .panel-theme-accordion .panel-body {
     border: none !important;
     position: relative;
-    padding-top: 24px;
-    padding-left: 48px; }
+    padding-top: 16px;
+    padding-bottom: 1px;
+    padding-left: 40px; }
     .panel-theme-accordion .panel-body:before {
       content: "";
       width: 2px;
-      height: 100%;
+      height: calc(100% + 6px);
       display: block;
       position: absolute;
       left: 12px;
-      top: 0;
+      bottom: 0;
       background-color: #e6e6e6;
       -webkit-transform: translate(-50%, 0);
       -moz-transform: translate(-50%, 0);
@@ -1697,7 +1698,6 @@ ol.fancy-list {
   position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -2px;
   border-radius: 50%;
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);
