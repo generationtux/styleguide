@@ -6,8 +6,6 @@
   color: $border-color;
   @include transition(all .2s ease);
 
-  
-
   @if (lightness($border-color) > 80) {
     color: $gray-base;
     &:hover,
@@ -68,8 +66,6 @@
     }
   }
 
-  
-
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
@@ -83,5 +79,82 @@
       color: black;
     }
   }
-}
 
+  &.btn-no-hover {
+    cursor: default;
+
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      box-shadow: none;
+
+      @if (lightness($border-color) > 80) {
+        color: $gray-base;
+        &:hover,
+        &:focus  {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: $gray-base;
+        }
+        &:active,
+        &.active,
+        &:focus:active {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: $gray-base;
+        }
+      }
+      @elseif ($btn-color == white) {
+        &:hover,
+        &:focus  {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: $border-color;
+        }
+        &:active,
+        &.active,
+        &:focus:active {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: $border-color;
+        }
+      }
+      @elseif ($btn-color == $border-color) {
+        color: white;
+        &:hover,
+        &:focus  {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: white;
+        }
+        &:active,
+        &.active,
+        &:focus:active {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: white;
+        }
+      }
+      @else {
+        &:hover,
+        &:focus  {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: $border-color;
+          color: white;
+        }
+        &:active,
+        &.active,
+        &:focus:active {
+          background-color: $btn-color;
+          border-color: $border-color;
+          color: white;
+        }
+      }
+
+    }
+  }
+}
