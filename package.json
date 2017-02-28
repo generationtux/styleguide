@@ -1,6 +1,6 @@
 {
-  "name": "gentux-pattern-library",
-  "version": "1.0.0",
+  "name": "gentux-style-guide",
+  "version": "1.0.1",
   "dependencies": {},
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
@@ -24,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/generationtux/styleguide"
   },
-  "author": "Generation Tux",
-  "license": "ISC",
-  "homepage": ""
+  "author": "Gentux",
+  "license": "MIT",
+  "homepage": "https://generationtux.github.io/styleguide/"
 }
