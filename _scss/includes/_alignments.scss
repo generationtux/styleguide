@@ -1,0 +1,305 @@
+.align-vertical {
+    display: block;
+    @include align-items(center);
+    @media (min-width: $grid-float-breakpoint) {
+        @include display(flex);
+    }
+}
+
+.row.row-eq-height {
+    @media(min-width: $grid-float-breakpoint) {
+        @include display(flex);
+
+        > [class*='col-'] {
+            @include display(flex);
+            @include flex-direction(column);
+
+            > .panel {
+                // width: 100%;
+                @include flex-grow(1);
+            }
+        }
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Bugger - adds padding
+// -----------------------------------------------------------------------------
+.buffer {
+    padding: $grid-gutter-width;
+}
+.buffer-vertical {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+}
+
+.buffer-top {
+    padding-top: $grid-gutter-width;
+}
+
+.buffer-right {
+    padding-right: $grid-gutter-width;
+}
+
+.buffer-bottom {
+    padding-bottom: $grid-gutter-width;
+}
+
+.buffer-right {
+    padding-left: $grid-gutter-width;
+}
+
+// large variant
+.buffer-vertical-lg {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $grid-gutter-width*2;
+        padding-bottom: $grid-gutter-width*2;
+    }
+}
+
+.buffer-top-lg {
+    padding-top: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $grid-gutter-width*2;
+    }
+}
+
+.buffer-right-lg {
+    padding-right: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-right: $grid-gutter-width*2;
+    }
+}
+
+.buffer-bottom-lg {
+    padding-bottom: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-bottom: $grid-gutter-width*2;
+    }
+}
+
+.buffer-right-lg {
+    padding-left: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: $grid-gutter-width*2;
+    }
+}
+
+// medium variant
+.buffer-vertical-md {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $grid-gutter-width*1.5;
+        padding-bottom: $grid-gutter-width*1.5;
+    }
+}
+
+.buffer-top-md {
+    padding-top: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $grid-gutter-width*1.5;
+    }
+}
+
+.buffer-right-md {
+    padding-right: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-right: $grid-gutter-width*1.5;
+    }
+}
+
+.buffer-bottom-md {
+    padding-bottom: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-bottom: $grid-gutter-width*1.5;
+    }
+}
+
+.buffer-right-md {
+    padding-left: $grid-gutter-width;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: $grid-gutter-width*1.5;
+    }
+}
+
+// small variant
+.buffer-vertical-sm {
+    padding-top: $grid-gutter-width/4;
+    padding-bottom: $grid-gutter-width/4;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $grid-gutter-width/2;
+        padding-bottom: $grid-gutter-width/2;
+    }
+}
+
+.buffer-top-sm {
+    padding-top: $grid-gutter-width/4;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $grid-gutter-width/2;
+    }
+}
+
+.buffer-right-sm {
+    padding-right: $grid-gutter-width/4;
+
+    @media (min-width: $screen-sm-min) {
+        padding-right: $grid-gutter-width/2;
+    }
+}
+
+.buffer-bottom-sm {
+    padding-bottom: $grid-gutter-width/4;
+
+    @media (min-width: $screen-sm-min) {
+        padding-bottom: $grid-gutter-width/2;
+    }
+}
+
+.buffer-left-sm {
+    padding-left: $grid-gutter-width/4;
+
+    @media (min-width: $screen-sm-min) {
+        padding-left: $grid-gutter-width/2;
+    }
+}
+
+// extra small variant
+.buffer-vertical-xs {
+    padding-top: $grid-gutter-width/8;
+    padding-bottom: $grid-gutter-width/8;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $grid-gutter-width/4;
+        padding-bottom: $grid-gutter-width/4;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Pusher - adds margin
+// -----------------------------------------------------------------------------
+.pusher-vertical {
+    margin-top: $grid-gutter-width;
+    margin-bottom: $grid-gutter-width;
+}
+
+.pusher-top {
+    margin-top: $grid-gutter-width;
+}
+
+.pusher-right {
+    margin-right: $grid-gutter-width;
+}
+
+.pusher-bottom {
+    margin-bottom: $grid-gutter-width;
+}
+
+.pusher-right {
+    margin-left: $grid-gutter-width;
+}
+
+// small variant
+.pusher-vertical-sm {
+    margin-top: $grid-gutter-width/2;
+    margin-bottom: $grid-gutter-width/2;
+}
+
+.pusher-top-sm {
+    margin-top: $grid-gutter-width/2;
+}
+
+.pusher-right-sm {
+    margin-right: $grid-gutter-width/2;
+}
+
+.pusher-bottom-sm {
+    margin-bottom: $grid-gutter-width/2;
+}
+
+.pusher-right-sm {
+    margin-left: $grid-gutter-width/2;
+}
+
+.pusher-top-lg {
+    margin-top: $grid-gutter-width*2;
+}
+// -----------------------------------------------------------------------------
+// Negation
+// -----------------------------------------------------------------------------
+.no-margin-top {
+    margin-top: 0;
+}
+
+// -----------------------------------------------------------------------------
+// Absolution Pos
+// -----------------------------------------------------------------------------
+.pos-top-right,
+.pos-top-left,
+.pos-bottom-right,
+.pos-bottom-left {
+    position: absolute;
+}
+
+.pos-top-right {
+    top: 0;
+    right: 0;
+}
+
+.pos-top-left {
+    top: 0;
+    left: 0;
+}
+
+.pos-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.pos-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+// keep images from stretching to massive sizes
+img.pos-top-right,
+img.pos-top-left,
+img.pos-bottom-right,
+img.pos-bottom-left {
+    width: auto;
+    max-width: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// Z index layers
+// -----------------------------------------------------------------------------
+.layer-parent {
+    position: relative;
+}
+
+[class^='layer-'] { 
+    position: relative; 
+}
+
+.layer-top { z-index: 500; }
+.layer-4 { z-index: 400; }
+.layer-3 { z-index: 300; }
+.layer-2 { z-index: 200; }
+.layer-1 { z-index: 100; }
+.layer-0 { z-index: 0; }
+.layer-0 { z-index: 0; }

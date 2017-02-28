@@ -1,6 +1,7 @@
 .btn {
   @extend .h6;
   line-height: 1;
+  white-space: normal;
 }
 .btn-lg {
   font-size: 16px;
@@ -87,3 +88,45 @@
   margin-left: 1em;
 }
 
+.btn-filter.active {
+  .glyphicon {
+    display: inline !important;
+    line-height: 0;
+    visibility: visible;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Facboook
+// -----------------------------------------------------------------------------
+.btn-primary-fb {
+  background-color: #3b5998;
+  color: white;
+
+  &:hover {
+    color: #3b5998;
+    background-color: white;
+    border-color: #3b5998;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #3b5998;
+    color: white;
+    outline: none;
+  }
+
+  &:before {
+      font-family: 'icomoon-20161125';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\e900";
+      padding-right: 0.4em;
+  }
+}

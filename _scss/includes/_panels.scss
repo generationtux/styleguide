@@ -17,3 +17,11 @@
 .panel-group .panel-naked .panel-collapse > .panel-body {
     border: none;
 }
+
+.panel-skinny {
+    .panel-body,
+    .panel-heading,
+    .panel-footer {
+        padding: $type-spacing-md;
+    }
+}

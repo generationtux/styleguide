@@ -11,6 +11,14 @@
 @include make-vertical-pusher("xxl");
 @include make-vertical-pusher("clear");
 
+@include make-horizontal-pusher("xs");
+@include make-horizontal-pusher("sm");
+@include make-horizontal-pusher("md");
+@include make-horizontal-pusher("lg");
+@include make-horizontal-pusher("xl");
+@include make-horizontal-pusher("xxl");
+@include make-horizontal-pusher("clear");
+
 // for on demand margin
 @include make-vertical-puller("xs");
 @include make-vertical-puller("sm");
@@ -51,4 +59,27 @@
 
 .no-margin-left {
     margin-left: 0;
+}
+
+// -----------------------------------------------------------------------------
+// Padding Clear
+// -----------------------------------------------------------------------------
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+.no-padding-left {
+    padding-left: 0;
 }

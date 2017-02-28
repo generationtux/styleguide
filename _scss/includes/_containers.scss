@@ -100,16 +100,18 @@
 
 .container.container-hero,
 .container-fluid.container-hero {
+    position: relative;
     background: linear-gradient(to right, white 50%, $gray-lighter 50%);
-    @media(min-width: $screen-md-min) {
+    @media(min-width: $screen-sm-min) {
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+    }
+    @media(min-width: $screen-lg-min) {
         > .row {
-            max-width: 2000px;
-            margin-left: auto;
-            margin-right: auto;
             min-height: calc(100vh - 96px);
             .container-hero-image {
                 img {
-                    max-height: 75vh;
+                    max-height: calc(80vh - 96px);
                 }
             }
         }

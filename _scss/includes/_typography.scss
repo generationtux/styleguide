@@ -28,6 +28,10 @@ h6,.h6 {
     margin-bottom: 0;
 }
 
+small {
+  color: $gray-dark;
+}
+
 // needs to go after headings so it can override
 .domd {
   font-family: 'DomD Reg', georgia, serif;
@@ -35,14 +39,10 @@ h6,.h6 {
   text-transform: none;
   letter-spacing: 0;
 }
-
 h1, .h1 {
-    font-size: 24px;
+    font-size: 32px;
     &.domd {
       line-height: 1.1;
-    }
-    @media(min-width: $screen-sm-min) {
-      font-size: 30px;
     }
     @media(min-width: $screen-md-min) {
       font-size: 39.063px;
@@ -66,6 +66,9 @@ h2, .h2 {
     }
     @media(min-width: $screen-md-min) {
       font-size: 31.25px;
+    }
+    &.domd {
+      font-size: 40px;
     }
 }
 h3, .h3 {
@@ -102,8 +105,6 @@ h6, .h6 {
     letter-spacing: .12em;
     line-height: 1.5;
 }
-
-
 h4,.h4 {
   &.lowercase, &.normalcase {
     letter-spacing: .02em;
@@ -130,6 +131,9 @@ p.small {
   letter-spacing: .03em;
   line-height: 1.7;
 }
+p.large {
+  font-size: 18px;
+}
 
 ul,ol {
   margin-bottom: $type-spacing-md;
@@ -146,6 +150,12 @@ hr.hr-small {
   margin-left: 0;
   margin-top: $type-spacing-lg;
   margin-bottom: $type-spacing-lg;
+}
+
+.t-indent {
+  @media(min-width: $screen-sm-min) {
+    text-indent:-.21em;
+  }
 }
 
 .text-center ul,
@@ -205,7 +215,6 @@ img {
   }
 }
 
-
 // -----------------------------------------------------------------------------
 // Case
 // -----------------------------------------------------------------------------
@@ -229,6 +238,7 @@ img {
 .link-style {
   color: $link-color;
   cursor: pointer;
+
   &:hover {
     color: darken($brand-info, 20%);
   }
@@ -303,8 +313,6 @@ img {
   }
 }
 
-
-
 ol.fancy-list {
   counter-reset:li; /* Initiate a counter */
   margin-left:2em; /* Remove the default left margin */
@@ -323,7 +331,7 @@ ol.fancy-list {
       display: inline-block;
       vertical-align: middle;
       text-align: left;
-      content:counter(li, decimal-leading-zero); /* Use the counter as content */
+      content: counter(li, decimal-leading-zero); /* Use the counter as content */
       counter-increment:li; /* Increment the counter by 1 */
       /* Position and style the number */
       position:relative;
