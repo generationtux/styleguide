@@ -7,28 +7,28 @@
 // -----------------------------------------------------------------------------
 // Theme - our own custom styles
 // -----------------------------------------------------------------------------
-@import "components/variables";
+@import "includes/variables";
 
 // grab our mixins
 @import "mixins/vertical-spacing";
 @import "mixins/shadows";
 @import "mixins/buttons";
 
-// grab our components where we override and/or extend bootstrap
-@import "components/fonts";
-@import "components/typography";
-@import "components/containers";
-@import "components/spacing";
-@import "components/align";
-@import "components/buttons";
-@import "components/navbar";
-@import "components/accordion";
-@import "components/shadows";
-@import "components/glyphs";
-@import "components/breadcrumbs";
-@import "components/blockquote";
-@import "components/panels";
-@import "components/tables";
+// grab our includes where we override and/or extend bootstrap
+@import "includes/fonts";
+@import "includes/typography";
+@import "includes/containers";
+@import "includes/spacing";
+@import "includes/align";
+@import "includes/buttons";
+@import "includes/navbar";
+@import "includes/accordion";
+@import "includes/shadows";
+@import "includes/glyphs";
+@import "includes/breadcrumbs";
+@import "includes/blockquote";
+@import "includes/panels";
+@import "includes/tables";
 
 // -----------------------------------------------------------------------------
 // More style stuff. 
