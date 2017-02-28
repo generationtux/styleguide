@@ -16,6 +16,20 @@
  * @requires {function} bottom-shadow
  */
 @font-face {
+  font-family: 'brandon-grotesque';
+  src: url("../fonts/brandon_bld-webfont.eot");
+  src: url("../fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon_bld-webfont.svg#brandon_grotesquebold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon-grotesque';
+  src: url("../fonts/brandon_blk-webfont.eot");
+  src: url("../fonts/brandon_blk-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_blk-webfont.woff") format("woff"), url("../fonts/brandon_blk-webfont.ttf") format("truetype"), url("../fonts/brandon_blk-webfont.svg#brandon_grotesqueblack") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
   font-family: 'DomD Reg';
   src: url("../fonts/DomDWeb-Regular.eot");
   /* IE9 Compat Modes */
@@ -27,11 +41,6 @@
   src: url("../fonts/icomoon-20161125.eot?#iefixbyysie") format("embedded-opentype"), url("../fonts/icomoon-20161125.woff?byysie") format("woff"), url("../fonts/icomoon-20161125.ttf?byysie") format("truetype"), url("../fonts/icomoon-20161125.svg?byysie#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 body {
   font-family: "Roboto", sans-serif;
