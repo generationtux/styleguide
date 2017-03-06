@@ -1,14 +1,23 @@
-.navbar-brand {
-	font-weight: 900;
-}
-.promo-banner {
-  background-color: $gray-lighter;
-}
+// -----------------------------------------------------------------------------
+// Main Navigation
+// -----------------------------------------------------------------------------
 .navbar-toggle {
 	.icon-bar {
 		width: 16px;
 		border-radius: 0;
 	}
+	@media(max-width: $grid-float-breakpoint-max) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+.navbar-brand {
+  font-weight: 900;
+  @media(max-width: $grid-float-breakpoint-max) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: auto;
+  }
 }
 .navbar {
 	h1,h2,h3,h4,h5,h6,
@@ -50,7 +59,20 @@
 			}
 		}
 	}
+	@media(max-width: $grid-float-breakpoint-max) {
+    min-height: auto;
+  }
 }
+
+.navbar-nav {
+  @media(min-width: $screen-sm-min) {
+    margin-left: -16px;
+  }
+  @media(min-width: $screen-md-min) {
+    margin-left: 0px;
+  }
+}
+
 .main-nav-items {
 	@media (min-width: $screen-sm-min) {
 		margin-top: -40px;
@@ -60,6 +82,10 @@
 	}
 }
 .navbar-default {
+	border-color: $gray-lighter;
+  .badge {
+    color: inherit;
+  }
 	@media(min-width: $grid-float-breakpoint) {
 		.main-nav-items {
 			& > li > a {
@@ -78,19 +104,35 @@
 		}
 	}
 }
+.home {
+  .navbar-default {
+    background-color: $gray-lighter;
+  }
+}
 .navbar-inverse {
-	@media(min-width: $grid-float-breakpoint) {
-		.main-nav-items {
-			& > li > a {
-				&:after {
-					background-color: $gray-lighter;
-					height: 3px;
-					bottom: -1px;
-					z-index: 10;
-				}
-			}
-		}
-	}
+  border: none;
+  @media(min-width: $grid-float-breakpoint) {
+    .main-nav-items {
+      & > li > a {
+        &:after {
+          background-color: $gray-lighter;
+          height: 3px;
+          bottom: -1px;
+          z-index: 10;
+        }
+      }
+    }
+  }
+  @media(max-width: $grid-float-breakpoint-max) {
+    .navbar-nav .open .dropdown-menu {
+      background-color: $gray-light;
+      margin-bottom: 16px;
+    }
+    .navbar-collapse {
+      background-color: $gray-dark;
+      border: none;
+    }
+  }
 }
 
 .navbar-sub {
@@ -119,4 +161,91 @@
 			padding-bottom: 24px;
 		}
 	}
+}
+
+// -----------------------------------------------------------------------------
+// Secondary menu - search, account, events
+// -----------------------------------------------------------------------------
+.secondary-menu {
+  .open {
+    .dropdown-menu {
+      min-width: 320px;
+    }
+  }
+}
+
+.events-link {
+  cursor: pointer;
+}
+
+.events-holder {
+  .badge {
+    background-color: transparent;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.search-link {
+  cursor: pointer;
+}
+
+.form-search {
+  .btn.pull-right {
+    margin-left: 0;
+  }
+  .input-group.pull-left {
+    width: auto;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Sub Menu
+// -----------------------------------------------------------------------------
+.sub-menu {
+  text-align: center;
+  display: block;
+  width: 100%;
+
+  @media (min-width: $screen-sm-min) {
+    display: table;
+  }
+
+  > li {
+    display: inline-block;
+    margin: 0;
+
+    @media (min-width: $screen-sm-min) {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &.active {
+      a {
+        background-color: $gray-light;
+        color: $gray-darker;
+        font-weight: 700;
+
+        &:hover {
+          background-color: $gray-light;
+          color: $gray-darker;
+        }
+      }
+    }
+
+    a {
+      color: $gray-darker;
+      font-weight: 400;
+      padding: 10px 10px;
+
+      @media (min-width: $screen-sm-min) {
+        padding: $grid-gutter-width/2 $grid-gutter-width/2;
+      }
+
+      &:hover {
+        background-color: $gray-light;
+      }
+    }
+  }
 }
