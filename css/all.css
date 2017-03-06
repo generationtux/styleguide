@@ -7857,6 +7857,9 @@ ol.fancy-list {
     content: "\e900";
     padding-right: 0.4em; }
 
+.navbar-brand {
+  font-weight: 900; }
+
 .promo-banner {
   background-color: #f8f8f8; }
 
