@@ -7867,16 +7867,13 @@ ol.fancy-list {
     margin-bottom: 12px; } }
 
 .navbar-brand {
+  line-height: 16px;
   font-weight: 900; }
   @media (max-width: 767px) {
     .navbar-brand {
       padding-top: 24px;
       padding-bottom: 24px;
       height: auto; } }
-
-.navbar h1, .navbar h2, .navbar h3, .navbar h4, .navbar h5, .navbar h6,
-.navbar .h1, .navbar .h2, .navbar .h3, .navbar .h4, .navbar .h5, .navbar .h6, .navbar .btn {
-  line-height: 16px !important; }
 
 .navbar .glyphicon {
   line-height: 0; }

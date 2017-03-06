@@ -12,6 +12,7 @@
   }
 }
 .navbar-brand {
+	line-height: 16px;
   font-weight: 900;
   @media(max-width: $grid-float-breakpoint-max) {
     padding-top: 24px;
@@ -20,10 +21,6 @@
   }
 }
 .navbar {
-	h1,h2,h3,h4,h5,h6,
-	.h1,.h2,.h3,.h4,.h5,.h6 {
-		line-height: 16px !important;
-	}
 	.glyphicon {
 		line-height: 0;
 	}
