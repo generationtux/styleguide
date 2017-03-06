@@ -5877,6 +5877,9 @@ h6, .h6, .btn {
   margin-top: 0;
   margin-bottom: 0; }
 
+small {
+  color: #888888; }
+
 .domd, ol.fancy-list > li:before {
   font-family: 'DomD Reg', georgia, serif;
   font-weight: 400;
@@ -5884,12 +5887,9 @@ h6, .h6, .btn {
   letter-spacing: 0; }
 
 h1, .h1 {
-  font-size: 24px; }
+  font-size: 32px; }
   h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
     line-height: 1.1; }
-  @media (min-width: 768px) {
-    h1, .h1 {
-      font-size: 30px; } }
   @media (min-width: 992px) {
     h1, .h1 {
       font-size: 39.063px; } }
@@ -5910,6 +5910,8 @@ h2, .h2 {
   @media (min-width: 992px) {
     h2, .h2 {
       font-size: 31.25px; } }
+  h2.domd, .h2.domd, ol.fancy-list > li.h2:before {
+    font-size: 40px; }
 
 h3, .h3 {
   font-size: 18px;
@@ -5963,6 +5965,9 @@ p.small {
   letter-spacing: .03em;
   line-height: 1.7; }
 
+p.large {
+  font-size: 18px; }
+
 ul, ol {
   margin-bottom: 16px;
   padding-left: 2em; }
@@ -5977,6 +5982,10 @@ hr.hr-small {
   margin-left: 0;
   margin-top: 32px;
   margin-bottom: 32px; }
+
+@media (min-width: 768px) {
+  .t-indent {
+    text-indent: -.21em; } }
 
 .text-center ul,
 .text-center ol {
@@ -6318,17 +6327,20 @@ ol.fancy-list {
 
 .container.container-hero,
 .container-fluid.container-hero {
+  position: relative;
   background: linear-gradient(to right, white 50%, #f8f8f8 50%); }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
+    .container.container-hero,
+    .container-fluid.container-hero {
+      padding-left: 32px;
+      padding-right: 32px; } }
+  @media (min-width: 1264px) {
     .container.container-hero > .row,
     .container-fluid.container-hero > .row {
-      max-width: 2000px;
-      margin-left: auto;
-      margin-right: auto;
       min-height: calc(100vh - 96px); }
       .container.container-hero > .row .container-hero-image img,
       .container-fluid.container-hero > .row .container-hero-image img {
-        max-height: 75vh; } }
+        max-height: calc(80vh - 96px); } }
 
 .pusher-xs-top-xs {
   margin-top: 4px; }
@@ -6478,6 +6490,156 @@ ol.fancy-list {
   .pusher-lg-btm-clear {
     margin-bottom: 0; }
   .copy.pusher-lg-btm-clear {
+    margin-bottom: 0; } }
+
+.pusher-xs-right-xs {
+  margin-right: 4px; }
+
+.pusher-xs-right-sm {
+  margin-right: 8px; }
+
+.pusher-xs-right-md {
+  margin-right: 16px; }
+
+.pusher-xs-right-lg {
+  margin-right: 32px; }
+
+.pusher-xs-right-xl {
+  margin-right: 64px; }
+
+.pusher-xs-right-xxl {
+  margin-right: 128px; }
+
+.pusher-xs-right-clear {
+  margin-right: 0; }
+
+.copy.pusher-xs-right-clear {
+  margin-right: 0; }
+
+.pusher-xs-left-xs {
+  margin-bottom: 4px; }
+
+.pusher-xs-left-sm {
+  margin-bottom: 8px; }
+
+.pusher-xs-left-md {
+  margin-bottom: 16px; }
+
+.pusher-xs-left-lg {
+  margin-bottom: 32px; }
+
+.pusher-xs-left-xl {
+  margin-bottom: 64px; }
+
+.pusher-xs-left-xxl {
+  margin-bottom: 128px; }
+
+.pusher-xs-left-clear {
+  margin-bottom: 0; }
+
+.copy.pusher-xs-left-clear {
+  margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .pusher-sm-right-xs {
+    margin-right: 4px; }
+  .pusher-sm-right-sm {
+    margin-right: 8px; }
+  .pusher-sm-right-md {
+    margin-right: 16px; }
+  .pusher-sm-right-lg {
+    margin-right: 32px; }
+  .pusher-sm-right-xl {
+    margin-right: 64px; }
+  .pusher-sm-right-xxl {
+    margin-right: 128px; }
+  .pusher-sm-right-clear {
+    margin-right: 0; }
+  .copy.pusher-sm-right-clear {
+    margin-right: 0; }
+  .pusher-sm-left-xs {
+    margin-bottom: 4px; }
+  .pusher-sm-left-sm {
+    margin-bottom: 8px; }
+  .pusher-sm-left-md {
+    margin-bottom: 16px; }
+  .pusher-sm-left-lg {
+    margin-bottom: 32px; }
+  .pusher-sm-left-xl {
+    margin-bottom: 64px; }
+  .pusher-sm-left-xxl {
+    margin-bottom: 128px; }
+  .pusher-sm-left-clear {
+    margin-bottom: 0; }
+  .copy.pusher-sm-left-clear {
+    margin-bottom: 0; } }
+
+@media (min-width: 992px) {
+  .pusher-md-right-xs {
+    margin-right: 4px; }
+  .pusher-md-right-sm {
+    margin-right: 8px; }
+  .pusher-md-right-md {
+    margin-right: 16px; }
+  .pusher-md-right-lg {
+    margin-right: 32px; }
+  .pusher-md-right-xl {
+    margin-right: 64px; }
+  .pusher-md-right-xxl {
+    margin-right: 128px; }
+  .pusher-md-right-clear {
+    margin-right: 0; }
+  .copy.pusher-md-right-clear {
+    margin-right: 0; }
+  .pusher-md-left-xs {
+    margin-bottom: 4px; }
+  .pusher-md-left-sm {
+    margin-bottom: 8px; }
+  .pusher-md-left-md {
+    margin-bottom: 16px; }
+  .pusher-md-left-lg {
+    margin-bottom: 32px; }
+  .pusher-md-left-xl {
+    margin-bottom: 64px; }
+  .pusher-md-left-xxl {
+    margin-bottom: 128px; }
+  .pusher-md-left-clear {
+    margin-bottom: 0; }
+  .copy.pusher-md-left-clear {
+    margin-bottom: 0; } }
+
+@media (min-width: 1264px) {
+  .pusher-lg-right-xs {
+    margin-right: 4px; }
+  .pusher-lg-right-sm {
+    margin-right: 8px; }
+  .pusher-lg-right-md {
+    margin-right: 16px; }
+  .pusher-lg-right-lg {
+    margin-right: 32px; }
+  .pusher-lg-right-xl {
+    margin-right: 64px; }
+  .pusher-lg-right-xxl {
+    margin-right: 128px; }
+  .pusher-lg-right-clear {
+    margin-right: 0; }
+  .copy.pusher-lg-right-clear {
+    margin-right: 0; }
+  .pusher-lg-left-xs {
+    margin-bottom: 4px; }
+  .pusher-lg-left-sm {
+    margin-bottom: 8px; }
+  .pusher-lg-left-md {
+    margin-bottom: 16px; }
+  .pusher-lg-left-lg {
+    margin-bottom: 32px; }
+  .pusher-lg-left-xl {
+    margin-bottom: 64px; }
+  .pusher-lg-left-xxl {
+    margin-bottom: 128px; }
+  .pusher-lg-left-clear {
+    margin-bottom: 0; }
+  .copy.pusher-lg-left-clear {
     margin-bottom: 0; } }
 
 .puller-xs-top-xs {
@@ -6795,6 +6957,21 @@ ol.fancy-list {
 .no-margin-left {
   margin-left: 0; }
 
+.no-padding {
+  padding: 0; }
+
+.no-padding-top {
+  padding-top: 0; }
+
+.no-padding-right {
+  padding-right: 0; }
+
+.no-padding-bottom {
+  padding-bottom: 0; }
+
+.no-padding-left {
+  padding-left: 0; }
+
 @media (min-width: 768px) {
   .align-vertical {
     display: -webkit-box;
@@ -6834,7 +7011,8 @@ ol.fancy-list {
     -ms-flex-align: end; } }
 
 .btn {
-  line-height: 1; }
+  line-height: 1;
+  white-space: normal; }
 
 .btn-lg, .btn-group-lg > .btn {
   font-size: 16px; }
@@ -6869,6 +7047,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-default.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-default.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-default.btn-no-hover, .btn-hollow-default.btn-no-hover:hover, .btn-hollow-default.btn-no-hover:focus, .btn-hollow-default.btn-no-hover.focus, .btn-hollow-default.btn-no-hover:active, .btn-hollow-default.btn-no-hover.active {
+      box-shadow: none;
+      color: #000; }
+      .btn-hollow-default.btn-no-hover:hover, .btn-hollow-default.btn-no-hover:focus, .btn-hollow-default.btn-no-hover:hover:hover, .btn-hollow-default.btn-no-hover:hover:focus, .btn-hollow-default.btn-no-hover:focus:hover, .btn-hollow-default.btn-no-hover:focus:focus, .btn-hollow-default.btn-no-hover.focus:hover, .btn-hollow-default.btn-no-hover.focus:focus, .btn-hollow-default.btn-no-hover:active:hover, .btn-hollow-default.btn-no-hover:active:focus, .btn-hollow-default.btn-no-hover.active:hover, .btn-hollow-default.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: #e6e6e6;
+        color: #000; }
+      .btn-hollow-default.btn-no-hover:active, .btn-hollow-default.btn-no-hover.active, .btn-hollow-default.btn-no-hover:focus:active, .btn-hollow-default.btn-no-hover:hover:active, .btn-hollow-default.btn-no-hover:hover.active, .btn-hollow-default.btn-no-hover:hover:focus:active, .btn-hollow-default.btn-no-hover:focus:active, .btn-hollow-default.btn-no-hover:focus.active, .btn-hollow-default.btn-no-hover:focus:focus:active, .btn-hollow-default.btn-no-hover.focus:active, .btn-hollow-default.btn-no-hover.focus.active, .btn-hollow-default.btn-no-hover.focus:focus:active, .btn-hollow-default.btn-no-hover:active:active, .btn-hollow-default.btn-no-hover:active.active, .btn-hollow-default.btn-no-hover:active:focus:active, .btn-hollow-default.btn-no-hover.active:active, .btn-hollow-default.btn-no-hover.active.active, .btn-hollow-default.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: #e6e6e6;
+        color: #000; }
 
 .btn-hollow-primary {
   background-color: white;
@@ -6893,6 +7084,18 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-primary.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-primary.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-primary.btn-no-hover, .btn-hollow-primary.btn-no-hover:hover, .btn-hollow-primary.btn-no-hover:focus, .btn-hollow-primary.btn-no-hover.focus, .btn-hollow-primary.btn-no-hover:active, .btn-hollow-primary.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-primary.btn-no-hover:hover, .btn-hollow-primary.btn-no-hover:focus, .btn-hollow-primary.btn-no-hover:hover:hover, .btn-hollow-primary.btn-no-hover:hover:focus, .btn-hollow-primary.btn-no-hover:focus:hover, .btn-hollow-primary.btn-no-hover:focus:focus, .btn-hollow-primary.btn-no-hover.focus:hover, .btn-hollow-primary.btn-no-hover.focus:focus, .btn-hollow-primary.btn-no-hover:active:hover, .btn-hollow-primary.btn-no-hover:active:focus, .btn-hollow-primary.btn-no-hover.active:hover, .btn-hollow-primary.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: #000;
+        color: #000; }
+      .btn-hollow-primary.btn-no-hover:active, .btn-hollow-primary.btn-no-hover.active, .btn-hollow-primary.btn-no-hover:focus:active, .btn-hollow-primary.btn-no-hover:hover:active, .btn-hollow-primary.btn-no-hover:hover.active, .btn-hollow-primary.btn-no-hover:hover:focus:active, .btn-hollow-primary.btn-no-hover:focus:active, .btn-hollow-primary.btn-no-hover:focus.active, .btn-hollow-primary.btn-no-hover:focus:focus:active, .btn-hollow-primary.btn-no-hover.focus:active, .btn-hollow-primary.btn-no-hover.focus.active, .btn-hollow-primary.btn-no-hover.focus:focus:active, .btn-hollow-primary.btn-no-hover:active:active, .btn-hollow-primary.btn-no-hover:active.active, .btn-hollow-primary.btn-no-hover:active:focus:active, .btn-hollow-primary.btn-no-hover.active:active, .btn-hollow-primary.btn-no-hover.active.active, .btn-hollow-primary.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: #000;
+        color: #000; }
 
 .btn-hollow-success {
   background-color: white;
@@ -6917,6 +7120,18 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-success.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-success.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-success.btn-no-hover, .btn-hollow-success.btn-no-hover:hover, .btn-hollow-success.btn-no-hover:focus, .btn-hollow-success.btn-no-hover.focus, .btn-hollow-success.btn-no-hover:active, .btn-hollow-success.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-success.btn-no-hover:hover, .btn-hollow-success.btn-no-hover:focus, .btn-hollow-success.btn-no-hover:hover:hover, .btn-hollow-success.btn-no-hover:hover:focus, .btn-hollow-success.btn-no-hover:focus:hover, .btn-hollow-success.btn-no-hover:focus:focus, .btn-hollow-success.btn-no-hover.focus:hover, .btn-hollow-success.btn-no-hover.focus:focus, .btn-hollow-success.btn-no-hover:active:hover, .btn-hollow-success.btn-no-hover:active:focus, .btn-hollow-success.btn-no-hover.active:hover, .btn-hollow-success.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: #7cab85;
+        color: #7cab85; }
+      .btn-hollow-success.btn-no-hover:active, .btn-hollow-success.btn-no-hover.active, .btn-hollow-success.btn-no-hover:focus:active, .btn-hollow-success.btn-no-hover:hover:active, .btn-hollow-success.btn-no-hover:hover.active, .btn-hollow-success.btn-no-hover:hover:focus:active, .btn-hollow-success.btn-no-hover:focus:active, .btn-hollow-success.btn-no-hover:focus.active, .btn-hollow-success.btn-no-hover:focus:focus:active, .btn-hollow-success.btn-no-hover.focus:active, .btn-hollow-success.btn-no-hover.focus.active, .btn-hollow-success.btn-no-hover.focus:focus:active, .btn-hollow-success.btn-no-hover:active:active, .btn-hollow-success.btn-no-hover:active.active, .btn-hollow-success.btn-no-hover:active:focus:active, .btn-hollow-success.btn-no-hover.active:active, .btn-hollow-success.btn-no-hover.active.active, .btn-hollow-success.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: #7cab85;
+        color: #7cab85; }
 
 .btn-hollow-info {
   background-color: white;
@@ -6941,6 +7156,18 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-info.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-info.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-info.btn-no-hover, .btn-hollow-info.btn-no-hover:hover, .btn-hollow-info.btn-no-hover:focus, .btn-hollow-info.btn-no-hover.focus, .btn-hollow-info.btn-no-hover:active, .btn-hollow-info.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-info.btn-no-hover:hover, .btn-hollow-info.btn-no-hover:focus, .btn-hollow-info.btn-no-hover:hover:hover, .btn-hollow-info.btn-no-hover:hover:focus, .btn-hollow-info.btn-no-hover:focus:hover, .btn-hollow-info.btn-no-hover:focus:focus, .btn-hollow-info.btn-no-hover.focus:hover, .btn-hollow-info.btn-no-hover.focus:focus, .btn-hollow-info.btn-no-hover:active:hover, .btn-hollow-info.btn-no-hover:active:focus, .btn-hollow-info.btn-no-hover.active:hover, .btn-hollow-info.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: #D5C197;
+        color: #D5C197; }
+      .btn-hollow-info.btn-no-hover:active, .btn-hollow-info.btn-no-hover.active, .btn-hollow-info.btn-no-hover:focus:active, .btn-hollow-info.btn-no-hover:hover:active, .btn-hollow-info.btn-no-hover:hover.active, .btn-hollow-info.btn-no-hover:hover:focus:active, .btn-hollow-info.btn-no-hover:focus:active, .btn-hollow-info.btn-no-hover:focus.active, .btn-hollow-info.btn-no-hover:focus:focus:active, .btn-hollow-info.btn-no-hover.focus:active, .btn-hollow-info.btn-no-hover.focus.active, .btn-hollow-info.btn-no-hover.focus:focus:active, .btn-hollow-info.btn-no-hover:active:active, .btn-hollow-info.btn-no-hover:active.active, .btn-hollow-info.btn-no-hover:active:focus:active, .btn-hollow-info.btn-no-hover.active:active, .btn-hollow-info.btn-no-hover.active.active, .btn-hollow-info.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: #D5C197;
+        color: #D5C197; }
 
 .btn-hollow-warning {
   background-color: white;
@@ -6965,6 +7192,18 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-warning.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-warning.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-warning.btn-no-hover, .btn-hollow-warning.btn-no-hover:hover, .btn-hollow-warning.btn-no-hover:focus, .btn-hollow-warning.btn-no-hover.focus, .btn-hollow-warning.btn-no-hover:active, .btn-hollow-warning.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-warning.btn-no-hover:hover, .btn-hollow-warning.btn-no-hover:focus, .btn-hollow-warning.btn-no-hover:hover:hover, .btn-hollow-warning.btn-no-hover:hover:focus, .btn-hollow-warning.btn-no-hover:focus:hover, .btn-hollow-warning.btn-no-hover:focus:focus, .btn-hollow-warning.btn-no-hover.focus:hover, .btn-hollow-warning.btn-no-hover.focus:focus, .btn-hollow-warning.btn-no-hover:active:hover, .btn-hollow-warning.btn-no-hover:active:focus, .btn-hollow-warning.btn-no-hover.active:hover, .btn-hollow-warning.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: #dccba8;
+        color: #dccba8; }
+      .btn-hollow-warning.btn-no-hover:active, .btn-hollow-warning.btn-no-hover.active, .btn-hollow-warning.btn-no-hover:focus:active, .btn-hollow-warning.btn-no-hover:hover:active, .btn-hollow-warning.btn-no-hover:hover.active, .btn-hollow-warning.btn-no-hover:hover:focus:active, .btn-hollow-warning.btn-no-hover:focus:active, .btn-hollow-warning.btn-no-hover:focus.active, .btn-hollow-warning.btn-no-hover:focus:focus:active, .btn-hollow-warning.btn-no-hover.focus:active, .btn-hollow-warning.btn-no-hover.focus.active, .btn-hollow-warning.btn-no-hover.focus:focus:active, .btn-hollow-warning.btn-no-hover:active:active, .btn-hollow-warning.btn-no-hover:active.active, .btn-hollow-warning.btn-no-hover:active:focus:active, .btn-hollow-warning.btn-no-hover.active:active, .btn-hollow-warning.btn-no-hover.active.active, .btn-hollow-warning.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: #dccba8;
+        color: #dccba8; }
 
 .btn-hollow-danger {
   background-color: white;
@@ -6989,6 +7228,18 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-danger.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-danger.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-danger.btn-no-hover, .btn-hollow-danger.btn-no-hover:hover, .btn-hollow-danger.btn-no-hover:focus, .btn-hollow-danger.btn-no-hover.focus, .btn-hollow-danger.btn-no-hover:active, .btn-hollow-danger.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-danger.btn-no-hover:hover, .btn-hollow-danger.btn-no-hover:focus, .btn-hollow-danger.btn-no-hover:hover:hover, .btn-hollow-danger.btn-no-hover:hover:focus, .btn-hollow-danger.btn-no-hover:focus:hover, .btn-hollow-danger.btn-no-hover:focus:focus, .btn-hollow-danger.btn-no-hover.focus:hover, .btn-hollow-danger.btn-no-hover.focus:focus, .btn-hollow-danger.btn-no-hover:active:hover, .btn-hollow-danger.btn-no-hover:active:focus, .btn-hollow-danger.btn-no-hover.active:hover, .btn-hollow-danger.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: #b45250;
+        color: #b45250; }
+      .btn-hollow-danger.btn-no-hover:active, .btn-hollow-danger.btn-no-hover.active, .btn-hollow-danger.btn-no-hover:focus:active, .btn-hollow-danger.btn-no-hover:hover:active, .btn-hollow-danger.btn-no-hover:hover.active, .btn-hollow-danger.btn-no-hover:hover:focus:active, .btn-hollow-danger.btn-no-hover:focus:active, .btn-hollow-danger.btn-no-hover:focus.active, .btn-hollow-danger.btn-no-hover:focus:focus:active, .btn-hollow-danger.btn-no-hover.focus:active, .btn-hollow-danger.btn-no-hover.focus.active, .btn-hollow-danger.btn-no-hover.focus:focus:active, .btn-hollow-danger.btn-no-hover:active:active, .btn-hollow-danger.btn-no-hover:active.active, .btn-hollow-danger.btn-no-hover:active:focus:active, .btn-hollow-danger.btn-no-hover.active:active, .btn-hollow-danger.btn-no-hover.active.active, .btn-hollow-danger.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: #b45250;
+        color: #b45250; }
 
 .btn-hollow-inverse {
   background-color: white;
@@ -7014,6 +7265,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-inverse.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-inverse.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-inverse.btn-no-hover, .btn-hollow-inverse.btn-no-hover:hover, .btn-hollow-inverse.btn-no-hover:focus, .btn-hollow-inverse.btn-no-hover.focus, .btn-hollow-inverse.btn-no-hover:active, .btn-hollow-inverse.btn-no-hover.active {
+      box-shadow: none;
+      color: #000; }
+      .btn-hollow-inverse.btn-no-hover:hover, .btn-hollow-inverse.btn-no-hover:focus, .btn-hollow-inverse.btn-no-hover:hover:hover, .btn-hollow-inverse.btn-no-hover:hover:focus, .btn-hollow-inverse.btn-no-hover:focus:hover, .btn-hollow-inverse.btn-no-hover:focus:focus, .btn-hollow-inverse.btn-no-hover.focus:hover, .btn-hollow-inverse.btn-no-hover.focus:focus, .btn-hollow-inverse.btn-no-hover:active:hover, .btn-hollow-inverse.btn-no-hover:active:focus, .btn-hollow-inverse.btn-no-hover.active:hover, .btn-hollow-inverse.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: white;
+        color: #000; }
+      .btn-hollow-inverse.btn-no-hover:active, .btn-hollow-inverse.btn-no-hover.active, .btn-hollow-inverse.btn-no-hover:focus:active, .btn-hollow-inverse.btn-no-hover:hover:active, .btn-hollow-inverse.btn-no-hover:hover.active, .btn-hollow-inverse.btn-no-hover:hover:focus:active, .btn-hollow-inverse.btn-no-hover:focus:active, .btn-hollow-inverse.btn-no-hover:focus.active, .btn-hollow-inverse.btn-no-hover:focus:focus:active, .btn-hollow-inverse.btn-no-hover.focus:active, .btn-hollow-inverse.btn-no-hover.focus.active, .btn-hollow-inverse.btn-no-hover.focus:focus:active, .btn-hollow-inverse.btn-no-hover:active:active, .btn-hollow-inverse.btn-no-hover:active.active, .btn-hollow-inverse.btn-no-hover:active:focus:active, .btn-hollow-inverse.btn-no-hover.active:active, .btn-hollow-inverse.btn-no-hover.active.active, .btn-hollow-inverse.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: white;
+        color: #000; }
 
 .btn-hollow-transparent-default {
   background-color: transparent;
@@ -7039,6 +7303,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-transparent-default.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-transparent-default.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-transparent-default.btn-no-hover, .btn-hollow-transparent-default.btn-no-hover:hover, .btn-hollow-transparent-default.btn-no-hover:focus, .btn-hollow-transparent-default.btn-no-hover.focus, .btn-hollow-transparent-default.btn-no-hover:active, .btn-hollow-transparent-default.btn-no-hover.active {
+      box-shadow: none;
+      color: #000; }
+      .btn-hollow-transparent-default.btn-no-hover:hover, .btn-hollow-transparent-default.btn-no-hover:focus, .btn-hollow-transparent-default.btn-no-hover:hover:hover, .btn-hollow-transparent-default.btn-no-hover:hover:focus, .btn-hollow-transparent-default.btn-no-hover:focus:hover, .btn-hollow-transparent-default.btn-no-hover:focus:focus, .btn-hollow-transparent-default.btn-no-hover.focus:hover, .btn-hollow-transparent-default.btn-no-hover.focus:focus, .btn-hollow-transparent-default.btn-no-hover:active:hover, .btn-hollow-transparent-default.btn-no-hover:active:focus, .btn-hollow-transparent-default.btn-no-hover.active:hover, .btn-hollow-transparent-default.btn-no-hover.active:focus {
+        background-color: transparent;
+        border-color: #e6e6e6;
+        color: #000; }
+      .btn-hollow-transparent-default.btn-no-hover:active, .btn-hollow-transparent-default.btn-no-hover.active, .btn-hollow-transparent-default.btn-no-hover:focus:active, .btn-hollow-transparent-default.btn-no-hover:hover:active, .btn-hollow-transparent-default.btn-no-hover:hover.active, .btn-hollow-transparent-default.btn-no-hover:hover:focus:active, .btn-hollow-transparent-default.btn-no-hover:focus:active, .btn-hollow-transparent-default.btn-no-hover:focus.active, .btn-hollow-transparent-default.btn-no-hover:focus:focus:active, .btn-hollow-transparent-default.btn-no-hover.focus:active, .btn-hollow-transparent-default.btn-no-hover.focus.active, .btn-hollow-transparent-default.btn-no-hover.focus:focus:active, .btn-hollow-transparent-default.btn-no-hover:active:active, .btn-hollow-transparent-default.btn-no-hover:active.active, .btn-hollow-transparent-default.btn-no-hover:active:focus:active, .btn-hollow-transparent-default.btn-no-hover.active:active, .btn-hollow-transparent-default.btn-no-hover.active.active, .btn-hollow-transparent-default.btn-no-hover.active:focus:active {
+        background-color: transparent;
+        border-color: #e6e6e6;
+        color: #000; }
 
 .btn-hollow-transparent-primary {
   background-color: transparent;
@@ -7063,6 +7340,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-transparent-primary.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-transparent-primary.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-transparent-primary.btn-no-hover, .btn-hollow-transparent-primary.btn-no-hover:hover, .btn-hollow-transparent-primary.btn-no-hover:focus, .btn-hollow-transparent-primary.btn-no-hover.focus, .btn-hollow-transparent-primary.btn-no-hover:active, .btn-hollow-transparent-primary.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-transparent-primary.btn-no-hover:hover, .btn-hollow-transparent-primary.btn-no-hover:focus, .btn-hollow-transparent-primary.btn-no-hover:hover:hover, .btn-hollow-transparent-primary.btn-no-hover:hover:focus, .btn-hollow-transparent-primary.btn-no-hover:focus:hover, .btn-hollow-transparent-primary.btn-no-hover:focus:focus, .btn-hollow-transparent-primary.btn-no-hover.focus:hover, .btn-hollow-transparent-primary.btn-no-hover.focus:focus, .btn-hollow-transparent-primary.btn-no-hover:active:hover, .btn-hollow-transparent-primary.btn-no-hover:active:focus, .btn-hollow-transparent-primary.btn-no-hover.active:hover, .btn-hollow-transparent-primary.btn-no-hover.active:focus {
+        background-color: transparent;
+        border-color: #000;
+        color: #000;
+        color: white; }
+      .btn-hollow-transparent-primary.btn-no-hover:active, .btn-hollow-transparent-primary.btn-no-hover.active, .btn-hollow-transparent-primary.btn-no-hover:focus:active, .btn-hollow-transparent-primary.btn-no-hover:hover:active, .btn-hollow-transparent-primary.btn-no-hover:hover.active, .btn-hollow-transparent-primary.btn-no-hover:hover:focus:active, .btn-hollow-transparent-primary.btn-no-hover:focus:active, .btn-hollow-transparent-primary.btn-no-hover:focus.active, .btn-hollow-transparent-primary.btn-no-hover:focus:focus:active, .btn-hollow-transparent-primary.btn-no-hover.focus:active, .btn-hollow-transparent-primary.btn-no-hover.focus.active, .btn-hollow-transparent-primary.btn-no-hover.focus:focus:active, .btn-hollow-transparent-primary.btn-no-hover:active:active, .btn-hollow-transparent-primary.btn-no-hover:active.active, .btn-hollow-transparent-primary.btn-no-hover:active:focus:active, .btn-hollow-transparent-primary.btn-no-hover.active:active, .btn-hollow-transparent-primary.btn-no-hover.active.active, .btn-hollow-transparent-primary.btn-no-hover.active:focus:active {
+        background-color: transparent;
+        border-color: #000;
+        color: white; }
 
 .btn-hollow-transparent-success {
   background-color: transparent;
@@ -7087,6 +7377,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-transparent-success.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-transparent-success.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-transparent-success.btn-no-hover, .btn-hollow-transparent-success.btn-no-hover:hover, .btn-hollow-transparent-success.btn-no-hover:focus, .btn-hollow-transparent-success.btn-no-hover.focus, .btn-hollow-transparent-success.btn-no-hover:active, .btn-hollow-transparent-success.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-transparent-success.btn-no-hover:hover, .btn-hollow-transparent-success.btn-no-hover:focus, .btn-hollow-transparent-success.btn-no-hover:hover:hover, .btn-hollow-transparent-success.btn-no-hover:hover:focus, .btn-hollow-transparent-success.btn-no-hover:focus:hover, .btn-hollow-transparent-success.btn-no-hover:focus:focus, .btn-hollow-transparent-success.btn-no-hover.focus:hover, .btn-hollow-transparent-success.btn-no-hover.focus:focus, .btn-hollow-transparent-success.btn-no-hover:active:hover, .btn-hollow-transparent-success.btn-no-hover:active:focus, .btn-hollow-transparent-success.btn-no-hover.active:hover, .btn-hollow-transparent-success.btn-no-hover.active:focus {
+        background-color: transparent;
+        border-color: #7cab85;
+        color: #7cab85;
+        color: white; }
+      .btn-hollow-transparent-success.btn-no-hover:active, .btn-hollow-transparent-success.btn-no-hover.active, .btn-hollow-transparent-success.btn-no-hover:focus:active, .btn-hollow-transparent-success.btn-no-hover:hover:active, .btn-hollow-transparent-success.btn-no-hover:hover.active, .btn-hollow-transparent-success.btn-no-hover:hover:focus:active, .btn-hollow-transparent-success.btn-no-hover:focus:active, .btn-hollow-transparent-success.btn-no-hover:focus.active, .btn-hollow-transparent-success.btn-no-hover:focus:focus:active, .btn-hollow-transparent-success.btn-no-hover.focus:active, .btn-hollow-transparent-success.btn-no-hover.focus.active, .btn-hollow-transparent-success.btn-no-hover.focus:focus:active, .btn-hollow-transparent-success.btn-no-hover:active:active, .btn-hollow-transparent-success.btn-no-hover:active.active, .btn-hollow-transparent-success.btn-no-hover:active:focus:active, .btn-hollow-transparent-success.btn-no-hover.active:active, .btn-hollow-transparent-success.btn-no-hover.active.active, .btn-hollow-transparent-success.btn-no-hover.active:focus:active {
+        background-color: transparent;
+        border-color: #7cab85;
+        color: white; }
 
 .btn-hollow-transparent-info {
   background-color: transparent;
@@ -7111,6 +7414,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-transparent-info.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-transparent-info.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-transparent-info.btn-no-hover, .btn-hollow-transparent-info.btn-no-hover:hover, .btn-hollow-transparent-info.btn-no-hover:focus, .btn-hollow-transparent-info.btn-no-hover.focus, .btn-hollow-transparent-info.btn-no-hover:active, .btn-hollow-transparent-info.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-transparent-info.btn-no-hover:hover, .btn-hollow-transparent-info.btn-no-hover:focus, .btn-hollow-transparent-info.btn-no-hover:hover:hover, .btn-hollow-transparent-info.btn-no-hover:hover:focus, .btn-hollow-transparent-info.btn-no-hover:focus:hover, .btn-hollow-transparent-info.btn-no-hover:focus:focus, .btn-hollow-transparent-info.btn-no-hover.focus:hover, .btn-hollow-transparent-info.btn-no-hover.focus:focus, .btn-hollow-transparent-info.btn-no-hover:active:hover, .btn-hollow-transparent-info.btn-no-hover:active:focus, .btn-hollow-transparent-info.btn-no-hover.active:hover, .btn-hollow-transparent-info.btn-no-hover.active:focus {
+        background-color: transparent;
+        border-color: #D5C197;
+        color: #D5C197;
+        color: white; }
+      .btn-hollow-transparent-info.btn-no-hover:active, .btn-hollow-transparent-info.btn-no-hover.active, .btn-hollow-transparent-info.btn-no-hover:focus:active, .btn-hollow-transparent-info.btn-no-hover:hover:active, .btn-hollow-transparent-info.btn-no-hover:hover.active, .btn-hollow-transparent-info.btn-no-hover:hover:focus:active, .btn-hollow-transparent-info.btn-no-hover:focus:active, .btn-hollow-transparent-info.btn-no-hover:focus.active, .btn-hollow-transparent-info.btn-no-hover:focus:focus:active, .btn-hollow-transparent-info.btn-no-hover.focus:active, .btn-hollow-transparent-info.btn-no-hover.focus.active, .btn-hollow-transparent-info.btn-no-hover.focus:focus:active, .btn-hollow-transparent-info.btn-no-hover:active:active, .btn-hollow-transparent-info.btn-no-hover:active.active, .btn-hollow-transparent-info.btn-no-hover:active:focus:active, .btn-hollow-transparent-info.btn-no-hover.active:active, .btn-hollow-transparent-info.btn-no-hover.active.active, .btn-hollow-transparent-info.btn-no-hover.active:focus:active {
+        background-color: transparent;
+        border-color: #D5C197;
+        color: white; }
 
 .btn-hollow-transparent-warning {
   background-color: transparent;
@@ -7135,6 +7451,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-transparent-warning.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-transparent-warning.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-transparent-warning.btn-no-hover, .btn-hollow-transparent-warning.btn-no-hover:hover, .btn-hollow-transparent-warning.btn-no-hover:focus, .btn-hollow-transparent-warning.btn-no-hover.focus, .btn-hollow-transparent-warning.btn-no-hover:active, .btn-hollow-transparent-warning.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-transparent-warning.btn-no-hover:hover, .btn-hollow-transparent-warning.btn-no-hover:focus, .btn-hollow-transparent-warning.btn-no-hover:hover:hover, .btn-hollow-transparent-warning.btn-no-hover:hover:focus, .btn-hollow-transparent-warning.btn-no-hover:focus:hover, .btn-hollow-transparent-warning.btn-no-hover:focus:focus, .btn-hollow-transparent-warning.btn-no-hover.focus:hover, .btn-hollow-transparent-warning.btn-no-hover.focus:focus, .btn-hollow-transparent-warning.btn-no-hover:active:hover, .btn-hollow-transparent-warning.btn-no-hover:active:focus, .btn-hollow-transparent-warning.btn-no-hover.active:hover, .btn-hollow-transparent-warning.btn-no-hover.active:focus {
+        background-color: transparent;
+        border-color: #dccba8;
+        color: #dccba8;
+        color: white; }
+      .btn-hollow-transparent-warning.btn-no-hover:active, .btn-hollow-transparent-warning.btn-no-hover.active, .btn-hollow-transparent-warning.btn-no-hover:focus:active, .btn-hollow-transparent-warning.btn-no-hover:hover:active, .btn-hollow-transparent-warning.btn-no-hover:hover.active, .btn-hollow-transparent-warning.btn-no-hover:hover:focus:active, .btn-hollow-transparent-warning.btn-no-hover:focus:active, .btn-hollow-transparent-warning.btn-no-hover:focus.active, .btn-hollow-transparent-warning.btn-no-hover:focus:focus:active, .btn-hollow-transparent-warning.btn-no-hover.focus:active, .btn-hollow-transparent-warning.btn-no-hover.focus.active, .btn-hollow-transparent-warning.btn-no-hover.focus:focus:active, .btn-hollow-transparent-warning.btn-no-hover:active:active, .btn-hollow-transparent-warning.btn-no-hover:active.active, .btn-hollow-transparent-warning.btn-no-hover:active:focus:active, .btn-hollow-transparent-warning.btn-no-hover.active:active, .btn-hollow-transparent-warning.btn-no-hover.active.active, .btn-hollow-transparent-warning.btn-no-hover.active:focus:active {
+        background-color: transparent;
+        border-color: #dccba8;
+        color: white; }
 
 .btn-hollow-transparent-danger {
   background-color: transparent;
@@ -7159,6 +7488,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-transparent-danger.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-transparent-danger.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-transparent-danger.btn-no-hover, .btn-hollow-transparent-danger.btn-no-hover:hover, .btn-hollow-transparent-danger.btn-no-hover:focus, .btn-hollow-transparent-danger.btn-no-hover.focus, .btn-hollow-transparent-danger.btn-no-hover:active, .btn-hollow-transparent-danger.btn-no-hover.active {
+      box-shadow: none; }
+      .btn-hollow-transparent-danger.btn-no-hover:hover, .btn-hollow-transparent-danger.btn-no-hover:focus, .btn-hollow-transparent-danger.btn-no-hover:hover:hover, .btn-hollow-transparent-danger.btn-no-hover:hover:focus, .btn-hollow-transparent-danger.btn-no-hover:focus:hover, .btn-hollow-transparent-danger.btn-no-hover:focus:focus, .btn-hollow-transparent-danger.btn-no-hover.focus:hover, .btn-hollow-transparent-danger.btn-no-hover.focus:focus, .btn-hollow-transparent-danger.btn-no-hover:active:hover, .btn-hollow-transparent-danger.btn-no-hover:active:focus, .btn-hollow-transparent-danger.btn-no-hover.active:hover, .btn-hollow-transparent-danger.btn-no-hover.active:focus {
+        background-color: transparent;
+        border-color: #b45250;
+        color: #b45250;
+        color: white; }
+      .btn-hollow-transparent-danger.btn-no-hover:active, .btn-hollow-transparent-danger.btn-no-hover.active, .btn-hollow-transparent-danger.btn-no-hover:focus:active, .btn-hollow-transparent-danger.btn-no-hover:hover:active, .btn-hollow-transparent-danger.btn-no-hover:hover.active, .btn-hollow-transparent-danger.btn-no-hover:hover:focus:active, .btn-hollow-transparent-danger.btn-no-hover:focus:active, .btn-hollow-transparent-danger.btn-no-hover:focus.active, .btn-hollow-transparent-danger.btn-no-hover:focus:focus:active, .btn-hollow-transparent-danger.btn-no-hover.focus:active, .btn-hollow-transparent-danger.btn-no-hover.focus.active, .btn-hollow-transparent-danger.btn-no-hover.focus:focus:active, .btn-hollow-transparent-danger.btn-no-hover:active:active, .btn-hollow-transparent-danger.btn-no-hover:active.active, .btn-hollow-transparent-danger.btn-no-hover:active:focus:active, .btn-hollow-transparent-danger.btn-no-hover.active:active, .btn-hollow-transparent-danger.btn-no-hover.active.active, .btn-hollow-transparent-danger.btn-no-hover.active:focus:active {
+        background-color: transparent;
+        border-color: #b45250;
+        color: white; }
 
 .btn-hollow-transparent-inverse {
   background-color: transparent;
@@ -7184,6 +7526,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-hollow-transparent-inverse.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-hollow-transparent-inverse.btn-no-hover {
+    cursor: default; }
+    .btn-hollow-transparent-inverse.btn-no-hover, .btn-hollow-transparent-inverse.btn-no-hover:hover, .btn-hollow-transparent-inverse.btn-no-hover:focus, .btn-hollow-transparent-inverse.btn-no-hover.focus, .btn-hollow-transparent-inverse.btn-no-hover:active, .btn-hollow-transparent-inverse.btn-no-hover.active {
+      box-shadow: none;
+      color: #000; }
+      .btn-hollow-transparent-inverse.btn-no-hover:hover, .btn-hollow-transparent-inverse.btn-no-hover:focus, .btn-hollow-transparent-inverse.btn-no-hover:hover:hover, .btn-hollow-transparent-inverse.btn-no-hover:hover:focus, .btn-hollow-transparent-inverse.btn-no-hover:focus:hover, .btn-hollow-transparent-inverse.btn-no-hover:focus:focus, .btn-hollow-transparent-inverse.btn-no-hover.focus:hover, .btn-hollow-transparent-inverse.btn-no-hover.focus:focus, .btn-hollow-transparent-inverse.btn-no-hover:active:hover, .btn-hollow-transparent-inverse.btn-no-hover:active:focus, .btn-hollow-transparent-inverse.btn-no-hover.active:hover, .btn-hollow-transparent-inverse.btn-no-hover.active:focus {
+        background-color: transparent;
+        border-color: white;
+        color: #000; }
+      .btn-hollow-transparent-inverse.btn-no-hover:active, .btn-hollow-transparent-inverse.btn-no-hover.active, .btn-hollow-transparent-inverse.btn-no-hover:focus:active, .btn-hollow-transparent-inverse.btn-no-hover:hover:active, .btn-hollow-transparent-inverse.btn-no-hover:hover.active, .btn-hollow-transparent-inverse.btn-no-hover:hover:focus:active, .btn-hollow-transparent-inverse.btn-no-hover:focus:active, .btn-hollow-transparent-inverse.btn-no-hover:focus.active, .btn-hollow-transparent-inverse.btn-no-hover:focus:focus:active, .btn-hollow-transparent-inverse.btn-no-hover.focus:active, .btn-hollow-transparent-inverse.btn-no-hover.focus.active, .btn-hollow-transparent-inverse.btn-no-hover.focus:focus:active, .btn-hollow-transparent-inverse.btn-no-hover:active:active, .btn-hollow-transparent-inverse.btn-no-hover:active.active, .btn-hollow-transparent-inverse.btn-no-hover:active:focus:active, .btn-hollow-transparent-inverse.btn-no-hover.active:active, .btn-hollow-transparent-inverse.btn-no-hover.active.active, .btn-hollow-transparent-inverse.btn-no-hover.active:focus:active {
+        background-color: transparent;
+        border-color: white;
+        color: #000; }
 
 .btn-naked {
   color: #e6e6e6;
@@ -7219,6 +7574,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-white.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-white.btn-no-hover {
+    cursor: default; }
+    .btn-white.btn-no-hover, .btn-white.btn-no-hover:hover, .btn-white.btn-no-hover:focus, .btn-white.btn-no-hover.focus, .btn-white.btn-no-hover:active, .btn-white.btn-no-hover.active {
+      box-shadow: none;
+      color: #000; }
+      .btn-white.btn-no-hover:hover, .btn-white.btn-no-hover:focus, .btn-white.btn-no-hover:hover:hover, .btn-white.btn-no-hover:hover:focus, .btn-white.btn-no-hover:focus:hover, .btn-white.btn-no-hover:focus:focus, .btn-white.btn-no-hover.focus:hover, .btn-white.btn-no-hover.focus:focus, .btn-white.btn-no-hover:active:hover, .btn-white.btn-no-hover:active:focus, .btn-white.btn-no-hover.active:hover, .btn-white.btn-no-hover.active:focus {
+        background-color: white;
+        border-color: white;
+        color: #000; }
+      .btn-white.btn-no-hover:active, .btn-white.btn-no-hover.active, .btn-white.btn-no-hover:focus:active, .btn-white.btn-no-hover:hover:active, .btn-white.btn-no-hover:hover.active, .btn-white.btn-no-hover:hover:focus:active, .btn-white.btn-no-hover:focus:active, .btn-white.btn-no-hover:focus.active, .btn-white.btn-no-hover:focus:focus:active, .btn-white.btn-no-hover.focus:active, .btn-white.btn-no-hover.focus.active, .btn-white.btn-no-hover.focus:focus:active, .btn-white.btn-no-hover:active:active, .btn-white.btn-no-hover:active.active, .btn-white.btn-no-hover:active:focus:active, .btn-white.btn-no-hover.active:active, .btn-white.btn-no-hover.active.active, .btn-white.btn-no-hover.active:focus:active {
+        background-color: white;
+        border-color: white;
+        color: #000; }
 
 .btn-default {
   background-color: #e6e6e6;
@@ -7244,6 +7612,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-default.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-default.btn-no-hover {
+    cursor: default; }
+    .btn-default.btn-no-hover, .btn-default.btn-no-hover:hover, .btn-default.btn-no-hover:focus, .btn-default.btn-no-hover.focus, .btn-default.btn-no-hover:active, .btn-default.btn-no-hover.active {
+      box-shadow: none;
+      color: #000; }
+      .btn-default.btn-no-hover:hover, .btn-default.btn-no-hover:focus, .btn-default.btn-no-hover:hover:hover, .btn-default.btn-no-hover:hover:focus, .btn-default.btn-no-hover:focus:hover, .btn-default.btn-no-hover:focus:focus, .btn-default.btn-no-hover.focus:hover, .btn-default.btn-no-hover.focus:focus, .btn-default.btn-no-hover:active:hover, .btn-default.btn-no-hover:active:focus, .btn-default.btn-no-hover.active:hover, .btn-default.btn-no-hover.active:focus {
+        background-color: #e6e6e6;
+        border-color: #e6e6e6;
+        color: #000; }
+      .btn-default.btn-no-hover:active, .btn-default.btn-no-hover.active, .btn-default.btn-no-hover:focus:active, .btn-default.btn-no-hover:hover:active, .btn-default.btn-no-hover:hover.active, .btn-default.btn-no-hover:hover:focus:active, .btn-default.btn-no-hover:focus:active, .btn-default.btn-no-hover:focus.active, .btn-default.btn-no-hover:focus:focus:active, .btn-default.btn-no-hover.focus:active, .btn-default.btn-no-hover.focus.active, .btn-default.btn-no-hover.focus:focus:active, .btn-default.btn-no-hover:active:active, .btn-default.btn-no-hover:active.active, .btn-default.btn-no-hover:active:focus:active, .btn-default.btn-no-hover.active:active, .btn-default.btn-no-hover.active.active, .btn-default.btn-no-hover.active:focus:active {
+        background-color: #e6e6e6;
+        border-color: #e6e6e6;
+        color: #000; }
 
 .btn-primary {
   background-color: #000;
@@ -7269,6 +7650,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-primary.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-primary.btn-no-hover {
+    cursor: default; }
+    .btn-primary.btn-no-hover, .btn-primary.btn-no-hover:hover, .btn-primary.btn-no-hover:focus, .btn-primary.btn-no-hover.focus, .btn-primary.btn-no-hover:active, .btn-primary.btn-no-hover.active {
+      box-shadow: none;
+      color: white; }
+      .btn-primary.btn-no-hover:hover, .btn-primary.btn-no-hover:focus, .btn-primary.btn-no-hover:hover:hover, .btn-primary.btn-no-hover:hover:focus, .btn-primary.btn-no-hover:focus:hover, .btn-primary.btn-no-hover:focus:focus, .btn-primary.btn-no-hover.focus:hover, .btn-primary.btn-no-hover.focus:focus, .btn-primary.btn-no-hover:active:hover, .btn-primary.btn-no-hover:active:focus, .btn-primary.btn-no-hover.active:hover, .btn-primary.btn-no-hover.active:focus {
+        background-color: #000;
+        border-color: #000;
+        color: white; }
+      .btn-primary.btn-no-hover:active, .btn-primary.btn-no-hover.active, .btn-primary.btn-no-hover:focus:active, .btn-primary.btn-no-hover:hover:active, .btn-primary.btn-no-hover:hover.active, .btn-primary.btn-no-hover:hover:focus:active, .btn-primary.btn-no-hover:focus:active, .btn-primary.btn-no-hover:focus.active, .btn-primary.btn-no-hover:focus:focus:active, .btn-primary.btn-no-hover.focus:active, .btn-primary.btn-no-hover.focus.active, .btn-primary.btn-no-hover.focus:focus:active, .btn-primary.btn-no-hover:active:active, .btn-primary.btn-no-hover:active.active, .btn-primary.btn-no-hover:active:focus:active, .btn-primary.btn-no-hover.active:active, .btn-primary.btn-no-hover.active.active, .btn-primary.btn-no-hover.active:focus:active {
+        background-color: #000;
+        border-color: #000;
+        color: white; }
 
 .btn-success {
   background-color: #7cab85;
@@ -7294,6 +7688,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-success.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-success.btn-no-hover {
+    cursor: default; }
+    .btn-success.btn-no-hover, .btn-success.btn-no-hover:hover, .btn-success.btn-no-hover:focus, .btn-success.btn-no-hover.focus, .btn-success.btn-no-hover:active, .btn-success.btn-no-hover.active {
+      box-shadow: none;
+      color: white; }
+      .btn-success.btn-no-hover:hover, .btn-success.btn-no-hover:focus, .btn-success.btn-no-hover:hover:hover, .btn-success.btn-no-hover:hover:focus, .btn-success.btn-no-hover:focus:hover, .btn-success.btn-no-hover:focus:focus, .btn-success.btn-no-hover.focus:hover, .btn-success.btn-no-hover.focus:focus, .btn-success.btn-no-hover:active:hover, .btn-success.btn-no-hover:active:focus, .btn-success.btn-no-hover.active:hover, .btn-success.btn-no-hover.active:focus {
+        background-color: #7cab85;
+        border-color: #7cab85;
+        color: white; }
+      .btn-success.btn-no-hover:active, .btn-success.btn-no-hover.active, .btn-success.btn-no-hover:focus:active, .btn-success.btn-no-hover:hover:active, .btn-success.btn-no-hover:hover.active, .btn-success.btn-no-hover:hover:focus:active, .btn-success.btn-no-hover:focus:active, .btn-success.btn-no-hover:focus.active, .btn-success.btn-no-hover:focus:focus:active, .btn-success.btn-no-hover.focus:active, .btn-success.btn-no-hover.focus.active, .btn-success.btn-no-hover.focus:focus:active, .btn-success.btn-no-hover:active:active, .btn-success.btn-no-hover:active.active, .btn-success.btn-no-hover:active:focus:active, .btn-success.btn-no-hover.active:active, .btn-success.btn-no-hover.active.active, .btn-success.btn-no-hover.active:focus:active {
+        background-color: #7cab85;
+        border-color: #7cab85;
+        color: white; }
 
 .btn-info {
   background-color: #D5C197;
@@ -7319,6 +7726,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-info.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-info.btn-no-hover {
+    cursor: default; }
+    .btn-info.btn-no-hover, .btn-info.btn-no-hover:hover, .btn-info.btn-no-hover:focus, .btn-info.btn-no-hover.focus, .btn-info.btn-no-hover:active, .btn-info.btn-no-hover.active {
+      box-shadow: none;
+      color: white; }
+      .btn-info.btn-no-hover:hover, .btn-info.btn-no-hover:focus, .btn-info.btn-no-hover:hover:hover, .btn-info.btn-no-hover:hover:focus, .btn-info.btn-no-hover:focus:hover, .btn-info.btn-no-hover:focus:focus, .btn-info.btn-no-hover.focus:hover, .btn-info.btn-no-hover.focus:focus, .btn-info.btn-no-hover:active:hover, .btn-info.btn-no-hover:active:focus, .btn-info.btn-no-hover.active:hover, .btn-info.btn-no-hover.active:focus {
+        background-color: #D5C197;
+        border-color: #D5C197;
+        color: white; }
+      .btn-info.btn-no-hover:active, .btn-info.btn-no-hover.active, .btn-info.btn-no-hover:focus:active, .btn-info.btn-no-hover:hover:active, .btn-info.btn-no-hover:hover.active, .btn-info.btn-no-hover:hover:focus:active, .btn-info.btn-no-hover:focus:active, .btn-info.btn-no-hover:focus.active, .btn-info.btn-no-hover:focus:focus:active, .btn-info.btn-no-hover.focus:active, .btn-info.btn-no-hover.focus.active, .btn-info.btn-no-hover.focus:focus:active, .btn-info.btn-no-hover:active:active, .btn-info.btn-no-hover:active.active, .btn-info.btn-no-hover:active:focus:active, .btn-info.btn-no-hover.active:active, .btn-info.btn-no-hover.active.active, .btn-info.btn-no-hover.active:focus:active {
+        background-color: #D5C197;
+        border-color: #D5C197;
+        color: white; }
 
 .btn-warning {
   background-color: #dccba8;
@@ -7344,6 +7764,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-warning.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-warning.btn-no-hover {
+    cursor: default; }
+    .btn-warning.btn-no-hover, .btn-warning.btn-no-hover:hover, .btn-warning.btn-no-hover:focus, .btn-warning.btn-no-hover.focus, .btn-warning.btn-no-hover:active, .btn-warning.btn-no-hover.active {
+      box-shadow: none;
+      color: white; }
+      .btn-warning.btn-no-hover:hover, .btn-warning.btn-no-hover:focus, .btn-warning.btn-no-hover:hover:hover, .btn-warning.btn-no-hover:hover:focus, .btn-warning.btn-no-hover:focus:hover, .btn-warning.btn-no-hover:focus:focus, .btn-warning.btn-no-hover.focus:hover, .btn-warning.btn-no-hover.focus:focus, .btn-warning.btn-no-hover:active:hover, .btn-warning.btn-no-hover:active:focus, .btn-warning.btn-no-hover.active:hover, .btn-warning.btn-no-hover.active:focus {
+        background-color: #dccba8;
+        border-color: #dccba8;
+        color: white; }
+      .btn-warning.btn-no-hover:active, .btn-warning.btn-no-hover.active, .btn-warning.btn-no-hover:focus:active, .btn-warning.btn-no-hover:hover:active, .btn-warning.btn-no-hover:hover.active, .btn-warning.btn-no-hover:hover:focus:active, .btn-warning.btn-no-hover:focus:active, .btn-warning.btn-no-hover:focus.active, .btn-warning.btn-no-hover:focus:focus:active, .btn-warning.btn-no-hover.focus:active, .btn-warning.btn-no-hover.focus.active, .btn-warning.btn-no-hover.focus:focus:active, .btn-warning.btn-no-hover:active:active, .btn-warning.btn-no-hover:active.active, .btn-warning.btn-no-hover:active:focus:active, .btn-warning.btn-no-hover.active:active, .btn-warning.btn-no-hover.active.active, .btn-warning.btn-no-hover.active:focus:active {
+        background-color: #dccba8;
+        border-color: #dccba8;
+        color: white; }
 
 .btn-danger {
   background-color: #b45250;
@@ -7369,6 +7802,19 @@ ol.fancy-list {
   fieldset[disabled] .btn-danger.active {
     background-color: #f8f8f8;
     color: black; }
+  .btn-danger.btn-no-hover {
+    cursor: default; }
+    .btn-danger.btn-no-hover, .btn-danger.btn-no-hover:hover, .btn-danger.btn-no-hover:focus, .btn-danger.btn-no-hover.focus, .btn-danger.btn-no-hover:active, .btn-danger.btn-no-hover.active {
+      box-shadow: none;
+      color: white; }
+      .btn-danger.btn-no-hover:hover, .btn-danger.btn-no-hover:focus, .btn-danger.btn-no-hover:hover:hover, .btn-danger.btn-no-hover:hover:focus, .btn-danger.btn-no-hover:focus:hover, .btn-danger.btn-no-hover:focus:focus, .btn-danger.btn-no-hover.focus:hover, .btn-danger.btn-no-hover.focus:focus, .btn-danger.btn-no-hover:active:hover, .btn-danger.btn-no-hover:active:focus, .btn-danger.btn-no-hover.active:hover, .btn-danger.btn-no-hover.active:focus {
+        background-color: #b45250;
+        border-color: #b45250;
+        color: white; }
+      .btn-danger.btn-no-hover:active, .btn-danger.btn-no-hover.active, .btn-danger.btn-no-hover:focus:active, .btn-danger.btn-no-hover:hover:active, .btn-danger.btn-no-hover:hover.active, .btn-danger.btn-no-hover:hover:focus:active, .btn-danger.btn-no-hover:focus:active, .btn-danger.btn-no-hover:focus.active, .btn-danger.btn-no-hover:focus:focus:active, .btn-danger.btn-no-hover.focus:active, .btn-danger.btn-no-hover.focus.active, .btn-danger.btn-no-hover.focus:focus:active, .btn-danger.btn-no-hover:active:active, .btn-danger.btn-no-hover:active.active, .btn-danger.btn-no-hover:active:focus:active, .btn-danger.btn-no-hover.active:active, .btn-danger.btn-no-hover.active.active, .btn-danger.btn-no-hover.active:focus:active {
+        background-color: #b45250;
+        border-color: #b45250;
+        color: white; }
 
 .nav-pills .btn-warning:hover, .nav-pills .btn-warning:focus {
   background-color: #dccba8; }
@@ -7381,6 +7827,35 @@ ol.fancy-list {
 
 .btn.pull-right {
   margin-left: 1em; }
+
+.btn-filter.active .glyphicon {
+  display: inline !important;
+  line-height: 0;
+  visibility: visible; }
+
+.btn-primary-fb {
+  background-color: #3b5998;
+  color: white; }
+  .btn-primary-fb:hover {
+    color: #3b5998;
+    background-color: white;
+    border-color: #3b5998; }
+  .btn-primary-fb:active, .btn-primary-fb:focus {
+    background-color: #3b5998;
+    color: white;
+    outline: none; }
+  .btn-primary-fb:before {
+    font-family: 'icomoon-20161125';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e900";
+    padding-right: 0.4em; }
 
 .promo-banner {
   background-color: #f8f8f8; }
@@ -7639,8 +8114,23 @@ blockquote {
 .panel-group .panel-naked .panel-collapse > .panel-body {
   border: none; }
 
+.panel-skinny .panel-body,
+.panel-skinny .panel-heading,
+.panel-skinny .panel-footer {
+  padding: 16px; }
+
 .table > thead > tr > th {
   border-bottom: 1px solid #404042; }
+
+.table-naked tbody > tr > th,
+.table-naked tbody > tr > td {
+  border: none; }
+
+.table-middle > tbody > tr > td {
+  vertical-align: middle; }
+
+.table > tbody + tbody {
+  border-top: 1px solid #cccccc; }
 
 .styleguide-label {
   opacity: .2; }
