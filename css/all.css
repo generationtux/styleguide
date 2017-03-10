@@ -6974,41 +6974,13 @@ ol.fancy-list {
 
 @media (min-width: 768px) {
   .align-vertical {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center; } }
+    align-items: center; } }
 
 @media (min-width: 768px) {
   .align-vertical-bottom {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-    -moz-box-align: end;
-    box-align: end;
-    -webkit-align-items: flex-end;
-    -moz-align-items: flex-end;
-    -ms-align-items: flex-end;
-    -o-align-items: flex-end;
-    align-items: flex-end;
-    -ms-flex-align: end; } }
+    align-items: flex-end; } }
 
 .btn {
   line-height: 1;
@@ -7028,7 +7000,7 @@ ol.fancy-list {
   border-color: #e6e6e6;
   color: #e6e6e6;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #000; }
   .btn-hollow-default:hover, .btn-hollow-default:focus {
@@ -7066,7 +7038,7 @@ ol.fancy-list {
   border-color: #000;
   color: #000;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-primary:hover, .btn-hollow-primary:focus {
     background-color: #000;
@@ -7102,7 +7074,7 @@ ol.fancy-list {
   border-color: #7cab85;
   color: #7cab85;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-success:hover, .btn-hollow-success:focus {
     background-color: #7cab85;
@@ -7138,7 +7110,7 @@ ol.fancy-list {
   border-color: #D5C197;
   color: #D5C197;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-info:hover, .btn-hollow-info:focus {
     background-color: #D5C197;
@@ -7174,7 +7146,7 @@ ol.fancy-list {
   border-color: #dccba8;
   color: #dccba8;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-warning:hover, .btn-hollow-warning:focus {
     background-color: #dccba8;
@@ -7210,7 +7182,7 @@ ol.fancy-list {
   border-color: #b45250;
   color: #b45250;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-danger:hover, .btn-hollow-danger:focus {
     background-color: #b45250;
@@ -7246,7 +7218,7 @@ ol.fancy-list {
   border-color: white;
   color: white;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #000; }
   .btn-hollow-inverse:hover, .btn-hollow-inverse:focus {
@@ -7284,7 +7256,7 @@ ol.fancy-list {
   border-color: #e6e6e6;
   color: #e6e6e6;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #000; }
   .btn-hollow-transparent-default:hover, .btn-hollow-transparent-default:focus {
@@ -7322,7 +7294,7 @@ ol.fancy-list {
   border-color: #000;
   color: #000;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-transparent-primary:hover, .btn-hollow-transparent-primary:focus {
     background-color: #000;
@@ -7359,7 +7331,7 @@ ol.fancy-list {
   border-color: #7cab85;
   color: #7cab85;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-transparent-success:hover, .btn-hollow-transparent-success:focus {
     background-color: #7cab85;
@@ -7396,7 +7368,7 @@ ol.fancy-list {
   border-color: #D5C197;
   color: #D5C197;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-transparent-info:hover, .btn-hollow-transparent-info:focus {
     background-color: #D5C197;
@@ -7433,7 +7405,7 @@ ol.fancy-list {
   border-color: #dccba8;
   color: #dccba8;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-transparent-warning:hover, .btn-hollow-transparent-warning:focus {
     background-color: #dccba8;
@@ -7470,7 +7442,7 @@ ol.fancy-list {
   border-color: #b45250;
   color: #b45250;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
   .btn-hollow-transparent-danger:hover, .btn-hollow-transparent-danger:focus {
     background-color: #b45250;
@@ -7507,7 +7479,7 @@ ol.fancy-list {
   border-color: white;
   color: white;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #000; }
   .btn-hollow-transparent-inverse:hover, .btn-hollow-transparent-inverse:focus {
@@ -7555,7 +7527,7 @@ ol.fancy-list {
   border-color: white;
   color: white;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #000; }
   .btn-white:hover, .btn-white:focus {
@@ -7593,7 +7565,7 @@ ol.fancy-list {
   border-color: #e6e6e6;
   color: #e6e6e6;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #000; }
   .btn-default:hover, .btn-default:focus {
@@ -7631,7 +7603,7 @@ ol.fancy-list {
   border-color: #000;
   color: #000;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: white; }
   .btn-primary:hover, .btn-primary:focus {
@@ -7669,7 +7641,7 @@ ol.fancy-list {
   border-color: #7cab85;
   color: #7cab85;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: white; }
   .btn-success:hover, .btn-success:focus {
@@ -7707,7 +7679,7 @@ ol.fancy-list {
   border-color: #D5C197;
   color: #D5C197;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: white; }
   .btn-info:hover, .btn-info:focus {
@@ -7745,7 +7717,7 @@ ol.fancy-list {
   border-color: #dccba8;
   color: #dccba8;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: white; }
   .btn-warning:hover, .btn-warning:focus {
@@ -7783,7 +7755,7 @@ ol.fancy-list {
   border-color: #b45250;
   color: #b45250;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: white; }
   .btn-danger:hover, .btn-danger:focus {
@@ -7888,31 +7860,13 @@ ol.fancy-list {
       bottom: -1px;
       left: 16px;
       right: 16px;
-      -webkit-transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      -o-transform: scaleX(0);
       transform: scaleX(0);
-      -webkit-transition: all 0.2s ease;
-      -moz-transition: all 0.2s ease;
-      transition: all 0.2s ease;
-      -webkit-transform-origin: left center;
-      -moz-transform-origin: left center;
-      -ms-transform-origin: left center;
-      -o-transform-origin: left center;
+      transition: all .2s ease;
       transform-origin: left center; }
     .navbar .main-nav-items > li > a:hover:after {
-      -webkit-transform: scaleX(1);
-      -moz-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      -o-transform: scaleX(1);
       transform: scaleX(1);
       opacity: 1; }
   .navbar .main-nav-items .active a:after {
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
     transform: scaleX(1); } }
 
 @media (max-width: 767px) {
@@ -8060,10 +8014,6 @@ ol.fancy-list {
       left: 12px;
       bottom: 0;
       background-color: #e6e6e6;
-      -webkit-transform: translate(-50%, 0);
-      -moz-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-      -o-transform: translate(-50%, 0);
       transform: translate(-50%, 0); }
     .panel-theme-accordion .panel-body:after {
       content: "";
@@ -8085,14 +8035,8 @@ ol.fancy-list {
   left: 0;
   top: 50%;
   border-radius: 50%;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
-  -o-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all .3s ease; }
   .plus-icon:before, .plus-icon:after {
     content: "";
     width: 10px;
@@ -8101,25 +8045,11 @@ ol.fancy-list {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -webkit-transition: -webkit-transform 0.3s ease;
-    -moz-transition: -moz-transform 0.3s ease;
-    transition: transform 0.3s ease; }
+    transition: transform .3s ease; }
   .plus-icon:after {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-    -moz-transform: translate(-50%, -50%) rotate(0deg);
-    -ms-transform: translate(-50%, -50%) rotate(0deg);
-    -o-transform: translate(-50%, -50%) rotate(0deg);
     transform: translate(-50%, -50%) rotate(0deg); }
   .plus-icon:before {
-    -webkit-transform: translate(-50%, -50%) rotate(180deg);
-    -moz-transform: translate(-50%, -50%) rotate(180deg);
-    -ms-transform: translate(-50%, -50%) rotate(180deg);
-    -o-transform: translate(-50%, -50%) rotate(180deg);
     transform: translate(-50%, -50%) rotate(180deg); }
 
 .collapsed .plus-icon {
@@ -8127,16 +8057,8 @@ ol.fancy-list {
   cursor: pointer;
   border-radius: 0%; }
   .collapsed .plus-icon:after {
-    -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-    -moz-transform: translate(-50%, -50%) rotate(-90deg);
-    -ms-transform: translate(-50%, -50%) rotate(-90deg);
-    -o-transform: translate(-50%, -50%) rotate(-90deg);
     transform: translate(-50%, -50%) rotate(-90deg); }
   .collapsed .plus-icon:before {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-    -moz-transform: translate(-50%, -50%) rotate(0deg);
-    -ms-transform: translate(-50%, -50%) rotate(0deg);
-    -o-transform: translate(-50%, -50%) rotate(0deg);
     transform: translate(-50%, -50%) rotate(0deg); }
 
 .shadow-level-0 {
@@ -8158,10 +8080,6 @@ ol.fancy-list {
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6); }
 
 .caret {
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
   transform: translate(0, -50%); }
 
 .breadcrumb {
@@ -8225,15 +8143,7 @@ blockquote {
     .styleguide-label {
       position: absolute;
       left: 0;
-      -webkit-transform: rotate(-90deg) translate(-100%, 0%);
-      -moz-transform: rotate(-90deg) translate(-100%, 0%);
-      -ms-transform: rotate(-90deg) translate(-100%, 0%);
-      -o-transform: rotate(-90deg) translate(-100%, 0%);
       transform: rotate(-90deg) translate(-100%, 0%);
-      -webkit-transform-origin: left top;
-      -moz-transform-origin: left top;
-      -ms-transform-origin: left top;
-      -o-transform-origin: left top;
       transform-origin: left top; } }
 
 .color-swatch {

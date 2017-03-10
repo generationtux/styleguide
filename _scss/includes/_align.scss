@@ -1,13 +1,13 @@
 .align-vertical {
   @media( min-width:$grid-float-breakpoint ) {
-    @include display(flex);
-    @include align-items(center);    
+    display: flex;
+    align-items: center;    
   }
 }
 
 .align-vertical-bottom {
   @media( min-width:$grid-float-breakpoint ) {
-    @include display(flex);
-    @include align-items(flex-end);    
+    display: flex;
+    align-items: flex-end;
   }
 }
