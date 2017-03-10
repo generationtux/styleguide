@@ -1,6 +1,6 @@
 {
   "name": "gentux-style-guide",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {},
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
