@@ -1,22 +1,21 @@
 .align-vertical {
     display: block;
-    @include align-items(center);
+    align-items: center;
     @media (min-width: $grid-float-breakpoint) {
-        @include display(flex);
+        display: flex;
     }
 }
 
 .row.row-eq-height {
     @media(min-width: $grid-float-breakpoint) {
-        @include display(flex);
+        display: flex;
 
         > [class*='col-'] {
-            @include display(flex);
-            @include flex-direction(column);
+            display: flex;
+            flex-direction: column;
 
             > .panel {
-                // width: 100%;
-                @include flex-grow(1);
+                flex-grow: 1;
             }
         }
     }

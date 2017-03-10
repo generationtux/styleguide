@@ -39,7 +39,7 @@ $btn-offset: 5px;
       left: $btn-size / 2;
       bottom: 0;
       background-color: $gray-light;
-      @include transform(translate(-50%,0));
+      transform: translate(-50%,0);
     }
 
     &:after {
@@ -67,8 +67,8 @@ $btn-offset: 5px;
   left: 0;
   top: 50%;
   border-radius: 50%;
-  @include transform(translate(0%,-50%));
-  @include transition(all .3s ease);
+  transform: translate(0%,-50%);
+  transition: all .3s ease;
 
   &:before,&:after {
     content: "";
@@ -78,16 +78,16 @@ $btn-offset: 5px;
     position: absolute;
     left: 50%;
     top: 50%;
-    @include transform(translate(-50%,-50%));
-    @include transition(transform .3s ease);
+    transform: translate(-50%,-50%);
+    transition: transform .3s ease;
   }
 
   &:after {
-    @include transform(translate(-50%,-50%) rotate(0deg));
+    transform: translate(-50%,-50%) rotate(0deg);
   }
 
   &:before {
-    @include transform(translate(-50%,-50%) rotate(180deg));
+    transform: translate(-50%,-50%) rotate(180deg);
   }
 }
 
@@ -98,11 +98,11 @@ $btn-offset: 5px;
     border-radius: 0%;
 
     &:after {
-      @include transform(translate(-50%,-50%) rotate(-90deg));
+      transform: translate(-50%,-50%) rotate(-90deg);
     }
 
     &:before {
-      @include transform(translate(-50%,-50%) rotate(0deg));
+      transform: translate(-50%,-50%) rotate(0deg);
     }
   }  
 }
