@@ -4,7 +4,7 @@
 @import "includes/variables";
 
 // grab our mixins
-@import "mixins/vertical-spacing";
+@import "mixins/spacing";
 @import "mixins/shadows";
 @import "mixins/buttons";
 
@@ -12,6 +12,7 @@
 @import "includes/fonts";
 @import "includes/typography";
 @import "includes/containers";
+@import "includes/backgrounds";
 @import "includes/spacing";
 @import "includes/align";
 @import "includes/buttons";

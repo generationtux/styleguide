@@ -1,72 +1,185 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
 .btn {
   @extend .h6;
-  line-height: 1;
-  white-space: normal;
-}
-.btn-lg {
-  font-size: 16px;
-}
-.btn-sm {
-  font-size: 10.24px;
-}
-.btn-xs {
-  font-size: 10.24px;
-}
+  white-space: nowrap;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
 
-// new style for hollow buttons
-.btn-hollow-default {
-  @include btn-styles(white, $brand-default);
-}
-.btn-hollow-primary {
-  @include btn-styles(white, $brand-primary);
-}
-.btn-hollow-success {
-  @include btn-styles(white, $brand-success);
-}
-.btn-hollow-info    {
-  @include btn-styles(white, $brand-info);
-}
-.btn-hollow-warning {
-  @include btn-styles(white, $brand-warning);
-}
-.btn-hollow-danger  {
-  @include btn-styles(white, $brand-danger);
-}
-.btn-hollow-inverse {
-  @include btn-styles(white, white);
-}
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
 
-// style for hollow buttons
-.btn-hollow-transparent-default { @include btn-styles(transparent, $brand-default); }
-.btn-hollow-transparent-primary { @include btn-styles(transparent, $brand-primary); }
-.btn-hollow-transparent-success { @include btn-styles(transparent, $brand-success); }
-.btn-hollow-transparent-info    { @include btn-styles(transparent, $brand-info); }
-.btn-hollow-transparent-warning { @include btn-styles(transparent, $brand-warning); }
-.btn-hollow-transparent-danger  { @include btn-styles(transparent, $brand-danger); }
-.btn-hollow-transparent-inverse { @include btn-styles(transparent, white);  }
-
-// gets same typography as buttons with no border, padding or other decoration
-.btn-naked {
-  color: $brand-default;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-
-  &:hover,&:active,&:focus {
+  &:active,
+  &.active {
+    // @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
     box-shadow: none;
-    text-decoration: underline;
-    color: $gray-darker;
+  }
+
+}
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+.bg-primary,
+.bg-black,
+.bg-texture {
+  .btn-link.active {
+    color: $link-color;
   }
 }
 
-// Apply the mixin to the buttons
-.btn-white { @include btn-styles(white, white); }
-.btn-default { @include btn-styles($brand-default, $brand-default); }
-.btn-primary { @include btn-styles($brand-primary, $brand-primary); }
-.btn-success { @include btn-styles($brand-success, $brand-success); }
-.btn-info    { @include btn-styles($brand-info, $brand-info); }
-.btn-warning { @include btn-styles($brand-warning, $brand-warning); }
-.btn-danger  { @include btn-styles($brand-danger, $brand-danger); }
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-large, $btn-border-radius-large);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($padding-small-vertical, $padding-small-horizontal, 10.24px, $line-height-small, $btn-border-radius-small);
+}
+.btn-xs {
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, 10.24px, $line-height-small, $btn-border-radius-small);
+}
+
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+.bg-primary,
+.bg-black,
+.bg-texture {
+  .btn-primary {
+    @include button-variant($btn-primary-color, $btn-primary-bg, $gray-dark);
+  }
+}
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+.btn-white {
+  @include button-variant(black, white, white);
+}
+.btn-transparent {
+  @include button-variant(black, transparent, transparent);
+}
+
+
+.btn-hollow-default {
+  @include button-variant(black, white, $btn-default-bg);
+}
+.btn-hollow-primary {
+  @include button-variant($brand-primary, white, $brand-primary);
+}
+.bg-primary,
+.bg-black,
+.bg-texture {
+  .btn-hollow-primary {
+    @include button-variant($brand-primary, white, $gray-dark);
+  }
+}
+.btn-hollow-success {
+  @include button-variant($brand-success, white, $brand-success);
+}
+.btn-hollow-info    {
+  @include button-variant($link-color, white, $link-color);
+}
+.btn-hollow-warning {
+  @include button-variant($brand-warning, white, $brand-warning);
+}
+.btn-hollow-danger  {
+  @include button-variant($brand-danger, white, $brand-danger);
+}
+
+
+.btn-hollow-transparent-default { 
+  @include button-variant(black, transparent, $btn-default-bg);
+}
+.btn-hollow-transparent-primary { 
+  @include button-variant($brand-primary, transparent, $brand-primary);
+}
+.bg-primary,
+.bg-black,
+.bg-texture {
+  .btn-hollow-transparent-primary {
+    @include button-variant($brand-primary, transparent, $gray-dark);
+  }
+}
+.btn-hollow-transparent-success { 
+  @include button-variant($brand-success, transparent, $brand-success);
+}
+.btn-hollow-transparent-info    { 
+  @include button-variant($link-color, transparent, $link-color);
+}
+.btn-hollow-transparent-warning { 
+  @include button-variant($brand-warning, transparent, $brand-warning);
+}
+.btn-hollow-transparent-danger  { 
+  @include button-variant($brand-danger, transparent, $brand-danger);
+}
+
 
 .nav-pills .btn-warning {
   &:hover,
@@ -95,6 +208,24 @@
     visibility: visible;
   }
 }
+
+// -----------------------------------------------------------------------------
+// Color Swatch Btn Filters
+// -----------------------------------------------------------------------------
+// color, bg, border
+.btn-color-swatch-black  {@include button-variant(white, #222, #222);}
+.btn-color-swatch-white  {@include button-variant(black, white, $gray-light);}
+.btn-color-swatch-red    {@include button-variant(white, #c4383f, #c4383f);}
+.btn-color-swatch-grey   {@include button-variant(white, #818085, #818085);}
+.btn-color-swatch-purple {@include button-variant(white, #8559c8, #8559c8);}
+.btn-color-swatch-pink   {@include button-variant(white, #e04ea7, #e04ea7);}
+.btn-color-swatch-blue   {@include button-variant(white, #6779de, #6779de);}
+.btn-color-swatch-green  {@include button-variant(white, #2bb18f, #2bb18f);}
+.btn-color-swatch-yellow {@include button-variant(black, #f6eaab, #f6eaab);}
+.btn-color-swatch-orange {@include button-variant(white, #f9905b, #f9905b);}
+.btn-color-swatch-beige  {@include button-variant(black, #d1bea0, #d1bea0);}
+.btn-color-swatch-brown  {@include button-variant(white, #963, #963);}
+
 
 // -----------------------------------------------------------------------------
 // Facboook

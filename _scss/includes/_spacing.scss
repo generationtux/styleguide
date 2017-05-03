@@ -2,40 +2,29 @@
 // will build classes that use the bootstrap grid naming convention
 // ex: .pusher-md-top-lg will give the html element a TOP margin of LARGE for a min-width MEDIUM SCREEN size
 
-// for on demand margin
-@include make-vertical-pusher("xs");
-@include make-vertical-pusher("sm");
-@include make-vertical-pusher("md");
-@include make-vertical-pusher("lg");
-@include make-vertical-pusher("xl");
-@include make-vertical-pusher("xxl");
-@include make-vertical-pusher("clear");
+@include make-pusher("xs");
+@include make-pusher("sm");
+@include make-pusher("md");
+@include make-pusher("lg");
+@include make-pusher("xl");
+@include make-pusher("xxl");
+@include make-pusher("clear");
 
-@include make-horizontal-pusher("xs");
-@include make-horizontal-pusher("sm");
-@include make-horizontal-pusher("md");
-@include make-horizontal-pusher("lg");
-@include make-horizontal-pusher("xl");
-@include make-horizontal-pusher("xxl");
-@include make-horizontal-pusher("clear");
+@include make-puller("xs");
+@include make-puller("sm");
+@include make-puller("md");
+@include make-puller("lg");
+@include make-puller("xl");
+@include make-puller("xxl");
+@include make-puller("clear");
 
-// for on demand margin
-@include make-vertical-puller("xs");
-@include make-vertical-puller("sm");
-@include make-vertical-puller("md");
-@include make-vertical-puller("lg");
-@include make-vertical-puller("xl");
-@include make-vertical-puller("xxl");
-@include make-vertical-puller("clear");
-
-// for on demand padding
-@include make-vertical-buffer("xs");
-@include make-vertical-buffer("sm");
-@include make-vertical-buffer("md");
-@include make-vertical-buffer("lg");
-@include make-vertical-buffer("xl");
-@include make-vertical-buffer("xxl");
-@include make-vertical-buffer("clear");
+@include make-buffer("xs");
+@include make-buffer("sm");
+@include make-buffer("md");
+@include make-buffer("lg");
+@include make-buffer("xl");
+@include make-buffer("xxl");
+@include make-buffer("clear");
 
 
 // -----------------------------------------------------------------------------

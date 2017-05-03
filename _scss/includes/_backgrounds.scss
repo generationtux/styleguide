@@ -1,0 +1,212 @@
+// -----------------------------------------------------------------------------
+// Background Colors
+// -----------------------------------------------------------------------------
+.bg-black {
+    background-color: $gray-base;
+    color: white;
+}
+
+.bg-gray-darker {
+    background-color: $gray-darker;
+    color: white;
+}
+
+.bg-gray-dark {
+    background-color: $gray-dark;
+    color: white;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.bg-gray-light {
+    background-color: $gray-light;
+}
+
+.bg-gray-lighter {
+    background-color: $gray-lighter;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-half-n-half {
+  background: linear-gradient(to bottom, $gray-lighter 0%, $gray-lighter 50%, white 50%, white 100%);
+}
+.bg-half-n-half-horizontal {
+  // background: linear-gradient(to right, white 50%, $gray-lighter 50%);
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 75%;
+    background-color: white;
+    z-index: -1;
+  }
+  @media(min-width:$screen-sm) {
+    &:after {
+      width: calc(50% - 16px);
+    }
+  }
+}
+
+.bg-offset-base {
+  position: relative;
+  z-index: 0;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: -1;
+  }
+}
+$columnUnit: 8.33%;
+$rowUnit: 10%;
+.bg-offset-leftbottom-5-2 {
+  &:after {
+    left: -$grid-gutter-width/2;
+    right: $columnUnit * 5.5;
+    top: $rowUnit * 2;
+  }
+}
+
+
+.bg-texture {
+  color: white;
+  background-color: $gray-base;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transform-style: preserve-3d; // prevents text flicker in safari
+}
+
+.bg-texture-inverted {
+  @extend .bg-texture;
+  background-color: white;
+  color: $gray-base;
+
+  a {
+    color: $gray-base;
+  }
+
+  a.btn-success {
+    color: white;
+  }
+}
+
+// hide bg texture on sm width
+.bg-texture-no-sm {
+  @media (max-width: $screen-sm-min)  {
+    background-image: none !important;
+  }
+}
+.bg-texture-no-md {
+  @media (max-width: $screen-md-min)  {
+    background-image: none !important;
+  }
+}
+.bg-texture-no-lg {
+  @media (max-width: $screen-lg-min)  {
+    background-image: none !important;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Borders
+// -----------------------------------------------------------------------------
+.bordered {
+    border: 1px solid $gray-base;
+}
+
+.bordered-vertical {
+    border-top: 1px solid $gray-base;
+    border-bottom: 1px solid $gray-base;
+}
+
+.bordered-top {
+    border-top: 1px solid $gray-base;
+}
+
+.bordered-bottom {
+    border-bottom: 1px solid $gray-base;
+}
+
+.bordered-right {
+    border-right: none;
+
+    @media (min-width: $screen-sm-min) {
+        border-right: 1px solid $gray-base;
+    }
+}
+
+.bordered-left {
+    border-left: none;
+
+    @media (min-width: $screen-sm-min) {
+        border-left: 1px solid $gray-base;
+    }
+}
+
+.bordered-vertical-xs {
+    border-top: 1px solid $gray-base;
+    border-bottom: 1px solid $gray-base;
+
+    @media (min-width: $screen-sm-min) {
+      border-top: none;
+      border-bottom: none;
+    }
+}
+
+.bordered-top-xs {
+    border-top: 1px solid $gray-base;
+
+    @media (min-width: $screen-sm-min) {
+      border-top: none;
+    }
+}
+
+.bordered-bottom-xs {
+    border-bottom: 1px solid $gray-base;
+
+    @media (min-width: $screen-sm-min) {
+      border-bottom: none;
+    }
+}
+
+.bordered-white {
+    border-color: white;
+}
+.bordered-light {
+    border-color: $gray-light;
+}
+.bordered-lighter {
+    border-color: $gray-lighter;
+}
+.bordered-gray {
+    border-color: $gray;
+}
+.bordered-dark {
+    border-color: $gray-dark;
+}
+.bordered-darker {
+    border-color: $gray-darker;
+}
+
+// -----------------------------------------------------------------------------
+// Striped
+// -----------------------------------------------------------------------------
+.bg-striped {
+  background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC') repeat center center;
+  background-size: 8px;
+}
