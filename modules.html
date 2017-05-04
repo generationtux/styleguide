@@ -92,26 +92,36 @@ permalink: /modules/
 
     {% if page.extras contains "none" %}
     {% else %}
-    <div class="container pusher-xs-top-lg">
-    <div class="row">
-      <div class="col-xs-11 col-sm-9 col-sm-offset-2">
-        <h3 class="context--copy uppercase">Stand Alone Module:</h3>
-        <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">View module on its own page</a>
-      </div><!-- /col -->
-    </div><!-- /row -->
-    </div><!-- /container -->
-
-    <div class="container pusher-xs-top-lg">
+    <div class="container-fluid pusher-xs-vertical-xl">
       <div class="row">
-      <div class="col-xs-11 col-sm-9 col-sm-offset-2">
-        <h3 class="context--copy uppercase">Markup:</h3>
-        <div class="context--copy-to-clipboard">
-          <div class="clipboard-content">
-            {% highlight html %} {{ page.content }} {% endhighlight %}
-          </div>
-          <div class="clipboard-init btn btn-primary pusher-xs-btm-md">Copy to Clipboard</div>
-        </div>
-      </div><!-- /col -->
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+          
+          <div class="shadow-level-3 buffer-xs-lg">
+            <div class="row">
+
+              <div class="col-sm-12 pusher-xs-btm-md">
+                <h3>Reference</h3>
+              </div>
+
+              <div class="col-sm-7">
+                <h4 class="pusher-xs-btm-md">Markup:</h4>
+                <div class="context--copy-to-clipboard">
+                  <div class="clipboard-content">
+                    {% highlight html %} {{ page.content }} {% endhighlight %}
+                  </div>
+                  <div class="clipboard-init btn btn-primary pusher-xs-top-md">Copy to Clipboard</div>
+                </div>
+              </div><!-- /col -->
+
+              <div class="col-sm-5">
+                <h4 class="pusher-xs-btm-md">View Module on it's own&nbsp;page:</h4>
+                <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">Open Module</a>
+              </div><!-- /col -->
+
+            </div><!--/row-->
+          </div><!--/shadow-->
+        </div><!--/col-->
+
       </div><!-- /row -->
     </div><!-- /container -->
     {% endif %}
