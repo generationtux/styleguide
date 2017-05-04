@@ -32,6 +32,11 @@
     background-color: white;
 }
 
+.bg-info {
+    background-color: $brand-info;
+    color: white;
+}
+
 .bg-half-n-half {
   background: linear-gradient(to bottom, $gray-lighter 0%, $gray-lighter 50%, white 50%, white 100%);
 }

@@ -43,14 +43,20 @@ permalink: /modules/
 
 
     {% if page.section-id %}
-    <div id="{{ page.section-id }}" class="buffer-xs-vertical-xxl bg-gray-dark">
-      <h2 class="h6 buffer-xs-left-md uppercase">{{ page.title }}</h2>
+    <div id="{{ page.section-id }}" class="container-fluid buffer-xs-vertical-xl bg-info pusher-xs-btm-lg">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="domd buffer-xs-left-md">{{ page.title }}</h2>
+        </div>
+      </div>
+    </div>
+      
     </div>
     {% else %}
     <div class="container-fluid pusher-xs-btm-lg">
-      <div class="row">
+      <div class="row puller-xs-left-lg">
         <div class="col-sm-12">
-          <h2 class="h6 buffer-xs-left-md context--copy uppercase">{{ page.title }}</h2>
+          <h2 class="h6 "><span class="bg-info buffer-xs-md"> {{ page.title }}</span></h2>
         </div>
       </div>
     </div>
@@ -106,15 +112,6 @@ permalink: /modules/
       </div><!-- /row -->
     </div><!-- /container -->
     {% endif %}
-
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <hr class="pusher-xs-top-xl pusher-xs-btm-lg">
-        </div>
-      </div>
-    </div><!-- /.container  -->
 
 
 {% endfor %}
