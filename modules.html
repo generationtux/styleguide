@@ -4,7 +4,7 @@ title: Modules
 permalink: /modules/
 ---
 
-<div class="container-fluid bg-gray-lighter buffer-xs-vertical-md" style="position:sticky;top:0;z-index:100;">
+<div class="container-fluid bg-gray-lighter buffer-xs-vertical-md" style="position:sticky;top:0;z-index:100;backface-visibility:hidden;">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-2">
 
@@ -43,7 +43,11 @@ permalink: /modules/
 
 
     {% if page.section-id %}
-    <div id="{{ page.section-id }}" class="container-fluid buffer-xs-vertical-xl bg-info pusher-xs-btm-lg">
+    <div id="{{ page.section-id }}" class="
+      container-fluid
+      bg-info
+      buffer-xs-top-xxl buffer-xs-btm-xl
+      pusher-xs-top-xl">
       <div class="row">
         <div class="col-sm-12">
           <h2 class="domd buffer-xs-left-md">{{ page.title }}</h2>
@@ -51,12 +55,11 @@ permalink: /modules/
       </div>
     </div>
       
-    </div>
     {% else %}
-    <div class="container-fluid pusher-xs-btm-lg">
+    <div class="container-fluid pusher-xs-vertical-xl">
       <div class="row puller-xs-left-lg">
         <div class="col-sm-12">
-          <h2 class="h6 "><span class="bg-info buffer-xs-md"> {{ page.title }}</span></h2>
+          <h2 class="h6 bg-info d-inline-block buffer-xs-md">{{ page.title }}</h2>
         </div>
       </div>
     </div>
