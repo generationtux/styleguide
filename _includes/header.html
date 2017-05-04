@@ -1,42 +1,42 @@
-<nav class="navbar navbar-inverse bg-primary">
+<nav class="navbar navbar-default navbar-main">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-        <svg width="24px" style="margin-top:-10px;" viewBox="0 0 30 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
-            <title>GT_G-bow_logo_BLK-BJgBuXd_c</title>
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Artboard-Copy-26" transform="translate(-35.000000, -26.000000)" fill="#FFFFFF">
-                    <g id="GT_G-bow_logo_BLK-BJgBuXd_c" transform="translate(35.000000, 26.000000)">
-                        <path d="M0,16.5292969 L0,16.4384766 C0,7.38671875 6.96,0 16.5,0 C22.17,0 25.59,1.54394531 28.86,4.359375 L24.51,9.65722656 C22.08,7.62890625 19.92,6.44824219 16.29,6.44824219 C11.25,6.44824219 7.26,10.9287109 7.26,16.3476562 L7.26,16.4384766 C7.26,22.2509766 11.22,26.5195312 16.8,26.5195312 C19.32,26.5195312 21.57,25.8837891 23.31,24.6123047 L23.31,20.0712891 L16.35,20.0712891 L16.35,14.0166016 L30,14.0166016 L30,27.8212891 C26.76,30.5761719 22.32,32.8466797 16.56,32.8466797 C6.75,32.8466797 0,25.9140625 0,16.5292969 L0,16.5292969 Z M16.11,41.5048828 L4.86,38.8710938 L4.86,46.5 L16.11,43.8662109 L27.36,46.5 L27.36,38.8710938 L16.11,41.5048828 L16.11,41.5048828 Z" id="Shape"></path>
-                    </g>
-                </g>
-            </g>
-        </svg>
-      </a>
-
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-inverted" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="h6 uppercase navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a class="visible-xs navbar-brand" href="/">
+        <img class="navbar-brand-logo-gt" src="/styleguide/images/gt-logo.svg" alt="Generation Tux Logo">
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li class="h6 uppercase {% if page.url == '/' %}active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
-        <li class="h6 uppercase {% if page.url == '/atoms/' %}active{% endif %}"><a href="{{ site.baseurl }}/atoms/">Atoms</a></li>
-        <li class="h6 uppercase {% if page.url == '/modules/' %}active{% endif %}"><a href="{{ site.baseurl }}/modules/">Modules</a></li>
-      </ul>
-    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-inverted">
+      <div class="row">
+        <div class="col-sm-3 col-lg-2">
+          <a class="hidden-xs navbar-brand h1 h5" href="{{ site.baseurl }}/">
+            <img class="navbar-brand-logo-gt" src="/styleguide/images/gt-logo.svg" alt="Generation Tux Logo">
+            <img class="navbar-brand-logo-full" src="/styleguide/images/generationtux-logo.svg" alt="Generation Tux Logo">
+          </a>
+        </div><!-- /col -->
+
+        <div class="col-sm-9 col-md-7 col-lg-8">
+          <ul class="nav navbar-nav">
+            <li class="h6 uppercase {% if page.url == '/' %}active{% endif %}">
+              <a href="{{ site.baseurl }}/">Home</a>
+            </li>
+            <li class="h6 {% if page.url == '/atoms/' %}active{% endif %}">
+              <a href="{{ site.baseurl }}/atoms/">Atoms</a>
+            </li>
+            <li class="h6 uppercase {% if page.url == '/modules/' %}active{% endif %}">
+              <a href="{{ site.baseurl }}/modules/">Modules</a>
+            </li>
+          </ul>
+        </div><!-- /col -->
+      </div><!-- /row -->
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

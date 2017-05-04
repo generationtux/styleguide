@@ -1,105 +1,148 @@
 // -----------------------------------------------------------------------------
 // Main Navigation
 // -----------------------------------------------------------------------------
+.container-fluid > .navbar-collapse,
+.navbar-nav,
+.main-nav-items {
+  // undo boostrap default margin so aligns with grid
+  margin-left: -$grid-gutter-width/2; 
+  margin-right: -$grid-gutter-width/2;
+}
 .navbar-toggle {
-	.icon-bar {
-		width: 16px;
-		border-radius: 0;
-	}
-	@media(max-width: $grid-float-breakpoint-max) {
+  .icon-bar {
+    width: 16px;
+    border-radius: 0;
+  }
+  @media(max-width: $grid-float-breakpoint-max) {
     margin-top: 12px;
     margin-bottom: 12px;
   }
 }
 .navbar-brand {
-	line-height: 16px;
+  line-height: 16px;
   font-weight: 900;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: opacity .2s ease;
+  position: relative;
+  img {
+    transition: all .15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    max-height: 100%;
+    max-width: 100%;
+  }
+  @media(min-width: $screen-sm-min) {
+    width: 100%;
+    img.navbar-brand-logo-gt {
+      transform: translate(0%,0) scale(1);
+      transform-origin: left 30%;
+      transition-duration: .3s;
+      width: 48px;
+    }
+    img.navbar-brand-logo-full {
+      position: absolute;
+      top: 50%;
+      transform: translate(-10%,-50%);
+      opacity: 0;
+      transition-duration: .1s;
+      width: 117px;
+    }
+    &:hover {
+      img.navbar-brand-logo-gt {
+        opacity: 0;
+        transform: translate(-20%,0) scale(.8);
+        transition-duration: .15s;
+      }
+      img.navbar-brand-logo-full {
+        opacity: 1;
+        transform: translate(0,-50%);
+        transition-duration: .4s;
+      }
+    }
+  }
   @media(max-width: $grid-float-breakpoint-max) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     height: auto;
+    img.navbar-brand-logo-gt {
+      width: 32px;
+    }
   }
 }
+
 .navbar {
-	.glyphicon {
-		line-height: 0;
-	}
-	@media(min-width: $grid-float-breakpoint) {
-		.main-nav-items {
-			& > li > a {
-				position: relative;
-				&:after {
-					content: "";
-					height: 1px;
-					position: absolute;
-					bottom: -1px; // to offset the navbar border
-					left: 16px;
-					right: 16px;
-					// opacity: .2;
-					transform: scaleX(0);
-					transition: all .2s ease;
-					transform-origin: left center;
-				}
-				&:hover {
-					&:after {
-						transform: scaleX(1);
-						opacity: 1;
-					}
-				}
-			}
-			.active {
-				a {
-					&:after {
-						transform: scaleX(1);
-					}
-				}
-			}
-		}
-	}
-	@media(max-width: $grid-float-breakpoint-max) {
+  .glyphicon {
+    line-height: 0;
+  }
+  @media(min-width: $grid-float-breakpoint) {
+    .main-nav-items {
+      & > li > a {
+        position: relative;
+        &:after {
+          content: "";
+          height: 1px;
+          position: absolute;
+          bottom: -1px; // to offset the navbar border
+          left: 16px;
+          right: 16px;
+          transform: scaleX(0) translateZ(0);
+          transition: all .2s ease;
+          transform-origin: left center;
+        }
+        &:hover {
+          &:after {
+            transform: scaleX(1) translateZ(0);
+            opacity: 1;
+          }
+        }
+      }
+      .active {
+        a {
+          &:after {
+            transform: scaleX(1) translateZ(0);
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: $grid-float-breakpoint-max) {
     min-height: auto;
   }
 }
 
-.navbar-nav {
-  @media(min-width: $screen-sm-min) {
-    margin-left: -16px;
+.main-nav-items {
+  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    &.navbar-nav>li>a {
+      padding-top: 8px;
+      padding-bottom: 32px;
+    }
   }
-  @media(min-width: $screen-md-min) {
-    margin-left: 0px;
+  @media (min-width: $screen-md-min) {
+    // margin-top: 0px;
   }
 }
 
-.main-nav-items {
-	@media (min-width: $screen-sm-min) {
-		margin-top: -40px;
-	}
-	@media (min-width: $screen-md-min) {
-		margin-top: 0px;
-	}
-}
 .navbar-default {
-	border-color: $gray-lighter;
+  border-color: $gray-lighter;
   .badge {
     color: inherit;
   }
-	@media(min-width: $grid-float-breakpoint) {
-		.main-nav-items {
-			& > li > a {
-				&:after {
-					background-color: $gray-base;
-				}
-				&:active,&:focus {
-					color: $brand-info;
-				}
-			}
-			.active a {
-				&:hover:after {
-					background-color: $gray;
-				}
-			}
-		}
-	}
+  @media(min-width: $grid-float-breakpoint) {
+    .main-nav-items {
+      & > li > a {
+        &:after {
+          background-color: $gray-base;
+        }
+        &:active,&:focus {
+          color: $brand-info;
+        }
+      }
+      .active a {
+        &:hover:after {
+          background-color: $gray;
+        }
+      }
+    }
+  }
 }
 .home {
   .navbar-default {
@@ -133,32 +176,34 @@
 }
 
 .navbar-sub {
-	// border-top: 1px solid $gray-light;
-	border: none;
-	min-height: auto;
-	background-color: $gray-lighter;
-	.navbar-nav {
-		li a {
-			&:after {
-				display: none;
-			}
-		}
-		.active {
-			a {
-				color: $link-color;
-			}
-		}
-	}
-	.navbar-collapse {
-		border-top-color: $gray-light;
-	}
-	@media (min-width: $screen-sm-min){
-		li a {
-			padding-top: 24px;
-			padding-bottom: 24px;
-		}
-	}
+  // border-top: 1px solid $gray-light;
+  border: none;
+  min-height: auto;
+  background-color: $gray-lighter;
+  .navbar-nav {
+    li a {
+      &:after {
+        display: none;
+      }
+    }
+    .active {
+      a {
+        color: $link-color;
+      }
+    }
+  }
+  .navbar-collapse {
+    border-top-color: $gray-light;
+  }
+  @media (min-width: $screen-sm-min){
+    li a {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
 }
+
+
 
 // -----------------------------------------------------------------------------
 // Secondary menu - search, account, events
@@ -244,5 +289,16 @@
         background-color: $gray-light;
       }
     }
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Promo Bar
+// -----------------------------------------------------------------------------
+.promo-bar-item {
+  display: none;
+  &:first-child {
+    display: block;
   }
 }

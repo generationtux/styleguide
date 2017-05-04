@@ -148,8 +148,16 @@ hr.hr-small {
   width: 32px;
   border-top: 1px solid black;
   margin-left: 0;
-  margin-top: $type-spacing-lg;
-  margin-bottom: $type-spacing-lg;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  @media(min-width:$screen-sm) {
+    margin-top: $type-spacing-lg;
+    margin-bottom: $type-spacing-lg;
+  }
+}
+
+.readable-line {
+  max-width: 40em;
 }
 
 .t-indent {
@@ -171,9 +179,7 @@ hr.hr-small {
 }
 
 .strong {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: $brandon-grotesque-font-stack;
+  font-weight: 700;
 }
 
 // to make type more flexible, margins only get added to type when the context--copy is used

@@ -7,9 +7,9 @@
  * @return {List}
  */
 @function bottom-shadow($depth) {
-  $primary-offset: nth(6 12 20 30 30, $depth) * 1px;
-  $blur: nth(30 50 70 90 90, $depth) * 1px;
-  $color: rgba(black, nth(.05 .08 .15 .3 .6, $depth));
+  $primary-offset:    nth(06 12 20 30 30, $depth) * 1px;
+  $blur:              nth(30 50 70 90 90, $depth) * 1px;
+  $color: rgba(black, nth(.1 .15 .15 .3 .6, $depth));
 
   @return 0 $primary-offset $blur $color;
 }
@@ -30,5 +30,15 @@
     @warn "Invalid $depth `#{$depth}` for mixin `card`.";
   } @else {  
     box-shadow: bottom-shadow($depth);  
+  }
+}
+
+@mixin shadow-inset-level($depth) {
+  @if $depth < 1 {
+    box-shadow: none;
+  } @else if $depth > 5 {
+    @warn "Invalid $depth `#{$depth}` for mixin `card`.";
+  } @else {  
+    box-shadow: bottom-shadow($depth) inset;  
   }
 }

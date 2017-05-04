@@ -1,160 +1,135 @@
-// Mixin for generating new styles
-// based on bootstraps _theme.scss file
-@mixin btn-styles($btn-color: #555, $border-color: $btn-default-border) {
-  background-color: $btn-color;
-  border-color: $border-color;
-  color: $border-color;
-  @include transition(all .2s ease);
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  position: relative;
+  @include transition(all .13s ease);
+  backface-visibility: hidden;
 
-  @if (lightness($border-color) > 80) {
-    color: $gray-base;
-    &:hover,
-    &:focus  {
-      background-color: darken($border-color,15%);
-      border-color: darken($border-color,15%);
-      color: $gray-base;
-    }
-    &:active,
-    &.active,
-    &:focus:active {
-      background-color: desaturate( darken($border-color, 7%), 7% );
-      color: white;
-    }
+  &:after {
+    content:"";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    height: 100%;
+    background-color: $border;
+    transform-origin: left bottom;
+    z-index: 10;
+    opacity: 0;
+    transition: all .13s ease-out;
+    backface-visibility: hidden;
+    transform: scaleY(1);
   }
-  @elseif ($btn-color == white) {
-    &:hover,
-    &:focus  {
-      background-color: $border-color;
-      border-color: $border-color;
-      color: $btn-color;
-    }
-    &:active,
-    &.active,
-    &:focus:active {
-      background-color: desaturate( darken($border-color, 7%), 7% );
-      color: white;
-    }
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
   }
-  @elseif ($btn-color == $border-color) {
-    color: white;
-    &:hover,
-    &:focus  {
-      background-color: white;
-      border-color: $btn-color;
-      color: $btn-color;
-    }
-    &:active,
-    &.active,
-    &:focus:active {
+  &:hover {
+    color: black;
+    @include shadow-level(2);
+    background-color: white;
+    border-color: transparent;
+    &:active {
+      border-color: transparent;
       background-color: $gray-lighter;
-      color: $btn-color;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
+      color: black;
+    }
+    &:after {
+      opacity: 1;
+      transform: scaleY(.1);
     }
   }
-  @else {
-    &:hover,
-    &:focus  {
-      background-color: $border-color;
-      border-color: $btn-color;
-      color: white;
-      // @include shadow-depth(3);
+  
+  &.active,
+  .open > &.dropdown-toggle {
+    color: black;
+    background-color: white;
+    border-color: $border;
+
+    &:focus,
+    &.focus {
+      color: black;
+      background-color: white;
+      border-color: $border;
     }
-    &:active,
-    &.active,
-    &:focus:active {
-      background-color: desaturate( darken($border-color, 7%), 7% );
-      color: white;
+
+    &:hover {
+      color: black;
+      @include shadow-level(2);
+      background: white;
+      border-color: transparent;
+    }
+  }
+  &.active {
+    text-align: right;
+    padding-left: $padding-base-horizontal + 8;
+    padding-right: $padding-base-horizontal - 8;
+    &:active {
+      background-color: $gray-lighter;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
+    }
+    &:before {
+      content: "\e013";
+      font-family: 'Glyphicons Halflings';
+      margin-right: 4px;
+      position: absolute;
+      left: 20px;
+      color: $gray-darker;
+      font-size: .9em;
+    }
+  }
+  &.btn-lg.active {
+    padding-left: $padding-large-horizontal + 16;
+    padding-right: $padding-large-horizontal - 16;
+    &:before {
+      left: $padding-large-horizontal - 14;
+    }
+  }
+  &.btn-sm.active {
+    padding-left: $padding-small-horizontal + 4;
+    padding-right: $padding-small-horizontal - 4;
+    &:before {
+      left: 8px;
+      font-size: .8em;
+      line-height: 1.8;
+    }
+  }
+  &.btn-xs.active {
+    padding-left: $padding-xs-horizontal;
+    padding-right: $padding-xs-horizontal;
+    &:before {
+      left: 0px;
+      position: relative;
+      font-size: .8em;
     }
   }
 
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
-    &,
     &:hover,
     &:focus,
-    &.focus,
-    &:active,
-    &.active {
-      background-color: $gray-lighter;
-      color: black;
-    }
-  }
-
-  &.btn-no-hover {
-    cursor: default;
-
-    &,
-    &:hover,
-    &:focus,
-    &.focus,
-    &:active,
-    &.active {
+    &.focus {
+      color: $color;
+      background-color: $background;
+      border-color: $border;
       box-shadow: none;
-
-      @if (lightness($border-color) > 80) {
-        color: $gray-base;
-        &:hover,
-        &:focus  {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: $gray-base;
-        }
-        &:active,
-        &.active,
-        &:focus:active {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: $gray-base;
-        }
+      &:after {
+        opacity: 0;
       }
-      @elseif ($btn-color == white) {
-        &:hover,
-        &:focus  {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: $border-color;
-        }
-        &:active,
-        &.active,
-        &:focus:active {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: $border-color;
-        }
-      }
-      @elseif ($btn-color == $border-color) {
-        color: white;
-        &:hover,
-        &:focus  {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: white;
-        }
-        &:active,
-        &.active,
-        &:focus:active {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: white;
-        }
-      }
-      @else {
-        &:hover,
-        &:focus  {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: $border-color;
-          color: white;
-        }
-        &:active,
-        &.active,
-        &:focus:active {
-          background-color: $btn-color;
-          border-color: $border-color;
-          color: white;
-        }
-      }
-
     }
   }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+
 }
+
+
