@@ -6470,6 +6470,10 @@ ol.fancy-list {
   .bg-texture-no-lg {
     background-image: none !important; } }
 
+.bg-striped {
+  background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC") repeat center center;
+  background-size: 8px; }
+
 .bordered {
   border: 1px solid #000; }
 
@@ -6533,9 +6537,8 @@ ol.fancy-list {
 .bordered-darker {
   border-color: #404042; }
 
-.bg-striped {
-  background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC") repeat center center;
-  background-size: 8px; }
+.bordered-info {
+  border-color: #D5C197; }
 
 .pusher-xs-xs {
   margin: 4px; }
