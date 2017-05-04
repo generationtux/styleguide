@@ -583,15 +583,15 @@
         .copy.buffer-#{$browserSize}-horizontal-clear { padding-left: 0; padding-right: 0; }
 
         // tops
-        .buffer-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-        .buffer-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-        .buffer-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-        .buffer-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-        .buffer-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-        .buffer-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
+        .buffer-#{$browserSize}-vertical-xs { padding-top: $type-spacing-xs; padding-bottom: $type-spacing-xs;}
+        .buffer-#{$browserSize}-vertical-sm { padding-top: $type-spacing-sm; padding-bottom: $type-spacing-sm;}
+        .buffer-#{$browserSize}-vertical-md { padding-top: $type-spacing-md; padding-bottom: $type-spacing-md;}
+        .buffer-#{$browserSize}-vertical-lg { padding-top: $type-spacing-lg; padding-bottom: $type-spacing-lg;}
+        .buffer-#{$browserSize}-vertical-xl { padding-top: $type-spacing-xl; padding-bottom: $type-spacing-xl;}
+        .buffer-#{$browserSize}-vertical-xxl { padding-top: $type-spacing-xl*2; padding-bottom: $type-spacing-xl*2;}
         
-        .buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-        .copy.buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
+        .buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
+        .copy.buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
 
         // create top classes
         .buffer-#{$browserSize}-top-xs { padding-top: $type-spacing-xs; }
@@ -661,15 +661,15 @@
             .copy.buffer-#{$browserSize}-horizontal-clear { padding-left: 0; padding-right: 0; }
 
             // tops
-            .buffer-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-            .buffer-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-            .buffer-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-            .buffer-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-            .buffer-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-            .buffer-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
+            .buffer-#{$browserSize}-vertical-xs { padding-top: $type-spacing-xs; padding-bottom: $type-spacing-xs;}
+            .buffer-#{$browserSize}-vertical-sm { padding-top: $type-spacing-sm; padding-bottom: $type-spacing-sm;}
+            .buffer-#{$browserSize}-vertical-md { padding-top: $type-spacing-md; padding-bottom: $type-spacing-md;}
+            .buffer-#{$browserSize}-vertical-lg { padding-top: $type-spacing-lg; padding-bottom: $type-spacing-lg;}
+            .buffer-#{$browserSize}-vertical-xl { padding-top: $type-spacing-xl; padding-bottom: $type-spacing-xl;}
+            .buffer-#{$browserSize}-vertical-xxl { padding-top: $type-spacing-xl*2; padding-bottom: $type-spacing-xl*2;}
             
-            .buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-            .copy.buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
+            .buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
+            .copy.buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
 
             // create top classes
             .buffer-#{$browserSize}-top-xs { padding-top: $type-spacing-xs; }
@@ -741,15 +741,15 @@
             .copy.buffer-#{$browserSize}-horizontal-clear { padding-left: 0; padding-right: 0; }
 
             // tops
-            .buffer-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-            .buffer-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-            .buffer-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-            .buffer-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-            .buffer-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-            .buffer-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
+            .buffer-#{$browserSize}-vertical-xs { padding-top: $type-spacing-xs; padding-bottom: $type-spacing-xs;}
+            .buffer-#{$browserSize}-vertical-sm { padding-top: $type-spacing-sm; padding-bottom: $type-spacing-sm;}
+            .buffer-#{$browserSize}-vertical-md { padding-top: $type-spacing-md; padding-bottom: $type-spacing-md;}
+            .buffer-#{$browserSize}-vertical-lg { padding-top: $type-spacing-lg; padding-bottom: $type-spacing-lg;}
+            .buffer-#{$browserSize}-vertical-xl { padding-top: $type-spacing-xl; padding-bottom: $type-spacing-xl;}
+            .buffer-#{$browserSize}-vertical-xxl { padding-top: $type-spacing-xl*2; padding-bottom: $type-spacing-xl*2;}
             
-            .buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-            .copy.buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
+            .buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
+            .copy.buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
 
             // create top classes
             .buffer-#{$browserSize}-top-xs { padding-top: $type-spacing-xs; }
@@ -821,15 +821,15 @@
             .copy.buffer-#{$browserSize}-horizontal-clear { padding-left: 0; padding-right: 0; }
 
             // tops
-            .buffer-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-            .buffer-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-            .buffer-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-            .buffer-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-            .buffer-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-            .buffer-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
+            .buffer-#{$browserSize}-vertical-xs { padding-top: $type-spacing-xs; padding-bottom: $type-spacing-xs;}
+            .buffer-#{$browserSize}-vertical-sm { padding-top: $type-spacing-sm; padding-bottom: $type-spacing-sm;}
+            .buffer-#{$browserSize}-vertical-md { padding-top: $type-spacing-md; padding-bottom: $type-spacing-md;}
+            .buffer-#{$browserSize}-vertical-lg { padding-top: $type-spacing-lg; padding-bottom: $type-spacing-lg;}
+            .buffer-#{$browserSize}-vertical-xl { padding-top: $type-spacing-xl; padding-bottom: $type-spacing-xl;}
+            .buffer-#{$browserSize}-vertical-xxl { padding-top: $type-spacing-xl*2; padding-bottom: $type-spacing-xl*2;}
             
-            .buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-            .copy.buffer-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
+            .buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
+            .copy.buffer-#{$browserSize}-vertical-clear { padding-top: 0; padding-bottom: 0;}
 
             // create top classes
             .buffer-#{$browserSize}-top-xs { padding-top: $type-spacing-xs; }

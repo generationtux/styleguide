@@ -7500,36 +7500,36 @@ ol.fancy-list {
   padding-right: 0; }
 
 .buffer-xs-vertical-xs {
-  margin-top: 4px;
-  margin-bottom: 4px; }
+  padding-top: 4px;
+  padding-bottom: 4px; }
 
 .buffer-xs-vertical-sm {
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  padding-top: 8px;
+  padding-bottom: 8px; }
 
 .buffer-xs-vertical-md {
-  margin-top: 16px;
-  margin-bottom: 16px; }
+  padding-top: 16px;
+  padding-bottom: 16px; }
 
 .buffer-xs-vertical-lg {
-  margin-top: 32px;
-  margin-bottom: 32px; }
+  padding-top: 32px;
+  padding-bottom: 32px; }
 
 .buffer-xs-vertical-xl {
-  margin-top: 64px;
-  margin-bottom: 64px; }
+  padding-top: 64px;
+  padding-bottom: 64px; }
 
 .buffer-xs-vertical-xxl {
-  margin-top: 128px;
-  margin-bottom: 128px; }
+  padding-top: 128px;
+  padding-bottom: 128px; }
 
 .buffer-xs-vertical-clear {
-  margin-top: 0;
-  margin-bottom: 0; }
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .copy.buffer-xs-vertical-clear {
-  margin-top: 0;
-  margin-bottom: 0; }
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .buffer-xs-top-xs {
   padding-top: 4px; }
@@ -7669,29 +7669,29 @@ ol.fancy-list {
     padding-left: 0;
     padding-right: 0; }
   .buffer-sm-vertical-xs {
-    margin-top: 4px;
-    margin-bottom: 4px; }
+    padding-top: 4px;
+    padding-bottom: 4px; }
   .buffer-sm-vertical-sm {
-    margin-top: 8px;
-    margin-bottom: 8px; }
+    padding-top: 8px;
+    padding-bottom: 8px; }
   .buffer-sm-vertical-md {
-    margin-top: 16px;
-    margin-bottom: 16px; }
+    padding-top: 16px;
+    padding-bottom: 16px; }
   .buffer-sm-vertical-lg {
-    margin-top: 32px;
-    margin-bottom: 32px; }
+    padding-top: 32px;
+    padding-bottom: 32px; }
   .buffer-sm-vertical-xl {
-    margin-top: 64px;
-    margin-bottom: 64px; }
+    padding-top: 64px;
+    padding-bottom: 64px; }
   .buffer-sm-vertical-xxl {
-    margin-top: 128px;
-    margin-bottom: 128px; }
+    padding-top: 128px;
+    padding-bottom: 128px; }
   .buffer-sm-vertical-clear {
-    margin-top: 0;
-    margin-bottom: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .copy.buffer-sm-vertical-clear {
-    margin-top: 0;
-    margin-bottom: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .buffer-sm-top-xs {
     padding-top: 4px; }
   .buffer-sm-top-sm {
@@ -7799,29 +7799,29 @@ ol.fancy-list {
     padding-left: 0;
     padding-right: 0; }
   .buffer-md-vertical-xs {
-    margin-top: 4px;
-    margin-bottom: 4px; }
+    padding-top: 4px;
+    padding-bottom: 4px; }
   .buffer-md-vertical-sm {
-    margin-top: 8px;
-    margin-bottom: 8px; }
+    padding-top: 8px;
+    padding-bottom: 8px; }
   .buffer-md-vertical-md {
-    margin-top: 16px;
-    margin-bottom: 16px; }
+    padding-top: 16px;
+    padding-bottom: 16px; }
   .buffer-md-vertical-lg {
-    margin-top: 32px;
-    margin-bottom: 32px; }
+    padding-top: 32px;
+    padding-bottom: 32px; }
   .buffer-md-vertical-xl {
-    margin-top: 64px;
-    margin-bottom: 64px; }
+    padding-top: 64px;
+    padding-bottom: 64px; }
   .buffer-md-vertical-xxl {
-    margin-top: 128px;
-    margin-bottom: 128px; }
+    padding-top: 128px;
+    padding-bottom: 128px; }
   .buffer-md-vertical-clear {
-    margin-top: 0;
-    margin-bottom: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .copy.buffer-md-vertical-clear {
-    margin-top: 0;
-    margin-bottom: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .buffer-md-top-xs {
     padding-top: 4px; }
   .buffer-md-top-sm {
@@ -7929,29 +7929,29 @@ ol.fancy-list {
     padding-left: 0;
     padding-right: 0; }
   .buffer-lg-vertical-xs {
-    margin-top: 4px;
-    margin-bottom: 4px; }
+    padding-top: 4px;
+    padding-bottom: 4px; }
   .buffer-lg-vertical-sm {
-    margin-top: 8px;
-    margin-bottom: 8px; }
+    padding-top: 8px;
+    padding-bottom: 8px; }
   .buffer-lg-vertical-md {
-    margin-top: 16px;
-    margin-bottom: 16px; }
+    padding-top: 16px;
+    padding-bottom: 16px; }
   .buffer-lg-vertical-lg {
-    margin-top: 32px;
-    margin-bottom: 32px; }
+    padding-top: 32px;
+    padding-bottom: 32px; }
   .buffer-lg-vertical-xl {
-    margin-top: 64px;
-    margin-bottom: 64px; }
+    padding-top: 64px;
+    padding-bottom: 64px; }
   .buffer-lg-vertical-xxl {
-    margin-top: 128px;
-    margin-bottom: 128px; }
+    padding-top: 128px;
+    padding-bottom: 128px; }
   .buffer-lg-vertical-clear {
-    margin-top: 0;
-    margin-bottom: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .copy.buffer-lg-vertical-clear {
-    margin-top: 0;
-    margin-bottom: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
   .buffer-lg-top-xs {
     padding-top: 4px; }
   .buffer-lg-top-sm {

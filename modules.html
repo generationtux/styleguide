@@ -4,92 +4,111 @@ title: Modules
 permalink: /modules/
 ---
 
+<div class="container-fluid bg-gray-lighter buffer-xs-vertical-md" style="position:sticky;top:0;z-index:100;">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-2">
+
+      <ul class="list-inline pusher-xs-btm-clear">
+        <li class="h6">Module Types:</li>
+        <li class="h6"><a href="#section-navbar">navs</a></li>
+        <li class="h6"><a href="#section-hero">heros</a></li>
+        <li class="h6"><a href="#section-content">content blocks</a></li>
+        <li class="h6"><a href="#section-other">other shite</a></li>
+      </ul>
+
+    </div><!--/col-->
+  </div><!--/row-->
+  
+</div><!--/nav-page-interior-->
+
+
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1 class="context--copy uppercase">Modules</h1>
+      <h1 class="buffer-xs-vertical-xl domd">Modules</h1>
     </div>
   </div>
 </div>
 
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-      <hr class="pusher-xs-top-md pusher-xs-btm-lg">
-    </div>
-  </div>
-</div><!-- /.container  -->
 
 
 {% for page in site.modules %}
 
 
 
-
-
-<div class="container pusher-xs-btm-lg">
-  <div class="row">
-    <div class="col-sm-12">
-      <h2 class="context--copy uppercase">{{ page.title }}</h2>
+    {% if page.section-id %}
+    <div id="{{ page.section-id }}" class="buffer-xs-vertical-xxl bg-gray-dark">
+      <h2 class="h6 buffer-xs-left-md uppercase">{{ page.title }}</h2>
     </div>
-  </div>
-</div>
-
-
-{% if page.container-type contains "none" %}
-{% elsif page.container-type contains "fluid" %}
-<div class="container-fluid">
-{% else %}
-<div class="container">
-{% endif %}
-
-{% if page.container-type contains "none" %}
-  {{ page.content }}
-{% else %}
-  <div class="row">
-    <div class="col-sm-12">
-      {{ page.content }}
-    </div>
-  </div><!-- /row -->
-{% endif %}
-
-{% if page.container-type contains "none" %}
-{% else %}
-</div> <!-- /container -->
-{% endif %}
-
-<div class="container pusher-xs-top-lg">
-<div class="row">
-  <div class="col-xs-11 col-sm-9 col-sm-offset-2">
-    <h3 class="context--copy uppercase">Stand Alone Module:</h3>
-    <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">View module on its own page</a>
-  </div><!-- /col -->
-</div><!-- /row -->
-</div><!-- /container -->
-
-<div class="container pusher-xs-top-lg">
-  <div class="row">
-  <div class="col-xs-11 col-sm-9 col-sm-offset-2">
-    <h3 class="context--copy uppercase">Markup:</h3>
-    <div class="context--copy-to-clipboard">
-      <div class="clipboard-content">
-        {% highlight html %} {{ page.content }} {% endhighlight %}
+    {% else %}
+    <div class="container-fluid pusher-xs-btm-lg">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="h6 buffer-xs-left-md context--copy uppercase">{{ page.title }}</h2>
+        </div>
       </div>
-      <div class="clipboard-init btn btn-primary pusher-xs-btm-md">Copy to Clipboard</div>
     </div>
-  </div><!-- /col -->
-  </div><!-- /row -->
-</div><!-- /container -->
+
+    {% endif %}
 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-      <hr class="pusher-xs-top-xl pusher-xs-btm-lg">
-    </div>
-  </div>
-</div><!-- /.container  -->
+    {% if page.container-type contains "none" %}
+    {% elsif page.container-type contains "fluid" %}
+    <div class="container-fluid">
+    {% else %}
+    <div class="container">
+    {% endif %}
+
+    {% if page.container-type contains "none" %}
+      {{ page.content }}
+    {% else %}
+      <div class="row">
+        <div class="col-sm-12">
+          {{ page.content }}
+        </div>
+      </div><!-- /row -->
+    {% endif %}
+
+    {% if page.container-type contains "none" %}
+    {% else %}
+    </div> <!-- /container -->
+    {% endif %}
+
+
+    {% if page.extras contains "none" %}
+    {% else %}
+    <div class="container pusher-xs-top-lg">
+    <div class="row">
+      <div class="col-xs-11 col-sm-9 col-sm-offset-2">
+        <h3 class="context--copy uppercase">Stand Alone Module:</h3>
+        <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">View module on its own page</a>
+      </div><!-- /col -->
+    </div><!-- /row -->
+    </div><!-- /container -->
+
+    <div class="container pusher-xs-top-lg">
+      <div class="row">
+      <div class="col-xs-11 col-sm-9 col-sm-offset-2">
+        <h3 class="context--copy uppercase">Markup:</h3>
+        <div class="context--copy-to-clipboard">
+          <div class="clipboard-content">
+            {% highlight html %} {{ page.content }} {% endhighlight %}
+          </div>
+          <div class="clipboard-init btn btn-primary pusher-xs-btm-md">Copy to Clipboard</div>
+        </div>
+      </div><!-- /col -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+    {% endif %}
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <hr class="pusher-xs-top-xl pusher-xs-btm-lg">
+        </div>
+      </div>
+    </div><!-- /.container  -->
 
 
 {% endfor %}
@@ -103,4 +122,3 @@ permalink: /modules/
     </div>
   </div>
 </div><!-- /.container  -->
-
