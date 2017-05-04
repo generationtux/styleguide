@@ -21,3 +21,8 @@
 	* You can fix with these steps:
 		* run `pkill -f jekyll`
 		* then re-run `bundle exec gulp`
+
+## Updating NPM
+* log into NPM from terminal with `npm login`
+* use gentux creds
+* run `npm publish`
