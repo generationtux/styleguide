@@ -12,7 +12,7 @@ type props = {
   content: string,
 }
 
-const HeroCarousel = ({
+const HeroCarouselSlide = ({
   heading,
   subHeading,
   btnCtaText,
@@ -49,9 +49,7 @@ const HeroCarousel = ({
         <img
           className="img-responsive"
           alt="hero"
-          src={
-            imgUrl || 'https://media.gentux.com/afBxlPasNQvg2@kaysWHap9MTPcj'
-          }
+          src={imgUrl}
         />
         {imgCtaText &&
           <a className="btn btn-link pusher-xs-btm-lg" href={imgCtaUrl || '/'}>
@@ -62,4 +60,4 @@ const HeroCarousel = ({
   </div>
 )
 
-export default HeroCarousel
+export default HeroCarouselSlide

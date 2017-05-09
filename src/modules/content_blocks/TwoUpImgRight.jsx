@@ -26,9 +26,7 @@ const TwoUpImgRight = ({
         <img
           alt="content"
           className="shadow-level-4 img-responsive"
-          src={
-            imgUrl || 'https://media.gentux.com/afBxlPasNQvg2@kaysWHap9MTPcj'
-          }
+          src={imgUrl}
         />
       </div>
       <div className="col-sm-4 col-sm-pull-5">

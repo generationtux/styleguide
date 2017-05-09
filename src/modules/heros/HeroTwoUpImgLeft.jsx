@@ -30,9 +30,7 @@ const HeroTwoUpImgLeft = ({
           <img
             alt="hero"
             className="shadow-level-4 img-responsive"
-            src={
-              imgUrl || 'https://media.gentux.com/afBxlPasNQvg2@kaysWHap9MTPcj'
-            }
+            src={imgUrl}
           />
         </div>
         <div className="col-sm-12 col-md-7 col-lg-6 buffer-lg-left-xl">

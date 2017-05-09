@@ -20,9 +20,7 @@ const OneUp = ({ heading, content, btnCtaText, btnCtaUrl, imgUrl }: props) => (
         <img
           alt="content"
           className="shadow-level-4 img-responsive"
-          src={
-            imgUrl || 'https://media.gentux.com/afBxlPasNQvg2@kaysWHap9MTPcj'
-          }
+          src={imgUrl}
         />
         {heading &&
           <h2 className="h3 pusher-xs-top-lg pusher-xs-btm-sm">{heading}</h2>}
