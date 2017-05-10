@@ -53,3 +53,4 @@ node_modules/**/*
 .jekyll-metadata
 _site
 dist
+lib
