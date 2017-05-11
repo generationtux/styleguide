@@ -27,11 +27,14 @@ const HeroTwoUpImgLeft = ({
         ">
       <div className="row align-vertical">
         <div className="col-sm-8 col-md-5 col-lg-4 col-lg-offset-1">
-          <img
-            alt="hero"
-            className="shadow-level-4 img-responsive"
-            src={imgUrl}
-          />
+        {
+          imgUrl &&
+            <img
+              alt="hero"
+              className="shadow-level-4 img-responsive"
+              src={imgUrl}
+            />
+        }
         </div>
         <div className="col-sm-12 col-md-7 col-lg-6 buffer-lg-left-xl">
           <h1 className="domd">
@@ -39,9 +42,13 @@ const HeroTwoUpImgLeft = ({
               <div className="h6 pusher-xs-top-lg pusher-sm-top-clear pusher-xs-btm-xs">
                 {heading}
               </div>}
-            {subHeading && subHeading}
+             {
+                subHeading &&
+                  <div dangerouslySetInnerHTML={{__html: subHeading}} />
+              }
           </h1>
-          {content && <p className="pusher-xs-top-md">{content}</p>}
+          {content &&
+            <p className="pusher-xs-top-md" dangerouslySetInnerHTML={{__html: content}} />}
           {btnCtaText &&
             <p>
               <a href={btnCtaUrl} className="btn btn-primary">{btnCtaText}</a>
