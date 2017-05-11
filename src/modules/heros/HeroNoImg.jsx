@@ -28,7 +28,7 @@ const HeroNoImg = ({
               <div className="h6 pusher-xs-top-lg pusher-sm-top-clear pusher-xs-btm-xs">
                 {heading}
               </div>}
-            {subHeading && <div className="h1 domd">{subHeading}</div>}
+            {subHeading && <div dangerouslySetInnerHTML={{__html: subHeading}} className="h1 domd" />}
           </h1>
           {content &&
             <p className="pusher-xs-top-md" dangerouslySetInnerHTML={{__html: content}} />}

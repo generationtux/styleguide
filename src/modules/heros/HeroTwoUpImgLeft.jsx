@@ -42,7 +42,10 @@ const HeroTwoUpImgLeft = ({
               <div className="h6 pusher-xs-top-lg pusher-sm-top-clear pusher-xs-btm-xs">
                 {heading}
               </div>}
-            {subHeading && subHeading}
+             {
+                subHeading &&
+                  <div dangerouslySetInnerHTML={{__html: subHeading}} />
+              }
           </h1>
           {content &&
             <p className="pusher-xs-top-md" dangerouslySetInnerHTML={{__html: content}} />}

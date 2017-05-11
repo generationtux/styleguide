@@ -26,10 +26,13 @@ const HeroCarouselSlide = ({
     <div className="row">
       <div className="col-sm-4 col-sm-push-1 lift-1">
         {heading && <div className="h6 pusher-xs-btm-sm">{heading}</div>}
-        {subHeading &&
-          <h1 className="domd pusher-xs-top-md pusher-xs-btm-md pusher-sm-btm-lg">
-            {subHeading}
-          </h1>}
+        {
+          subHeading &&
+            <h1
+              dangerouslySetInnerHTML={{__html: subHeading}}
+              className="domd pusher-xs-top-md pusher-xs-btm-md pusher-sm-btm-lg"
+            />
+        }
         {(content || btnCtaText) &&
           <div>
             <hr className="hr-small" />
