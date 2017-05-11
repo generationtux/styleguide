@@ -17,17 +17,18 @@ const OneUp = ({ heading, content, btnCtaText, btnCtaUrl, imgUrl }: props) => (
       ">
     <div className="row align-vertical">
       <div className="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-        <img
-          alt="content"
-          className="shadow-level-4 img-responsive"
-          src={imgUrl}
-        />
+        {
+          imgUrl &&
+            <img
+              alt="content"
+              className="shadow-level-4 img-responsive"
+              src={imgUrl}
+            />
+        }
         {heading &&
           <h2 className="h3 pusher-xs-top-lg pusher-xs-btm-sm">{heading}</h2>}
         {content &&
-          <p>
-            {content}
-          </p>}
+          <p dangerouslySetInnerHTML={{__html: content}} />}
         {btnCtaText &&
           <p>
             <a href={btnCtaUrl} className="btn btn-primary">{btnCtaText}</a>

@@ -33,7 +33,8 @@ const HeroCarouselSlide = ({
         {(content || btnCtaText) &&
           <div>
             <hr className="hr-small" />
-            {content && <p>{content}</p>}
+            {content &&
+              <p dangerouslySetInnerHTML={{__html: content}} />}
           </div>}
         {btnCtaText &&
           <a
@@ -46,11 +47,14 @@ const HeroCarouselSlide = ({
           </a>}
       </div>
       <div className="col-sm-8">
-        <img
-          className="img-responsive"
-          alt="hero"
-          src={imgUrl}
-        />
+        {
+          imgUrl &&
+            <img
+              className="img-responsive"
+              alt="hero"
+              src={imgUrl}
+            />
+        }
         {imgCtaText &&
           <a className="btn btn-link pusher-xs-btm-lg" href={imgCtaUrl || '/'}>
             {imgCtaText}

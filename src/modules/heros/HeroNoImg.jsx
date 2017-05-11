@@ -30,7 +30,8 @@ const HeroNoImg = ({
               </div>}
             {subHeading && <div className="h1 domd">{subHeading}</div>}
           </h1>
-          {content && <p className="pusher-xs-top-md">{content}</p>}
+          {content &&
+            <p className="pusher-xs-top-md" dangerouslySetInnerHTML={{__html: content}} />}
           {btnCtaText &&
             <p>
               <a href={btnCtaUrl} className="btn btn-primary">{btnCtaText}</a>
