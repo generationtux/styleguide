@@ -32,6 +32,7 @@
 
 // Make a button look and behave like a link
 .btn-link {
+  color: $link-color;
   &,
   &:active,
   &.active,
@@ -49,6 +50,7 @@
   &:focus,
   &:active {
     border-color: transparent;
+    color: $link-hover-color;
   }
   &:hover,
   &:focus {
@@ -223,8 +225,7 @@
 .btn-color-swatch-green  {@include button-variant(white, #2bb18f, #2bb18f);}
 .btn-color-swatch-yellow {@include button-variant(black, #f6eaab, #f6eaab);}
 .btn-color-swatch-orange {@include button-variant(white, #f9905b, #f9905b);}
-.btn-color-swatch-beige  {@include button-variant(black, #d1bea0, #d1bea0);}
-.btn-color-swatch-brown  {@include button-variant(white, #963, #963);}
+.btn-color-swatch-tan  {@include button-variant(black, #d1bea0, #d1bea0);}
 
 
 // -----------------------------------------------------------------------------

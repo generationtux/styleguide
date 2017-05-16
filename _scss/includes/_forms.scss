@@ -1,0 +1,220 @@
+// -----------------------------------------------------------------------------
+// Forms and Inputs
+// -----------------------------------------------------------------------------
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="text"],
+input[type="password"],
+input[type="reset"],
+input[type="file"],
+input[type="submit"],
+textarea, select{
+    -webkit-appearance: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.input-group {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    position: relative;
+
+    input {
+        margin: 0;
+        z-index: 800;
+    }
+
+    .input-group-addon:last-child {
+
+    }
+}
+
+.form-group label {
+    @extend h6;
+}
+
+.form-control {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: $font-size-base;
+    padding-right: $font-size-base;
+    color: $gray-darker;
+    font-size: 12.8px;
+    height: 46px; // this needs to match btn height. Bootstrap does fancy calculations to make this match we have to do manually since we are cutomizing btn size
+    background-color: transparent;
+    border: 1px solid $gray-base;
+}
+
+.checkbox {
+  margin: 0;
+
+  label {
+    color: $gray-darker;
+    font-size: 12.8px;
+  }
+}
+
+textarea.form-control {
+    padding-top: $grid-gutter-width/2;
+    padding-bottom: $grid-gutter-width/2;
+}
+
+.form-group-inline {
+    @include clearfix;
+
+    > label,
+    > div.radio {
+        @media (min-width: $screen-sm-min) {
+            float: left;
+            margin: 0;
+            margin-left: $grid-gutter-width;
+        }
+    }
+}
+
+.radio-label {
+    font-family: $roboto-font-stack;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+.radio-info {
+    padding-left: 24px;
+    &.small {
+        line-height: 1.4;
+    }
+}
+$radio-btn-size: 16px;
+.radio {
+    position: relative;
+    margin: 8px 0;
+
+    input[type=radio] {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked ~ .radio-btn-styled:before{
+            opacity: 1;
+        }
+
+        &:checked ~ label{
+            color: $link-color;
+        }
+    }
+
+    label {
+        display: block;
+        padding-left: $radio-btn-size + 8; // unit part of var
+        cursor: pointer;
+        font-weight: normal;
+        letter-spacing: 0;
+        position: relative;
+        z-index: 100;
+        transition: color 0.1s ease;
+
+        &.checked {
+            color: $link-color;
+        }
+    }
+
+    .radio-btn-styled {
+        display: block;
+        position: absolute;
+        border: 1px solid $gray-base;
+        border-radius: 100%;
+        height: $radio-btn-size;
+        width: $radio-btn-size;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        box-shadow: inset 0px 0px 0px 2px white;
+    }
+    .checked ~ .radio-btn-styled {
+        background-color: $brand-info;
+    }
+
+    &:hover {
+        label {
+           color: $link-hover-color;
+        }
+    }
+
+}
+
+.radio-center-mobile {
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+
+    .form-group {
+        display: inline-block;
+        text-align: left;
+
+        @media (min-width: $screen-sm-min) {
+            display: block;
+        }
+    }
+}
+
+select.form-control {
+    background-image:url('../../images/arrow-down-black.svg');
+    background-size: 16px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+.form-underline.form-control {
+    border: none;
+    border-bottom: 1px solid $gray-base;
+    padding-left: 0;
+    box-shadow: none;
+    color: $gray-base;
+    &::-webkit-input-placeholder {
+       color: $gray-base;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       color: $gray-base;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: $gray-base;
+    }
+
+    &:-ms-input-placeholder {
+       color: $gray-base;
+    }
+    &:focus {
+        border-bottom-color: $brand-info;
+    }
+}
+.form-underline.input-group-btn {
+    font-size: inherit;
+    border-bottom: 1px solid $gray-base;
+    .btn {
+        padding: 0px 8px;
+        height: 100%;
+    }
+}
+
+.form-inline .form-group input {
+    padding: 20px 12px;
+}
+
+.form-inline-group {
+  margin-bottom: 0;
+  display: table;
+  @include clearfix;
+
+  label, input {
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: $grid-gutter-width;
+    width: auto;
+    line-height: 1;
+  }
+}

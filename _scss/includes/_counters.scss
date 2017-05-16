@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// Counters
+// -----------------------------------------------------------------------------
+.data-label {
+  color: $gray;
+  position: absolute;
+  left: -16px;
+  line-height: 30px; // set to corresponding headline line-height for better vertical alignment
+  transform: translate(-100%,0);
+}
+
+
+.data-label-list {
+  counter-reset: li;
+  list-style-type: none;
+  padding-left: 2.5em;
+  margin-left: 0;
+
+  li {
+    position: relative;
+
+    &:before {
+      counter-increment: li;
+      content: '0'  counter(li, decimal-leading-zero);
+      color: $gray;
+      position: absolute;
+      left: -(2.5em);
+    }
+  }
+  @media(min-width: $screen-lg) {
+    padding-left: 0;
+    li:before {
+      transform: translate(-100%,0);
+      left: -($grid-gutter-width*.75);
+    }
+  }
+}

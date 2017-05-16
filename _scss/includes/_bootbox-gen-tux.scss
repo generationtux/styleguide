@@ -1,0 +1,47 @@
+.bootbox .modal-content {
+    position: relative !important;
+    background-color: #fff !important;
+    border: 1px solid #999 !important;
+    border: 1px solid transparent !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5) !important;
+    background-clip: padding-box !important;
+    outline: 0 !important;
+    height: 287px !important;
+}
+
+.bootbox .modal-content .modal-body {
+    padding: 0 40px 20px !important;
+    font-family: "brandon-grotesque", Arial, Helvetica, sans-serif !important;
+}
+
+.bootbox .modal-content .modal-footer {
+    padding: 0 40px 20px !important;
+    font-family: "brandon-grotesque", Arial, Helvetica, sans-serif !important;
+    text-align: center;
+}
+
+.bootbox .modal-content .modal-body .bootbox-confirm-prompt {
+    padding: 54px 0px 13px !important;
+}
+
+.bootbox .modal-content .modal-body .bootbox-confirm-prompt .heading {
+    padding: 0px !important;
+}
+
+.bootbox .modal-content .modal-body .bootbox-confirm-prompt .heading #bootbox-confirm-prompt-title {
+    float: left !important;
+    padding: 0 45px 0 0 !important;
+}
+
+.bootbox .modal-content .modal-body .bootbox-confirm-prompt .form-group .bootbox-body {
+    font-size: 19px !important;
+    text-align: center;
+}
+
+.bootbox .modal-content .modal-footer button {
+    min-width: 30%;
+    display: inline-block;
+    margin-bottom: 0;
+}

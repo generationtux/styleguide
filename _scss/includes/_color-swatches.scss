@@ -1,0 +1,15 @@
+/////////////////
+// color swatches
+////////////////
+
+.color-swatch-white  { @include swatch(#f8f8f8); }
+.color-swatch-orange { @include swatch(#f9905b); }
+.color-swatch-pink   { @include swatch(#e04ea7); }
+.color-swatch-red    { @include swatch(#c4383f); }
+.color-swatch-purple { @include swatch(#8559c8); }
+.color-swatch-green  { @include swatch(#2bb18f); }
+.color-swatch-blue   { @include swatch(#6779de); }
+.color-swatch-grey   { @include swatch(#818085); }
+.color-swatch-tan    { @include swatch(#d1bea0); }
+.color-swatch-yellow { @include swatch(#f6eaab); }
+.color-swatch-black  { @include swatch(#222); }

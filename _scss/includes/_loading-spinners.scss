@@ -1,0 +1,55 @@
+.spinner-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+
+  .spinner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.loading-tie {
+  position: relative;
+  display: inline-block;
+  $arrow-size: 12px;
+  width: $arrow-size*3;
+  height: $arrow-size*2;
+
+  &:before,
+  &:after {
+    content:"";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-top: $arrow-size solid transparent;
+    border-bottom: $arrow-size solid transparent;
+  }
+  &:before {
+    border-left: $arrow-size *1.5 solid black;
+    left: 0;
+  }
+  &:after {
+    border-right: $arrow-size *1.5 solid black;
+    right: 0;
+  }
+}
+
+.loading-spin {
+  animation: spin 1.1s cubic-bezier(.2,.3,.3,1) infinite;
+  transform-origin: center center ;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  70%,100% {
+    transform: rotate(540deg);
+  }
+}
