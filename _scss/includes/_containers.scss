@@ -5,6 +5,12 @@
 // -----------------------------------------------------------------------------
 // Visual Styles
 // -----------------------------------------------------------------------------
+.container-fluid {
+    @media(min-width: $screen-sm) {
+        padding-left: $outside-gutter-width + $grid-gutter-width/2;
+        padding-right: $outside-gutter-width + $grid-gutter-width/2;
+    }
+}
 .container-bordered {
     border-top: 1px solid $gray-lighter;
     border-bottom: 1px solid $gray-lighter;
@@ -70,50 +76,16 @@
   }
 }
 
-.callout-bg-offset-left {
-  position: relative;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 75%;
-    background-color: $gray-lighter;
-  }
-}
-.callout-bg-offset-right {
-  position: relative;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 75%;
-    background-color: $gray-lighter;
-  }
-}
-
-
-.container.container-hero,
-.container-fluid.container-hero {
-    position: relative;
-    background: linear-gradient(to right, white 50%, $gray-lighter 50%);
-    @media(min-width: $screen-sm-min) {
-        padding-left: $grid-gutter-width;
-        padding-right: $grid-gutter-width;
-    }
+.container-hero-image {
+    display: inline-block;
+    max-width: 100%;
+    background-image: url("../../images/hero-placeholder.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
     @media(min-width: $screen-lg-min) {
-        > .row {
-            min-height: calc(100vh - 96px);
-            .container-hero-image {
-                img {
-                    max-height: calc(80vh - 96px);
-                }
-            }
-        }
+        img {
+            max-height: calc(80vh - 96px);
+        }   
     }
 }

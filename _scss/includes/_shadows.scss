@@ -4,3 +4,10 @@
 .shadow-level-3 { @include shadow-level(3); }
 .shadow-level-4 { @include shadow-level(4); }
 .shadow-level-5 { @include shadow-level(5); }
+
+.shadow-inset-level-0 { @include shadow-inset-level(0); }
+.shadow-inset-level-1 { @include shadow-inset-level(1); }
+.shadow-inset-level-2 { @include shadow-inset-level(2); }
+.shadow-inset-level-3 { @include shadow-inset-level(3); }
+.shadow-inset-level-4 { @include shadow-inset-level(4); }
+.shadow-inset-level-5 { @include shadow-inset-level(5); }

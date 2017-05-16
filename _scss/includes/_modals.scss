@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------------------
+// Modals & Popups
+// -----------------------------------------------------------------------------
+.popup {
+  position: fixed;
+  z-index: 2000;
+  top: 10%;
+  right: 10%;
+  left: 10%;
+  margin: auto;
+  max-width: 900px;
+  padding: $grid-gutter-width/2 $grid-gutter-width $grid-gutter-width;
+  @include shadow-level(4);
+}
+
+.modal-content {
+    @include shadow-level(4);
+}
+
+.modal-header,
+.modal-footer,
+.modal-body {
+    border: none;
+    position: relative;
+    padding: $grid-gutter-width/2;
+    min-height: 0;
+
+    @media (min-width: $screen-sm-min) {
+        padding: $grid-gutter-width;
+    }
+}
+
+.modal-header {
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    padding-top: 0;
+    text-align: left;
+}
+
+.modal-dialog {
+    margin: 0;
+
+    @media (min-width: $screen-sm-min) {
+        margin: $grid-gutter-width auto;
+    }
+}
+
+.modal .close,
+.popup .close {
+    background: url('https://media.gentux.com//T1dIpEDuCIW5RrRthTF7F7rL@acp') no-repeat -94px -40px;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    opacity: 1;
+    margin: 0;
+    position: absolute;
+    top: $grid-gutter-width/1.5;
+    right: $grid-gutter-width/1.5;
+    z-index: 900;
+
+    &:hover {
+       background-position: -94px 0;
+    }
+}
+
+.modal-bleed {
+    .modal-header,
+    .modal-footer,
+    .modal-body {
+        padding: 0;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0;
+        }
+    }
+
+    .modal-dialog {
+        height: 100%;
+
+        @media (min-width: $screen-sm-min) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .close {
+        background-position: -94px 0;
+
+        &:hover {
+           background-position: -94px -40px;
+        }
+    }
+}

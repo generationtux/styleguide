@@ -2,7 +2,9 @@
 // Glyphicon Overrides
 // -----------------------------------------------------------------------------
 
-
+.caret {
+	transform: translate(0,-50%);
+}
 .glyphicon-arrow-right {
     // content: url(../../images/icons/glyphicon-arrow-right.svg);
     color: transparent !important;
