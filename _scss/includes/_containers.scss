@@ -79,7 +79,7 @@
 .container-hero-image {
     display: inline-block;
     max-width: 100%;
-    background-image: url("../../images/hero-placeholder.png");
+    background-image: url($image-url + 'hero-placeholder.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;

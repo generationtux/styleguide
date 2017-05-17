@@ -6456,7 +6456,7 @@ ol.fancy-list {
 .container-hero-image {
   display: inline-block;
   max-width: 100%;
-  background-image: url("../../images/hero-placeholder.png");
+  background-image: url("../images/hero-placeholder.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain; }
@@ -12596,17 +12596,17 @@ img.pos-bottom-left {
 
 .glyphicon-arrow-right {
   color: transparent !important;
-  background: url(../../images/icons/default/glyphicon-arrow-right.svg) no-repeat center center; }
+  background: url("../images/icons/default/glyphicon-arrow-right.svg") no-repeat center center; }
 
 .link-style.glyphicon-arrow-right {
-  background: url(../../images/icons/link-style/glyphicon-arrow-right.svg) no-repeat center center; }
+  background: url("../images/icons/link-style/glyphicon-arrow-right.svg") no-repeat center center; }
 
 .glyphicon-arrow-left {
   color: transparent !important;
-  background: url(../../images/icons/default/glyphicon-arrow-left.svg) no-repeat center center; }
+  background: url("../images/icons/default/glyphicon-arrow-left.svg") no-repeat center center; }
 
 .link-style.glyphicon-arrow-left {
-  background: url(../../images/icons/link-style/glyphicon-arrow-left.svg) no-repeat center center; }
+  background: url("../images/icons/link-style/glyphicon-arrow-left.svg") no-repeat center center; }
 
 .breadcrumb {
   border-radius: 0;

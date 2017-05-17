@@ -161,7 +161,7 @@ $radio-btn-size: 16px;
 }
 
 select.form-control {
-    background-image:url('../../images/arrow-down-black.svg');
+    background-image:url($image-url + 'arrow-down-black.svg');
     background-size: 16px;
     background-position: right center;
     background-repeat: no-repeat;
