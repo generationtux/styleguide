@@ -47,7 +47,7 @@
 }
 
 .stamp-726 {
-  background: url(../../images/stamp-726.svg) center center no-repeat;
+  background: url($image-url + '../../images/stamp-726.svg') center center no-repeat;
   width: 65px;
   height: 65px;
   position: absolute;

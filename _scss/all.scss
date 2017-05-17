@@ -1,13 +1,13 @@
-// Set environment var for proper font loading
-// True for styleguide, False for Production
-$env-styleguide: true;
+// set asset path for proper font and image loading
+// this is the relative path from the css to the images and font folders
+// examples:
+// styleguide: "../"
+// ecomm: "../../"
 
-$font-url-styleguide: "../fonts/";
-$font-url-production: "../../fonts/";
-$font-url: $font-url-production;
-@if ($env-styleguide == true) {
-	$font-url: $font-url-styleguide;
-}
+$asset-url: "../";
+
+$font-url:  $asset-url + "fonts/";
+$image-url: $asset-url + "images/";
 
 
 @import "bootstrap-custom";

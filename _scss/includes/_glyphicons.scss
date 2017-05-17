@@ -6,19 +6,17 @@
 	transform: translate(0,-50%);
 }
 .glyphicon-arrow-right {
-    // content: url(../../images/icons/glyphicon-arrow-right.svg);
     color: transparent !important;
-    background:  url(../../images/icons/default/glyphicon-arrow-right.svg) no-repeat center center;
+    background:  url($image-url + 'icons/default/glyphicon-arrow-right.svg') no-repeat center center;
 }
 .link-style.glyphicon-arrow-right {
-    background:  url(../../images/icons/link-style/glyphicon-arrow-right.svg) no-repeat center center;
+    background:  url($image-url + 'icons/link-style/glyphicon-arrow-right.svg') no-repeat center center;
 }
 
 .glyphicon-arrow-left {
-    // content: url(../../images/icons/glyphicon-arrow-right.svg);
     color: transparent !important;
-    background: url(../../images/icons/default/glyphicon-arrow-left.svg) no-repeat center center;
+    background: url($image-url + 'icons/default/glyphicon-arrow-left.svg') no-repeat center center;
 }
 .link-style.glyphicon-arrow-left {
-    background:  url(../../images/icons/link-style/glyphicon-arrow-left.svg) no-repeat center center;
+    background:  url($image-url + 'icons/link-style/glyphicon-arrow-left.svg') no-repeat center center;
 }
