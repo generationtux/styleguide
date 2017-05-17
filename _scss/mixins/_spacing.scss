@@ -1,324 +1,82 @@
-@mixin make-pusher($browserSize:"sm") {
-    @if $browserSize == "xs" {
-        // all sides
-        .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
-        .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
-        .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
-        .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
-        .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
-        .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
-        
-        .pusher-#{$browserSize}-all-clear { margin: 0; }
-        .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
+$breakpoints: xs sm md lg;
 
-        // sides
-        .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
-        .pusher-#{$browserSize}-horizontal-sm { margin-left: $type-spacing-sm; margin-right: $type-spacing-sm; }
-        .pusher-#{$browserSize}-horizontal-md { margin-left: $type-spacing-md; margin-right: $type-spacing-md; }
-        .pusher-#{$browserSize}-horizontal-lg { margin-left: $type-spacing-lg; margin-right: $type-spacing-lg; }
-        .pusher-#{$browserSize}-horizontal-xl { margin-left: $type-spacing-xl; margin-right: $type-spacing-xl; }
-        .pusher-#{$browserSize}-horizontal-xxl { margin-left: $type-spacing-xl*2; margin-right: $type-spacing-xl*2; }
-        
-        .pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
-        .copy.pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
+@mixin make-pusher($size:"xs") {
+  @each $size in $breakpoints {
+    .pusher-#{$size}-all-xs { margin: $type-spacing-xs; }
+    .pusher-#{$size}-all-sm { margin: $type-spacing-sm; }
+    .pusher-#{$size}-all-md { margin: $type-spacing-md; }
+    .pusher-#{$size}-all-lg { margin: $type-spacing-lg; }
+    .pusher-#{$size}-all-xl { margin: $type-spacing-xl; }
+    .pusher-#{$size}-all-xxl { margin: $type-spacing-xl*2; }
+    .pusher-#{$size}-all-clear { margin: 0; }
+    .copy.pusher-#{$size}-all-clear { margin: 0; }
 
-        // tops
-        .pusher-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-        .pusher-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-        .pusher-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-        .pusher-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-        .pusher-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-        .pusher-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
-        
-        .pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-        .copy.pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
+    // sides
+    .pusher-#{$size}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
+    .pusher-#{$size}-horizontal-sm { margin-left: $type-spacing-sm; margin-right: $type-spacing-sm; }
+    .pusher-#{$size}-horizontal-md { margin-left: $type-spacing-md; margin-right: $type-spacing-md; }
+    .pusher-#{$size}-horizontal-lg { margin-left: $type-spacing-lg; margin-right: $type-spacing-lg; }
+    .pusher-#{$size}-horizontal-xl { margin-left: $type-spacing-xl; margin-right: $type-spacing-xl; }
+    .pusher-#{$size}-horizontal-xxl { margin-left: $type-spacing-xl*2; margin-right: $type-spacing-xl*2; }
+    
+    .pusher-#{$size}-horizontal-clear { margin-left: 0; margin-right: 0; }
+    .copy.pusher-#{$size}-horizontal-clear { margin-left: 0; margin-right: 0; }
 
-        // create top classes
-        .pusher-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-        .pusher-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-        .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-        .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-        .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-        .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
+    // tops
+    .pusher-#{$size}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
+    .pusher-#{$size}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
+    .pusher-#{$size}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
+    .pusher-#{$size}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
+    .pusher-#{$size}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
+    .pusher-#{$size}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
+    
+    .pusher-#{$size}-vertical-clear { margin-top: 0; margin-bottom: 0;}
+    .copy.pusher-#{$size}-vertical-clear { margin-top: 0; margin-bottom: 0;}
 
-        .pusher-#{$browserSize}-top-clear { margin-top: 0; }
-        .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
+    // create top classes
+    .pusher-#{$size}-top-xs { margin-top: $type-spacing-xs; }
+    .pusher-#{$size}-top-sm { margin-top: $type-spacing-sm; }
+    .pusher-#{$size}-top-md { margin-top: $type-spacing-md; }
+    .pusher-#{$size}-top-lg { margin-top: $type-spacing-lg; }
+    .pusher-#{$size}-top-xl { margin-top: $type-spacing-xl; }
+    .pusher-#{$size}-top-xxl { margin-top: $type-spacing-xl*2; }
 
-        // create bottom classes
-        .pusher-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-        .pusher-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-        .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-        .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-        .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-        .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
+    .pusher-#{$size}-top-clear { margin-top: 0; }
+    .copy.pusher-#{$size}-top-clear { margin-top: 0; }
 
-        .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
-        .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
+    // create bottom classes
+    .pusher-#{$size}-btm-xs { margin-bottom: $type-spacing-xs; }
+    .pusher-#{$size}-btm-sm { margin-bottom: $type-spacing-sm; }
+    .pusher-#{$size}-btm-md { margin-bottom: $type-spacing-md; }
+    .pusher-#{$size}-btm-lg { margin-bottom: $type-spacing-lg; }
+    .pusher-#{$size}-btm-xl { margin-bottom: $type-spacing-xl; }
+    .pusher-#{$size}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
 
-        // create right classes
-        .pusher-#{$browserSize}-right-xs { margin-right: $type-spacing-xs; }
-        .pusher-#{$browserSize}-right-sm { margin-right: $type-spacing-sm; }
-        .pusher-#{$browserSize}-right-md { margin-right: $type-spacing-md; }
-        .pusher-#{$browserSize}-right-lg { margin-right: $type-spacing-lg; }
-        .pusher-#{$browserSize}-right-xl { margin-right: $type-spacing-xl; }
-        .pusher-#{$browserSize}-right-xxl { margin-right: $type-spacing-xl*2; }
+    .pusher-#{$size}-btm-clear { margin-bottom: 0; }
+    .copy.pusher-#{$size}-btm-clear { margin-bottom: 0; }
 
-        .pusher-#{$browserSize}-right-clear { margin-right: 0; }
-        .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
+    // create right classes
+    .pusher-#{$size}-right-xs { margin-right: $type-spacing-xs; }
+    .pusher-#{$size}-right-sm { margin-right: $type-spacing-sm; }
+    .pusher-#{$size}-right-md { margin-right: $type-spacing-md; }
+    .pusher-#{$size}-right-lg { margin-right: $type-spacing-lg; }
+    .pusher-#{$size}-right-xl { margin-right: $type-spacing-xl; }
+    .pusher-#{$size}-right-xxl { margin-right: $type-spacing-xl*2; }
 
-        // create left classes
-        .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
-        .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
-        .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
-        .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
-        .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
-        .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
+    .pusher-#{$size}-right-clear { margin-right: 0; }
+    .copy.pusher-#{$size}-right-clear { margin-right: 0; }
 
-        .pusher-#{$browserSize}-left-clear { margin-left: 0; }
-        .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
+    // create left classes
+    .pusher-#{$size}-left-xs { margin-left: $type-spacing-xs; }
+    .pusher-#{$size}-left-sm { margin-left: $type-spacing-sm; }
+    .pusher-#{$size}-left-md { margin-left: $type-spacing-md; }
+    .pusher-#{$size}-left-lg { margin-left: $type-spacing-lg; }
+    .pusher-#{$size}-left-xl { margin-left: $type-spacing-xl; }
+    .pusher-#{$size}-left-xxl { margin-left: $type-spacing-xl*2; }
 
-    }
-    @if $browserSize == "sm" {
-        @media(min-width:$screen-sm-min){
-            // all sides
-            .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
-            .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
-            .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
-            .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
-            .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
-            .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-all-clear { margin: 0; }
-            .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
-
-            // sides
-            .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
-            .pusher-#{$browserSize}-horizontal-sm { margin-left: $type-spacing-sm; margin-right: $type-spacing-sm; }
-            .pusher-#{$browserSize}-horizontal-md { margin-left: $type-spacing-md; margin-right: $type-spacing-md; }
-            .pusher-#{$browserSize}-horizontal-lg { margin-left: $type-spacing-lg; margin-right: $type-spacing-lg; }
-            .pusher-#{$browserSize}-horizontal-xl { margin-left: $type-spacing-xl; margin-right: $type-spacing-xl; }
-            .pusher-#{$browserSize}-horizontal-xxl { margin-left: $type-spacing-xl*2; margin-right: $type-spacing-xl*2; }
-            
-            .pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
-            .copy.pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
-
-            // tops
-            .pusher-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-            .pusher-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-            .pusher-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-            .pusher-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-            .pusher-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-            .pusher-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
-            
-            .pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-            .copy.pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-
-
-            // create top classes
-            .pusher-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-            .pusher-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-            .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-            .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-            .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-            .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-top-clear { margin-top: 0; }
-            .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
-
-            // create bottom classes
-            .pusher-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-            .pusher-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-            .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-            .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-            .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-            .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
-            .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
-
-            // create right classes
-            .pusher-#{$browserSize}-right-xs { margin-right: $type-spacing-xs; }
-            .pusher-#{$browserSize}-right-sm { margin-right: $type-spacing-sm; }
-            .pusher-#{$browserSize}-right-md { margin-right: $type-spacing-md; }
-            .pusher-#{$browserSize}-right-lg { margin-right: $type-spacing-lg; }
-            .pusher-#{$browserSize}-right-xl { margin-right: $type-spacing-xl; }
-            .pusher-#{$browserSize}-right-xxl { margin-right: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-right-clear { margin-right: 0; }
-            .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
-
-            // create left classes
-            .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
-            .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
-            .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
-            .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
-            .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
-            .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-left-clear { margin-left: 0; }
-            .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
-        }
-    }
-    @if $browserSize == "md" {
-        @media(min-width:$screen-md-min){
-            // all sides
-            .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
-            .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
-            .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
-            .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
-            .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
-            .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-all-clear { margin: 0; }
-            .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
-
-            // sides
-            .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
-            .pusher-#{$browserSize}-horizontal-sm { margin-left: $type-spacing-sm; margin-right: $type-spacing-sm; }
-            .pusher-#{$browserSize}-horizontal-md { margin-left: $type-spacing-md; margin-right: $type-spacing-md; }
-            .pusher-#{$browserSize}-horizontal-lg { margin-left: $type-spacing-lg; margin-right: $type-spacing-lg; }
-            .pusher-#{$browserSize}-horizontal-xl { margin-left: $type-spacing-xl; margin-right: $type-spacing-xl; }
-            .pusher-#{$browserSize}-horizontal-xxl { margin-left: $type-spacing-xl*2; margin-right: $type-spacing-xl*2; }
-            
-            .pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
-            .copy.pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
-
-            // tops
-            .pusher-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-            .pusher-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-            .pusher-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-            .pusher-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-            .pusher-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-            .pusher-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
-            
-            .pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-            .copy.pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-
-            // create top classes
-            .pusher-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-            .pusher-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-            .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-            .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-            .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-            .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-top-clear { margin-top: 0; }
-            .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
-
-            // create bottom classes
-            .pusher-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-            .pusher-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-            .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-            .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-            .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-            .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
-            .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
-
-            // create right classes
-            .pusher-#{$browserSize}-right-xs { margin-right: $type-spacing-xs; }
-            .pusher-#{$browserSize}-right-sm { margin-right: $type-spacing-sm; }
-            .pusher-#{$browserSize}-right-md { margin-right: $type-spacing-md; }
-            .pusher-#{$browserSize}-right-lg { margin-right: $type-spacing-lg; }
-            .pusher-#{$browserSize}-right-xl { margin-right: $type-spacing-xl; }
-            .pusher-#{$browserSize}-right-xxl { margin-right: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-right-clear { margin-right: 0; }
-            .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
-
-            // create bottom classes
-            .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
-            .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
-            .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
-            .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
-            .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
-            .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-left-clear { margin-left: 0; }
-            .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
-        }
-    }
-    @if $browserSize == "lg" {
-        @media(min-width:$screen-lg-min){
-            // all sides
-            .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
-            .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
-            .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
-            .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
-            .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
-            .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-all-clear { margin: 0; }
-            .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
-
-            // sides
-            .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
-            .pusher-#{$browserSize}-horizontal-sm { margin-left: $type-spacing-sm; margin-right: $type-spacing-sm; }
-            .pusher-#{$browserSize}-horizontal-md { margin-left: $type-spacing-md; margin-right: $type-spacing-md; }
-            .pusher-#{$browserSize}-horizontal-lg { margin-left: $type-spacing-lg; margin-right: $type-spacing-lg; }
-            .pusher-#{$browserSize}-horizontal-xl { margin-left: $type-spacing-xl; margin-right: $type-spacing-xl; }
-            .pusher-#{$browserSize}-horizontal-xxl { margin-left: $type-spacing-xl*2; margin-right: $type-spacing-xl*2; }
-            
-            .pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
-            .copy.pusher-#{$browserSize}-horizontal-clear { margin-left: 0; margin-right: 0; }
-
-            // tops
-            .pusher-#{$browserSize}-vertical-xs { margin-top: $type-spacing-xs; margin-bottom: $type-spacing-xs;}
-            .pusher-#{$browserSize}-vertical-sm { margin-top: $type-spacing-sm; margin-bottom: $type-spacing-sm;}
-            .pusher-#{$browserSize}-vertical-md { margin-top: $type-spacing-md; margin-bottom: $type-spacing-md;}
-            .pusher-#{$browserSize}-vertical-lg { margin-top: $type-spacing-lg; margin-bottom: $type-spacing-lg;}
-            .pusher-#{$browserSize}-vertical-xl { margin-top: $type-spacing-xl; margin-bottom: $type-spacing-xl;}
-            .pusher-#{$browserSize}-vertical-xxl { margin-top: $type-spacing-xl*2; margin-bottom: $type-spacing-xl*2;}
-            
-            .pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-            .copy.pusher-#{$browserSize}-vertical-clear { margin-top: 0; margin-bottom: 0;}
-
-            // create top classes
-            .pusher-#{$browserSize}-top-xs { margin-top: $type-spacing-xs; }
-            .pusher-#{$browserSize}-top-sm { margin-top: $type-spacing-sm; }
-            .pusher-#{$browserSize}-top-md { margin-top: $type-spacing-md; }
-            .pusher-#{$browserSize}-top-lg { margin-top: $type-spacing-lg; }
-            .pusher-#{$browserSize}-top-xl { margin-top: $type-spacing-xl; }
-            .pusher-#{$browserSize}-top-xxl { margin-top: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-top-clear { margin-top: 0; }
-            .copy.pusher-#{$browserSize}-top-clear { margin-top: 0; }
-
-            // create bottom classes
-            .pusher-#{$browserSize}-btm-xs { margin-bottom: $type-spacing-xs; }
-            .pusher-#{$browserSize}-btm-sm { margin-bottom: $type-spacing-sm; }
-            .pusher-#{$browserSize}-btm-md { margin-bottom: $type-spacing-md; }
-            .pusher-#{$browserSize}-btm-lg { margin-bottom: $type-spacing-lg; }
-            .pusher-#{$browserSize}-btm-xl { margin-bottom: $type-spacing-xl; }
-            .pusher-#{$browserSize}-btm-xxl { margin-bottom: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
-            .copy.pusher-#{$browserSize}-btm-clear { margin-bottom: 0; }
-
-            // create right classes
-            .pusher-#{$browserSize}-right-xs { margin-right: $type-spacing-xs; }
-            .pusher-#{$browserSize}-right-sm { margin-right: $type-spacing-sm; }
-            .pusher-#{$browserSize}-right-md { margin-right: $type-spacing-md; }
-            .pusher-#{$browserSize}-right-lg { margin-right: $type-spacing-lg; }
-            .pusher-#{$browserSize}-right-xl { margin-right: $type-spacing-xl; }
-            .pusher-#{$browserSize}-right-xxl { margin-right: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-right-clear { margin-right: 0; }
-            .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
-
-            // create bottom classes
-            .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
-            .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
-            .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
-            .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
-            .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
-            .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
-
-            .pusher-#{$browserSize}-left-clear { margin-left: 0; }
-            .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
-        }
-    }
+    .pusher-#{$size}-left-clear { margin-left: 0; }
+    .copy.pusher-#{$size}-left-clear { margin-left: 0; }
+  }
 }
 
 
