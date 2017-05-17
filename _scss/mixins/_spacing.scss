@@ -1,15 +1,15 @@
 @mixin make-pusher($browserSize:"sm") {
     @if $browserSize == "xs" {
         // all sides
-        .pusher-#{$browserSize}-xs { margin: $type-spacing-xs; }
-        .pusher-#{$browserSize}-sm { margin: $type-spacing-sm; }
-        .pusher-#{$browserSize}-md { margin: $type-spacing-md; }
-        .pusher-#{$browserSize}-lg { margin: $type-spacing-lg; }
-        .pusher-#{$browserSize}-xl { margin: $type-spacing-xl; }
-        .pusher-#{$browserSize}-xxl { margin: $type-spacing-xl*2; }
+        .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
+        .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
+        .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
+        .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
+        .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
+        .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
         
-        .pusher-#{$browserSize}-clear { margin: 0; }
-        .copy.pusher-#{$browserSize}-clear { margin: 0; }
+        .pusher-#{$browserSize}-all-clear { margin: 0; }
+        .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
 
         // sides
         .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
@@ -81,15 +81,15 @@
     @if $browserSize == "sm" {
         @media(min-width:$screen-sm-min){
             // all sides
-            .pusher-#{$browserSize}-xs { margin: $type-spacing-xs; }
-            .pusher-#{$browserSize}-sm { margin: $type-spacing-sm; }
-            .pusher-#{$browserSize}-md { margin: $type-spacing-md; }
-            .pusher-#{$browserSize}-lg { margin: $type-spacing-lg; }
-            .pusher-#{$browserSize}-xl { margin: $type-spacing-xl; }
-            .pusher-#{$browserSize}-xxl { margin: $type-spacing-xl*2; }
+            .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
+            .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
+            .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
+            .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
+            .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
+            .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
 
-            .pusher-#{$browserSize}-clear { margin: 0; }
-            .copy.pusher-#{$browserSize}-clear { margin: 0; }
+            .pusher-#{$browserSize}-all-clear { margin: 0; }
+            .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
 
             // sides
             .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
@@ -162,15 +162,15 @@
     @if $browserSize == "md" {
         @media(min-width:$screen-md-min){
             // all sides
-            .pusher-#{$browserSize}-xs { margin: $type-spacing-xs; }
-            .pusher-#{$browserSize}-sm { margin: $type-spacing-sm; }
-            .pusher-#{$browserSize}-md { margin: $type-spacing-md; }
-            .pusher-#{$browserSize}-lg { margin: $type-spacing-lg; }
-            .pusher-#{$browserSize}-xl { margin: $type-spacing-xl; }
-            .pusher-#{$browserSize}-xxl { margin: $type-spacing-xl*2; }
+            .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
+            .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
+            .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
+            .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
+            .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
+            .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
 
-            .pusher-#{$browserSize}-clear { margin: 0; }
-            .copy.pusher-#{$browserSize}-clear { margin: 0; }
+            .pusher-#{$browserSize}-all-clear { margin: 0; }
+            .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
 
             // sides
             .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
@@ -242,15 +242,15 @@
     @if $browserSize == "lg" {
         @media(min-width:$screen-lg-min){
             // all sides
-            .pusher-#{$browserSize}-xs { margin: $type-spacing-xs; }
-            .pusher-#{$browserSize}-sm { margin: $type-spacing-sm; }
-            .pusher-#{$browserSize}-md { margin: $type-spacing-md; }
-            .pusher-#{$browserSize}-lg { margin: $type-spacing-lg; }
-            .pusher-#{$browserSize}-xl { margin: $type-spacing-xl; }
-            .pusher-#{$browserSize}-xxl { margin: $type-spacing-xl*2; }
+            .pusher-#{$browserSize}-all-xs { margin: $type-spacing-xs; }
+            .pusher-#{$browserSize}-all-sm { margin: $type-spacing-sm; }
+            .pusher-#{$browserSize}-all-md { margin: $type-spacing-md; }
+            .pusher-#{$browserSize}-all-lg { margin: $type-spacing-lg; }
+            .pusher-#{$browserSize}-all-xl { margin: $type-spacing-xl; }
+            .pusher-#{$browserSize}-all-xxl { margin: $type-spacing-xl*2; }
 
-            .pusher-#{$browserSize}-clear { margin: 0; }
-            .copy.pusher-#{$browserSize}-clear { margin: 0; }
+            .pusher-#{$browserSize}-all-clear { margin: 0; }
+            .copy.pusher-#{$browserSize}-all-clear { margin: 0; }
 
             // sides
             .pusher-#{$browserSize}-horizontal-xs { margin-left: $type-spacing-xs; margin-right: $type-spacing-xs; }
@@ -325,15 +325,15 @@
 @mixin make-puller($browserSize:"sm") {
     @if $browserSize == "xs" {
         // all sides
-        .puller-#{$browserSize}-xs { margin: -$type-spacing-xs; }
-        .puller-#{$browserSize}-sm { margin: -$type-spacing-sm; }
-        .puller-#{$browserSize}-md { margin: -$type-spacing-md; }
-        .puller-#{$browserSize}-lg { margin: -$type-spacing-lg; }
-        .puller-#{$browserSize}-xl { margin: -$type-spacing-xl; }
-        .puller-#{$browserSize}-xxl { margin: -$type-spacing-xl*2; }
+        .puller-#{$browserSize}-all-xs { margin: -$type-spacing-xs; }
+        .puller-#{$browserSize}-all-sm { margin: -$type-spacing-sm; }
+        .puller-#{$browserSize}-all-md { margin: -$type-spacing-md; }
+        .puller-#{$browserSize}-all-lg { margin: -$type-spacing-lg; }
+        .puller-#{$browserSize}-all-xl { margin: -$type-spacing-xl; }
+        .puller-#{$browserSize}-all-xxl { margin: -$type-spacing-xl*2; }
 
-        .puller-#{$browserSize}-clear { margin: 0; }
-        .copy.puller-#{$browserSize}-clear { margin: 0; }
+        .puller-#{$browserSize}-all-clear { margin: 0; }
+        .copy.puller-#{$browserSize}-all-clear { margin: 0; }
 
         // create top classes
         .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
@@ -383,15 +383,15 @@
     @if $browserSize == "sm" {
         @media(min-width:$screen-sm-min){
             // all sides
-            .puller-#{$browserSize}-xs { margin: -$type-spacing-xs; }
-            .puller-#{$browserSize}-sm { margin: -$type-spacing-sm; }
-            .puller-#{$browserSize}-md { margin: -$type-spacing-md; }
-            .puller-#{$browserSize}-lg { margin: -$type-spacing-lg; }
-            .puller-#{$browserSize}-xl { margin: -$type-spacing-xl; }
-            .puller-#{$browserSize}-xxl { margin: -$type-spacing-xl*2; }
+            .puller-#{$browserSize}-all-xs { margin: -$type-spacing-xs; }
+            .puller-#{$browserSize}-all-sm { margin: -$type-spacing-sm; }
+            .puller-#{$browserSize}-all-md { margin: -$type-spacing-md; }
+            .puller-#{$browserSize}-all-lg { margin: -$type-spacing-lg; }
+            .puller-#{$browserSize}-all-xl { margin: -$type-spacing-xl; }
+            .puller-#{$browserSize}-all-xxl { margin: -$type-spacing-xl*2; }
 
-            .puller-#{$browserSize}-clear { margin: 0; }
-            .copy.puller-#{$browserSize}-clear { margin: 0; }
+            .puller-#{$browserSize}-all-clear { margin: 0; }
+            .copy.puller-#{$browserSize}-all-clear { margin: 0; }
 
             // create top classes
             .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
@@ -441,15 +441,15 @@
     @if $browserSize == "md" {
         @media(min-width:$screen-md-min){
             // all sides
-            .puller-#{$browserSize}-xs { margin: -$type-spacing-xs; }
-            .puller-#{$browserSize}-sm { margin: -$type-spacing-sm; }
-            .puller-#{$browserSize}-md { margin: -$type-spacing-md; }
-            .puller-#{$browserSize}-lg { margin: -$type-spacing-lg; }
-            .puller-#{$browserSize}-xl { margin: -$type-spacing-xl; }
-            .puller-#{$browserSize}-xxl { margin: -$type-spacing-xl*2; }
+            .puller-#{$browserSize}-all-xs { margin: -$type-spacing-xs; }
+            .puller-#{$browserSize}-all-sm { margin: -$type-spacing-sm; }
+            .puller-#{$browserSize}-all-md { margin: -$type-spacing-md; }
+            .puller-#{$browserSize}-all-lg { margin: -$type-spacing-lg; }
+            .puller-#{$browserSize}-all-xl { margin: -$type-spacing-xl; }
+            .puller-#{$browserSize}-all-xxl { margin: -$type-spacing-xl*2; }
 
-            .puller-#{$browserSize}-clear { margin: 0; }
-            .copy.puller-#{$browserSize}-clear { margin: 0; }
+            .puller-#{$browserSize}-all-clear { margin: 0; }
+            .copy.puller-#{$browserSize}-all-clear { margin: 0; }
 
             // create top classes
             .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
@@ -499,15 +499,15 @@
     @if $browserSize == "lg" {
         @media(min-width:$screen-lg-min){
             // all sides
-            .puller-#{$browserSize}-xs { margin: -$type-spacing-xs; }
-            .puller-#{$browserSize}-sm { margin: -$type-spacing-sm; }
-            .puller-#{$browserSize}-md { margin: -$type-spacing-md; }
-            .puller-#{$browserSize}-lg { margin: -$type-spacing-lg; }
-            .puller-#{$browserSize}-xl { margin: -$type-spacing-xl; }
-            .puller-#{$browserSize}-xxl { margin: -$type-spacing-xl*2; }
+            .puller-#{$browserSize}-all-xs { margin: -$type-spacing-xs; }
+            .puller-#{$browserSize}-all-sm { margin: -$type-spacing-sm; }
+            .puller-#{$browserSize}-all-md { margin: -$type-spacing-md; }
+            .puller-#{$browserSize}-all-lg { margin: -$type-spacing-lg; }
+            .puller-#{$browserSize}-all-xl { margin: -$type-spacing-xl; }
+            .puller-#{$browserSize}-all-xxl { margin: -$type-spacing-xl*2; }
 
-            .puller-#{$browserSize}-clear { margin: 0; }
-            .copy.puller-#{$browserSize}-clear { margin: 0; }
+            .puller-#{$browserSize}-all-clear { margin: 0; }
+            .copy.puller-#{$browserSize}-all-clear { margin: 0; }
 
             // create top classes
             .puller-#{$browserSize}-top-xs { margin-top: -$type-spacing-xs; }
@@ -561,15 +561,15 @@
 @mixin make-buffer($browserSize:"sm") {
     @if $browserSize == "xs" {
         // all sides
-        .buffer-#{$browserSize}-xs { padding: $type-spacing-xs; }
-        .buffer-#{$browserSize}-sm { padding: $type-spacing-sm; }
-        .buffer-#{$browserSize}-md { padding: $type-spacing-md; }
-        .buffer-#{$browserSize}-lg { padding: $type-spacing-lg; }
-        .buffer-#{$browserSize}-xl { padding: $type-spacing-xl; }
-        .buffer-#{$browserSize}-xxl { padding: $type-spacing-xl*2; }
+        .buffer-#{$browserSize}-all-xs { padding: $type-spacing-xs; }
+        .buffer-#{$browserSize}-all-sm { padding: $type-spacing-sm; }
+        .buffer-#{$browserSize}-all-md { padding: $type-spacing-md; }
+        .buffer-#{$browserSize}-all-lg { padding: $type-spacing-lg; }
+        .buffer-#{$browserSize}-all-xl { padding: $type-spacing-xl; }
+        .buffer-#{$browserSize}-all-xxl { padding: $type-spacing-xl*2; }
 
-        .buffer-#{$browserSize}-clear { padding: 0; }
-        .copy.buffer-#{$browserSize}-clear { padding: 0; }
+        .buffer-#{$browserSize}-all-clear { padding: 0; }
+        .copy.buffer-#{$browserSize}-all-clear { padding: 0; }
 
         // sides
         .buffer-#{$browserSize}-horizontal-xs { padding-left: $type-spacing-xs; padding-right: $type-spacing-xs; }
@@ -640,14 +640,14 @@
     @if $browserSize == "sm" {
         @media(min-width:$screen-sm-min){
             // all sides
-            .buffer-#{$browserSize}-xs { padding: $type-spacing-xs; }
-            .buffer-#{$browserSize}-sm { padding: $type-spacing-sm; }
-            .buffer-#{$browserSize}-md { padding: $type-spacing-md; }
-            .buffer-#{$browserSize}-lg { padding: $type-spacing-lg; }
-            .buffer-#{$browserSize}-xl { padding: $type-spacing-xl; }
-            .buffer-#{$browserSize}-xxl { padding: $type-spacing-xl*2; }
-            .buffer-#{$browserSize}-clear { padding: 0; }
-            .copy.buffer-#{$browserSize}-clear { padding: 0; }
+            .buffer-#{$browserSize}-all-xs { padding: $type-spacing-xs; }
+            .buffer-#{$browserSize}-all-sm { padding: $type-spacing-sm; }
+            .buffer-#{$browserSize}-all-md { padding: $type-spacing-md; }
+            .buffer-#{$browserSize}-all-lg { padding: $type-spacing-lg; }
+            .buffer-#{$browserSize}-all-xl { padding: $type-spacing-xl; }
+            .buffer-#{$browserSize}-all-xxl { padding: $type-spacing-xl*2; }
+            .buffer-#{$browserSize}-all-clear { padding: 0; }
+            .copy.buffer-#{$browserSize}-all-clear { padding: 0; }
 
             // sides
             .buffer-#{$browserSize}-horizontal-xs { padding-left: $type-spacing-xs; padding-right: $type-spacing-xs; }
@@ -719,15 +719,15 @@
     @if $browserSize == "md" {
         @media(min-width:$screen-md-min){
             // all sides
-            .buffer-#{$browserSize}-xs { padding: $type-spacing-xs; }
-            .buffer-#{$browserSize}-sm { padding: $type-spacing-sm; }
-            .buffer-#{$browserSize}-md { padding: $type-spacing-md; }
-            .buffer-#{$browserSize}-lg { padding: $type-spacing-lg; }
-            .buffer-#{$browserSize}-xl { padding: $type-spacing-xl; }
-            .buffer-#{$browserSize}-xxl { padding: $type-spacing-xl*2; }
+            .buffer-#{$browserSize}-all-xs { padding: $type-spacing-xs; }
+            .buffer-#{$browserSize}-all-sm { padding: $type-spacing-sm; }
+            .buffer-#{$browserSize}-all-md { padding: $type-spacing-md; }
+            .buffer-#{$browserSize}-all-lg { padding: $type-spacing-lg; }
+            .buffer-#{$browserSize}-all-xl { padding: $type-spacing-xl; }
+            .buffer-#{$browserSize}-all-xxl { padding: $type-spacing-xl*2; }
 
-            .buffer-#{$browserSize}-clear { padding: 0; }
-            .copy.buffer-#{$browserSize}-clear { padding: 0; }
+            .buffer-#{$browserSize}-all-clear { padding: 0; }
+            .copy.buffer-#{$browserSize}-all-clear { padding: 0; }
 
             // sides
             .buffer-#{$browserSize}-horizontal-xs { padding-left: $type-spacing-xs; padding-right: $type-spacing-xs; }
@@ -799,15 +799,15 @@
     @if $browserSize == "lg" {
         @media(min-width:$screen-lg-min){
             // all sides
-            .buffer-#{$browserSize}-xs { padding: $type-spacing-xs; }
-            .buffer-#{$browserSize}-sm { padding: $type-spacing-sm; }
-            .buffer-#{$browserSize}-md { padding: $type-spacing-md; }
-            .buffer-#{$browserSize}-lg { padding: $type-spacing-lg; }
-            .buffer-#{$browserSize}-xl { padding: $type-spacing-xl; }
-            .buffer-#{$browserSize}-xxl { padding: $type-spacing-xl*2; }
+            .buffer-#{$browserSize}-all-xs { padding: $type-spacing-xs; }
+            .buffer-#{$browserSize}-all-sm { padding: $type-spacing-sm; }
+            .buffer-#{$browserSize}-all-md { padding: $type-spacing-md; }
+            .buffer-#{$browserSize}-all-lg { padding: $type-spacing-lg; }
+            .buffer-#{$browserSize}-all-xl { padding: $type-spacing-xl; }
+            .buffer-#{$browserSize}-all-xxl { padding: $type-spacing-xl*2; }
             
-            .buffer-#{$browserSize}-clear { padding: 0; }
-            .copy.buffer-#{$browserSize}-clear { padding: 0; }
+            .buffer-#{$browserSize}-all-clear { padding: 0; }
+            .copy.buffer-#{$browserSize}-all-clear { padding: 0; }
 
             // sides
             .buffer-#{$browserSize}-horizontal-xs { padding-left: $type-spacing-xs; padding-right: $type-spacing-xs; }

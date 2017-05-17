@@ -8190,95 +8190,17 @@ ol.fancy-list {
 .buffer-right {
   padding-left: 32px; }
 
-.buffer-vertical-lg {
-  padding-top: 32px;
-  padding-bottom: 32px; }
-  @media (min-width: 768px) {
-    .buffer-vertical-lg {
-      padding-top: 64px;
-      padding-bottom: 64px; } }
-
-.buffer-top-lg {
-  padding-top: 32px; }
-  @media (min-width: 768px) {
-    .buffer-top-lg {
-      padding-top: 64px; } }
-
-.buffer-right-lg {
-  padding-right: 32px; }
-  @media (min-width: 768px) {
-    .buffer-right-lg {
-      padding-right: 64px; } }
-
-.buffer-bottom-lg {
-  padding-bottom: 32px; }
-  @media (min-width: 768px) {
-    .buffer-bottom-lg {
-      padding-bottom: 64px; } }
-
-.buffer-right-lg {
-  padding-left: 32px; }
-  @media (min-width: 768px) {
-    .buffer-right-lg {
-      padding-left: 64px; } }
-
-.buffer-vertical-md {
-  padding-top: 32px;
-  padding-bottom: 32px; }
-  @media (min-width: 768px) {
-    .buffer-vertical-md {
-      padding-top: 48px;
-      padding-bottom: 48px; } }
-
-.buffer-top-md {
-  padding-top: 32px; }
-  @media (min-width: 768px) {
-    .buffer-top-md {
-      padding-top: 48px; } }
-
-.buffer-right-md {
-  padding-right: 32px; }
-  @media (min-width: 768px) {
-    .buffer-right-md {
-      padding-right: 48px; } }
-
-.buffer-bottom-md {
-  padding-bottom: 32px; }
-  @media (min-width: 768px) {
-    .buffer-bottom-md {
-      padding-bottom: 48px; } }
-
 .buffer-right-md {
   padding-left: 32px; }
   @media (min-width: 768px) {
     .buffer-right-md {
       padding-left: 48px; } }
 
-.buffer-vertical-sm {
-  padding-top: 8px;
-  padding-bottom: 8px; }
-  @media (min-width: 768px) {
-    .buffer-vertical-sm {
-      padding-top: 16px;
-      padding-bottom: 16px; } }
-
-.buffer-top-sm {
-  padding-top: 8px; }
-  @media (min-width: 768px) {
-    .buffer-top-sm {
-      padding-top: 16px; } }
-
 .buffer-right-sm {
   padding-right: 8px; }
   @media (min-width: 768px) {
     .buffer-right-sm {
       padding-right: 16px; } }
-
-.buffer-bottom-sm {
-  padding-bottom: 8px; }
-  @media (min-width: 768px) {
-    .buffer-bottom-sm {
-      padding-bottom: 16px; } }
 
 .buffer-left-sm {
   padding-left: 8px; }
