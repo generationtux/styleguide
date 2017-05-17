@@ -67,15 +67,15 @@
         .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
 
         // create left classes
-        .pusher-#{$browserSize}-left-xs { margin-bottom: $type-spacing-xs; }
-        .pusher-#{$browserSize}-left-sm { margin-bottom: $type-spacing-sm; }
-        .pusher-#{$browserSize}-left-md { margin-bottom: $type-spacing-md; }
-        .pusher-#{$browserSize}-left-lg { margin-bottom: $type-spacing-lg; }
-        .pusher-#{$browserSize}-left-xl { margin-bottom: $type-spacing-xl; }
-        .pusher-#{$browserSize}-left-xxl { margin-bottom: $type-spacing-xl*2; }
+        .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
+        .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
+        .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
+        .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
+        .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
+        .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
 
-        .pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
-        .copy.pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
+        .pusher-#{$browserSize}-left-clear { margin-left: 0; }
+        .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
 
     }
     @if $browserSize == "sm" {
@@ -148,15 +148,15 @@
             .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
 
             // create left classes
-            .pusher-#{$browserSize}-left-xs { margin-bottom: $type-spacing-xs; }
-            .pusher-#{$browserSize}-left-sm { margin-bottom: $type-spacing-sm; }
-            .pusher-#{$browserSize}-left-md { margin-bottom: $type-spacing-md; }
-            .pusher-#{$browserSize}-left-lg { margin-bottom: $type-spacing-lg; }
-            .pusher-#{$browserSize}-left-xl { margin-bottom: $type-spacing-xl; }
-            .pusher-#{$browserSize}-left-xxl { margin-bottom: $type-spacing-xl*2; }
+            .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
+            .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
+            .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
+            .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
+            .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
+            .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
 
-            .pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
-            .copy.pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
+            .pusher-#{$browserSize}-left-clear { margin-left: 0; }
+            .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
         }
     }
     @if $browserSize == "md" {
@@ -228,15 +228,15 @@
             .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
 
             // create bottom classes
-            .pusher-#{$browserSize}-left-xs { margin-bottom: $type-spacing-xs; }
-            .pusher-#{$browserSize}-left-sm { margin-bottom: $type-spacing-sm; }
-            .pusher-#{$browserSize}-left-md { margin-bottom: $type-spacing-md; }
-            .pusher-#{$browserSize}-left-lg { margin-bottom: $type-spacing-lg; }
-            .pusher-#{$browserSize}-left-xl { margin-bottom: $type-spacing-xl; }
-            .pusher-#{$browserSize}-left-xxl { margin-bottom: $type-spacing-xl*2; }
+            .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
+            .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
+            .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
+            .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
+            .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
+            .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
 
-            .pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
-            .copy.pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
+            .pusher-#{$browserSize}-left-clear { margin-left: 0; }
+            .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
         }
     }
     @if $browserSize == "lg" {
@@ -308,15 +308,15 @@
             .copy.pusher-#{$browserSize}-right-clear { margin-right: 0; }
 
             // create bottom classes
-            .pusher-#{$browserSize}-left-xs { margin-bottom: $type-spacing-xs; }
-            .pusher-#{$browserSize}-left-sm { margin-bottom: $type-spacing-sm; }
-            .pusher-#{$browserSize}-left-md { margin-bottom: $type-spacing-md; }
-            .pusher-#{$browserSize}-left-lg { margin-bottom: $type-spacing-lg; }
-            .pusher-#{$browserSize}-left-xl { margin-bottom: $type-spacing-xl; }
-            .pusher-#{$browserSize}-left-xxl { margin-bottom: $type-spacing-xl*2; }
+            .pusher-#{$browserSize}-left-xs { margin-left: $type-spacing-xs; }
+            .pusher-#{$browserSize}-left-sm { margin-left: $type-spacing-sm; }
+            .pusher-#{$browserSize}-left-md { margin-left: $type-spacing-md; }
+            .pusher-#{$browserSize}-left-lg { margin-left: $type-spacing-lg; }
+            .pusher-#{$browserSize}-left-xl { margin-left: $type-spacing-xl; }
+            .pusher-#{$browserSize}-left-xxl { margin-left: $type-spacing-xl*2; }
 
-            .pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
-            .copy.pusher-#{$browserSize}-left-clear { margin-bottom: 0; }
+            .pusher-#{$browserSize}-left-clear { margin-left: 0; }
+            .copy.pusher-#{$browserSize}-left-clear { margin-left: 0; }
         }
     }
 }
