@@ -1,31 +1,9 @@
 // uses mixins/theme-vertical-spacing to build out all the vertical spacing classes
 // will build classes that use the bootstrap grid naming convention
 // ex: .pusher-md-top-lg will give the html element a TOP margin of LARGE for a min-width MEDIUM SCREEN size
-
-@include make-pusher("xs");
-@include make-pusher("sm");
-@include make-pusher("md");
-@include make-pusher("lg");
-@include make-pusher("xl");
-@include make-pusher("xxl");
-@include make-pusher("clear");
-
-@include make-puller("xs");
-@include make-puller("sm");
-@include make-puller("md");
-@include make-puller("lg");
-@include make-puller("xl");
-@include make-puller("xxl");
-@include make-puller("clear");
-
-@include make-buffer("xs");
-@include make-buffer("sm");
-@include make-buffer("md");
-@include make-buffer("lg");
-@include make-buffer("xl");
-@include make-buffer("xxl");
-@include make-buffer("clear");
-
+@include make-pusher();
+@include make-puller();
+@include make-buffer();
 
 // -----------------------------------------------------------------------------
 // Margin Clear
