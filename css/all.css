@@ -6557,6 +6557,36 @@ ol.fancy-list {
   .bg-texture-no-lg {
     background-image: none !important; } }
 
+.bg-offset-left {
+  position: relative; }
+  .bg-offset-left:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 83.33%;
+    background-color: #f8f8f8; }
+  @media (min-width: 768px) {
+    .bg-offset-left:before {
+      left: 16px; } }
+
+.bg-offset-right {
+  position: relative; }
+  .bg-offset-right:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 83.33%;
+    background-color: #f8f8f8; }
+  @media (min-width: 768px) {
+    .bg-offset-right:before {
+      right: 16px; } }
+
 .bg-striped {
   background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC") repeat center center;
   background-size: 8px; }

@@ -84,7 +84,6 @@ $rowUnit: 10%;
   }
 }
 
-
 .bg-texture {
   color: white;
   background-color: $gray-base;
@@ -126,7 +125,42 @@ $rowUnit: 10%;
   }
 }
 
-
+.bg-offset-left {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 83.33%;
+    background-color: $gray-lighter;
+  }
+  @media(min-width:$screen-sm) {
+    &:before {
+      left: $grid-gutter-width/2;
+    }
+  }
+}
+.bg-offset-right {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 83.33%;
+    background-color: $gray-lighter;
+  }
+  @media(min-width:$screen-sm) {
+    &:before {
+      right: $grid-gutter-width/2;
+    }
+  }
+}
 
 // -----------------------------------------------------------------------------
 // Striped
