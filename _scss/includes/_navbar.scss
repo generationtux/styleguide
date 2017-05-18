@@ -127,9 +127,6 @@
 
 .navbar-default {
   border-color: $gray-lighter;
-  .badge {
-    color: inherit;
-  }
   @media(min-width: $grid-float-breakpoint) {
     .main-nav-items {
       & > li > a {
@@ -218,23 +215,6 @@
       min-width: 320px;
     }
   }
-}
-
-.events-link {
-  cursor: pointer;
-}
-
-.events-holder {
-  .badge {
-    background-color: transparent;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-.search-link {
-  cursor: pointer;
 }
 
 .form-search {

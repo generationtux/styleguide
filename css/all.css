@@ -4253,7 +4253,7 @@ a.label:hover, a.label:focus {
   vertical-align: middle;
   white-space: nowrap;
   text-align: center;
-  background-color: #e6e6e6;
+  background-color: #D5C197;
   border-radius: 10px; }
   .badge:empty {
     display: none; }
@@ -12379,8 +12379,6 @@ img.pos-bottom-left {
 
 .navbar-default {
   border-color: #f8f8f8; }
-  .navbar-default .badge {
-    color: inherit; }
   @media (min-width: 768px) {
     .navbar-default .main-nav-items > li > a:after {
       background-color: #000; }
@@ -12425,18 +12423,6 @@ img.pos-bottom-left {
 
 .secondary-menu .open .dropdown-menu {
   min-width: 320px; }
-
-.events-link {
-  cursor: pointer; }
-
-.events-holder .badge {
-  background-color: transparent;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0; }
-
-.search-link {
-  cursor: pointer; }
 
 .form-search .btn.pull-right {
   margin-left: 0; }
@@ -12771,6 +12757,11 @@ img.link-img {
     opacity: 0.3; }
   to {
     opacity: 1; } }
+
+.badge {
+  padding: 3px 6px;
+  margin: -3px 0;
+  transform: translate(0, -1px); }
 
 .styleguide-label {
   opacity: .2; }
