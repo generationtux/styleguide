@@ -1,5 +1,5 @@
 .badge {
-  padding: 3px 6px;
-  margin: -3px 0;
-  transform: translate(0,-1px);
+  padding-right: 5px; // default 6. reduce to counter extra space on right of brandon grotesque
+  margin: -3px 0; // negates extra space added by top and bottom padding
+  transform: translate(0,-1px); // helps vertically center text
 }
