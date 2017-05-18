@@ -12424,12 +12424,6 @@ img.pos-bottom-left {
 .secondary-menu .open .dropdown-menu {
   min-width: 320px; }
 
-.form-search .btn.pull-right {
-  margin-left: 0; }
-
-.form-search .input-group.pull-left {
-  width: auto; }
-
 .sub-menu {
   text-align: center;
   display: block;
