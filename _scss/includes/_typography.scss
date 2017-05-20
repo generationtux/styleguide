@@ -121,7 +121,14 @@ h6,.h6 {
     line-height: 1.3;
   }
 }
-
+h1.crazy-big {
+  @media(min-width:$screen-sm) {
+    font-size: 100px;
+  }
+  @media(min-width:$screen-md) {
+    font-size: 200px;
+  }
+}
 p {
   margin-bottom: $type-spacing-md;
 }
@@ -252,6 +259,16 @@ img {
 .link-style-clear {
   color: $gray-base;
 }
+
+// -----------------------------------------------------------------------------
+// text color
+// -----------------------------------------------------------------------------
+.text-default { color: $brand-default; }
+.text-primary { color: $brand-primary; }
+.text-success { color: $brand-success; }
+.text-info    { color: $brand-info; }
+.text-warning { color: $brand-warning; }
+.text-danger  { color: $brand-danger; }
 
 // -----------------------------------------------------------------------------
 // Text truncation
