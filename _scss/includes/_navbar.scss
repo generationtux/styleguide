@@ -207,8 +207,18 @@
 
 
 // -----------------------------------------------------------------------------
-// Secondary menu - search, account, events
+// Dropdowns
 // -----------------------------------------------------------------------------
+.dropdown-menu {
+  @include shadow-level(3);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  li {
+    a {
+      padding: 8px 16px;
+    }
+  }
+}
 .secondary-menu {
   .open {
     .dropdown-menu {

@@ -31,11 +31,22 @@
             <li class="h6 {% if page.url == '/brand-assets/' %}active{% endif %}">
               <a href="{{ site.baseurl }}/brand-assets/">Assets</a>
             </li>
-            <li class="h6 {% if page.url == '/atoms/' %}active{% endif %}">
-              <a href="{{ site.baseurl }}/atoms/">Atoms</a>
-            </li>
-            <li class="h6 uppercase {% if page.url == '/modules/' %}active{% endif %}">
-              <a href="{{ site.baseurl }}/modules/">Modules</a>
+            <li class="dropdown">
+              <a
+                class="dropdown-toggle h6"
+                data-toggle="dropdown"
+                href="#!"
+              >
+                Developers <em class="caret"></em>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="h6 {% if page.url == '/atoms/' %}active{% endif %}">
+                  <a href="{{ site.baseurl }}/atoms/">Atoms</a>
+                </li>
+                <li class="h6 uppercase {% if page.url == '/modules/' %}active{% endif %}">
+                  <a href="{{ site.baseurl }}/modules/">Modules</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div><!-- /col -->
@@ -43,3 +54,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+
+
