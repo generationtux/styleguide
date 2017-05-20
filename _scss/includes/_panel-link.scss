@@ -5,7 +5,7 @@
   }
   .glyphicon-arrow-right {
     transform: translate3d(-200%,0,0);
-    transition: all .2s ease-out;
+    transition: all .3s ease-out;
     backface-visibility: hidden;
   }
   &:before,
@@ -16,7 +16,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    transition: all .2s ease-out;
+    transition: all .3s ease-out;
     z-index: -1;
     backface-visibility: hidden;
   }
