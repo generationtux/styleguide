@@ -1,0 +1,45 @@
+.panel-link {
+  position: relative;
+  h3,p {
+    will-change: color;
+  }
+  .glyphicon-arrow-right {
+    transform: translate3d(-200%,0,0);
+    transition: all .3s ease-out;
+    backface-visibility: hidden;
+  }
+  &:before,
+  &:after {
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all .3s ease-out;
+    z-index: -1;
+    backface-visibility: hidden;
+  }
+  &:before {
+    background-color: $gray-lighter;
+    transform: scaleX(1);
+    will-change: transform;
+    transform-origin: right top;
+  }
+  &:after {
+    @include shadow-level(3);
+    opacity: 0;
+    will-change: opacity;
+  }
+  &:hover {
+    .glyphicon-arrow-right {
+      transform: translate3d(0,0,0);
+    }
+    &:before {
+      transform: scaleX(0);
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+}
