@@ -25,8 +25,11 @@
 
         <div class="col-sm-9 col-md-7 col-lg-8">
           <ul class="nav navbar-nav">
-            <li class="h6 uppercase {% if page.url == '/' %}active{% endif %}">
-              <a href="{{ site.baseurl }}/">Home</a>
+            <li class="h6 {% if page.url == '/brand-guidlines/' %}active{% endif %}">
+              <a href="{{ site.baseurl }}/brand-guidlines/">Guide</a>
+            </li>
+            <li class="h6 {% if page.url == '/brand-assets/' %}active{% endif %}">
+              <a href="{{ site.baseurl }}/brand-assets/">Assets</a>
             </li>
             <li class="h6 {% if page.url == '/atoms/' %}active{% endif %}">
               <a href="{{ site.baseurl }}/atoms/">Atoms</a>
