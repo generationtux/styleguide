@@ -258,6 +258,10 @@ img {
 }
 .link-style-clear {
   color: $gray-base;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // -----------------------------------------------------------------------------

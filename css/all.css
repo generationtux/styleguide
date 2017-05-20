@@ -6299,7 +6299,10 @@ img.context--copy {
     color: #b8964e; }
 
 .link-style-clear {
-  color: #000; }
+  color: #000;
+  text-decoration: none; }
+  .link-style-clear:hover {
+    text-decoration: none; }
 
 .text-default {
   color: #e6e6e6; }
