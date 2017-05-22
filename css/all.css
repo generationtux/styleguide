@@ -12318,30 +12318,36 @@ img.pos-bottom-left {
     content: "\e900";
     padding-right: 0.4em; }
 
-.container-fluid > .navbar-collapse,
-.navbar-nav,
-.main-nav-items {
+.navbar-with-columns .navbar-collapse,
+.navbar-with-columns .navbar-nav,
+.navbar-with-columns .main-nav-items {
   margin-left: -16px;
   margin-right: -16px; }
 
-.navbar-toggle {
+.navbar-with-columns .navbar-toggle {
   margin-right: 0; }
-  .navbar-toggle .icon-bar {
-    width: 16px;
-    border-radius: 0; }
-  @media (max-width: 767px) {
-    .navbar-toggle {
-      margin-top: 12px;
-      margin-bottom: 12px; } }
 
-.navbar > .container .navbar-brand,
-.navbar > .container-fluid .navbar-brand {
-  margin-left: 0; }
+.navbar-with-columns.navbar .navbar-brand {
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+.navbar-toggle .icon-bar {
+  width: 16px;
+  border-radius: 0; }
+
+@media (max-width: 767px) {
+  .navbar-toggle {
+    margin-top: 12px;
+    margin-bottom: 12px; } }
+
+.navbar-brand.navbar-brand-gt-logo {
+  padding-top: 24px;
+  padding-bottom: 24px; }
 
 .navbar-brand {
   line-height: 16px;
   font-weight: 900;
-  padding: 24px 0;
   transition: opacity .2s ease;
   position: relative; }
   .navbar-brand img {
