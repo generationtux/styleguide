@@ -42,7 +42,53 @@
     }
   }
 }
-
+.navbar-form {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media(min-width:$screen-sm) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.navbar-form-search {
+    position: relative;
+    .form-control,
+    .btn {
+        border-radius: 80px !important;
+    }
+    .form-control {
+        padding-right: 56px;
+        background-color: $gray-lighter;
+        border-color: $gray-lighter;
+        &:focus {
+            @include shadow-level(3);
+            background-color: white;
+        }
+    }
+    .input-group-btn {
+        left: -48px;
+        z-index: 500;
+    }
+    .btn {
+        padding-left: 16px;
+        padding-right: 16px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        &:focus { 
+            outline: none;
+            // color: $gray-dark;
+            @include shadow-level(3);
+            background-color: white;
+        }
+        &:active {
+            color: $brand-info;
+        }
+        @media(min-width:$screen-sm) {
+            top: 0;
+        }
+    }
+}
 .navbar-toggle {
   .icon-bar {
     width: 16px;

@@ -12363,6 +12363,45 @@ img.pos-bottom-left {
     padding-top: 8px;
     padding-bottom: 32px; } }
 
+.navbar-form {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+  @media (min-width: 768px) {
+    .navbar-form {
+      padding-top: 0px;
+      padding-bottom: 0px; } }
+
+.navbar-form-search {
+  position: relative; }
+  .navbar-form-search .form-control,
+  .navbar-form-search .btn {
+    border-radius: 80px !important; }
+  .navbar-form-search .form-control {
+    padding-right: 56px;
+    background-color: #f8f8f8;
+    border-color: #f8f8f8; }
+    .navbar-form-search .form-control:focus {
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
+      background-color: white; }
+  .navbar-form-search .input-group-btn {
+    left: -48px;
+    z-index: 500; }
+  .navbar-form-search .btn {
+    padding-left: 16px;
+    padding-right: 16px;
+    position: absolute;
+    top: 16px;
+    right: 16px; }
+    .navbar-form-search .btn:focus {
+      outline: none;
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
+      background-color: white; }
+    .navbar-form-search .btn:active {
+      color: #D5C197; }
+    @media (min-width: 768px) {
+      .navbar-form-search .btn {
+        top: 0; } }
+
 .navbar-toggle .icon-bar {
   width: 16px;
   border-radius: 0; }
@@ -12893,32 +12932,6 @@ textarea, select {
   height: 46px;
   background-color: transparent;
   border: 1px solid #000; }
-
-.navbar-form-search .form-control,
-.navbar-form-search .btn {
-  border-radius: 80px !important; }
-
-.navbar-form-search .form-control {
-  padding-right: 56px;
-  background-color: #f8f8f8;
-  border-color: #f8f8f8; }
-  .navbar-form-search .form-control:focus {
-    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
-    background-color: white; }
-
-.navbar-form-search .input-group-btn {
-  left: -48px;
-  z-index: 500; }
-
-.navbar-form-search .btn {
-  padding-left: 16px;
-  padding-right: 16px; }
-  .navbar-form-search .btn:focus {
-    outline: none;
-    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
-    background-color: white; }
-  .navbar-form-search .btn:active {
-    color: #D5C197; }
 
 .checkbox {
   margin: 0; }
