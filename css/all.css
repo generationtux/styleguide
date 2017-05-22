@@ -12348,6 +12348,11 @@ img.pos-bottom-left {
   padding-left: 0;
   padding-right: 0; }
 
+@media (max-width: 767px) {
+  .navbar-with-columns .navbar-form {
+    margin-left: 0;
+    margin-right: 0; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-with-columns .main-nav-items.main-nav-items-offset-sm.navbar-nav > li > a {
     padding-top: 8px;
@@ -12411,9 +12416,6 @@ img.pos-bottom-left {
       height: auto; }
       .navbar-brand img.navbar-brand-logo-gt {
         width: 32px; } }
-
-.navbar .glyphicon {
-  line-height: 0; }
 
 @media (min-width: 768px) {
   .navbar .main-nav-items > li > a {
@@ -12891,6 +12893,32 @@ textarea, select {
   height: 46px;
   background-color: transparent;
   border: 1px solid #000; }
+
+.navbar-form-search .form-control,
+.navbar-form-search .btn {
+  border-radius: 80px !important; }
+
+.navbar-form-search .form-control {
+  padding-right: 56px;
+  background-color: #f8f8f8;
+  border-color: #f8f8f8; }
+  .navbar-form-search .form-control:focus {
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
+    background-color: white; }
+
+.navbar-form-search .input-group-btn {
+  left: -48px;
+  z-index: 500; }
+
+.navbar-form-search .btn {
+  padding-left: 16px;
+  padding-right: 16px; }
+  .navbar-form-search .btn:focus {
+    outline: none;
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
+    background-color: white; }
+  .navbar-form-search .btn:active {
+    color: #D5C197; }
 
 .checkbox {
   margin: 0; }
