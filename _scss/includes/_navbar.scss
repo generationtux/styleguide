@@ -18,6 +18,23 @@
     padding-left: 0;
     padding-right: 0;
   }
+  // use main-nav-items-offset sm and md for reducing vertical spacing when subnav goes full width
+  .main-nav-items.main-nav-items-offset-sm {
+    @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+      &.navbar-nav>li>a {
+        padding-top: 8px;
+        padding-bottom: 32px;
+      }
+    }
+  }
+  .main-nav-items.main-nav-items-offset-md {
+    @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+      &.navbar-nav>li>a {
+        padding-top: 8px;
+        padding-bottom: 32px;
+      }
+    }
+  }
 }
 
 .navbar-toggle {
@@ -122,18 +139,6 @@
   }
   @media(max-width: $grid-float-breakpoint-max) {
     min-height: auto;
-  }
-}
-
-.main-nav-items {
-  @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
-    &.navbar-nav>li>a {
-      padding-top: 8px;
-      padding-bottom: 32px;
-    }
-  }
-  @media (min-width: $screen-md-min) {
-    // margin-top: 0px;
   }
 }
 

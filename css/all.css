@@ -12348,6 +12348,16 @@ img.pos-bottom-left {
   padding-left: 0;
   padding-right: 0; }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-with-columns .main-nav-items.main-nav-items-offset-sm.navbar-nav > li > a {
+    padding-top: 8px;
+    padding-bottom: 32px; } }
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .navbar-with-columns .main-nav-items.main-nav-items-offset-md.navbar-nav > li > a {
+    padding-top: 8px;
+    padding-bottom: 32px; } }
+
 .navbar-toggle .icon-bar {
   width: 16px;
   border-radius: 0; }
@@ -12427,11 +12437,6 @@ img.pos-bottom-left {
 @media (max-width: 767px) {
   .navbar {
     min-height: auto; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-nav-items.navbar-nav > li > a {
-    padding-top: 8px;
-    padding-bottom: 32px; } }
 
 .navbar-default {
   border-color: #f8f8f8; }
