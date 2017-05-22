@@ -122,12 +122,15 @@ h6,.h6 {
   }
 }
 h1.crazy-big {
-  font-size: 80px;
+  font-size: 90px;
   @media(min-width:$screen-sm) {
-    font-size: 100px;
+    font-size: 150px;
   }
   @media(min-width:$screen-md) {
     font-size: 200px;
+  }
+  @media(min-width:$screen-lg) {
+    font-size: 250px;
   }
 }
 p {
