@@ -58,8 +58,7 @@
     }
     .form-control {
         padding-right: 56px;
-        background-color: $gray-lighter;
-        border-color: $gray-lighter;
+        border-color: $gray-light;
         &:focus {
             @include shadow-level(3);
             background-color: white;

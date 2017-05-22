@@ -12378,8 +12378,7 @@ img.pos-bottom-left {
     border-radius: 80px !important; }
   .navbar-form-search .form-control {
     padding-right: 56px;
-    background-color: #f8f8f8;
-    border-color: #f8f8f8; }
+    border-color: #e6e6e6; }
     .navbar-form-search .form-control:focus {
       box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
       background-color: white; }
