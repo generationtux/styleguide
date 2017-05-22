@@ -25,19 +25,17 @@
     }
   }
   // use main-nav-items-offset sm and md for reducing vertical spacing when subnav goes full width
-  .main-nav-items.main-nav-items-offset-sm {
-    @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+  .main-nav-items.main-nav-items-offset {
+    @media (min-width: $screen-sm) and (max-width: $screen-md-max) {
       &.navbar-nav>li>a {
-        padding-top: 8px;
+        padding-top: 16px;
         padding-bottom: 32px;
+        margin-top: -8px;
       }
-    }
-  }
-  .main-nav-items.main-nav-items-offset-md {
-    @media (min-width: $screen-md) and (max-width: $screen-md-max) {
-      &.navbar-nav>li>a {
-        padding-top: 8px;
-        padding-bottom: 32px;
+      .navbar-form-search {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-top: -8px;
       }
     }
   }
