@@ -12365,7 +12365,8 @@ img.pos-bottom-left {
   line-height: 16px;
   font-weight: 900;
   transition: opacity .2s ease;
-  position: relative; }
+  position: relative;
+  white-space: nowrap; }
   .navbar-brand img {
     transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
     max-height: 100%;
