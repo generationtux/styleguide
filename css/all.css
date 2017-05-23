@@ -6505,7 +6505,7 @@ ol.fancy-list {
 .container-hero-image {
   display: inline-block;
   max-width: 100%;
-  background-image: url("../images/hero-placeholder.png");
+  background-image: url("../images/styleguide-required/hero-placeholder.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain; }
@@ -12686,17 +12686,17 @@ img.pos-bottom-left {
 
 .glyphicon-arrow-right {
   color: transparent !important;
-  background: url("../images/icons/default/glyphicon-arrow-right.svg") no-repeat center center; }
+  background: url("../images/styleguide-required/icons/default/glyphicon-arrow-right.svg") no-repeat center center; }
 
 .link-style.glyphicon-arrow-right {
-  background: url("../images/icons/link-style/glyphicon-arrow-right.svg") no-repeat center center; }
+  background: url("../images/styleguide-required/icons/link-style/glyphicon-arrow-right.svg") no-repeat center center; }
 
 .glyphicon-arrow-left {
   color: transparent !important;
-  background: url("../images/icons/default/glyphicon-arrow-left.svg") no-repeat center center; }
+  background: url("../images/styleguide-required/icons/default/glyphicon-arrow-left.svg") no-repeat center center; }
 
 .link-style.glyphicon-arrow-left {
-  background: url("../images/icons/link-style/glyphicon-arrow-left.svg") no-repeat center center; }
+  background: url("../images/styleguide-required/icons/link-style/glyphicon-arrow-left.svg") no-repeat center center; }
 
 .breadcrumb {
   border-radius: 0;
@@ -12833,7 +12833,7 @@ blockquote {
     top: 50%; }
 
 .stamp-726 {
-  background: url("../images/stamp-726.svg") center center no-repeat;
+  background: url("../images/styleguide-required/stamp-726.svg") center center no-repeat;
   width: 65px;
   height: 65px;
   position: absolute;
@@ -13019,7 +13019,7 @@ textarea.form-control {
         display: block; } }
 
 select.form-control {
-  background-image: url("../images/arrow-down-black.svg");
+  background-image: url("../images/styleguide-required/arrow-down-black.svg");
   background-size: 16px;
   background-position: right center;
   background-repeat: no-repeat;
