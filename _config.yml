@@ -28,6 +28,7 @@ markdown: kramdown
 
 
 collections:
+  brand-guides:
   atoms:
   modules:
     output: true
