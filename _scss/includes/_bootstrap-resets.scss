@@ -118,9 +118,9 @@ $border-radius-large:       0px;
 $border-radius-small:       0px;
 
 // //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color:    $text-color;
+// $component-active-color:    $text-color;
 // //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg:       transparent;
+// $component-active-bg:       $gray-lighter;
 
 // //** Width of the `border` for generating carets that indicate dropdowns.
 // $caret-width-base:          4px;
@@ -261,7 +261,7 @@ $dropdown-link-hover-bg:         $gray-lighter;
 // //** Active dropdown menu item text color.
 // $dropdown-link-active-color:     $component-active-color;
 // //** Active dropdown menu item background color.
-$dropdown-link-active-bg:        $component-active-bg;
+// $dropdown-link-active-bg:        $component-active-bg;
 
 // //** Disabled dropdown menu item background color.
 // $dropdown-link-disabled-color:   $gray-light;
