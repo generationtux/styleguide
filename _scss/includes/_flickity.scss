@@ -179,3 +179,11 @@ img.flickity-lazyload {
     display: none;
   }
 }
+
+// add this class to empty elements at beginning and end to get spacing between cells and edge of container
+.flickity-pad {
+  width: 16px;
+  @media(min-width:$screen-sm) {
+    width: 40px;
+  }
+}
