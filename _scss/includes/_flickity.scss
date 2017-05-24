@@ -66,6 +66,18 @@ $btn-height: 32px;
   }
 }
 
+// extra nav spacing for flickitys that go the full browser width
+.flickity-full-width {
+  .flickity-prev-next-button {
+    &.previous {
+      right: $btn-width + 40px;
+    }
+    &.next {
+      right: 40px;
+    }
+  }
+}
+
 .flickity-offset-prev-next {
   .flickity-prev-next-button {
     bottom: -170px;
