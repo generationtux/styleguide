@@ -8107,12 +8107,15 @@ ol.fancy-list {
 .buffer {
   padding: 32px; }
 
-.align-vertical {
-  display: block;
-  align-items: center; }
-  @media (min-width: 768px) {
-    .align-vertical {
-      display: flex; } }
+@media (min-width: 768px) {
+  .align-vertical {
+    display: flex;
+    align-items: center; } }
+
+@media (min-width: 768px) {
+  .align-bottom {
+    display: flex;
+    align-items: flex-end; } }
 
 @media (min-width: 768px) {
   .row.row-eq-height {

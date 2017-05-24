@@ -1,8 +1,13 @@
 .align-vertical {
-    display: block;
-    align-items: center;
     @media (min-width: $grid-float-breakpoint) {
         display: flex;
+        align-items: center;
+    }
+}
+.align-bottom {
+    @media(min-width:$screen-sm) {
+        display: flex;
+        align-items: flex-end;
     }
 }
 
