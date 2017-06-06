@@ -17,8 +17,8 @@ title: GenTux Style Guide
 email: patrick.hill@generationtux.com
 description: > # this means to ignore newlines until "baseurl:"
   Brand Standards and Pattern Library for the Generation Tux website.
-baseurl: "/styleguide" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://gentuxdesign.com" # the base hostname & protocol for your site
 twitter_username: 
 github_username: 
 

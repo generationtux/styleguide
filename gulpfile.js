@@ -44,7 +44,7 @@ gulp.task('browser-reload', function () {
 // -----------------------------------------------------------------------------
 gulp.task('browser-sync', ['jekyll','sass-all','js'], function() {
   browserSync({
-    proxy: "http://127.0.0.1:4000/styleguide/"
+    proxy: "http://127.0.0.1:4000/"
   });
 });
 

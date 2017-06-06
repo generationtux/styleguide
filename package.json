@@ -34,7 +34,7 @@
   },
   "author": "Gentux",
   "license": "MIT",
-  "homepage": "https://generationtux.github.io/styleguide/",
+  "homepage": "http://gentuxdesign.com",
   "scripts": {
     "build": "./node_modules/.bin/webpack -p",
     "build-babel": "./node_modules/.bin/babel ./src --out-dir lib",

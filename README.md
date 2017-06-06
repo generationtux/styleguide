@@ -1,6 +1,6 @@
 # Generation Tux Style Guide
 
-<https://generationtux.github.io/styleguide/>
+<http://gentuxdesign.com>
 
 ## Setup
 
