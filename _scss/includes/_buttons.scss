@@ -27,55 +27,6 @@
 }
 
 
-// Link buttons
-// -------------------------
-
-// Make a button look and behave like a link
-.btn-link {
-  color: $link-color;
-  &,
-  &:active,
-  &.active,
-  &[disabled],
-  fieldset[disabled] & {
-    background-color: transparent;
-    @include box-shadow(none);
-    &:hover {
-      background-color: transparent;
-      border-color: transparent;
-    }
-  }
-  &,
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: transparent;
-    color: $link-hover-color;
-  }
-  &:hover,
-  &:focus {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-    background-color: transparent;
-  }
-  &[disabled],
-  &.disabled,
-  fieldset[disabled] & {
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
-}
-.bg-primary,
-.bg-black,
-.bg-texture {
-  .btn-link.active {
-    color: $link-color;
-  }
-}
-
-
 // Button Sizes
 // --------------------------------------------------
 
@@ -126,6 +77,9 @@
 }
 .btn-transparent {
   @include button-variant(black, transparent, transparent);
+}
+.btn-link {
+  @include button-variant($link-color, transparent, transparent);
 }
 
 

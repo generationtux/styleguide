@@ -83,15 +83,6 @@
       font-size: .9em;
     }
   }
-  &.btn-block.active {
-    text-align: center;
-    padding-left: $padding-base-horizontal;
-    padding-right: $padding-base-horizontal;
-    &:before {
-      position: relative;
-      left: 0;
-    }
-  }
   &.btn-lg.active {
     padding-left: $padding-large-horizontal + 16;
     padding-right: $padding-large-horizontal - 16;
@@ -115,6 +106,25 @@
       left: 0px;
       position: relative;
       font-size: .8em;
+    }
+  }
+
+  &.btn-block.active {
+    text-align: center;
+    padding-left: $padding-base-horizontal;
+    padding-right: $padding-base-horizontal;
+    &:before {
+      position: relative;
+      left: 0;
+    }
+  }
+  &.btn-link {
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    &.active:hover {
+      color: $color
     }
   }
 

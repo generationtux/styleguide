@@ -8194,34 +8194,6 @@ img.pos-bottom-left {
   .btn:active, .btn.active {
     box-shadow: none; }
 
-.btn-link {
-  color: #b8964e; }
-  .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled],
-  fieldset[disabled] .btn-link {
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-    .btn-link:hover, .btn-link:active:hover, .btn-link.active:hover, .btn-link[disabled]:hover,
-    fieldset[disabled] .btn-link:hover {
-      background-color: transparent;
-      border-color: transparent; }
-  .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
-    border-color: transparent;
-    color: #c6ab73; }
-  .btn-link:hover, .btn-link:focus {
-    color: #c6ab73;
-    text-decoration: underline;
-    background-color: transparent; }
-  .btn-link[disabled]:hover, .btn-link[disabled]:focus, .btn-link.disabled:hover, .btn-link.disabled:focus,
-  fieldset[disabled] .btn-link:hover,
-  fieldset[disabled] .btn-link:focus {
-    text-decoration: none; }
-
-.bg-primary .btn-link.active,
-.bg-black .btn-link.active,
-.bg-texture .btn-link.active, .bg-texture-inverted .btn-link.active {
-  color: #b8964e; }
-
 .btn-lg, .btn-group-lg > .btn {
   padding: 24px 48px;
   font-size: 16px;
@@ -8312,13 +8284,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-default.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-default.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-default.btn-lg.active, .btn-group-lg > .btn-default.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8338,6 +8303,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-default.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-default.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-default.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-default.btn-link.active:hover {
+    color: #000; }
   .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus,
   fieldset[disabled] .btn-default:hover,
   fieldset[disabled] .btn-default:focus,
@@ -8427,13 +8404,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-primary.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-primary.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-primary.btn-lg.active, .btn-group-lg > .btn-primary.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8453,6 +8423,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-primary.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-primary.btn-link.active:hover {
+    color: #fff; }
   .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
@@ -8590,17 +8572,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .bg-primary .btn-primary.btn-block.active,
-  .bg-black .btn-primary.btn-block.active,
-  .bg-texture .btn-primary.btn-block.active, .bg-texture-inverted .btn-primary.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .bg-primary .btn-primary.btn-block.active:before,
-    .bg-black .btn-primary.btn-block.active:before,
-    .bg-texture .btn-primary.btn-block.active:before, .bg-texture-inverted .btn-primary.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .bg-primary .btn-primary.btn-lg.active, .bg-primary .btn-group-lg > .btn-primary.active.btn,
   .bg-black .btn-primary.btn-lg.active,
   .bg-black .btn-group-lg > .btn-primary.active.btn,
@@ -8644,6 +8615,26 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .bg-primary .btn-primary.btn-block.active,
+  .bg-black .btn-primary.btn-block.active,
+  .bg-texture .btn-primary.btn-block.active, .bg-texture-inverted .btn-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .bg-primary .btn-primary.btn-block.active:before,
+    .bg-black .btn-primary.btn-block.active:before,
+    .bg-texture .btn-primary.btn-block.active:before, .bg-texture-inverted .btn-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .bg-primary .btn-primary.btn-link:hover,
+  .bg-black .btn-primary.btn-link:hover,
+  .bg-texture .btn-primary.btn-link:hover, .bg-texture-inverted .btn-primary.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .bg-primary .btn-primary.btn-link.active:hover,
+  .bg-black .btn-primary.btn-link.active:hover,
+  .bg-texture .btn-primary.btn-link.active:hover, .bg-texture-inverted .btn-primary.btn-link.active:hover {
+    color: #fff; }
   .bg-primary .btn-primary.disabled:hover, .bg-primary .btn-primary.disabled:focus, .bg-primary .btn-primary.disabled.focus, .bg-primary .btn-primary[disabled]:hover, .bg-primary .btn-primary[disabled]:focus, .bg-primary .btn-primary[disabled].focus,
   fieldset[disabled] .bg-primary .btn-primary:hover,
   fieldset[disabled] .bg-primary .btn-primary:focus,
@@ -8789,13 +8780,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-success.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-success.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-success.btn-lg.active, .btn-group-lg > .btn-success.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8815,6 +8799,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-success.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-success.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-success.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-success.btn-link.active:hover {
+    color: #fff; }
   .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus,
   fieldset[disabled] .btn-success:hover,
   fieldset[disabled] .btn-success:focus,
@@ -8904,13 +8900,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-info.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-info.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-info.btn-lg.active, .btn-group-lg > .btn-info.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8930,6 +8919,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-info.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-info.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-info.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-info.btn-link.active:hover {
+    color: #fff; }
   .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus,
   fieldset[disabled] .btn-info:hover,
   fieldset[disabled] .btn-info:focus,
@@ -9019,13 +9020,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-warning.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-warning.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-warning.btn-lg.active, .btn-group-lg > .btn-warning.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9045,6 +9039,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-warning.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-warning.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-warning.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-warning.btn-link.active:hover {
+    color: #fff; }
   .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus,
   fieldset[disabled] .btn-warning:hover,
   fieldset[disabled] .btn-warning:focus,
@@ -9134,13 +9140,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-danger.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-danger.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-danger.btn-lg.active, .btn-group-lg > .btn-danger.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9160,6 +9159,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-danger.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-danger.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-danger.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-danger.btn-link.active:hover {
+    color: #fff; }
   .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus,
   fieldset[disabled] .btn-danger:hover,
   fieldset[disabled] .btn-danger:focus,
@@ -9249,13 +9260,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-white.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-white.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-white.btn-lg.active, .btn-group-lg > .btn-white.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9275,6 +9279,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-white.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-white.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-white.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-white.btn-link.active:hover {
+    color: black; }
   .btn-white.disabled:hover, .btn-white.disabled:focus, .btn-white.disabled.focus, .btn-white[disabled]:hover, .btn-white[disabled]:focus, .btn-white[disabled].focus,
   fieldset[disabled] .btn-white:hover,
   fieldset[disabled] .btn-white:focus,
@@ -9364,13 +9380,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-transparent.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-transparent.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-transparent.btn-lg.active, .btn-group-lg > .btn-transparent.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9390,6 +9399,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-transparent.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-transparent.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-transparent.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-transparent.btn-link.active:hover {
+    color: black; }
   .btn-transparent.disabled:hover, .btn-transparent.disabled:focus, .btn-transparent.disabled.focus, .btn-transparent[disabled]:hover, .btn-transparent[disabled]:focus, .btn-transparent[disabled].focus,
   fieldset[disabled] .btn-transparent:hover,
   fieldset[disabled] .btn-transparent:focus,
@@ -9406,6 +9427,126 @@ img.pos-bottom-left {
   .btn-transparent .badge {
     color: transparent;
     background-color: black; }
+
+.btn-link {
+  color: #b8964e;
+  background-color: transparent;
+  border-color: transparent;
+  position: relative;
+  -webkit-transition: all 0.13s ease;
+  -o-transition: all 0.13s ease;
+  transition: all 0.13s ease;
+  backface-visibility: hidden; }
+  .btn-link:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    height: 100%;
+    background-color: transparent;
+    transform-origin: left bottom;
+    z-index: 10;
+    opacity: 0;
+    transition: all .13s ease-out;
+    backface-visibility: hidden;
+    transform: scaleY(1); }
+  .btn-link:focus, .btn-link.focus {
+    color: #b8964e;
+    background-color: transparent;
+    border-color: transparent; }
+  .btn-link:hover {
+    color: black;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    border-color: transparent; }
+    .btn-link:hover:active {
+      border-color: transparent;
+      background-color: #f8f8f8;
+      box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+      color: black; }
+    .btn-link:hover:after {
+      opacity: 1;
+      transform: scaleY(0.1); }
+  .btn-link.active,
+  .open > .btn-link.dropdown-toggle {
+    color: black;
+    background-color: white;
+    border-color: transparent; }
+    .btn-link.active:focus, .btn-link.active.focus,
+    .open > .btn-link.dropdown-toggle:focus,
+    .open > .btn-link.dropdown-toggle.focus {
+      color: black;
+      background-color: white;
+      border-color: transparent; }
+    .btn-link.active:hover,
+    .open > .btn-link.dropdown-toggle:hover {
+      color: black;
+      box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
+      background: white;
+      border-color: transparent; }
+  .btn-link.active {
+    text-align: right;
+    padding-left: 40px;
+    padding-right: 24px; }
+    .btn-link.active:active {
+      background-color: #f8f8f8;
+      box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1); }
+    .btn-link.active:before {
+      content: "\e013";
+      font-family: 'Glyphicons Halflings';
+      margin-right: 4px;
+      position: absolute;
+      left: 20px;
+      color: #404042;
+      font-size: .9em; }
+  .btn-link.btn-lg.active, .btn-group-lg > .btn-link.active.btn {
+    padding-left: 64px;
+    padding-right: 32px; }
+    .btn-link.btn-lg.active:before, .btn-group-lg > .btn-link.active.btn:before {
+      left: 34px; }
+  .btn-link.btn-sm.active, .btn-group-sm > .btn-link.active.btn {
+    padding-left: 20px;
+    padding-right: 12px; }
+    .btn-link.btn-sm.active:before, .btn-group-sm > .btn-link.active.btn:before {
+      left: 8px;
+      font-size: .8em;
+      line-height: 1.8; }
+  .btn-link.btn-xs.active, .btn-group-xs > .btn-link.active.btn {
+    padding-left: 8px;
+    padding-right: 8px; }
+    .btn-link.btn-xs.active:before, .btn-group-xs > .btn-link.active.btn:before {
+      left: 0px;
+      position: relative;
+      font-size: .8em; }
+  .btn-link.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-link.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-link.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-link.btn-link.active:hover {
+    color: #b8964e; }
+  .btn-link.disabled:hover, .btn-link.disabled:focus, .btn-link.disabled.focus, .btn-link[disabled]:hover, .btn-link[disabled]:focus, .btn-link[disabled].focus,
+  fieldset[disabled] .btn-link:hover,
+  fieldset[disabled] .btn-link:focus,
+  fieldset[disabled] .btn-link.focus {
+    color: #b8964e;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none; }
+    .btn-link.disabled:hover:after, .btn-link.disabled:focus:after, .btn-link.disabled.focus:after, .btn-link[disabled]:hover:after, .btn-link[disabled]:focus:after, .btn-link[disabled].focus:after,
+    fieldset[disabled] .btn-link:hover:after,
+    fieldset[disabled] .btn-link:focus:after,
+    fieldset[disabled] .btn-link.focus:after {
+      opacity: 0; }
+  .btn-link .badge {
+    color: transparent;
+    background-color: #b8964e; }
 
 .btn-hollow-default {
   color: black;
@@ -9479,13 +9620,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-default.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-default.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-default.btn-lg.active, .btn-group-lg > .btn-hollow-default.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9505,6 +9639,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-default.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-default.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-default.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-default.btn-link.active:hover {
+    color: black; }
   .btn-hollow-default.disabled:hover, .btn-hollow-default.disabled:focus, .btn-hollow-default.disabled.focus, .btn-hollow-default[disabled]:hover, .btn-hollow-default[disabled]:focus, .btn-hollow-default[disabled].focus,
   fieldset[disabled] .btn-hollow-default:hover,
   fieldset[disabled] .btn-hollow-default:focus,
@@ -9594,13 +9740,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-primary.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-primary.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-primary.btn-lg.active, .btn-group-lg > .btn-hollow-primary.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9620,6 +9759,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-primary.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-primary.btn-link.active:hover {
+    color: #000; }
   .btn-hollow-primary.disabled:hover, .btn-hollow-primary.disabled:focus, .btn-hollow-primary.disabled.focus, .btn-hollow-primary[disabled]:hover, .btn-hollow-primary[disabled]:focus, .btn-hollow-primary[disabled].focus,
   fieldset[disabled] .btn-hollow-primary:hover,
   fieldset[disabled] .btn-hollow-primary:focus,
@@ -9757,17 +9908,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .bg-primary .btn-hollow-primary.btn-block.active,
-  .bg-black .btn-hollow-primary.btn-block.active,
-  .bg-texture .btn-hollow-primary.btn-block.active, .bg-texture-inverted .btn-hollow-primary.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .bg-primary .btn-hollow-primary.btn-block.active:before,
-    .bg-black .btn-hollow-primary.btn-block.active:before,
-    .bg-texture .btn-hollow-primary.btn-block.active:before, .bg-texture-inverted .btn-hollow-primary.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .bg-primary .btn-hollow-primary.btn-lg.active, .bg-primary .btn-group-lg > .btn-hollow-primary.active.btn,
   .bg-black .btn-hollow-primary.btn-lg.active,
   .bg-black .btn-group-lg > .btn-hollow-primary.active.btn,
@@ -9811,6 +9951,26 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .bg-primary .btn-hollow-primary.btn-block.active,
+  .bg-black .btn-hollow-primary.btn-block.active,
+  .bg-texture .btn-hollow-primary.btn-block.active, .bg-texture-inverted .btn-hollow-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .bg-primary .btn-hollow-primary.btn-block.active:before,
+    .bg-black .btn-hollow-primary.btn-block.active:before,
+    .bg-texture .btn-hollow-primary.btn-block.active:before, .bg-texture-inverted .btn-hollow-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .bg-primary .btn-hollow-primary.btn-link:hover,
+  .bg-black .btn-hollow-primary.btn-link:hover,
+  .bg-texture .btn-hollow-primary.btn-link:hover, .bg-texture-inverted .btn-hollow-primary.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .bg-primary .btn-hollow-primary.btn-link.active:hover,
+  .bg-black .btn-hollow-primary.btn-link.active:hover,
+  .bg-texture .btn-hollow-primary.btn-link.active:hover, .bg-texture-inverted .btn-hollow-primary.btn-link.active:hover {
+    color: #000; }
   .bg-primary .btn-hollow-primary.disabled:hover, .bg-primary .btn-hollow-primary.disabled:focus, .bg-primary .btn-hollow-primary.disabled.focus, .bg-primary .btn-hollow-primary[disabled]:hover, .bg-primary .btn-hollow-primary[disabled]:focus, .bg-primary .btn-hollow-primary[disabled].focus,
   fieldset[disabled] .bg-primary .btn-hollow-primary:hover,
   fieldset[disabled] .bg-primary .btn-hollow-primary:focus,
@@ -9956,13 +10116,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-success.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-success.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-success.btn-lg.active, .btn-group-lg > .btn-hollow-success.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9982,6 +10135,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-success.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-success.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-success.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-success.btn-link.active:hover {
+    color: #7cab85; }
   .btn-hollow-success.disabled:hover, .btn-hollow-success.disabled:focus, .btn-hollow-success.disabled.focus, .btn-hollow-success[disabled]:hover, .btn-hollow-success[disabled]:focus, .btn-hollow-success[disabled].focus,
   fieldset[disabled] .btn-hollow-success:hover,
   fieldset[disabled] .btn-hollow-success:focus,
@@ -10071,13 +10236,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-info.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-info.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-info.btn-lg.active, .btn-group-lg > .btn-hollow-info.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10097,6 +10255,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-info.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-info.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-info.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-info.btn-link.active:hover {
+    color: #b8964e; }
   .btn-hollow-info.disabled:hover, .btn-hollow-info.disabled:focus, .btn-hollow-info.disabled.focus, .btn-hollow-info[disabled]:hover, .btn-hollow-info[disabled]:focus, .btn-hollow-info[disabled].focus,
   fieldset[disabled] .btn-hollow-info:hover,
   fieldset[disabled] .btn-hollow-info:focus,
@@ -10186,13 +10356,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-warning.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-warning.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-warning.btn-lg.active, .btn-group-lg > .btn-hollow-warning.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10212,6 +10375,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-warning.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-warning.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-warning.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-warning.btn-link.active:hover {
+    color: #dccba8; }
   .btn-hollow-warning.disabled:hover, .btn-hollow-warning.disabled:focus, .btn-hollow-warning.disabled.focus, .btn-hollow-warning[disabled]:hover, .btn-hollow-warning[disabled]:focus, .btn-hollow-warning[disabled].focus,
   fieldset[disabled] .btn-hollow-warning:hover,
   fieldset[disabled] .btn-hollow-warning:focus,
@@ -10301,13 +10476,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-danger.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-danger.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-danger.btn-lg.active, .btn-group-lg > .btn-hollow-danger.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10327,6 +10495,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-danger.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-danger.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-danger.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-danger.btn-link.active:hover {
+    color: #b45250; }
   .btn-hollow-danger.disabled:hover, .btn-hollow-danger.disabled:focus, .btn-hollow-danger.disabled.focus, .btn-hollow-danger[disabled]:hover, .btn-hollow-danger[disabled]:focus, .btn-hollow-danger[disabled].focus,
   fieldset[disabled] .btn-hollow-danger:hover,
   fieldset[disabled] .btn-hollow-danger:focus,
@@ -10416,13 +10596,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-transparent-default.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-transparent-default.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-transparent-default.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-default.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10442,6 +10615,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-transparent-default.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-default.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-transparent-default.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-transparent-default.btn-link.active:hover {
+    color: black; }
   .btn-hollow-transparent-default.disabled:hover, .btn-hollow-transparent-default.disabled:focus, .btn-hollow-transparent-default.disabled.focus, .btn-hollow-transparent-default[disabled]:hover, .btn-hollow-transparent-default[disabled]:focus, .btn-hollow-transparent-default[disabled].focus,
   fieldset[disabled] .btn-hollow-transparent-default:hover,
   fieldset[disabled] .btn-hollow-transparent-default:focus,
@@ -10531,13 +10716,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-transparent-primary.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-transparent-primary.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-transparent-primary.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-primary.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10557,6 +10735,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-transparent-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-transparent-primary.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-transparent-primary.btn-link.active:hover {
+    color: #000; }
   .btn-hollow-transparent-primary.disabled:hover, .btn-hollow-transparent-primary.disabled:focus, .btn-hollow-transparent-primary.disabled.focus, .btn-hollow-transparent-primary[disabled]:hover, .btn-hollow-transparent-primary[disabled]:focus, .btn-hollow-transparent-primary[disabled].focus,
   fieldset[disabled] .btn-hollow-transparent-primary:hover,
   fieldset[disabled] .btn-hollow-transparent-primary:focus,
@@ -10694,17 +10884,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .bg-primary .btn-hollow-transparent-primary.btn-block.active,
-  .bg-black .btn-hollow-transparent-primary.btn-block.active,
-  .bg-texture .btn-hollow-transparent-primary.btn-block.active, .bg-texture-inverted .btn-hollow-transparent-primary.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .bg-primary .btn-hollow-transparent-primary.btn-block.active:before,
-    .bg-black .btn-hollow-transparent-primary.btn-block.active:before,
-    .bg-texture .btn-hollow-transparent-primary.btn-block.active:before, .bg-texture-inverted .btn-hollow-transparent-primary.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .bg-primary .btn-hollow-transparent-primary.btn-lg.active, .bg-primary .btn-group-lg > .btn-hollow-transparent-primary.active.btn,
   .bg-black .btn-hollow-transparent-primary.btn-lg.active,
   .bg-black .btn-group-lg > .btn-hollow-transparent-primary.active.btn,
@@ -10748,6 +10927,26 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .bg-primary .btn-hollow-transparent-primary.btn-block.active,
+  .bg-black .btn-hollow-transparent-primary.btn-block.active,
+  .bg-texture .btn-hollow-transparent-primary.btn-block.active, .bg-texture-inverted .btn-hollow-transparent-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .bg-primary .btn-hollow-transparent-primary.btn-block.active:before,
+    .bg-black .btn-hollow-transparent-primary.btn-block.active:before,
+    .bg-texture .btn-hollow-transparent-primary.btn-block.active:before, .bg-texture-inverted .btn-hollow-transparent-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .bg-primary .btn-hollow-transparent-primary.btn-link:hover,
+  .bg-black .btn-hollow-transparent-primary.btn-link:hover,
+  .bg-texture .btn-hollow-transparent-primary.btn-link:hover, .bg-texture-inverted .btn-hollow-transparent-primary.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .bg-primary .btn-hollow-transparent-primary.btn-link.active:hover,
+  .bg-black .btn-hollow-transparent-primary.btn-link.active:hover,
+  .bg-texture .btn-hollow-transparent-primary.btn-link.active:hover, .bg-texture-inverted .btn-hollow-transparent-primary.btn-link.active:hover {
+    color: #000; }
   .bg-primary .btn-hollow-transparent-primary.disabled:hover, .bg-primary .btn-hollow-transparent-primary.disabled:focus, .bg-primary .btn-hollow-transparent-primary.disabled.focus, .bg-primary .btn-hollow-transparent-primary[disabled]:hover, .bg-primary .btn-hollow-transparent-primary[disabled]:focus, .bg-primary .btn-hollow-transparent-primary[disabled].focus,
   fieldset[disabled] .bg-primary .btn-hollow-transparent-primary:hover,
   fieldset[disabled] .bg-primary .btn-hollow-transparent-primary:focus,
@@ -10893,13 +11092,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-transparent-success.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-transparent-success.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-transparent-success.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-success.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10919,6 +11111,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-transparent-success.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-success.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-transparent-success.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-transparent-success.btn-link.active:hover {
+    color: #7cab85; }
   .btn-hollow-transparent-success.disabled:hover, .btn-hollow-transparent-success.disabled:focus, .btn-hollow-transparent-success.disabled.focus, .btn-hollow-transparent-success[disabled]:hover, .btn-hollow-transparent-success[disabled]:focus, .btn-hollow-transparent-success[disabled].focus,
   fieldset[disabled] .btn-hollow-transparent-success:hover,
   fieldset[disabled] .btn-hollow-transparent-success:focus,
@@ -11008,13 +11212,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-transparent-info.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-transparent-info.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-transparent-info.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-info.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11034,6 +11231,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-transparent-info.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-info.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-transparent-info.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-transparent-info.btn-link.active:hover {
+    color: #b8964e; }
   .btn-hollow-transparent-info.disabled:hover, .btn-hollow-transparent-info.disabled:focus, .btn-hollow-transparent-info.disabled.focus, .btn-hollow-transparent-info[disabled]:hover, .btn-hollow-transparent-info[disabled]:focus, .btn-hollow-transparent-info[disabled].focus,
   fieldset[disabled] .btn-hollow-transparent-info:hover,
   fieldset[disabled] .btn-hollow-transparent-info:focus,
@@ -11123,13 +11332,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-transparent-warning.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-transparent-warning.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-transparent-warning.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-warning.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11149,6 +11351,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-transparent-warning.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-warning.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-transparent-warning.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-transparent-warning.btn-link.active:hover {
+    color: #dccba8; }
   .btn-hollow-transparent-warning.disabled:hover, .btn-hollow-transparent-warning.disabled:focus, .btn-hollow-transparent-warning.disabled.focus, .btn-hollow-transparent-warning[disabled]:hover, .btn-hollow-transparent-warning[disabled]:focus, .btn-hollow-transparent-warning[disabled].focus,
   fieldset[disabled] .btn-hollow-transparent-warning:hover,
   fieldset[disabled] .btn-hollow-transparent-warning:focus,
@@ -11238,13 +11452,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-hollow-transparent-danger.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-hollow-transparent-danger.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-hollow-transparent-danger.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-danger.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11264,6 +11471,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-hollow-transparent-danger.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-danger.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-hollow-transparent-danger.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-hollow-transparent-danger.btn-link.active:hover {
+    color: #b45250; }
   .btn-hollow-transparent-danger.disabled:hover, .btn-hollow-transparent-danger.disabled:focus, .btn-hollow-transparent-danger.disabled.focus, .btn-hollow-transparent-danger[disabled]:hover, .btn-hollow-transparent-danger[disabled]:focus, .btn-hollow-transparent-danger[disabled].focus,
   fieldset[disabled] .btn-hollow-transparent-danger:hover,
   fieldset[disabled] .btn-hollow-transparent-danger:focus,
@@ -11370,13 +11589,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-black.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-black.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-black.btn-lg.active, .btn-group-lg > .btn-color-swatch-black.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11396,6 +11608,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-black.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-black.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-black.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-black.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-black.disabled:hover, .btn-color-swatch-black.disabled:focus, .btn-color-swatch-black.disabled.focus, .btn-color-swatch-black[disabled]:hover, .btn-color-swatch-black[disabled]:focus, .btn-color-swatch-black[disabled].focus,
   fieldset[disabled] .btn-color-swatch-black:hover,
   fieldset[disabled] .btn-color-swatch-black:focus,
@@ -11485,13 +11709,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-white.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-white.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-white.btn-lg.active, .btn-group-lg > .btn-color-swatch-white.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11511,6 +11728,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-white.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-white.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-white.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-white.btn-link.active:hover {
+    color: black; }
   .btn-color-swatch-white.disabled:hover, .btn-color-swatch-white.disabled:focus, .btn-color-swatch-white.disabled.focus, .btn-color-swatch-white[disabled]:hover, .btn-color-swatch-white[disabled]:focus, .btn-color-swatch-white[disabled].focus,
   fieldset[disabled] .btn-color-swatch-white:hover,
   fieldset[disabled] .btn-color-swatch-white:focus,
@@ -11600,13 +11829,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-red.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-red.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-red.btn-lg.active, .btn-group-lg > .btn-color-swatch-red.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11626,6 +11848,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-red.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-red.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-red.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-red.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-red.disabled:hover, .btn-color-swatch-red.disabled:focus, .btn-color-swatch-red.disabled.focus, .btn-color-swatch-red[disabled]:hover, .btn-color-swatch-red[disabled]:focus, .btn-color-swatch-red[disabled].focus,
   fieldset[disabled] .btn-color-swatch-red:hover,
   fieldset[disabled] .btn-color-swatch-red:focus,
@@ -11715,13 +11949,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-grey.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-grey.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-grey.btn-lg.active, .btn-group-lg > .btn-color-swatch-grey.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11741,6 +11968,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-grey.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-grey.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-grey.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-grey.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-grey.disabled:hover, .btn-color-swatch-grey.disabled:focus, .btn-color-swatch-grey.disabled.focus, .btn-color-swatch-grey[disabled]:hover, .btn-color-swatch-grey[disabled]:focus, .btn-color-swatch-grey[disabled].focus,
   fieldset[disabled] .btn-color-swatch-grey:hover,
   fieldset[disabled] .btn-color-swatch-grey:focus,
@@ -11830,13 +12069,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-purple.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-purple.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-purple.btn-lg.active, .btn-group-lg > .btn-color-swatch-purple.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11856,6 +12088,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-purple.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-purple.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-purple.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-purple.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-purple.disabled:hover, .btn-color-swatch-purple.disabled:focus, .btn-color-swatch-purple.disabled.focus, .btn-color-swatch-purple[disabled]:hover, .btn-color-swatch-purple[disabled]:focus, .btn-color-swatch-purple[disabled].focus,
   fieldset[disabled] .btn-color-swatch-purple:hover,
   fieldset[disabled] .btn-color-swatch-purple:focus,
@@ -11945,13 +12189,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-pink.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-pink.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-pink.btn-lg.active, .btn-group-lg > .btn-color-swatch-pink.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11971,6 +12208,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-pink.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-pink.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-pink.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-pink.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-pink.disabled:hover, .btn-color-swatch-pink.disabled:focus, .btn-color-swatch-pink.disabled.focus, .btn-color-swatch-pink[disabled]:hover, .btn-color-swatch-pink[disabled]:focus, .btn-color-swatch-pink[disabled].focus,
   fieldset[disabled] .btn-color-swatch-pink:hover,
   fieldset[disabled] .btn-color-swatch-pink:focus,
@@ -12060,13 +12309,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-blue.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-blue.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-blue.btn-lg.active, .btn-group-lg > .btn-color-swatch-blue.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12086,6 +12328,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-blue.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-blue.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-blue.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-blue.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-blue.disabled:hover, .btn-color-swatch-blue.disabled:focus, .btn-color-swatch-blue.disabled.focus, .btn-color-swatch-blue[disabled]:hover, .btn-color-swatch-blue[disabled]:focus, .btn-color-swatch-blue[disabled].focus,
   fieldset[disabled] .btn-color-swatch-blue:hover,
   fieldset[disabled] .btn-color-swatch-blue:focus,
@@ -12175,13 +12429,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-green.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-green.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-green.btn-lg.active, .btn-group-lg > .btn-color-swatch-green.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12201,6 +12448,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-green.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-green.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-green.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-green.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-green.disabled:hover, .btn-color-swatch-green.disabled:focus, .btn-color-swatch-green.disabled.focus, .btn-color-swatch-green[disabled]:hover, .btn-color-swatch-green[disabled]:focus, .btn-color-swatch-green[disabled].focus,
   fieldset[disabled] .btn-color-swatch-green:hover,
   fieldset[disabled] .btn-color-swatch-green:focus,
@@ -12290,13 +12549,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-yellow.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-yellow.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-yellow.btn-lg.active, .btn-group-lg > .btn-color-swatch-yellow.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12316,6 +12568,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-yellow.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-yellow.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-yellow.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-yellow.btn-link.active:hover {
+    color: black; }
   .btn-color-swatch-yellow.disabled:hover, .btn-color-swatch-yellow.disabled:focus, .btn-color-swatch-yellow.disabled.focus, .btn-color-swatch-yellow[disabled]:hover, .btn-color-swatch-yellow[disabled]:focus, .btn-color-swatch-yellow[disabled].focus,
   fieldset[disabled] .btn-color-swatch-yellow:hover,
   fieldset[disabled] .btn-color-swatch-yellow:focus,
@@ -12405,13 +12669,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-orange.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-orange.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-orange.btn-lg.active, .btn-group-lg > .btn-color-swatch-orange.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12431,6 +12688,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-orange.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-orange.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-orange.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-orange.btn-link.active:hover {
+    color: white; }
   .btn-color-swatch-orange.disabled:hover, .btn-color-swatch-orange.disabled:focus, .btn-color-swatch-orange.disabled.focus, .btn-color-swatch-orange[disabled]:hover, .btn-color-swatch-orange[disabled]:focus, .btn-color-swatch-orange[disabled].focus,
   fieldset[disabled] .btn-color-swatch-orange:hover,
   fieldset[disabled] .btn-color-swatch-orange:focus,
@@ -12520,13 +12789,6 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
-  .btn-color-swatch-tan.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn-color-swatch-tan.btn-block.active:before {
-      position: relative;
-      left: 0; }
   .btn-color-swatch-tan.btn-lg.active, .btn-group-lg > .btn-color-swatch-tan.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12546,6 +12808,18 @@ img.pos-bottom-left {
       left: 0px;
       position: relative;
       font-size: .8em; }
+  .btn-color-swatch-tan.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-tan.btn-block.active:before {
+      position: relative;
+      left: 0; }
+  .btn-color-swatch-tan.btn-link:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .btn-color-swatch-tan.btn-link.active:hover {
+    color: black; }
   .btn-color-swatch-tan.disabled:hover, .btn-color-swatch-tan.disabled:focus, .btn-color-swatch-tan.disabled.focus, .btn-color-swatch-tan[disabled]:hover, .btn-color-swatch-tan[disabled]:focus, .btn-color-swatch-tan[disabled].focus,
   fieldset[disabled] .btn-color-swatch-tan:hover,
   fieldset[disabled] .btn-color-swatch-tan:focus,
