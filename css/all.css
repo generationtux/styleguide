@@ -8312,6 +8312,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-default.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-default.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-default.btn-lg.active, .btn-group-lg > .btn-default.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8420,6 +8427,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-primary.btn-lg.active, .btn-group-lg > .btn-primary.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8576,6 +8590,17 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .bg-primary .btn-primary.btn-block.active,
+  .bg-black .btn-primary.btn-block.active,
+  .bg-texture .btn-primary.btn-block.active, .bg-texture-inverted .btn-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .bg-primary .btn-primary.btn-block.active:before,
+    .bg-black .btn-primary.btn-block.active:before,
+    .bg-texture .btn-primary.btn-block.active:before, .bg-texture-inverted .btn-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .bg-primary .btn-primary.btn-lg.active, .bg-primary .btn-group-lg > .btn-primary.active.btn,
   .bg-black .btn-primary.btn-lg.active,
   .bg-black .btn-group-lg > .btn-primary.active.btn,
@@ -8764,6 +8789,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-success.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-success.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-success.btn-lg.active, .btn-group-lg > .btn-success.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8872,6 +8904,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-info.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-info.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-info.btn-lg.active, .btn-group-lg > .btn-info.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -8980,6 +9019,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-warning.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-warning.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-warning.btn-lg.active, .btn-group-lg > .btn-warning.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9088,6 +9134,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-danger.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-danger.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-danger.btn-lg.active, .btn-group-lg > .btn-danger.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9196,6 +9249,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-white.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-white.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-white.btn-lg.active, .btn-group-lg > .btn-white.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9304,6 +9364,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-transparent.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-transparent.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-transparent.btn-lg.active, .btn-group-lg > .btn-transparent.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9412,6 +9479,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-default.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-default.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-default.btn-lg.active, .btn-group-lg > .btn-hollow-default.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9520,6 +9594,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-primary.btn-lg.active, .btn-group-lg > .btn-hollow-primary.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9676,6 +9757,17 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .bg-primary .btn-hollow-primary.btn-block.active,
+  .bg-black .btn-hollow-primary.btn-block.active,
+  .bg-texture .btn-hollow-primary.btn-block.active, .bg-texture-inverted .btn-hollow-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .bg-primary .btn-hollow-primary.btn-block.active:before,
+    .bg-black .btn-hollow-primary.btn-block.active:before,
+    .bg-texture .btn-hollow-primary.btn-block.active:before, .bg-texture-inverted .btn-hollow-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .bg-primary .btn-hollow-primary.btn-lg.active, .bg-primary .btn-group-lg > .btn-hollow-primary.active.btn,
   .bg-black .btn-hollow-primary.btn-lg.active,
   .bg-black .btn-group-lg > .btn-hollow-primary.active.btn,
@@ -9864,6 +9956,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-success.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-success.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-success.btn-lg.active, .btn-group-lg > .btn-hollow-success.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -9972,6 +10071,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-info.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-info.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-info.btn-lg.active, .btn-group-lg > .btn-hollow-info.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10080,6 +10186,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-warning.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-warning.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-warning.btn-lg.active, .btn-group-lg > .btn-hollow-warning.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10188,6 +10301,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-danger.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-danger.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-danger.btn-lg.active, .btn-group-lg > .btn-hollow-danger.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10296,6 +10416,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-transparent-default.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-default.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-transparent-default.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-default.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10404,6 +10531,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-transparent-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-transparent-primary.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-primary.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10560,6 +10694,17 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .bg-primary .btn-hollow-transparent-primary.btn-block.active,
+  .bg-black .btn-hollow-transparent-primary.btn-block.active,
+  .bg-texture .btn-hollow-transparent-primary.btn-block.active, .bg-texture-inverted .btn-hollow-transparent-primary.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .bg-primary .btn-hollow-transparent-primary.btn-block.active:before,
+    .bg-black .btn-hollow-transparent-primary.btn-block.active:before,
+    .bg-texture .btn-hollow-transparent-primary.btn-block.active:before, .bg-texture-inverted .btn-hollow-transparent-primary.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .bg-primary .btn-hollow-transparent-primary.btn-lg.active, .bg-primary .btn-group-lg > .btn-hollow-transparent-primary.active.btn,
   .bg-black .btn-hollow-transparent-primary.btn-lg.active,
   .bg-black .btn-group-lg > .btn-hollow-transparent-primary.active.btn,
@@ -10748,6 +10893,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-transparent-success.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-success.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-transparent-success.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-success.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10856,6 +11008,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-transparent-info.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-info.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-transparent-info.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-info.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -10964,6 +11123,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-transparent-warning.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-warning.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-transparent-warning.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-warning.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11072,6 +11238,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-hollow-transparent-danger.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-hollow-transparent-danger.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-hollow-transparent-danger.btn-lg.active, .btn-group-lg > .btn-hollow-transparent-danger.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11197,6 +11370,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-black.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-black.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-black.btn-lg.active, .btn-group-lg > .btn-color-swatch-black.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11305,6 +11485,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-white.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-white.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-white.btn-lg.active, .btn-group-lg > .btn-color-swatch-white.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11413,6 +11600,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-red.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-red.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-red.btn-lg.active, .btn-group-lg > .btn-color-swatch-red.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11521,6 +11715,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-grey.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-grey.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-grey.btn-lg.active, .btn-group-lg > .btn-color-swatch-grey.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11629,6 +11830,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-purple.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-purple.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-purple.btn-lg.active, .btn-group-lg > .btn-color-swatch-purple.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11737,6 +11945,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-pink.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-pink.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-pink.btn-lg.active, .btn-group-lg > .btn-color-swatch-pink.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11845,6 +12060,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-blue.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-blue.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-blue.btn-lg.active, .btn-group-lg > .btn-color-swatch-blue.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -11953,6 +12175,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-green.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-green.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-green.btn-lg.active, .btn-group-lg > .btn-color-swatch-green.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12061,6 +12290,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-yellow.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-yellow.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-yellow.btn-lg.active, .btn-group-lg > .btn-color-swatch-yellow.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12169,6 +12405,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-orange.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-orange.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-orange.btn-lg.active, .btn-group-lg > .btn-color-swatch-orange.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
@@ -12277,6 +12520,13 @@ img.pos-bottom-left {
       left: 20px;
       color: #404042;
       font-size: .9em; }
+  .btn-color-swatch-tan.btn-block.active {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px; }
+    .btn-color-swatch-tan.btn-block.active:before {
+      position: relative;
+      left: 0; }
   .btn-color-swatch-tan.btn-lg.active, .btn-group-lg > .btn-color-swatch-tan.active.btn {
     padding-left: 64px;
     padding-right: 32px; }
