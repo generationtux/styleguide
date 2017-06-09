@@ -7577,8 +7577,7 @@ ol.fancy-list {
   .buffer-xs-horizontal-sm {
     padding-left: 8px;
     padding-right: 8px; }
-  .buffer-xs-horizontal-md, .modal-header,
-  .modal-footer, .modal-body {
+  .buffer-xs-horizontal-md {
     padding-left: 16px;
     padding-right: 16px; }
   .buffer-xs-horizontal-lg {
@@ -7605,8 +7604,7 @@ ol.fancy-list {
   .buffer-xs-vertical-md {
     padding-top: 16px;
     padding-bottom: 16px; }
-  .buffer-xs-vertical-lg, .modal-header,
-  .modal-footer, .modal-body {
+  .buffer-xs-vertical-lg {
     padding-top: 32px;
     padding-bottom: 32px; }
   .buffer-xs-vertical-xl {
@@ -7695,7 +7693,7 @@ ol.fancy-list {
     padding: 16px; }
   .buffer-sm-all-lg {
     padding: 32px; }
-  .buffer-sm-all-xl, .modal-body {
+  .buffer-sm-all-xl {
     padding: 64px; }
   .buffer-sm-all-xxl {
     padding: 128px; }
@@ -7715,8 +7713,7 @@ ol.fancy-list {
   .buffer-sm-horizontal-lg {
     padding-left: 32px;
     padding-right: 32px; }
-  .buffer-sm-horizontal-xl, .modal-header,
-  .modal-footer {
+  .buffer-sm-horizontal-xl {
     padding-left: 64px;
     padding-right: 64px; }
   .buffer-sm-horizontal-xxl {
@@ -7737,8 +7734,7 @@ ol.fancy-list {
   .buffer-sm-vertical-md {
     padding-top: 16px;
     padding-bottom: 16px; }
-  .buffer-sm-vertical-lg, .modal-header,
-  .modal-footer {
+  .buffer-sm-vertical-lg {
     padding-top: 32px;
     padding-bottom: 32px; }
   .buffer-sm-vertical-xl {
@@ -13619,8 +13615,30 @@ select.form-control {
 .modal-footer {
   background-color: #f8f8f8; }
 
-.modal-header {
-  background-color: #f8f8f8; }
+.modal-header,
+.modal-footer,
+.modal-body {
+  padding: 32px 16px; }
+  @media (min-width: 768px) {
+    .modal-header,
+    .modal-footer,
+    .modal-body {
+      padding: 32px 64px; } }
+
+@media (max-width: 767px) {
+  .modal-header {
+    padding-top: 48px; } }
+
+@media (min-width: 768px) {
+  .modal-body {
+    padding-top: 64px;
+    padding-bottom: 64px; } }
+
+@media (min-width: 768px) {
+  .modal-sm .modal-header,
+  .modal-sm .modal-footer,
+  .modal-sm .modal-body {
+    padding: 32px 32px; } }
 
 .modal-footer {
   text-align: left; }
