@@ -1,6 +1,8 @@
 // -----------------------------------------------------------------------------
 // Modals & Popups
 // -----------------------------------------------------------------------------
+
+// .popup needs to be depricated in favor of modal
 .popup {
   position: fixed;
   z-index: 2000;
@@ -14,82 +16,38 @@
 }
 
 .modal-content {
+    border: none;
     @include shadow-level(4);
 }
 
 .modal-header,
-.modal-footer,
-.modal-body {
-    border: none;
-    position: relative;
-    padding: $grid-gutter-width/2;
-    min-height: 0;
-
-    @media (min-width: $screen-sm-min) {
-        padding: $grid-gutter-width;
-    }
+.modal-footer {
+    @extend .buffer-xs-horizontal-md;
+    @extend .buffer-xs-vertical-lg;
+    @extend .buffer-sm-horizontal-xl;
+    @extend .buffer-sm-vertical-lg;
+    background-color: $gray-lighter;
 }
-
 .modal-header {
-    padding-bottom: 0;
+    background-color: $gray-lighter;
+}
+.modal-body {
+    @extend .buffer-xs-horizontal-md;
+    @extend .buffer-xs-vertical-lg;
+    @extend .buffer-sm-all-xl;
 }
 
 .modal-footer {
-    padding-top: 0;
     text-align: left;
 }
 
-.modal-dialog {
-    margin: 0;
 
-    @media (min-width: $screen-sm-min) {
-        margin: $grid-gutter-width auto;
-    }
-}
-
-.modal .close,
-.popup .close {
-    background: url('https://media.gentux.com//T1dIpEDuCIW5RrRthTF7F7rL@acp') no-repeat -94px -40px;
-    width: 32px;
-    height: 32px;
-    text-indent: -9999px;
-    opacity: 1;
-    margin: 0;
+.modal .close {
     position: absolute;
-    top: $grid-gutter-width/1.5;
-    right: $grid-gutter-width/1.5;
-    z-index: 900;
-
+    top: 16px;
+    right: 16px;
+    opacity: .5;
     &:hover {
-       background-position: -94px 0;
-    }
-}
-
-.modal-bleed {
-    .modal-header,
-    .modal-footer,
-    .modal-body {
-        padding: 0;
-
-        @media (min-width: $screen-sm-min) {
-            padding: 0;
-        }
-    }
-
-    .modal-dialog {
-        height: 100%;
-
-        @media (min-width: $screen-sm-min) {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    .close {
-        background-position: -94px 0;
-
-        &:hover {
-           background-position: -94px -40px;
-        }
+        opacity: 1;
     }
 }

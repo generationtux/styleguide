@@ -7577,7 +7577,8 @@ ol.fancy-list {
   .buffer-xs-horizontal-sm {
     padding-left: 8px;
     padding-right: 8px; }
-  .buffer-xs-horizontal-md {
+  .buffer-xs-horizontal-md, .modal-header,
+  .modal-footer, .modal-body {
     padding-left: 16px;
     padding-right: 16px; }
   .buffer-xs-horizontal-lg {
@@ -7604,7 +7605,8 @@ ol.fancy-list {
   .buffer-xs-vertical-md {
     padding-top: 16px;
     padding-bottom: 16px; }
-  .buffer-xs-vertical-lg {
+  .buffer-xs-vertical-lg, .modal-header,
+  .modal-footer, .modal-body {
     padding-top: 32px;
     padding-bottom: 32px; }
   .buffer-xs-vertical-xl {
@@ -7693,7 +7695,7 @@ ol.fancy-list {
     padding: 16px; }
   .buffer-sm-all-lg {
     padding: 32px; }
-  .buffer-sm-all-xl {
+  .buffer-sm-all-xl, .modal-body {
     padding: 64px; }
   .buffer-sm-all-xxl {
     padding: 128px; }
@@ -7713,7 +7715,8 @@ ol.fancy-list {
   .buffer-sm-horizontal-lg {
     padding-left: 32px;
     padding-right: 32px; }
-  .buffer-sm-horizontal-xl {
+  .buffer-sm-horizontal-xl, .modal-header,
+  .modal-footer {
     padding-left: 64px;
     padding-right: 64px; }
   .buffer-sm-horizontal-xxl {
@@ -7734,7 +7737,8 @@ ol.fancy-list {
   .buffer-sm-vertical-md {
     padding-top: 16px;
     padding-bottom: 16px; }
-  .buffer-sm-vertical-lg {
+  .buffer-sm-vertical-lg, .modal-header,
+  .modal-footer {
     padding-top: 32px;
     padding-bottom: 32px; }
   .buffer-sm-vertical-xl {
@@ -13595,6 +13599,39 @@ select.form-control {
     margin-right: 32px;
     width: auto;
     line-height: 1; }
+
+.popup {
+  position: fixed;
+  z-index: 2000;
+  top: 10%;
+  right: 10%;
+  left: 10%;
+  margin: auto;
+  max-width: 900px;
+  padding: 16px 32px 32px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3); }
+
+.modal-content {
+  border: none;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3); }
+
+.modal-header,
+.modal-footer {
+  background-color: #f8f8f8; }
+
+.modal-header {
+  background-color: #f8f8f8; }
+
+.modal-footer {
+  text-align: left; }
+
+.modal .close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  opacity: .5; }
+  .modal .close:hover {
+    opacity: 1; }
 
 .styleguide-label {
   opacity: .2; }
