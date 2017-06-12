@@ -3,139 +3,151 @@ layout: default
 title: Modules
 permalink: /modules/
 ---
-<div class="container-fluid bg-gray-lighter buffer-xs-vertical-md" style="position:sticky;top:0;z-index:100;backface-visibility:hidden;">
-  <div class="row">
-    <div class="col-sm-12 col-md-9 col-md-offset-3 col-lg-10 col-lg-offset-2">
 
-      <ul class="list-inline pusher-xs-btm-clear">
-        <li class="h6">Module Types:</li>
-        <li class="h6"><a href="#section-navbar">navs</a></li>
-        <li class="h6"><a href="#section-hero">heros</a></li>
-        <li class="h6"><a href="#section-content">content blocks</a></li>
-        <li class="h6"><a href="#section-other">other shite</a></li>
-      </ul>
+<style>
+.styleguide-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.container-styleguide {
+}
+.container-styleguide-sidebar {
+}
+</style>
 
-    </div><!--/col-->
-  </div><!--/row-->
-  
-</div><!--/nav-page-interior-->
+<div class="styleguide-grid">
 
-
-<div class="container-fluid">
-  <div class="row buffer-xs-btm-md buffer-sm-btm-xl">
-    <div class="
-        col-sm-7 col-sm-offset-3
-        col-lg-6 col-lg-offset-2
-    ">
-      <h1 class="buffer-xs-top-xl buffer-xs-btm-md domd">Modules</h1>
-      <p>
-        Modules are content blocks built up of atoms.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-{% for page in site.modules %}
-
-
-
-    {% if page.section-id %}
-    <div id="{{ page.section-id }}" class="
-      container-fluid
-      bg-info
-      buffer-xs-top-xl buffer-sm-top-xxl
-      buffer-xs-btm-lg buffer-sm-btm-xl
-      pusher-xs-top-lg pusher-sm-top-xl
-    ">
+  <div class="styleguide-grid-col">
+    <div class="container-fluid buffer-xs-vertical-md" style="position:sticky;top:0;z-index:100;backface-visibility:hidden;">
       <div class="row">
-        <div class="col-sm-12">
-          <h2 class="domd">{{ page.title }}</h2>
-        </div>
-      </div>
-    </div>
-      
-    {% else %}
-    <div class="container-fluid pusher-xs-vertical-xl bordered-top bordered-info">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2 class="h6 bg-info d-inline-block buffer-xs-all-md">{{ page.title }}</h2>
-        </div>
-      </div>
-    </div>
+        <div class="col-sm-12 pusher-xs-top-lg">
+          <h6 class="h6">Module Types:</h6>
+          <ul>
+            <li class="h6"><a href="#section-navbar">navs</a></li>
+            <li class="h6"><a href="#section-hero">heros</a></li>
+            <li class="h6"><a href="#section-content">content blocks</a></li>
+            <li class="h6"><a href="#section-other">other shite</a></li>
+          </ul>
+          <div class="h6"><a href="#">Back to Top</a></div>
 
-    {% endif %}
-
-
-    {% if page.container-type contains "none" %}
-    {% elsif page.container-type contains "fluid" %}
-    <div class="container-fluid">
-    {% else %}
-    <div class="container">
-    {% endif %}
-
-    {% if page.container-type contains "none" %}
-      {{ page.content }}
-    {% else %}
-      <div class="row">
-        <div class="col-sm-12">
-          {{ page.content }}
-        </div>
-      </div><!-- /row -->
-    {% endif %}
-
-    {% if page.container-type contains "none" %}
-    {% else %}
-    </div> <!-- /container -->
-    {% endif %}
-
-
-    {% if page.extras contains "none" %}
-    {% else %}
-    <div class="container-fluid pusher-xs-vertical-xl">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
-          
-          <div class="shadow-level-3 buffer-xs-all-lg">
-            <div class="row">
-
-              <div class="col-sm-12 pusher-xs-btm-md">
-                <h3>Reference</h3>
-              </div>
-
-              <div class="col-sm-7">
-                <h4 class="pusher-xs-btm-md">Markup:</h4>
-                <div class="copy-to-clipboard">
-                  <div class="clipboard-content">
-                    {% highlight html %} {{ page.content }} {% endhighlight %}
-                  </div>
-                  <div class="clipboard-init btn btn-primary pusher-xs-top-md">Copy to Clipboard</div>
-                </div>
-              </div><!-- /col -->
-
-              <div class="col-sm-5">
-                <h4 class="pusher-xs-btm-md pusher-xs-top-lg">View Module on it's own&nbsp;page:</h4>
-                <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">Open Module</a>
-              </div><!-- /col -->
-
-            </div><!--/row-->
-          </div><!--/shadow-->
         </div><!--/col-->
-
-      </div><!-- /row -->
-    </div><!-- /container -->
-    {% endif %}
-
-
-{% endfor %}
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="pusher-xs-top-xl pusher-xs-btm-xl"></div>
-    </div>
+      </div><!--/row-->
+    </div><!--/nav-page-interior-->
   </div>
-</div><!-- /.container  -->
+
+
+  <div class="styleguide-grid-col bg-white shadow-level-3">
+
+    <div class="container-styleguide">
+    <div class="container-fluid">
+      <div class="row buffer-xs-btm-md buffer-sm-btm-xl">
+        <div class="
+            col-sm-7 col-sm-offset-3
+            col-lg-6 col-lg-offset-2
+        ">
+          <h1 class="buffer-xs-top-xl buffer-xs-btm-md domd">Modules</h1>
+          <p>
+            Modules are content blocks built up of atoms.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    {% for page in site.modules %}
+
+
+
+        {% if page.section-id %}
+        <div class="container-styleguide">
+        <div id="{{ page.section-id }}" class="
+          container-fluid
+          bg-info
+          buffer-xs-top-xl buffer-sm-top-xxl
+          buffer-xs-btm-lg buffer-sm-btm-xl
+          pusher-xs-top-lg pusher-sm-top-xl
+        ">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="domd">{{ page.title }}</h2>
+            </div>
+          </div>
+        </div>
+        </div>
+          
+        {% else %}
+        <div class="container-styleguide">
+        <div class="container-fluid pusher-xs-vertical-xl bordered-top bordered-info">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="h6 bg-info d-inline-block buffer-xs-all-md">{{ page.title }}</h2>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        {% endif %}
+
+
+
+        <div class="container-styleguide">
+              {{ page.content }}
+        </div> <!-- /container -->
+
+
+        {% if page.extras contains "none" %}
+        {% else %}
+        <div class="container-styleguide">
+        <div class="container-fluid pusher-xs-vertical-xl">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
+              
+              <div class="shadow-level-3 buffer-xs-all-lg">
+                <div class="row">
+
+                  <div class="col-sm-12 pusher-xs-btm-md">
+                    <h3>Reference</h3>
+                  </div>
+
+                  <div class="col-sm-7">
+                    <h4 class="pusher-xs-btm-md">Markup:</h4>
+                    <div class="copy-to-clipboard">
+                      <div class="clipboard-content">
+                        {% highlight html %} {{ page.content }} {% endhighlight %}
+                      </div>
+                      <div class="clipboard-init btn btn-primary pusher-xs-top-md">Copy to Clipboard</div>
+                    </div>
+                  </div><!-- /col -->
+
+                  <div class="col-sm-5">
+                    <h4 class="pusher-xs-btm-md pusher-xs-top-lg">View Module on it's own&nbsp;page:</h4>
+                    <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">Open Module</a>
+                  </div><!-- /col -->
+
+                </div><!--/row-->
+              </div><!--/shadow-->
+            </div><!--/col-->
+
+          </div><!-- /row -->
+        </div><!-- /container -->
+        </div>
+        {% endif %}
+
+
+    {% endfor %}
+
+
+    <div class="container-styleguide">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="pusher-xs-top-xl pusher-xs-btm-xl"></div>
+        </div>
+      </div>
+    </div><!-- /.container  -->
+    </div>
+
+  </div><!-- /styleguide-grid-col -->
+
+</div><!-- /styleguide-grid -->
