@@ -6,8 +6,22 @@ permalink: /modules/
 
 <style>
 .styleguide-grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+}
+@media(min-width: 768px) {
+  .styleguide-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr .25fr;
+  }
+}
+@media(min-width: 1000px) {
+  .styleguide-grid {
+    grid-template-columns: 1fr 3fr .5fr;
+  }
+}
+@media(min-width: 1600px) {
+  .styleguide-grid {
+    grid-template-columns: .5fr 3fr .5fr;
+  }
 }
 .container-styleguide {
 }
@@ -15,12 +29,28 @@ permalink: /modules/
 }
 </style>
 
+<div class="container-styleguide">
+<div class="container-fluid">
+  <div class="row buffer-xs-btm-md buffer-sm-btm-xl">
+    <div class="
+        col-sm-7 col-sm-offset-3
+        col-lg-6 col-lg-offset-2
+    ">
+      <h1 class="buffer-xs-top-xl buffer-xs-btm-md domd">Modules</h1>
+      <p>
+        Modules are content blocks built up of atoms.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
 <div class="styleguide-grid">
 
   <div class="styleguide-grid-col">
-    <div class="container-fluid buffer-xs-vertical-md" style="position:sticky;top:0;z-index:100;backface-visibility:hidden;">
+    <div class="container-fluid" style="position:sticky;top:0;z-index:100;backface-visibility:hidden;">
       <div class="row">
-        <div class="col-sm-12 pusher-xs-top-lg">
+        <div class="col-sm-12 pusher-xs-top-xl">
           <h6 class="h6">Module Types:</h6>
           <ul>
             <li class="h6"><a href="#section-navbar">navs</a></li>
@@ -36,37 +66,20 @@ permalink: /modules/
   </div>
 
 
-  <div class="styleguide-grid-col bg-white shadow-level-3">
-
-    <div class="container-styleguide">
-    <div class="container-fluid">
-      <div class="row buffer-xs-btm-md buffer-sm-btm-xl">
-        <div class="
-            col-sm-7 col-sm-offset-3
-            col-lg-6 col-lg-offset-2
-        ">
-          <h1 class="buffer-xs-top-xl buffer-xs-btm-md domd">Modules</h1>
-          <p>
-            Modules are content blocks built up of atoms.
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
-
+  <div class="styleguide-grid-col">
 
     {% for page in site.modules %}
+      <div class=" pusher-xs-top-xl">
 
+    {% if page.section-id %}
+      
 
-
-        {% if page.section-id %}
         <div class="container-styleguide">
         <div id="{{ page.section-id }}" class="
           container-fluid
           bg-info
-          buffer-xs-top-xl buffer-sm-top-xxl
+          buffer-xs-top-xl buffer-sm-top-xl
           buffer-xs-btm-lg buffer-sm-btm-xl
-          pusher-xs-top-lg pusher-sm-top-xl
         ">
           <div class="row">
             <div class="col-sm-12">
@@ -76,34 +89,30 @@ permalink: /modules/
         </div>
         </div>
           
-        {% else %}
-        <div class="container-styleguide">
-        <div class="container-fluid pusher-xs-vertical-xl bordered-top bordered-info">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2 class="h6 bg-info d-inline-block buffer-xs-all-md">{{ page.title }}</h2>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        {% endif %}
-
-
+    {% else %}
 
         <div class="container-styleguide">
+          <h2 class="h6 bg-info d-inline-block buffer-xs-all-md">{{ page.title }}</h2>
+        </div>
+
+    {% endif %}
+
+
+
+        <div class="container-styleguide shadow-level-3 bordered bordered-info" style="position:relative;">
               {{ page.content }}
         </div> <!-- /container -->
 
+        </div><!-- /shadow -->
 
         {% if page.extras contains "none" %}
         {% else %}
         <div class="container-styleguide">
-        <div class="container-fluid pusher-xs-vertical-xl">
+        <div class="container-fluid buffer-xs-vertical-xl bg-gray-light">
           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
+            <div class="col-xs-12">
               
-              <div class="shadow-level-3 buffer-xs-all-lg">
+              <div class="buffer-xs-all-lg">
                 <div class="row">
 
                   <div class="col-sm-12 pusher-xs-btm-md">
@@ -133,6 +142,7 @@ permalink: /modules/
         </div><!-- /container -->
         </div>
         {% endif %}
+
 
 
     {% endfor %}
