@@ -6641,6 +6641,9 @@ ol.fancy-list {
   background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC") repeat center center;
   background-size: 8px; }
 
+.bg-test {
+  background-image: linear-gradient(to right, transparent 0, transparent 30%, red 30%, red 100%); }
+
 .bordered {
   border: 1px solid #000; }
 

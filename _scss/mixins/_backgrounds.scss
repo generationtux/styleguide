@@ -1,0 +1,3 @@
+@mixin bg-fraction($offset, $fill-side, $color) {
+	background-image: linear-gradient(to $fill-side, transparent 0, transparent $offset, $color $offset, $color 100%);
+}

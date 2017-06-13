@@ -170,3 +170,8 @@ $rowUnit: 10%;
   background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC') repeat center center;
   background-size: 8px;
 }
+
+
+.bg-test {
+  @include bg-fraction(30%, right, red);
+}
