@@ -13018,9 +13018,6 @@ img.pos-bottom-left {
     .navbar-default .main-nav-items .active a:hover:after {
       background-color: #cccccc; } }
 
-.home .navbar-default {
-  background-color: #f8f8f8; }
-
 .navbar-inverse {
   border: none; }
   @media (min-width: 768px) {
