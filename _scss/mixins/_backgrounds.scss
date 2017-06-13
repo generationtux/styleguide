@@ -1,3 +1,14 @@
-@mixin bg-fraction($offset, $fill-side, $color) {
-	background-image: linear-gradient(to $fill-side, transparent 0, transparent $offset, $color $offset, $color 100%);
+
+@mixin bg-fraction($color, $fill-side, $offset) {
+	background-image: 
+		linear-gradient(to $fill-side, transparent 0, transparent $offset, $color $offset, $color 100%),
+		linear-gradient(to $fill-side, transparent 0, transparent 50%,  $color 50%, $color 100%),
+		linear-gradient(to $fill-side, $color 0%, $color 100%),
+	;
+	background-size: 100%, 100%, 100%;
+	background-repeat: repeat-y;
+	background-position: center;
+	@media(min-width:$screen-sm) { background-size: $screen-sm - $outside-gutter-width*2, 100%, 0; }
+	@media(min-width:$screen-md) { background-size: $screen-md - $outside-gutter-width*2, 100%, 0; }
+	@media(min-width:$screen-lg) { background-size: $screen-lg - $outside-gutter-width*2, 100%, 0; }
 }
