@@ -6303,7 +6303,8 @@ img.context--copy {
   text-transform: uppercase; }
 
 .lowercase {
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  letter-spacing: 0; }
 
 .capitalize {
   text-transform: capitalize; }
