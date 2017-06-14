@@ -56,13 +56,17 @@ permalink: /atoms/
 
       {% for page in site.atoms %}
 
-        <div id="{{ page.title }}" class="pusher-xs-top-xl pusher-xs-btm-xxl">
+        <div id="{{ page.title }}" class="buffer-xs-top-xl pusher-xs-btm-xxl">
           
           <h2>{{ page.title }}</h2>
 
-          <div>
-            {{ page.content }}
-          </div>
+          <hr class="pusher-sm-btm-xl">
+
+          <div class="row">
+            <div class="col-xs-11 col-xs-offset-1">
+              {{ page.content }}
+            </div>
+          </div><!-- /row -->
 
         </div>
 
