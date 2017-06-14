@@ -4,8 +4,11 @@ title: Atoms
 permalink: /atoms/
 ---
 
+
 <div class="container-fluid">
-  <div class="row">
+
+
+  <div class="row buffer-xs-btm-md buffer-sm-btm-xl">
     <div class="
         col-sm-7 col-sm-offset-3
         col-lg-6 col-lg-offset-2
@@ -16,56 +19,51 @@ permalink: /atoms/
       </p>
     </div>
   </div>
-</div>
 
 
-{% for page in site.atoms %}
-
-<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12">
-      <hr class="pusher-xs-top-xl pusher-xs-btm-lg">
-    </div>
-  </div>
-</div><!-- /.container  -->
+
+    <div style="position:sticky;top:0;" class="
+      col-sm-3
+      col-md-3
+      col-lg-2
+    ">
+        <div class="row">
+          <div class="col-sm-12 pusher-xs-top-xl">
+            <h6 class="h6">Module Types:</h6>
+            <ul>
+              {% for page in site.atoms %}
+                <li class="h6"><a href="#{{ page.title }}">{{ page.title }}</a></li>
+              {% endfor %}
+            </ul>
+            <div class="h6"><a href="#">Back to Top</a></div>
+
+          </div><!--/col-->
+        </div><!--/row-->
+    </div><!-- /col -->
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <h2 class="context--copy uppercase">{{ page.title }}</h2>
+    <div class="
+      col-sm-9
+    ">
 
-      {% if page.bootstrap-link %}
-        <p>For more information on {{ page.title }} visit the <a href="{{ page.bootstrap-link}}">Bootstap Reference</a></p>
-      {% endif %}
+      {% for page in site.atoms %}
 
-    </div>
-  </div>
-</div>
+        <div id="{{ page.title }}" class="pusher-xs-top-xl pusher-xs-btm-xxl">
+          
+          <h2>{{ page.title }}</h2>
 
-{% if page.container-type contains "none" %}
-{% elsif page.container-type contains "fluid" %}
-<div class="container-fluid">
-{% else %}
-<div class="container">
-{% endif %}
+          <div>
+            {{ page.content }}
+          </div>
 
-{{ page.content }}
+        </div>
 
-{% if page.container-type contains "none" %}
-{% else %}
-</div> <!-- /container -->
-{% endif %}
+      {% endfor %}
 
-{% endfor %}
+    </div><!-- /col -->
+
+  </div><!-- /row -->
 
 
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="pusher-xs-top-xl pusher-xs-btm-xl"></div>
-    </div>
-  </div>
-</div><!-- /.container  -->
+</div><!-- /container -->
