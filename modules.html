@@ -4,8 +4,10 @@ title: Modules
 permalink: /modules/
 ---
 
-<div class="container-styleguide">
+
 <div class="container-fluid">
+
+
   <div class="row buffer-xs-btm-md buffer-sm-btm-xl">
     <div class="
         col-sm-7 col-sm-offset-3
@@ -17,122 +19,81 @@ permalink: /modules/
       </p>
     </div>
   </div>
-</div>
-</div>
-
-<div class="styleguide-grid">
-
-  <div class="styleguide-grid-col">
-    <div class="container-fluid" style="position:sticky;top:0;z-index:100;backface-visibility:hidden;">
-      <div class="row">
-        <div class="col-sm-12 pusher-xs-top-xl">
-          <h6 class="h6">Module Types:</h6>
-          <ul>
-            <li class="h6"><a href="#section-navbar">navs</a></li>
-            <li class="h6"><a href="#section-hero">heros</a></li>
-            <li class="h6"><a href="#section-content">content blocks</a></li>
-            <li class="h6"><a href="#section-other">other shite</a></li>
-          </ul>
-          <div class="h6"><a href="#">Back to Top</a></div>
-
-        </div><!--/col-->
-      </div><!--/row-->
-    </div><!--/nav-page-interior-->
-  </div>
 
 
-  <div class="styleguide-grid-col">
+  <div class="row">
 
-    {% for page in site.modules %}
-      <div class=" pusher-xs-top-xl">
+    <div style="position:sticky;top:0;" class="
+      col-sm-3
+      col-md-3
+      col-lg-2
+    ">
+        <div class="row">
+          <div class="col-sm-12 pusher-xs-top-xl">
+            <h6 class="h6">Module Types:</h6>
+            <ul>
+              {% for page in site.modules %}
+                <li class="h6"><a href="#{{ page.title }}">{{ page.title }}</a></li>
+              {% endfor %}
+            </ul>
+            <div class="h6"><a href="#">Back to Top</a></div>
 
-    {% if page.section-id %}
-      
+          </div><!--/col-->
+        </div><!--/row-->
+    </div><!-- /col -->
 
-        <div class="container-styleguide">
-        <div id="{{ page.section-id }}" class="
-          container-fluid
-          bg-info
-          buffer-xs-top-xl buffer-sm-top-xl
-          buffer-xs-btm-lg buffer-sm-btm-xl
-        ">
-          <div class="row">
-            <div class="col-sm-12">
-              <h2 class="domd">{{ page.title }}</h2>
-            </div>
-          </div>
-        </div>
-        </div>
-          
-    {% else %}
 
-        <div class="container-styleguide">
+    <div class="
+      col-sm-9
+    ">
+
+      {% for page in site.modules %}
+        <div id="{{ page.title }}" class="pusher-xs-top-xl">
+
           <h2 class="h6 bg-info d-inline-block buffer-xs-all-md">{{ page.title }}</h2>
-        </div>
 
-    {% endif %}
+          <div class="shadow-level-3 bordered bordered-info" style="position:relative;">
+                {{ page.content }}
+          </div> <!-- /container -->
 
+          <div class="buffer-xs-vertical-xl bg-gray-light">
+            <div class="row">
+              <div class="col-xs-12">
+                
+                <div class="buffer-xs-all-lg">
+                  <div class="row">
 
-
-        <div class="container-styleguide shadow-level-3 bordered bordered-info" style="position:relative;">
-              {{ page.content }}
-        </div> <!-- /container -->
-
-        </div><!-- /shadow -->
-
-        {% if page.extras contains "none" %}
-        {% else %}
-        <div class="container-styleguide">
-        <div class="container-fluid buffer-xs-vertical-xl bg-gray-light">
-          <div class="row">
-            <div class="col-xs-12">
-              
-              <div class="buffer-xs-all-lg">
-                <div class="row">
-
-                  <div class="col-sm-12 pusher-xs-btm-md">
-                    <h3>Reference</h3>
-                  </div>
-
-                  <div class="col-sm-7">
-                    <h4 class="pusher-xs-btm-md">Markup:</h4>
-                    <div class="copy-to-clipboard">
-                      <div class="clipboard-content">
-                        {% highlight html %} {{ page.content }} {% endhighlight %}
-                      </div>
-                      <div class="clipboard-init btn btn-primary pusher-xs-top-md">Copy to Clipboard</div>
+                    <div class="col-sm-12 pusher-xs-btm-md">
+                      <h3>Reference</h3>
                     </div>
-                  </div><!-- /col -->
 
-                  <div class="col-sm-5">
-                    <h4 class="pusher-xs-btm-md">View Module on it's own&nbsp;page:</h4>
-                    <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">Open Module</a>
-                  </div><!-- /col -->
+                    <div class="col-sm-7">
+                      <h4 class="pusher-xs-btm-md">Markup:</h4>
+                      <div class="copy-to-clipboard">
+                        <div class="clipboard-content">
+                          {% highlight html %} {{ page.content }} {% endhighlight %}
+                        </div>
+                        <div class="clipboard-init btn btn-primary pusher-xs-top-md">Copy to Clipboard</div>
+                      </div>
+                    </div><!-- /col -->
 
-                </div><!--/row-->
-              </div><!--/shadow-->
-            </div><!--/col-->
+                    <div class="col-sm-5">
+                      <h4 class="pusher-xs-btm-md">View Module on it's own&nbsp;page:</h4>
+                      <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">Open Module</a>
+                    </div><!-- /col -->
 
-          </div><!-- /row -->
-        </div><!-- /container -->
-        </div>
-        {% endif %}
+                  </div><!--/row-->
+                </div><!--/shadow-->
+              </div><!--/col-->
+
+            </div><!-- /row -->
+          </div><!-- /container -->
+
+      {% endfor %}
+
+    </div><!-- /col -->
+
+  </div><!-- /row -->
 
 
-
-    {% endfor %}
-
-
-    <div class="container-styleguide">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="pusher-xs-top-xl pusher-xs-btm-xl"></div>
-        </div>
-      </div>
-    </div><!-- /.container  -->
-    </div>
-
-  </div><!-- /styleguide-grid-col -->
-
-</div><!-- /styleguide-grid -->
+</div><!-- /container -->
