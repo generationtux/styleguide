@@ -172,6 +172,6 @@ $rowUnit: 10%;
 }
 
 
-.bg-gray-lighter-right-30 {
-  @include bg-fraction($gray-lighter, right, 30%);
+.bg-gray-lighter-right-1 {
+  @include bg-fraction(red, right, 9);
 }

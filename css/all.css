@@ -6641,20 +6641,21 @@ ol.fancy-list {
   background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC") repeat center center;
   background-size: 8px; }
 
-.bg-gray-lighter-right-30 {
-  background-image: linear-gradient(to right, transparent 0, transparent 30%, #f8f8f8 30%, #f8f8f8 100%), linear-gradient(to right, transparent 0, transparent 50%, #f8f8f8 50%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 0%, #f8f8f8 100%);
-  background-size: 100%, 100%, 100%;
-  background-repeat: repeat-y;
-  background-position: center; }
-  @media (min-width: 768px) {
-    .bg-gray-lighter-right-30 {
-      background-size: 720px, 100%, 0; } }
-  @media (min-width: 992px) {
-    .bg-gray-lighter-right-30 {
-      background-size: 944px, 100%, 0; } }
-  @media (min-width: 1280px) {
-    .bg-gray-lighter-right-30 {
-      background-size: 1232px, 100%, 0; } }
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-1 {
+    background-image: linear-gradient(to right, transparent 0, transparent 25.003%, red 25.003%, red 100%), linear-gradient(to right, red 100%, red 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-1 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-1 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-1 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
 
 .bordered {
   border: 1px solid #000; }
