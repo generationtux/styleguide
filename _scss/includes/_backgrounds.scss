@@ -172,6 +172,38 @@ $rowUnit: 10%;
 }
 
 
-.bg-gray-lighter-right-1 {
-  @include bg-fraction(red, right, 9);
-}
+
+// -----------------------------------------------------------------------------
+// Offset, fractional backgrounds
+// only gray lighter support for now
+// add more as needed
+// -----------------------------------------------------------------------------
+.bg-gray-lighter-right-1  { @include bg-fraction($gray-lighter, right, 1); }
+.bg-gray-lighter-right-2  { @include bg-fraction($gray-lighter, right, 2); }
+.bg-gray-lighter-right-3  { @include bg-fraction($gray-lighter, right, 3); }
+.bg-gray-lighter-right-4  { @include bg-fraction($gray-lighter, right, 4); }
+.bg-gray-lighter-right-5  { @include bg-fraction($gray-lighter, right, 5); }
+.bg-gray-lighter-right-6  { @include bg-fraction($gray-lighter, right, 6); }
+.bg-gray-lighter-right-7  { @include bg-fraction($gray-lighter, right, 7); }
+.bg-gray-lighter-right-8  { @include bg-fraction($gray-lighter, right, 8); }
+.bg-gray-lighter-right-9  { @include bg-fraction($gray-lighter, right, 9); }
+.bg-gray-lighter-right-10 { @include bg-fraction($gray-lighter, right, 10); }
+.bg-gray-lighter-right-11 { @include bg-fraction($gray-lighter, right, 11); }
+.bg-gray-lighter-right-12 { @include bg-fraction($gray-lighter, right, 12); }
+
+.bg-gray-lighter-left-1  { @include bg-fraction($gray-lighter, left, 1); }
+.bg-gray-lighter-left-2  { @include bg-fraction($gray-lighter, left, 2); }
+.bg-gray-lighter-left-3  { @include bg-fraction($gray-lighter, left, 3); }
+.bg-gray-lighter-left-4  { @include bg-fraction($gray-lighter, left, 4); }
+.bg-gray-lighter-left-5  { @include bg-fraction($gray-lighter, left, 5); }
+.bg-gray-lighter-left-6  { @include bg-fraction($gray-lighter, left, 6); }
+.bg-gray-lighter-left-7  { @include bg-fraction($gray-lighter, left, 7); }
+.bg-gray-lighter-left-8  { @include bg-fraction($gray-lighter, left, 8); }
+.bg-gray-lighter-left-9  { @include bg-fraction($gray-lighter, left, 9); }
+.bg-gray-lighter-left-10 { @include bg-fraction($gray-lighter, left, 10); }
+.bg-gray-lighter-left-11 { @include bg-fraction($gray-lighter, left, 11); }
+.bg-gray-lighter-left-12 { @include bg-fraction($gray-lighter, left, 12); }
+
+
+
+

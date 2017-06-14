@@ -6643,7 +6643,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-1 {
-    background-image: linear-gradient(to right, transparent 0, transparent 25.003%, red 25.003%, red 100%), linear-gradient(to right, red 100%, red 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 91.667%, #f8f8f8 91.667%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6655,6 +6655,374 @@ ol.fancy-list {
         background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
     @media (min-width: 1280px) {
       .bg-gray-lighter-right-1 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-2 {
+    background-image: linear-gradient(to right, transparent 0, transparent 83.334%, #f8f8f8 83.334%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-2 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-2 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-2 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-3 {
+    background-image: linear-gradient(to right, transparent 0, transparent 75.001%, #f8f8f8 75.001%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-3 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-3 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-3 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-4 {
+    background-image: linear-gradient(to right, transparent 0, transparent 66.668%, #f8f8f8 66.668%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-4 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-4 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-4 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-5 {
+    background-image: linear-gradient(to right, transparent 0, transparent 58.335%, #f8f8f8 58.335%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-5 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-5 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-5 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-6 {
+    background-image: linear-gradient(to right, transparent 0, transparent 50.002%, #f8f8f8 50.002%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-6 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-6 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-6 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-7 {
+    background-image: linear-gradient(to right, transparent 0, transparent 41.669%, #f8f8f8 41.669%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-7 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-7 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-7 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-8 {
+    background-image: linear-gradient(to right, transparent 0, transparent 33.336%, #f8f8f8 33.336%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-8 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-8 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-8 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-9 {
+    background-image: linear-gradient(to right, transparent 0, transparent 25.003%, #f8f8f8 25.003%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-9 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-9 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-9 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-10 {
+    background-image: linear-gradient(to right, transparent 0, transparent 16.67%, #f8f8f8 16.67%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-10 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-10 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-10 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-11 {
+    background-image: linear-gradient(to right, transparent 0, transparent 8.337%, #f8f8f8 8.337%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-11 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-11 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-11 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-right-12 {
+    background-image: linear-gradient(to right, transparent 0, transparent 0.004%, #f8f8f8 0.004%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, right center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-right-12 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-right-12 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-right-12 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-1 {
+    background-image: linear-gradient(to left, transparent 0, transparent 91.667%, #f8f8f8 91.667%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-1 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-1 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-1 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-2 {
+    background-image: linear-gradient(to left, transparent 0, transparent 83.334%, #f8f8f8 83.334%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-2 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-2 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-2 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-3 {
+    background-image: linear-gradient(to left, transparent 0, transparent 75.001%, #f8f8f8 75.001%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-3 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-3 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-3 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-4 {
+    background-image: linear-gradient(to left, transparent 0, transparent 66.668%, #f8f8f8 66.668%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-4 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-4 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-4 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-5 {
+    background-image: linear-gradient(to left, transparent 0, transparent 58.335%, #f8f8f8 58.335%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-5 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-5 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-5 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-6 {
+    background-image: linear-gradient(to left, transparent 0, transparent 50.002%, #f8f8f8 50.002%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-6 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-6 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-6 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-7 {
+    background-image: linear-gradient(to left, transparent 0, transparent 41.669%, #f8f8f8 41.669%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-7 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-7 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-7 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-8 {
+    background-image: linear-gradient(to left, transparent 0, transparent 33.336%, #f8f8f8 33.336%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-8 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-8 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-8 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-9 {
+    background-image: linear-gradient(to left, transparent 0, transparent 25.003%, #f8f8f8 25.003%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-9 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-9 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-9 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-10 {
+    background-image: linear-gradient(to left, transparent 0, transparent 16.67%, #f8f8f8 16.67%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-10 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-10 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-10 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-11 {
+    background-image: linear-gradient(to left, transparent 0, transparent 8.337%, #f8f8f8 8.337%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-11 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-11 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-11 {
+        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+
+@supports (background-size: calc(50%)) {
+  .bg-gray-lighter-left-12 {
+    background-image: linear-gradient(to left, transparent 0, transparent 0.004%, #f8f8f8 0.004%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-size: 100%, 100%;
+    background-repeat: repeat-y;
+    background-position: center center, left center; }
+    @media (min-width: 768px) {
+      .bg-gray-lighter-left-12 {
+        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
+    @media (min-width: 992px) {
+      .bg-gray-lighter-left-12 {
+        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
+    @media (min-width: 1280px) {
+      .bg-gray-lighter-left-12 {
         background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
 
 .bordered {
