@@ -40,7 +40,7 @@ permalink: /modules/
             <h6 class="h6">Module Types:</h6>
             <ul>
               {% for page in site.modules %}
-                <li class="h6"><a href="#{{ page.title }}">{{ page.title }}</a></li>
+                <li class="small"><a href="#{{ page.title }}">{{ page.title }}</a></li>
               {% endfor %}
             </ul>
             <div class="h6"><a href="#">Back to Top</a></div>
@@ -55,7 +55,7 @@ permalink: /modules/
     ">
 
       {% for page in site.modules %}
-        <div id="{{ page.title }}" class="pusher-xs-top-xl">
+        <div id="{{ page.title }}" class="buffer-xs-top-xl">
 
           <h2 class="h6 bg-info d-inline-block buffer-xs-all-md">{{ page.title }}</h2>
 
