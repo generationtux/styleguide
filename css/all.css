@@ -6066,6 +6066,8 @@ h3, .h3 {
   @media (min-width: 992px) {
     h3, .h3 {
       font-size: 25px; } }
+  h3.domd, .h3.domd, ol.fancy-list > li.h3:before {
+    letter-spacing: 0; }
 
 h4, .h4 {
   font-size: 16px;
@@ -6077,6 +6079,8 @@ h4, .h4 {
   @media (min-width: 992px) {
     h4, .h4 {
       font-size: 20px; } }
+  h4.domd, .h4.domd, ol.fancy-list > li.h4:before {
+    letter-spacing: 0; }
 
 h5, .h5 {
   font-size: 14px;
@@ -6085,11 +6089,15 @@ h5, .h5 {
   @media (min-width: 768px) {
     h5, .h5 {
       font-size: 16px; } }
+  h5.domd, .h5.domd, ol.fancy-list > li.h5:before {
+    letter-spacing: 0; }
 
 h6, .form-group label, .h6, .btn {
   font-size: 12.8px;
   letter-spacing: .12em;
   line-height: 1.5; }
+  h6.domd, .form-group label.domd, .h6.domd, ol.fancy-list > li.h6:before, ol.fancy-list > li.btn:before, .domd.btn {
+    letter-spacing: 0; }
 
 h4.lowercase, h4.normalcase, .h4.lowercase, .h4.normalcase {
   letter-spacing: .02em; }

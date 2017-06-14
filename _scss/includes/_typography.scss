@@ -80,6 +80,9 @@ h3, .h3 {
     @media(min-width: $screen-md-min) {
       font-size: 25px;
     }
+    &.domd {
+      letter-spacing: 0;
+    }
 }
 h4, .h4 {
     font-size: 16px;
@@ -91,6 +94,9 @@ h4, .h4 {
     @media(min-width: $screen-md-min) {
       font-size: 20px;
     }
+    &.domd {
+      letter-spacing: 0;
+    }
 }
 h5, .h5 {
     font-size: 14px;
@@ -99,11 +105,17 @@ h5, .h5 {
     @media(min-width: $screen-sm-min) {
       font-size: 16px;
     }
+    &.domd {
+      letter-spacing: 0;
+    }
 }
 h6, .h6 {
     font-size: 12.8px;
     letter-spacing: .12em;
     line-height: 1.5;
+    &.domd {
+      letter-spacing: 0;
+    }
 }
 h4,.h4 {
   &.lowercase, &.normalcase {
