@@ -11,6 +11,7 @@ input[type="file"],
 input[type="submit"],
 textarea, select{
     -webkit-appearance: none;
+    -moz-appearance: none;
     border-radius: 0;
     box-shadow: none;
 }
