@@ -32,12 +32,12 @@ title: Generation Tux Style Guide Intro
     overflow: hidden;
   }*/
   .container-home-hero > .row > [class*='col-']:first-child{ 
-    animation: fade-in 2s ease;
+    animation: fade-in 1.8s ease;
   }
 
 
   .container-home-hero > .row > [class*='col-']:last-child{ 
-    animation: fade-in-slide 1.3s ease;
+    animation: fade-in-slide 1.6s ease;
   }
   .panel-link:nth-child(1n) { 
     animation: fade-in-slide 1.8s ease;
@@ -50,8 +50,9 @@ title: Generation Tux Style Guide Intro
   }
 
   @keyframes fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    100% {opacity: 1;}
   }
   @keyframes fade-in-slide {
     0% {
