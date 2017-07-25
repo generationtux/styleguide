@@ -33,6 +33,17 @@ title: Generation Tux Style Guide Intro
   }*/
   .container-home-hero > .row > [class*='col-']:first-child{ 
     animation: fade-in 1.8s ease;
+    background-image: 
+      linear-gradient(to right, black 0%, black 50%, rgba(0,0,0,.5) 100% ), 
+      url(https://media.gentux.com/afBxlPasNQvg2@kaysWHap9MTPcj);
+    background-repeat: no-repeat;
+    background-size: 200% 100%, cover;
+    background-position: left center, center center;
+    transition: all 3s ease;
+  }
+  .container-home-hero > .row > [class*='col-']:first-child:hover {
+    background-position: right center, center center; 
+    transition: all .7s ease-out;
   }
 
 
@@ -111,7 +122,7 @@ title: Generation Tux Style Guide Intro
   ">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1">
-        <h3 class="pusher-xs-btm-lg"> Get Started</h3>
+        <h2 class="pusher-xs-btm-lg domd"> Get Started</h2>
         
         <div>
           <a href="{{ site.baseurl }}/brand-guidelines/" class="
