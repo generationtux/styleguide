@@ -37,16 +37,16 @@ title: Generation Tux Style Guide Intro
 
 
   .container-home-hero > .row > [class*='col-']:last-child{ 
-    animation: fade-in-slide 1.2s ease;
-  }
-  .panel-link:nth-child(1n) { 
     animation: fade-in-slide 1.3s ease;
   }
+  .panel-link:nth-child(1n) { 
+    animation: fade-in-slide 1.8s ease;
+  }
   .panel-link:nth-child(2n) { 
-    animation: fade-in-slide 1.5s ease;
+    animation: fade-in-slide 2s ease;
   }
   .panel-link:nth-child(3n) { 
-    animation: fade-in-slide 1.7s ease;
+    animation: fade-in-slide 2.2s ease;
   }
 
   @keyframes fade-in {
@@ -58,13 +58,15 @@ title: Generation Tux Style Guide Intro
       opacity: 0;
       transform: translateY(100%);
     }
-    50% {
+    40% {
       opacity: 0;
       transform: translateY(100%);
+      animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
     }
     100% {
       opacity: 1;
       transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
     }
   }
 </style>
