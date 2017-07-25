@@ -1,5 +1,6 @@
 .panel-link {
   position: relative;
+  z-index: 0;
   h3,p {
     will-change: color;
   }

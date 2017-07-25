@@ -27,17 +27,56 @@ title: Generation Tux Style Guide Intro
       justify-content: center;
     }
   }
+
+  /*.container-home-hero > .row {
+    overflow: hidden;
+  }*/
+  .container-home-hero > .row > [class*='col-']:first-child{ 
+    animation: fade-in 2s ease;
+  }
+
+
+  .container-home-hero > .row > [class*='col-']:last-child{ 
+    animation: fade-in-slide 1.2s ease;
+  }
+  .panel-link:nth-child(1n) { 
+    animation: fade-in-slide 1.3s ease;
+  }
+  .panel-link:nth-child(2n) { 
+    animation: fade-in-slide 1.5s ease;
+  }
+  .panel-link:nth-child(3n) { 
+    animation: fade-in-slide 1.7s ease;
+  }
+
+  @keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes fade-in-slide {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>
 
 <section class="
   container-fluid 
   container-home-hero
-  bordered-bottom bordered-lighter
+  bg-black
 ">
 <div class="row">
   <div class="
-    col-md-5
-    bg-black
+    col-md-6
     buffer-xs-vertical-xl
     buffer-lg-left-xl
   ">
@@ -59,40 +98,50 @@ title: Generation Tux Style Guide Intro
   </div><!-- /col -->
 
   <div class="
-    col-md-5 col-md-offset-1
+    col-md-6
     buffer-xs-vertical-xl
+    bg-white
   ">
-    <h3 class="pusher-xs-btm-lg"> Get Started</h3>
-    <a href="{{ site.baseurl }}/brand-guidelines/" class="
-      panel-link
-      link-style-clear d-block 
-      buffer-xs-all-lg
-      pusher-xs-btm-lg
-    ">
-      <h3 class="h4">Brand guidelines</h3>
-      <p>Brand foundation, usage guidelines and examples.</p>
-      <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
-    </a>
-    <a href="{{ site.baseurl }}/brand-assets/" class="
-      panel-link
-      link-style-clear d-block 
-      buffer-xs-all-lg
-      pusher-xs-btm-lg
-    ">
-      <h3 class="h4">Assets</h3>
-      <p>Logos, graphic elements, images, etc.</p>
-      <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
-    </a>
-    <a href="{{ site.baseurl }}/dev-intro/" class="
-      panel-link
-      link-style-clear d-block 
-      buffer-xs-all-lg
-      pusher-xs-btm-lg
-    ">
-      <h3 class="h4">Developer Resources</h3>
-      <p>Interactive styleguide, code samples and implementation details.</p>
-      <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
-    </a>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <h3 class="pusher-xs-btm-lg"> Get Started</h3>
+        
+        <div>
+          <a href="{{ site.baseurl }}/brand-guidelines/" class="
+            panel-link
+            link-style-clear d-block 
+            buffer-xs-all-lg
+            pusher-xs-btm-lg
+          ">
+            <h3 class="h4">Brand guidelines</h3>
+            <p>Brand foundation, usage guidelines and examples.</p>
+            <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
+          </a>
+          <a href="{{ site.baseurl }}/brand-assets/" class="
+            panel-link
+            link-style-clear d-block 
+            buffer-xs-all-lg
+            pusher-xs-btm-lg
+          ">
+            <h3 class="h4">Assets</h3>
+            <p>Logos, graphic elements, images, etc.</p>
+            <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
+          </a>
+          <a href="{{ site.baseurl }}/dev-intro/" class="
+            panel-link
+            link-style-clear d-block 
+            buffer-xs-all-lg
+            pusher-xs-btm-lg
+          ">
+            <h3 class="h4">Developer Resources</h3>
+            <p>Interactive styleguide, code samples and implementation details.</p>
+            <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </div><!-- /row -->
 </section>

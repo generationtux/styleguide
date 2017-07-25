@@ -6546,7 +6546,8 @@ ol.fancy-list {
   background-color: #f8f8f8; }
 
 .bg-white {
-  background-color: white; }
+  background-color: white;
+  color: black; }
 
 .bg-info {
   background-color: #D5C197;
@@ -13788,7 +13789,8 @@ img.link-img {
   transform: translate(0, -1px); }
 
 .panel-link {
-  position: relative; }
+  position: relative;
+  z-index: 0; }
   .panel-link h3, .panel-link p {
     will-change: color; }
   .panel-link .glyphicon-arrow-right {
