@@ -16,8 +16,12 @@ title: Generation Tux Style Guide Intro
     }
   }
   @media (min-width: 992px) {
-    .container-home-hero > .row > [class*='col-']{
+    .container-home-hero > .row {
       min-height: 100vh;
+      display: flex;
+      align-items: stretch;
+    }
+    .container-home-hero > .row > [class*='col-']{ 
       display: flex;
       flex-direction: column;
       justify-content: center;
