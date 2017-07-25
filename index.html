@@ -7,11 +7,21 @@ title: Generation Tux Style Guide Intro
     padding-left: 16px;
     padding-right: 16px;
   }
-  .container-home-hero > .row > [class*='col-']{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .home-hero-logo {
+    max-width: 400px;
+  }
+  @media (min-width: 992px) { 
+    .home-hero-logo {
+      max-width: 700px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container-home-hero > .row > [class*='col-']{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 </style>
 
@@ -22,11 +32,12 @@ title: Generation Tux Style Guide Intro
 ">
 <div class="row">
   <div class="
-    col-sm-5 col-md-5
+    col-md-5
     bg-black
+    buffer-xs-vertical-xl
   ">
     <h1 class="domd">
-      <img src="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/white-wordmark.svg" width="80%" alt="Generation Tux Design">
+      <img class="home-hero-logo" src="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/white-wordmark.svg" width="80%" alt="Generation Tux Design">
     </h1>
     <div class="row">
       <div class="col-xs-8 col-xs-offset-4">
@@ -35,14 +46,15 @@ title: Generation Tux Style Guide Intro
             pusher-xs-btm-sm pusher-md-btm-clear
           ">Design</div>
         <p>
-          Brand&nbsp;standards, <br>interactive&nbsp;style&nbsp;guide <br>and&nbsp;asset&nbsp;resources.
+          Brand&nbsp;standards, interactive&nbsp;style&nbsp;guide <br>and&nbsp;asset&nbsp;resources.
         </p>
       </div>
     </div>
   </div><!-- /col -->
 
   <div class="
-    col-sm-7 col-md-5 col-md-offset-1
+    col-md-5 col-md-offset-1
+    buffer-xs-vertical-xl
   ">
     <h3 class="pusher-xs-btm-lg"> Get Started</h3>
     <a href="{{ site.baseurl }}/brand-guidelines/" class="
