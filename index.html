@@ -39,11 +39,14 @@ title: Generation Tux Style Guide Intro
     background-repeat: no-repeat;
     background-size: 200% 100%, cover;
     background-position: left center, center center;
-    transition: all 3s ease;
+    transition-timing-function: ease;
+    transition-duration: 3s;
+    transition-property: opacity, background-position;
   }
   .container-home-hero > .row > [class*='col-']:first-child:hover {
     background-position: right center, center center; 
-    transition: all .7s ease-out;
+    transition-timing-function: ease-out;
+    transition-duration: .7s;
   }
 
 
