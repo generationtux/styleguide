@@ -76,7 +76,7 @@ h2, .h2 {
 }
 h3, .h3 {
     font-size: 18px;
-    letter-spacing: .08em;
+    // letter-spacing: .08em;
     @media(min-width: $screen-sm-min) {
       font-size: 22px;
     }
@@ -89,8 +89,8 @@ h3, .h3 {
 }
 h4, .h4 {
     font-size: 16px;
-    letter-spacing: .08em;
-    line-height: 1.45;
+    letter-spacing: .07em;
+    // line-height: 1.45;
     @media(min-width: $screen-sm-min) {
       font-size: 18px;
     }
@@ -103,36 +103,37 @@ h4, .h4 {
 }
 h5, .h5 {
     font-size: 14px;
-    letter-spacing: .13em;
-    line-height: 1.6;
+    letter-spacing: .07em;
+    line-height: 1.3;
     @media(min-width: $screen-sm-min) {
       font-size: 16px;
     }
     &.domd {
-      letter-spacing: 0;
+      letter-spacing: .03em;
     }
 }
 h6, .h6 {
     font-size: 12.8px;
-    letter-spacing: .12em;
-    line-height: 1.5;
+    letter-spacing: .08em;
+    line-height: 1.3;
     &.domd {
-      letter-spacing: 0;
+      letter-spacing: .03em;
+      line-height: 1.4;
     }
 }
 h4,.h4 {
   &.lowercase, &.normalcase {
-    letter-spacing: .02em;
+    letter-spacing: .01em;
   }
 }
 h5,.h5 {
   &.lowercase, &.normalcase {
-    letter-spacing: .05em;
+    letter-spacing: .02em;
   }
 }
 h6,.h6 {
   &.lowercase, &.normalcase {
-    letter-spacing: .07em;
+    letter-spacing: .03em;
     line-height: 1.3;
   }
 }
