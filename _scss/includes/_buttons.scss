@@ -100,7 +100,7 @@
   @include button-variant($brand-success, white, $brand-success);
 }
 .btn-hollow-info    {
-  @include button-variant($link-color, white, $link-color);
+  @include button-variant($link-color, white, $brand-info);
 }
 .btn-hollow-warning {
   @include button-variant($brand-warning, white, $brand-warning);
@@ -127,7 +127,7 @@
   @include button-variant($brand-success, transparent, $brand-success);
 }
 .btn-hollow-transparent-info    { 
-  @include button-variant($link-color, transparent, $link-color);
+  @include button-variant($link-color, transparent, $brand-info);
 }
 .btn-hollow-transparent-warning { 
   @include button-variant($brand-warning, transparent, $brand-warning);

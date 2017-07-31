@@ -10564,7 +10564,7 @@ img.pos-bottom-left {
 .btn-hollow-info {
   color: #b08e47;
   background-color: white;
-  border-color: #b08e47;
+  border-color: #D5C197;
   position: relative;
   -webkit-transition: all 0.13s ease;
   -o-transition: all 0.13s ease;
@@ -10577,7 +10577,7 @@ img.pos-bottom-left {
     right: -1px;
     bottom: -1px;
     height: 100%;
-    background-color: #b08e47;
+    background-color: #D5C197;
     transform-origin: left bottom;
     z-index: 10;
     opacity: 0;
@@ -10587,7 +10587,7 @@ img.pos-bottom-left {
   .btn-hollow-info:focus, .btn-hollow-info.focus {
     color: #b08e47;
     background-color: white;
-    border-color: #b08e47; }
+    border-color: #D5C197; }
   .btn-hollow-info:hover {
     color: black;
     box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
@@ -10605,13 +10605,13 @@ img.pos-bottom-left {
   .open > .btn-hollow-info.dropdown-toggle {
     color: black;
     background-color: white;
-    border-color: #b08e47; }
+    border-color: #D5C197; }
     .btn-hollow-info.active:focus, .btn-hollow-info.active.focus,
     .open > .btn-hollow-info.dropdown-toggle:focus,
     .open > .btn-hollow-info.dropdown-toggle.focus {
       color: black;
       background-color: white;
-      border-color: #b08e47; }
+      border-color: #D5C197; }
     .btn-hollow-info.active:hover,
     .open > .btn-hollow-info.dropdown-toggle:hover {
       color: black;
@@ -10670,7 +10670,7 @@ img.pos-bottom-left {
   fieldset[disabled] .btn-hollow-info.focus {
     color: #b08e47;
     background-color: white;
-    border-color: #b08e47;
+    border-color: #D5C197;
     box-shadow: none; }
     .btn-hollow-info.disabled:hover:after, .btn-hollow-info.disabled:focus:after, .btn-hollow-info.disabled.focus:after, .btn-hollow-info[disabled]:hover:after, .btn-hollow-info[disabled]:focus:after, .btn-hollow-info[disabled].focus:after,
     fieldset[disabled] .btn-hollow-info:hover:after,
@@ -11540,7 +11540,7 @@ img.pos-bottom-left {
 .btn-hollow-transparent-info {
   color: #b08e47;
   background-color: transparent;
-  border-color: #b08e47;
+  border-color: #D5C197;
   position: relative;
   -webkit-transition: all 0.13s ease;
   -o-transition: all 0.13s ease;
@@ -11553,7 +11553,7 @@ img.pos-bottom-left {
     right: -1px;
     bottom: -1px;
     height: 100%;
-    background-color: #b08e47;
+    background-color: #D5C197;
     transform-origin: left bottom;
     z-index: 10;
     opacity: 0;
@@ -11563,7 +11563,7 @@ img.pos-bottom-left {
   .btn-hollow-transparent-info:focus, .btn-hollow-transparent-info.focus {
     color: #b08e47;
     background-color: transparent;
-    border-color: #b08e47; }
+    border-color: #D5C197; }
   .btn-hollow-transparent-info:hover {
     color: black;
     box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
@@ -11581,13 +11581,13 @@ img.pos-bottom-left {
   .open > .btn-hollow-transparent-info.dropdown-toggle {
     color: black;
     background-color: white;
-    border-color: #b08e47; }
+    border-color: #D5C197; }
     .btn-hollow-transparent-info.active:focus, .btn-hollow-transparent-info.active.focus,
     .open > .btn-hollow-transparent-info.dropdown-toggle:focus,
     .open > .btn-hollow-transparent-info.dropdown-toggle.focus {
       color: black;
       background-color: white;
-      border-color: #b08e47; }
+      border-color: #D5C197; }
     .btn-hollow-transparent-info.active:hover,
     .open > .btn-hollow-transparent-info.dropdown-toggle:hover {
       color: black;
@@ -11646,7 +11646,7 @@ img.pos-bottom-left {
   fieldset[disabled] .btn-hollow-transparent-info.focus {
     color: #b08e47;
     background-color: transparent;
-    border-color: #b08e47;
+    border-color: #D5C197;
     box-shadow: none; }
     .btn-hollow-transparent-info.disabled:hover:after, .btn-hollow-transparent-info.disabled:focus:after, .btn-hollow-transparent-info.disabled.focus:after, .btn-hollow-transparent-info[disabled]:hover:after, .btn-hollow-transparent-info[disabled]:focus:after, .btn-hollow-transparent-info[disabled].focus:after,
     fieldset[disabled] .btn-hollow-transparent-info:hover:after,
