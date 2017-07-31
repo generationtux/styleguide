@@ -2,8 +2,8 @@
 // Typography
 // -----------------------------------------------------------------------------
 
-$brandon-grotesque-font-stack: "brandon-grotesque", Arial, Helvetica, sans-serif;
 $roboto-font-stack: "Roboto", sans-serif;
+$roboto-condensed-font-stack: 'Roboto Condensed', sans-serif;
 $line-height: 1.642;
 
 body {
@@ -19,9 +19,9 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-    font-family: $brandon-grotesque-font-stack;
+    font-family: $roboto-condensed-font-stack;
     font-weight: 600;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     line-height: 1.2;
     text-transform: uppercase;
     margin-top: 0;
