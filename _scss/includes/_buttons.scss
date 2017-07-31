@@ -64,7 +64,7 @@
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
 }
 .btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  @include button-variant(#000000, $btn-info-bg, $btn-info-border);
 }
 .btn-warning {
   @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
