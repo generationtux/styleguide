@@ -8477,13 +8477,15 @@ img.pos-bottom-left {
   padding: 8px 16px;
   font-size: 10.24px;
   line-height: 1.5;
-  border-radius: 0; }
+  border-radius: 0;
+  letter-spacing: .1em; }
 
 .btn-xs, .btn-group-xs > .btn {
   padding: 4px 8px;
   font-size: 10.24px;
   line-height: 1.5;
-  border-radius: 0; }
+  border-radius: 0;
+  letter-spacing: .1em; }
 
 .btn-default {
   color: #000;
