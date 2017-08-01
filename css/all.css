@@ -5900,7 +5900,7 @@ small {
   color: #888888; }
 
 .domd, ol.fancy-list > li:before {
-  font-family: 'DomD Reg', georgia, serif;
+  font-family: "DomD Reg", georgia, serif;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0; }
@@ -13511,15 +13511,33 @@ img.pos-bottom-left {
     color: #404042; }
 
 blockquote {
-  border: none; }
-  blockquote footer:before, blockquote small:before, blockquote .small:before {
-    content: "";
-    width: 32px;
-    height: 1px;
-    margin-right: 8px;
-    background-color: #D5C197;
-    display: inline-block;
-    vertical-align: middle; }
+  border: none;
+  padding: 0;
+  margin: 0; }
+  blockquote q, blockquote cite {
+    display: block; }
+  blockquote q:before {
+    content: "\201C";
+    font-family: "DomD Reg", georgia, serif;
+    position: absolute;
+    transform: translate(-120%, 0); }
+  blockquote q:after {
+    content: "\201D";
+    font-family: "DomD Reg", georgia, serif; }
+  blockquote small:before, blockquote .small:before {
+    content: ""; }
+  blockquote footer, blockquote cite {
+    color: #888888; }
+    blockquote footer:before, blockquote cite:before {
+      content: "";
+      width: 32px;
+      height: 0px;
+      margin-right: 8px;
+      border-top-width: 0;
+      border-top-width: 1px;
+      border-top-style: solid;
+      display: inline-block;
+      vertical-align: middle; }
 
 .panel {
   margin-bottom: 32px; }

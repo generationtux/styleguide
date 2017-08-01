@@ -4,6 +4,7 @@
 
 $roboto-font-stack: "Roboto", sans-serif;
 $roboto-condensed-font-stack: 'Roboto Condensed', sans-serif;
+$domain-font-stack: 'DomD Reg', georgia, serif;
 $line-height: 1.642;
 
 body {
@@ -34,7 +35,7 @@ small {
 
 // needs to go after headings so it can override
 .domd {
-  font-family: 'DomD Reg', georgia, serif;
+  font-family: $domain-font-stack;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0;
