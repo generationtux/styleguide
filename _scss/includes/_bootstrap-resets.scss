@@ -18,7 +18,7 @@ $gray-lighter:           #f8f8f8;
 $brand-default:         $gray-light;
 $brand-primary:         $gray-base;
 $brand-success:         #519281;
-$brand-info:            #D5C197;
+$brand-info:            #E6CE9A;
 
 $brand-warning:         #dccba8;
 $brand-danger:          #b45250;
@@ -34,7 +34,7 @@ $brand-danger:          #b45250;
 $text-color:            $gray-base;
 
 // //** Global textual link color.
-$link-color:            desaturate(darken($brand-info,23%),0%);
+$link-color:            #b0893a; // brand gold darkened to meet AA accessibility standards
 // //** Link hover color set via `darken()` function.
 $link-hover-color:      lighten($link-color, 10%);
 // //** Link hover decoration.
