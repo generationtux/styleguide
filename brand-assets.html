@@ -3,7 +3,7 @@ layout: default
 title: Brand guidelines
 permalink: /brand-assets/
 ---
-<div class="bordered-bottom bordered-lighter
+<div class="bordered-bottom bordered-light
   buffer-xs-top-xl buffer-md-top-xxl
   buffer-xs-btm-lg buffer-md-btm-xl 
   pusher-xs-btm-xl pusher-md-btm-xl
@@ -26,154 +26,28 @@ permalink: /brand-assets/
 </div><!-- /container -->
 </div>
 
-<div class="container">
-  <div class="row pusher-xs-vertical-xl">
-    
-    <div class="
-      col-sm-12
-    ">
-      <h2 class="h6">Primary Logos</h2>
-      <hr class="pusher-xs-btm-lg">
-    </div>
 
-    <div class="
-      col-sm-9 col-sm-offset-3
-      col-lg-10 col-lg-offset-2
-    ">
-      <div class="row">
-        <div class="col-xs-6 col-lg-3 pusher-xs-top-lg">
-          <img src="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/black-wordmark-gentux.svg" width="116" height="60">
-          <div class="bordered bordered-light buffer-xs-all-lg pusher-xs-top-lg">
-            <h3 class="h6 pusher-xs-btm-md">Download As</h3>
-            <p>
-              Black
-              <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/black-wordmark-gentux.svg" download>SVG</a>
-            </p>
-            <p class="pusher-xs-btm-clear">
-              White
-              <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/white-wordmark-gentux.svg" download>SVG</a>
-            </p>
-          </div>
-        </div><!-- /col -->
-        <div class="col-xs-6 col-lg-3 pusher-xs-top-lg">
-          <img src="{{ site.baseurl }}/images/styleguide-required/generationtux-logo.svg" width="240" height="60">
-          <div class="bordered bordered-light buffer-xs-all-lg pusher-xs-top-lg">
-            <h3 class="h6 pusher-xs-btm-md">Download As</h3>
-            <p>
-              Black
-              <br>
-              <a href="{{ site.baseurl }}/images/styleguide-required/generationtux-logo.svg" download>SVG</a>
-              <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/black-wordmark@4x.png" download>PNG</a>
-            </p>
-            <p class="pusher-xs-btm-clear">
-              White
-              <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/white-wordmark@4x.png" download>PNG</a>
-            </p>
-          </div>
-        </div><!-- /col -->
-      </div><!-- /row -->
-    </div><!-- /col -->
-  </div><!-- /row -->
+{% for page in site.brand-assets %}
 
-  <div class="row pusher-xs-vertical-xl">
-    <div class="
-      col-sm-12
-    ">
-      <h2 class="h6">Secondary Marks</h2>
-      <hr class="pusher-xs-btm-lg">
-    </div>
-
-    <div class="
-      col-sm-9 col-sm-offset-3
-      col-lg-10 col-lg-offset-2
-    ">
-      
-      <div class="row">
-        <div class="col-xs-6 col-lg-3 pusher-xs-top-lg">
-          <p>
-            <img src="{{ site.baseurl }}/images/styleguide-required/gt-logo.svg" height="68">
-          </p>
-          <div class="bordered bordered-light buffer-xs-all-lg pusher-xs-top-lg">
-            <h3 class="h6 pusher-xs-btm-md">Download As</h3>
-            <p>
-              Black <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/black-circle-mark.svg" download>SVG</a>
-              <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/black-circle-mark@4x.png" download>PNG</a>
-            </p>
-            <p class="pusher-xs-btm-clear">
-              White <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/white-circle-mark@4x.png" download>PNG</a>
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-lg-3 pusher-xs-top-lg">
-          <p>
-            <img src="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/black-george-tag.svg" height="68">
-          </p>
-          <div class="bordered bordered-light buffer-xs-all-lg pusher-xs-top-lg">
-            <h3 class="h6 pusher-xs-btm-md">Download As</h3>
-            <p>
-              Black <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/black-george-tag.svg" download>SVG</a>
-              <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/black-george-tag@4x.png" download>PNG</a>
-            </p>
-            <p class="pusher-xs-btm-clear">
-              White <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/white-george-tag@4x.png" download>PNG</a>
-            </p>
-          </div>
-        </div>
+  <div class="container puller-xs-btm-lg pusher-xs-top-xl">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="context--copy domd">{{ page.title }}</h2>
       </div>
-
-    </div><!-- /col -->
-  </div><!-- /row -->
-
-
-  <div class="row pusher-xs-vertical-xl">
-    <div class="
-      col-sm-12
-    ">
-      <h2 class="h6">Social Icon</h2>
-      <hr class="pusher-xs-btm-lg">
     </div>
+  </div>
+  
+  <div class="container bg-gray-lighter buffer-xs-btm-xl">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-lg-10">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
 
-    <div class="
-      col-sm-9 col-sm-offset-3
-      col-lg-10 col-lg-offset-2
-    ">
-      <div class="row">
-        <div class="col-xs-6 col-lg-3 pusher-xs-top-lg">
-
-          <p>
-            <img src="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/black-social-icon-2.svg" width="128">
-          </p>
-          <div class="bordered bordered-light buffer-xs-all-lg pusher-xs-top-lg">
-            <h3 class="h6 pusher-xs-btm-md">Download As</h3>
-            <p>
-              Black <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/black-social-icon-2.svg" download>SVG</a>
-              <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/black-social-icon-2@4x.png" download>PNG</a>
-            </p>
-            <p class="pusher-xs-btm-clear">
-              White <br>
-              <a href="{{ site.baseurl }}/images/brand-assets/brand-assets-png/white-social-icon-2@4x.png" download>PNG</a>
-            </p>
-          </div>
-
-        </div><!-- /col -->
-      </div><!-- /row -->
-    </div><!-- /col -->
-  </div><!-- /row -->
+{% endfor %}
 
 
-</div><!-- /container -->
 
 
 
