@@ -5912,6 +5912,9 @@ h1, .h1 {
   @media (min-width: 992px) {
     h1, .h1 {
       font-size: 39.063px; } }
+  @media (min-width: 1280px) {
+    h1, .h1 {
+      font-size: 61.035px; } }
 
 h2, .h2 {
   font-size: 20px; }
@@ -13928,6 +13931,11 @@ select.form-control {
   opacity: .5; }
   .modal .close:hover {
     opacity: 1; }
+
+@media (min-width: 768px) {
+  .sticky {
+    position: sticky;
+    top: 0; } }
 
 .styleguide-label {
   opacity: .2; }
