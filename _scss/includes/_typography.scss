@@ -4,7 +4,7 @@
 
 $roboto-font-stack: "Roboto", sans-serif;
 $roboto-condensed-font-stack: 'Roboto Condensed', sans-serif;
-$domain-font-stack: 'DomD Reg', georgia, serif;
+$domain-font-stack: 'DomD Reg', 'domaine display', georgia, serif;
 $line-height: 1.642;
 
 body {
@@ -56,7 +56,7 @@ $ms4:  $ms3 * $ms-scale;
 $ms5:  $ms4 * $ms-scale;
 $ms6:  $ms5 * $ms-scale;
 
-$ms-scale: 1.125;
+// $ms-scale: 1.125;
 $ms-scale: 1.2;
 // small
 $ms0-sm:  16px;
@@ -76,7 +76,7 @@ h1, .h1 {
     &.domd, & > .domd {
       font-size: $ms4-sm * $domd-size-adjust; 
     }
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
       font-size: $ms4;
       &.domd, & > .domd {
         font-size: $ms4 * $domd-size-adjust; 
@@ -94,7 +94,7 @@ h2, .h2 {
     &.domd, & > .domd {
       font-size: $ms3-sm * $domd-size-adjust; 
     }
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
       font-size: $ms3;
       &.domd, & > .domd {
         font-size: $ms3 * $domd-size-adjust; 
@@ -107,7 +107,7 @@ h3, .h3 {
     &.domd, & > .domd {
       font-size: $ms2-sm * $domd-size-adjust; 
     }
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
       font-size: $ms2;
       &.domd, & > .domd {
         font-size: $ms2-sm * $domd-size-adjust; 
@@ -122,7 +122,7 @@ h4, .h4 {
       font-size: $ms1-sm * $domd-size-adjust; 
       letter-spacing: 0;
     }
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
       font-size: $ms1;
       &.domd, & > .domd {
         font-size: $ms1-sm * $domd-size-adjust; 
@@ -137,7 +137,7 @@ h5, .h5 {
       font-size: $ms0-sm * $domd-size-adjust;
       letter-spacing: .03em;
     }
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
       font-size: $ms0;
       &.domd, & > .domd {
         font-size: $ms0-sm * $domd-size-adjust;
@@ -152,7 +152,7 @@ h6, .h6 {
       font-size: $ms-1-sm * $domd-size-adjust;
       letter-spacing: .03em;
     }
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
       font-size: $ms-1;
       &.domd, & > .domd {
         font-size: $ms-1-sm * $domd-size-adjust;
