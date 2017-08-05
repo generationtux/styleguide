@@ -5908,25 +5908,25 @@ small {
 h1, .h1 {
   font-size: 26.28851px; }
   h1.domd, h1 > .domd, .h1.domd, ol.fancy-list > li.h1:before, .h1 > .domd, ol.fancy-list.h1 > li:before {
-    font-size: 31.54621px; }
+    font-size: 28.91736px; }
 
 h2, .h2 {
   font-size: 22.2784px; }
   h2.domd, h2 > .domd, .h2.domd, ol.fancy-list > li.h2:before, .h2 > .domd, ol.fancy-list.h2 > li:before {
-    font-size: 26.73408px; }
+    font-size: 24.50624px; }
 
 h3, .h3 {
   font-size: 18.88px;
   line-height: 1.3; }
   h3.domd, h3 > .domd, .h3.domd, ol.fancy-list > li.h3:before, .h3 > .domd, ol.fancy-list.h3 > li:before {
-    font-size: 22.656px; }
+    font-size: 20.768px; }
 
 h4, .h4 {
   font-size: 16px;
   letter-spacing: .04em;
   line-height: 1.3; }
   h4.domd, h4 > .domd, .h4.domd, ol.fancy-list > li.h4:before, .h4 > .domd, ol.fancy-list.h4 > li:before {
-    font-size: 19.2px;
+    font-size: 17.6px;
     letter-spacing: 0; }
 
 h5, .h5 {
@@ -5934,7 +5934,7 @@ h5, .h5 {
   letter-spacing: .05em;
   line-height: 1.35; }
   h5.domd, h5 > .domd, .h5.domd, ol.fancy-list > li.h5:before, .h5 > .domd, ol.fancy-list.h5 > li:before {
-    font-size: 16.27119px;
+    font-size: 14.91525px;
     letter-spacing: .03em; }
 
 h6, .form-group label, .h6, .btn {
@@ -5942,40 +5942,40 @@ h6, .form-group label, .h6, .btn {
   letter-spacing: .07em;
   line-height: 1.45; }
   h6.domd, .form-group label.domd, h6 > .domd, .form-group label > .domd, .h6.domd, ol.fancy-list > li.h6:before, ol.fancy-list > li.btn:before, .domd.btn, .h6 > .domd, .btn > .domd, ol.fancy-list.h6 > li:before, ol.fancy-list.btn > li:before {
-    font-size: 13.78914px;
+    font-size: 12.64005px;
     letter-spacing: .03em; }
 
 @media (min-width: 768px) {
   h1, .h1 {
     font-size: 31.25px; }
     h1.domd, h1 > .domd, .h1.domd, ol.fancy-list > li.h1:before, .h1 > .domd, ol.fancy-list.h1 > li:before {
-      font-size: 37.5px; }
+      font-size: 34.375px; }
   h2, .h2 {
     font-size: 25px; }
     h2.domd, h2 > .domd, .h2.domd, ol.fancy-list > li.h2:before, .h2 > .domd, ol.fancy-list.h2 > li:before {
-      font-size: 30px; }
+      font-size: 27.5px; }
   h3, .h3 {
     font-size: 20px; }
     h3.domd, h3 > .domd, .h3.domd, ol.fancy-list > li.h3:before, .h3 > .domd, ol.fancy-list.h3 > li:before {
-      font-size: 24px; }
+      font-size: 22px; }
   h4, .h4 {
     font-size: 16px; }
     h4.domd, h4 > .domd, .h4.domd, ol.fancy-list > li.h4:before, .h4 > .domd, ol.fancy-list.h4 > li:before {
-      font-size: 19.2px; }
+      font-size: 17.6px; }
   h5, .h5 {
     font-size: 12.8px; }
     h5.domd, h5 > .domd, .h5.domd, ol.fancy-list > li.h5:before, .h5 > .domd, ol.fancy-list.h5 > li:before {
-      font-size: 15.36px; }
+      font-size: 14.08px; }
   h6, .form-group label, .h6, .btn {
     font-size: 10.24px; }
     h6.domd, .form-group label.domd, h6 > .domd, .form-group label > .domd, .h6.domd, ol.fancy-list > li.h6:before, ol.fancy-list > li.btn:before, .domd.btn, .h6 > .domd, .btn > .domd, ol.fancy-list.h6 > li:before, ol.fancy-list.btn > li:before {
-      font-size: 12.288px; } }
+      font-size: 11.264px; } }
 
 @media (min-width: 992px) {
   h1 {
     font-size: 39.0625px; }
     h1.domd, h1 > .domd {
-      font-size: 46.875px; } }
+      font-size: 42.96875px; } }
 
 h4.lowercase, h4.normalcase, .h4.lowercase, .h4.normalcase {
   letter-spacing: .01em; }
