@@ -153,7 +153,7 @@ $ms6:  $ms5 * $ms-scale;
   h6, .h6 {
     font-size: $ms-2;
     &.domd, & > .domd {
-      font-size: $ms-1 * $domd-size-adjust;
+      font-size: $ms-2 * $domd-size-adjust;
     }
   }
 } // headline screen sm-min
