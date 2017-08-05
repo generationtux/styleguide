@@ -41,14 +41,13 @@ small {
   letter-spacing: 0;
 }
 
-// type - modular scale (ms)
-// 1.25 ratio
-// 4:5 / major third
-
+/// Domaine headline needs to be a littler large to visually pair with Roboto Bold 
 $domd-size-adjust: 1.2;
 
+////////////////////////////////////
+// type setting - Mobile first
+////////////////////////////////////
 $ms-scale: 1.2;
-// base
 $ms0:  16px;
 $ms-1: $ms0 / $ms-scale;
 $ms-2: $ms-1 / $ms-scale;
@@ -58,7 +57,6 @@ $ms3:  $ms2 * $ms-scale;
 $ms4:  $ms3 * $ms-scale;
 $ms5:  $ms4 * $ms-scale;
 $ms6:  $ms5 * $ms-scale;
-
 
 h1, .h1 {
     font-size: $ms3;
@@ -107,9 +105,10 @@ h6, .h6 {
     }
 }
 
-
+////////////////////////////////////
+// type setting - larger than mobile
+////////////////////////////////////
 $ms-scale: 1.25;
-// base
 $ms0:  16px;
 $ms-1: $ms0 / $ms-scale;
 $ms-2: $ms-1 / $ms-scale;
