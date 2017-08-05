@@ -5911,17 +5911,7 @@ h1, .h1 {
     line-height: 1.1; }
   @media (min-width: 992px) {
     h1, .h1 {
-      font-size: 39.063px; }
-      h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
-        font-size: 50px; } }
-  @media (min-width: 1280px) {
-    h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
-      font-size: 50px; } }
-  @media (min-width: 1600px) {
-    h1, .h1 {
-      font-size: 39.063px; }
-      h1.domd, .h1.domd, ol.fancy-list > li.h1:before {
-        font-size: 65px; } }
+      font-size: 39.063px; } }
 
 h2, .h2 {
   font-size: 20px; }
@@ -5930,9 +5920,7 @@ h2, .h2 {
       font-size: 25px; } }
   @media (min-width: 992px) {
     h2, .h2 {
-      font-size: 31.25px; }
-      h2.domd, .h2.domd, ol.fancy-list > li.h2:before {
-        font-size: 40px; } }
+      font-size: 31.25px; } }
 
 h3, .h3 {
   font-size: 18px;
@@ -5943,8 +5931,6 @@ h3, .h3 {
   @media (min-width: 992px) {
     h3, .h3 {
       font-size: 25px; } }
-  h3.domd, .h3.domd, ol.fancy-list > li.h3:before {
-    letter-spacing: 0; }
 
 h4, .h4 {
   font-size: 16px;
