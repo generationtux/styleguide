@@ -6265,6 +6265,10 @@ img.context--copy {
   .hero-title-right:after {
     margin-right: 0; }
 
+.text-center .img-responsive {
+  margin-left: auto;
+  margin-right: auto; }
+
 .list-inline {
   margin-left: -8px; }
   .list-inline > li {
