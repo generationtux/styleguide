@@ -88,7 +88,7 @@ h4, .h4 {
 }
 h5, .h5 {
     font-size: $ms-1;
-    letter-spacing: .05em;
+    letter-spacing: .06em;
     line-height: 1.35;
     &.domd, & > .domd {
       font-size: $ms-1 * $domd-size-adjust;
@@ -97,7 +97,7 @@ h5, .h5 {
 }
 h6, .h6 {
     font-size: $ms-2;
-    letter-spacing: .07em;
+    letter-spacing: .08em;
     line-height: 1.45;
     &.domd, & > .domd {
       font-size: $ms-2 * $domd-size-adjust;
@@ -181,12 +181,12 @@ h4,.h4 {
 }
 h5,.h5 {
   &.lowercase, &.normalcase {
-    letter-spacing: .02em;
+    letter-spacing: .03em;
   }
 }
 h6,.h6 {
   &.lowercase, &.normalcase {
-    letter-spacing: .03em;
+    letter-spacing: .04em;
     line-height: 1.3;
   }
 }

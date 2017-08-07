@@ -5931,7 +5931,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 13.55932px;
-  letter-spacing: .05em;
+  letter-spacing: .06em;
   line-height: 1.35; }
   h5.domd, h5 > .domd, .h5.domd, ol.fancy-list > li.h5:before, .h5 > .domd, ol.fancy-list.h5 > li:before {
     font-size: 16.27119px;
@@ -5939,7 +5939,7 @@ h5, .h5 {
 
 h6, .form-group label, .h6, .btn {
   font-size: 11.49095px;
-  letter-spacing: .07em;
+  letter-spacing: .08em;
   line-height: 1.45; }
   h6.domd, .form-group label.domd, h6 > .domd, .form-group label > .domd, .h6.domd, ol.fancy-list > li.h6:before, ol.fancy-list > li.btn:before, .domd.btn, .h6 > .domd, .btn > .domd, ol.fancy-list.h6 > li:before, ol.fancy-list.btn > li:before {
     font-size: 13.78914px;
@@ -5985,10 +5985,10 @@ h4.lowercase, h4.normalcase, .h4.lowercase, .h4.normalcase {
   letter-spacing: .01em; }
 
 h5.lowercase, h5.normalcase, .h5.lowercase, .h5.normalcase {
-  letter-spacing: .02em; }
+  letter-spacing: .03em; }
 
 h6.lowercase, .form-group label.lowercase, h6.normalcase, .form-group label.normalcase, .h6.lowercase, .lowercase.btn, .h6.normalcase, .normalcase.btn {
-  letter-spacing: .03em;
+  letter-spacing: .04em;
   line-height: 1.3; }
 
 p {
