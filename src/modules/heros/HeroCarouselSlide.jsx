@@ -25,7 +25,7 @@ const HeroCarouselSlide = ({
   <div className="container container-callout">
     <div className="row">
       <div className="col-sm-4 col-sm-push-1 lift-1">
-        {heading && <div className="h6 pusher-xs-btm-sm">{heading}</div>}
+        {heading && <div className="h5 pusher-xs-btm-sm">{heading}</div>}
         {
           subHeading &&
             <h1

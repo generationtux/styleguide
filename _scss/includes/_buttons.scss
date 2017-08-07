@@ -7,7 +7,7 @@
 // --------------------------------------------------
 
 .btn {
-  @extend .h6;
+  @extend .h5;
   white-space: nowrap;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
 
