@@ -39,7 +39,7 @@ const HeroTwoUpImgLeft = ({
         <div className="col-sm-12 col-md-7 col-lg-6 buffer-lg-left-xl">
           <h1 className="domd">
             {heading &&
-              <div className="h6 pusher-xs-top-lg pusher-sm-top-clear pusher-xs-btm-xs">
+              <div className="h5 pusher-xs-top-lg pusher-sm-top-clear pusher-xs-btm-xs">
                 {heading}
               </div>}
              {

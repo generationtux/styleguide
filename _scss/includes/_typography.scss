@@ -40,89 +40,141 @@ small {
   text-transform: none;
   letter-spacing: 0;
 }
+
+/// Domaine headline needs to be a littler large to visually pair with Roboto Bold 
+$domd-size-adjust: 1.2;
+
+////////////////////////////////////
+// type setting - Mobile first
+////////////////////////////////////
+$ms-scale: 1.18;
+$ms0:  16px;
+$ms-1: $ms0 / $ms-scale;
+$ms-2: $ms-1 / $ms-scale;
+$ms1:  $ms0 * $ms-scale;
+$ms2:  $ms1 * $ms-scale;
+$ms3:  $ms2 * $ms-scale;
+$ms4:  $ms3 * $ms-scale;
+$ms5:  $ms4 * $ms-scale;
+$ms6:  $ms5 * $ms-scale;
+
 h1, .h1 {
-    font-size: 32px;
-    &.domd {
-      line-height: 1.1;
-    }
-    @media(min-width: $screen-md-min) {
-      font-size: 39.063px;
-      &.domd {
-        font-size: 50px;
-      }
-    }
-    @media(min-width: $screen-lg-min) {
-      &.domd {
-        font-size: 50px;
-      }
-    }
-    @media(min-width: 1600px) {
-      font-size: 39.063px;
-      &.domd {
-        font-size: 65px;
-      }
+    font-size: $ms3;
+    &.domd, & > .domd {
+      font-size: $ms3 * $domd-size-adjust; 
     }
 }
 h2, .h2 {
-    font-size: 20px;
-    @media(min-width: $screen-sm-min) {
-      font-size: 25px;
-    }
-    @media(min-width: $screen-md-min) {
-      font-size: 31.25px;
-      &.domd {
-        font-size: 40px;
-      }
+    font-size: $ms2;
+    &.domd, & > .domd {
+      font-size: $ms2 * $domd-size-adjust; 
     }
 }
 h3, .h3 {
-    font-size: 18px;
-    // letter-spacing: .08em;
+    font-size: $ms1;
     line-height: 1.3;
-    @media(min-width: $screen-sm-min) {
-      font-size: 22px;
-    }
-    @media(min-width: $screen-md-min) {
-      font-size: 25px;
-    }
-    &.domd {
-      letter-spacing: 0;
+    &.domd, & > .domd {
+      font-size: $ms1 * $domd-size-adjust; 
     }
 }
 h4, .h4 {
-    font-size: 16px;
+    font-size: $ms0;
     letter-spacing: .04em;
     line-height: 1.3;
-    @media(min-width: $screen-sm-min) {
-      font-size: 18px;
-    }
-    @media(min-width: $screen-md-min) {
-      font-size: 20px;
-    }
-    &.domd {
+    &.domd, & > .domd {
+      font-size: $ms0 * $domd-size-adjust; 
       letter-spacing: 0;
     }
 }
 h5, .h5 {
-    font-size: 14px;
-    letter-spacing: .05em;
+    font-size: $ms-1;
+    letter-spacing: .06em;
     line-height: 1.35;
-    @media(min-width: $screen-sm-min) {
-      font-size: 16px;
-    }
-    &.domd {
+    &.domd, & > .domd {
+      font-size: $ms-1 * $domd-size-adjust;
       letter-spacing: .03em;
     }
 }
 h6, .h6 {
-    font-size: 12.8px;
-    letter-spacing: .07em;
+    font-size: $ms-2;
+    letter-spacing: .08em;
     line-height: 1.45;
-    &.domd {
+    &.domd, & > .domd {
+      font-size: $ms-2 * $domd-size-adjust;
       letter-spacing: .03em;
-      line-height: 1.4;
     }
 }
+
+////////////////////////////////////
+// type setting - larger than mobile
+////////////////////////////////////
+$ms-scale: 1.25;
+$ms0:  16px;
+$ms-1: $ms0 / $ms-scale;
+$ms-2: $ms-1 / $ms-scale;
+$ms1:  $ms0 * $ms-scale;
+$ms2:  $ms1 * $ms-scale;
+$ms3:  $ms2 * $ms-scale;
+$ms4:  $ms3 * $ms-scale;
+$ms5:  $ms4 * $ms-scale;
+$ms6:  $ms5 * $ms-scale;
+$ms7:  $ms6 * $ms-scale;
+
+@media(min-width: $screen-sm-min) {
+  h1, .h1 {
+    font-size: $ms3;
+    &.domd, & > .domd {
+      font-size: $ms3 * $domd-size-adjust; 
+    }
+  }
+  h2, .h2 {
+    font-size: $ms2;
+    &.domd, & > .domd {
+      font-size: $ms2 * $domd-size-adjust; 
+    }
+  }
+  h3, .h3 {
+    font-size: $ms1;
+    &.domd, & > .domd {
+      font-size: $ms1 * $domd-size-adjust; 
+    }
+  }
+  h4, .h4 {
+    font-size: $ms0;
+    &.domd, & > .domd {
+      font-size: $ms0 * $domd-size-adjust; 
+    }
+  }
+  h5, .h5 {
+    font-size: $ms-1;
+    &.domd, & > .domd {
+      font-size: $ms-1 * $domd-size-adjust;
+    }
+  }
+  h6, .h6 {
+    font-size: $ms-2;
+    &.domd, & > .domd {
+      font-size: $ms-2 * $domd-size-adjust;
+    }
+  }
+} // headline screen sm-min
+
+@media(min-width: $screen-lg-min) {
+  h1, .h1 {
+    font-size: $ms4;
+    &.domd, & > .domd {
+      font-size: $ms4 * $domd-size-adjust; 
+    }
+  }
+}
+
+h1.h1-lg,
+h1 > .h1-lg {
+  @media(min-width:1600px) {
+    font-size: $ms6;
+  }
+}
+
 h4,.h4 {
   &.lowercase, &.normalcase {
     letter-spacing: .01em;
@@ -130,27 +182,16 @@ h4,.h4 {
 }
 h5,.h5 {
   &.lowercase, &.normalcase {
-    letter-spacing: .02em;
+    letter-spacing: .03em;
   }
 }
 h6,.h6 {
   &.lowercase, &.normalcase {
-    letter-spacing: .03em;
+    letter-spacing: .04em;
     line-height: 1.3;
   }
 }
-h1.crazy-big {
-  font-size: 90px;
-  @media(min-width:$screen-sm) {
-    font-size: 150px;
-  }
-  @media(min-width:$screen-md) {
-    font-size: 200px;
-  }
-  @media(min-width:$screen-lg) {
-    font-size: 250px;
-  }
-}
+
 p {
   margin-bottom: $type-spacing-md;
 }
@@ -347,6 +388,11 @@ img {
     &:after {
         margin-right: 0;
     }
+}
+
+.text-center .img-responsive {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
