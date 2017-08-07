@@ -5978,7 +5978,8 @@ h6, .form-group label, .h6, .btn {
       font-size: 46.875px; } }
 
 @media (min-width: 1280px) {
-  h1.h1-lg {
+  h1.h1-lg,
+  h1 > .h1-lg {
     font-size: 61.03516px; } }
 
 h4.lowercase, h4.normalcase, .h4.lowercase, .h4.normalcase {

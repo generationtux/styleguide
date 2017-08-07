@@ -168,7 +168,8 @@ $ms7:  $ms6 * $ms-scale;
   }
 }
 
-h1.h1-lg {
+h1.h1-lg,
+h1 > .h1-lg {
   @media(min-width:$screen-lg) {
     font-size: $ms6;
   }
