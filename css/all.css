@@ -6189,7 +6189,7 @@ img.context--copy {
   text-transform: capitalize; }
 
 .normalcase {
-  text-transform: none;
+  text-transform: none !important;
   letter-spacing: 0; }
 
 .link-style {
