@@ -5900,7 +5900,7 @@ small {
   color: #888888; }
 
 .domd, ol.fancy-list > li:before {
-  font-family: "DomD Reg", "domaine display", georgia, serif;
+  font-family: "DomD Reg", georgia, serif;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0; }
@@ -13515,12 +13515,12 @@ blockquote {
     display: block; }
   blockquote q:before {
     content: "\201C";
-    font-family: "DomD Reg", "domaine display", georgia, serif;
+    font-family: "DomD Reg", georgia, serif;
     position: absolute;
     transform: translate(-120%, 0); }
   blockquote q:after {
     content: "\201D";
-    font-family: "DomD Reg", "domaine display", georgia, serif; }
+    font-family: "DomD Reg", georgia, serif; }
   blockquote small:before, blockquote .small:before {
     content: ""; }
   blockquote footer, blockquote cite {
