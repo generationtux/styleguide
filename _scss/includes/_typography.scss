@@ -42,7 +42,7 @@ small {
 }
 
 /// Domaine headline needs to be a littler large to visually pair with Roboto Bold 
-$domd-size-adjust: 1.15;
+$domd-size-adjust: 1.2;
 
 ////////////////////////////////////
 // type setting - Mobile first
@@ -118,6 +118,7 @@ $ms3:  $ms2 * $ms-scale;
 $ms4:  $ms3 * $ms-scale;
 $ms5:  $ms4 * $ms-scale;
 $ms6:  $ms5 * $ms-scale;
+$ms7:  $ms6 * $ms-scale;
 
 @media(min-width: $screen-sm-min) {
   h1, .h1 {
@@ -167,6 +168,11 @@ $ms6:  $ms5 * $ms-scale;
   }
 }
 
+h1.h1-lg {
+  @media(min-width:$screen-lg) {
+    font-size: $ms6;
+  }
+}
 
 h4,.h4 {
   &.lowercase, &.normalcase {
@@ -184,18 +190,7 @@ h6,.h6 {
     line-height: 1.3;
   }
 }
-h1.crazy-big {
-  font-size: 90px;
-  @media(min-width:$screen-sm) {
-    font-size: 150px;
-  }
-  @media(min-width:$screen-md) {
-    font-size: 200px;
-  }
-  @media(min-width:$screen-lg) {
-    font-size: 250px;
-  }
-}
+
 p {
   margin-bottom: $type-spacing-md;
 }
