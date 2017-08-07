@@ -5977,7 +5977,7 @@ h6, .form-group label, .h6, .btn {
     h1.domd, h1 > .domd {
       font-size: 46.875px; } }
 
-@media (min-width: 1280px) {
+@media (min-width: 1600px) {
   h1.h1-lg,
   h1 > .h1-lg {
     font-size: 61.03516px; } }
