@@ -5971,10 +5971,10 @@ h6, .h6 {
     h6.domd, h6 > .domd, .h6.domd, ol.fancy-list > li.h6:before, .h6 > .domd, ol.fancy-list.h6 > li:before {
       font-size: 12.288px; } }
 
-@media (min-width: 992px) {
-  h1 {
+@media (min-width: 1280px) {
+  h1, .h1 {
     font-size: 39.0625px; }
-    h1.domd, h1 > .domd {
+    h1.domd, h1 > .domd, .h1.domd, ol.fancy-list > li.h1:before, .h1 > .domd, ol.fancy-list.h1 > li:before {
       font-size: 46.875px; } }
 
 @media (min-width: 1600px) {

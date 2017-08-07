@@ -159,8 +159,8 @@ $ms7:  $ms6 * $ms-scale;
   }
 } // headline screen sm-min
 
-@media(min-width: $screen-md-min) {
-  h1 {
+@media(min-width: $screen-lg-min) {
+  h1, .h1 {
     font-size: $ms4;
     &.domd, & > .domd {
       font-size: $ms4 * $domd-size-adjust; 
