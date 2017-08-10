@@ -13958,8 +13958,11 @@ select.form-control {
   width: 100%;
   height: 100px; }
 
-.bg-brand-blue {
+.bg-brand-gold {
   background-color: #E6CE9A; }
+
+.bg-brand-gold-dark {
+  background-color: #b0893a; }
 
 .bg-brand-green {
   background-color: #519281; }
