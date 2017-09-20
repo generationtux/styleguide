@@ -8,8 +8,8 @@
 $asset-url: "../";
 
 $font-url:  $asset-url + "fonts/";
-$image-url: $asset-url + "images/styleguide-required/"; 
+$image-url: $asset-url + "images/styleguide-required/";
 
 
-@import "bootstrap-custom";
+@import "menguin/bootstrap-custom-menguin";
 @import "theme";
