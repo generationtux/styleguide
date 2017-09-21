@@ -1,0 +1,398 @@
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+$roboto-font-stack: "Roboto", sans-serif;
+$roboto-condensed-font-stack: 'Roboto', sans-serif;
+$domain-font-stack: 'DomD Reg', georgia, serif;
+$line-height: 1.642;
+
+body {
+    font-family: $roboto-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+    font-family: $roboto-condensed-font-stack;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+small {
+  color: $gray-dark;
+}
+
+
+////////////////////////////////////
+// type setting - Mobile first
+////////////////////////////////////
+$ms-scale: 1.18;
+$ms0:  16px;
+$ms-1: $ms0 / $ms-scale;
+$ms-2: $ms-1 / $ms-scale;
+$ms1:  $ms0 * $ms-scale;
+$ms2:  $ms1 * $ms-scale;
+$ms3:  $ms2 * $ms-scale;
+$ms4:  $ms3 * $ms-scale;
+$ms5:  $ms4 * $ms-scale;
+$ms6:  $ms5 * $ms-scale;
+
+h1, .h1 {
+  font-size: $ms3;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+h2, .h2 {
+  font-size: $ms2;
+}
+h3, .h3 {
+  font-size: $ms1;
+  line-height: 1.3;
+}
+h4, .h4 {
+  font-size: $ms0;
+  letter-spacing: .04em;
+  line-height: 1.3;
+}
+h5, .h5 {
+  font-size: $ms-1;
+  letter-spacing: .06em;
+  line-height: 1.35;
+}
+h6, .h6 {
+  font-size: $ms-2;
+  letter-spacing: .08em;
+  line-height: 1.45;
+}
+
+////////////////////////////////////
+// type setting - larger than mobile
+////////////////////////////////////
+$ms-scale: 1.333;
+$ms0:  16px;
+$ms-1: $ms0 / $ms-scale;
+$ms-2: $ms-1 / $ms-scale;
+$ms1:  $ms0 * $ms-scale;
+$ms2:  $ms1 * $ms-scale;
+$ms3:  $ms2 * $ms-scale;
+$ms4:  $ms3 * $ms-scale;
+$ms5:  $ms4 * $ms-scale;
+$ms6:  $ms5 * $ms-scale;
+$ms7:  $ms6 * $ms-scale;
+
+@media(min-width: $screen-sm-min) {
+  h1, .h1 {
+    font-size: $ms3;
+  }
+  h2, .h2 {
+    font-size: $ms2;
+  }
+  h3, .h3 {
+    font-size: $ms1;
+  }
+  h4, .h4 {
+    font-size: $ms0;
+  }
+  h5, .h5 {
+    font-size: $ms-1;
+  }
+  h6, .h6 {
+    font-size: $ms-2;
+  }
+} // headline screen sm-min
+
+@media(min-width: $screen-lg-min) {
+  h1, .h1 {
+    font-size: $ms4;
+  }
+}
+
+h1.h1-lg,
+h1 > .h1-lg {
+  @media(min-width:1600px) {
+    font-size: $ms6;
+  }
+}
+
+h4,.h4 {
+  &.lowercase, &.normalcase {
+    letter-spacing: .01em;
+  }
+}
+h5,.h5 {
+  &.lowercase, &.normalcase {
+    letter-spacing: .03em;
+  }
+}
+h6,.h6 {
+  &.lowercase, &.normalcase {
+    letter-spacing: .04em;
+    line-height: 1.3;
+  }
+}
+
+p {
+  margin-bottom: $type-spacing-md;
+}
+
+p.small {
+  font-size: 12.8px;
+  letter-spacing: .01em;
+  line-height: 1.7;
+}
+p.large {
+  font-size: 18px;
+}
+
+ul,ol {
+  margin-bottom: $type-spacing-md;
+  padding-left: 2em;
+}
+
+hr {
+  margin-top: $type-spacing-md;
+  margin-bottom: $type-spacing-md;
+}
+hr.hr-small {
+  width: 32px;
+  border-top: 1px solid black;
+  margin-left: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  @media(min-width:$screen-sm) {
+    margin-top: $type-spacing-lg;
+    margin-bottom: $type-spacing-lg;
+  }
+}
+
+.readable-line {
+  max-width: 40em;
+}
+
+.t-indent {
+  @media(min-width: $screen-sm-min) {
+    text-indent:-.21em;
+  }
+}
+
+.text-center ul,
+.text-center ol {
+    text-align: left;
+    display: inline-block;
+}
+
+.page-header {
+    margin-top: 0.4em;
+    margin-bottom: 0.75em;
+    border-bottom: 1px solid $gray-light;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+// to make type more flexible, margins only get added to type when the context--copy is used
+// reference: http://rizzo.lonelyplanet.com/styleguide/design-elements/typography
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  &.context--copy {
+    margin-top: $type-spacing-lg;
+    margin-bottom: $type-spacing-md;
+  }
+  +h1,+.h1,
+  +h2,+.h2,
+  +h3,+.h3,
+  +h4,+.h4,
+  +h5,+.h5,
+  +h6,+.h6 {
+    &.context--copy {
+      margin-top: 0;
+    }
+  }
+}
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  &.context--copy {
+    color: $gray-darker;
+  }
+}
+
+img {
+  &.context--copy {
+    display: block;
+    margin-top: $type-spacing-lg;
+    margin-bottom: $type-spacing-lg;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Case
+// -----------------------------------------------------------------------------
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+    letter-spacing: 0;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.normalcase {
+    text-transform: none !important;
+    letter-spacing: 0;
+}
+
+.link-style {
+  color: $link-color;
+  cursor: pointer;
+
+  &:hover {
+    color: darken($brand-info, 20%);
+  }
+}
+.link-style-clear {
+  color: $gray-base;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// text color
+// -----------------------------------------------------------------------------
+.text-default { color: $brand-default; }
+.text-primary { color: $brand-primary; }
+.text-success { color: $brand-success; }
+.text-info    { color: $brand-info; }
+.text-warning { color: $brand-warning; }
+.text-danger  { color: $brand-danger; }
+
+// -----------------------------------------------------------------------------
+// Text truncation
+// -----------------------------------------------------------------------------
+.text-truncate,
+.text-overflow {
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: "…";
+  -webkit-text-overflow: clip;
+  -webkit-text-overflow: ellipsis;
+  -webkit-text-overflow: "…";
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+// -----------------------------------------------------------------------------
+// Hero Titles
+// -----------------------------------------------------------------------------
+@mixin hero-title-base() {
+    &:after {
+        content: '';
+        width: 27%;
+        height: 0.12em;
+        background-color: $gray-base;
+        display: block;
+        margin: 0.5em auto 0.6em;
+    }
+}
+
+.hero-title {
+    @include hero-title-base;
+}
+
+.hero-title-left {
+    @include hero-title-base;
+    text-align: left;
+
+    &:after {
+        margin-left: 0;
+    }
+}
+
+.hero-title-right {
+    @include hero-title-base;
+    text-align: right;
+
+    &:after {
+        margin-right: 0;
+    }
+}
+
+.text-center .img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// -----------------------------------------------------------------------------
+// lists
+// -----------------------------------------------------------------------------
+
+//overrides bootstrap spacing
+.list-inline {
+  margin-left: -8px;
+  > li {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+ol.fancy-list {
+  counter-reset:li; /* Initiate a counter */
+  margin-left:2em; /* Remove the default left margin */
+  padding-left:0; /* Remove the default left padding */
+  > li {
+    position:relative; /* Create a positioning context */
+    margin: 0; /* Give each list item a left margin to make room for the numbers */
+    padding: 0px 0px 16px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    // border-bottom: 1px solid $gray-light;
+    &:before {
+      font-size: 25px;
+      line-height: 1;
+      color:  $gray;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      content: counter(li, decimal-leading-zero); /* Use the counter as content */
+      counter-increment:li; /* Increment the counter by 1 */
+      /* Position and style the number */
+      position:relative;
+      // left:-2em;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      min-width:1.8em;
+      /* Some space between the number and the content in browsers that support
+         generated content but not positioning it (Camino 2 is one example) */
+      // margin-right:16px;
+    }
+    a {
+      vertical-align: middle;
+    }
+  }
+  li ol,
+  li ul {margin-top:6px;}
+  ol ol li:last-child {margin-bottom:0;}
+}

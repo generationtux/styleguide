@@ -1,0 +1,45 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+  @extend .h5;
+  white-space: nowrap;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    // @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    box-shadow: none;
+  }
+
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-large, $btn-border-radius-large);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($padding-small-vertical, $padding-small-horizontal, 10.24px, $line-height-small, $btn-border-radius-small);
+  letter-spacing: .1em;
+}
+.btn-xs {
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, 10.24px, $line-height-small, $btn-border-radius-small);
+  letter-spacing: .1em;
+}

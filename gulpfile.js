@@ -42,7 +42,7 @@ gulp.task('browser-reload', function () {
 // -----------------------------------------------------------------------------
 // Wait for jekyll-build, then launch the Server
 // -----------------------------------------------------------------------------
-gulp.task('browser-sync', ['jekyll','sass-all','js'], function() {
+gulp.task('browser-sync', ['jekyll','sass-all-gentux','sass-all-menguin','js'], function() {
   browserSync({
     proxy: "http://127.0.0.1:4000/"
   });
@@ -74,8 +74,19 @@ gulp.task('js', function(cb) {
 // -----------------------------------------------------------------------------
 //  Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
 // -----------------------------------------------------------------------------
-gulp.task('sass-all', function () {
+gulp.task('sass-all-gentux', function () {
   return gulp.src('_scss/all.scss')
+    .pipe(sass({
+      includePaths: ['scss'],
+      onError: browserSync.notify
+    }))
+    .pipe(gulp.dest('_site/css'))
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('sass-all-menguin', function () {
+  return gulp.src('_scss/all-menguin.scss')
     .pipe(sass({
       includePaths: ['scss'],
       onError: browserSync.notify
@@ -102,12 +113,21 @@ gulp.task('copy-fonts', function(){
 gulp.task('watch', function () {
   gulp.watch('_js/*.js', ['js']);
 
+  // gentux
   gulp.watch([
     '_scss/bootstrap-custom.scss',
-    '_scss/components/_variables-theme.scss',
-    '_scss/components/_bootstrap-resets.scss',
+    '_scss/_theme.scss',
+    '_scss/includes/_bootstrap-resets.scss',
     '_scss/**/*.scss'
-  ], ['sass-all']);
+  ], ['sass-all-gentux']);
+
+  // menguin
+  gulp.watch([
+    '_scss/bootstrap-custom-menguin.scss',
+    '_scss/_theme-menguin.scss',
+    '_scss/_bootstrap-resets-menguin.scss',
+    '_scss/**/*.scss'
+  ], ['sass-all-menguin']);
 
   gulp.watch([
     '_site/**/*',
