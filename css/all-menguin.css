@@ -5899,7 +5899,9 @@ small {
 
 h1, .h1 {
   font-size: 26.28851px;
-  font-weight: 300; }
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .01em; }
 
 h2, .h2 {
   font-size: 22.2784px; }
@@ -5925,26 +5927,26 @@ h6, .h6 {
 
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 45.23434px; }
+    font-size: 37.89749px; }
   h2, .h2 {
-    font-size: 31.99034px; }
+    font-size: 28.43022px; }
   h3, .h3 {
-    font-size: 22.624px; }
+    font-size: 21.328px; }
   h4, .h4 {
     font-size: 16px; }
   h5, .form-group label, .h5, .btn {
-    font-size: 11.31542px; }
+    font-size: 12.003px; }
   h6, .h6 {
-    font-size: 8.00242px; } }
+    font-size: 9.0045px; } }
 
 @media (min-width: 1280px) {
   h1, .h1 {
-    font-size: 63.96135px; } }
+    font-size: 50.51735px; } }
 
 @media (min-width: 1600px) {
   h1.h1-lg,
   h1 > .h1-lg {
-    font-size: 127.88407px; } }
+    font-size: 89.76373px; } }
 
 h4.lowercase, h4.normalcase, .h4.lowercase, .h4.normalcase {
   letter-spacing: .01em; }

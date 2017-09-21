@@ -49,6 +49,8 @@ $ms6:  $ms5 * $ms-scale;
 h1, .h1 {
   font-size: $ms3;
   font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .01em;
 }
 h2, .h2 {
   font-size: $ms2;
@@ -76,7 +78,7 @@ h6, .h6 {
 ////////////////////////////////////
 // type setting - larger than mobile
 ////////////////////////////////////
-$ms-scale: 1.414;
+$ms-scale: 1.333;
 $ms0:  16px;
 $ms-1: $ms0 / $ms-scale;
 $ms-2: $ms-1 / $ms-scale;
