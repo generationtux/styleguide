@@ -183,9 +183,9 @@ $btn-danger-border:              darken($btn-danger-bg, 0%);
 $btn-link-disabled-color:        $gray-light;
 
 // // Allows for customizing button radius independently from global border radius
-$btn-border-radius-base:         0;
-$btn-border-radius-large:        0;
-$btn-border-radius-small:        0;
+$btn-border-radius-base:         40px;
+$btn-border-radius-large:        60px;
+$btn-border-radius-small:        20px;
 
 
 // //== Forms
