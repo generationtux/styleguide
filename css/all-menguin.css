@@ -1114,7 +1114,7 @@ hr {
   margin-top: 16px;
   margin-bottom: 16px;
   border: 0;
-  border-top: 1px solid #e6e6e6; }
+  border-top: 1px solid #dbdbdb; }
 
 .sr-only {
   position: absolute;
@@ -1159,7 +1159,7 @@ h1, h2, h3, h4, h5, .form-group label, h6,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
-    color: #cccccc; }
+    color: #c9c9c9; }
 
 h1, .h1,
 h2, .h2,
@@ -1258,7 +1258,7 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #888888; }
+  color: #2d2d2d; }
 
 .text-primary {
   color: #00B9FF; }
@@ -1336,7 +1336,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 7px;
   margin: 32px 0 16px;
-  border-bottom: 1px solid #f8f8f8; }
+  border-bottom: 1px solid #ececec; }
 
 ul,
 ol {
@@ -1397,7 +1397,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #e6e6e6; }
+  border-bottom: 1px dotted #dbdbdb; }
 
 .initialism {
   font-size: 90%; }
@@ -1406,7 +1406,7 @@ blockquote {
   padding: 8px 16px;
   margin: 0 0 16px;
   font-size: 20px;
-  border-left: 5px solid #f8f8f8; }
+  border-left: 5px solid #ececec; }
   blockquote p:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
@@ -1417,7 +1417,7 @@ blockquote {
     display: block;
     font-size: 80%;
     line-height: 1.5;
-    color: #cccccc; }
+    color: #c9c9c9; }
     blockquote footer:before,
     blockquote small:before,
     blockquote .small:before {
@@ -1427,7 +1427,7 @@ blockquote {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #f8f8f8;
+  border-right: 5px solid #ececec;
   border-left: 0;
   text-align: right; }
   .blockquote-reverse footer:before,
@@ -1484,7 +1484,7 @@ pre {
   line-height: 1.5;
   word-break: break-all;
   word-wrap: break-word;
-  color: #888888;
+  color: #2d2d2d;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 0px; }
@@ -2026,7 +2026,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #888888;
+  color: #2d2d2d;
   text-align: left; }
 
 th {
@@ -2258,7 +2258,7 @@ legend {
   margin-bottom: 16px;
   font-size: 24px;
   line-height: inherit;
-  color: #888888;
+  color: #2d2d2d;
   border: 0;
   border-bottom: 1px solid #e5e5e5; }
 
@@ -2301,7 +2301,7 @@ output {
   padding-top: 17px;
   font-size: 16px;
   line-height: 1.5;
-  color: #404042; }
+  color: #252525; }
 
 .form-control {
   display: block;
@@ -2310,7 +2310,7 @@ output {
   padding: 16px 32px;
   font-size: 16px;
   line-height: 1.5;
-  color: #404042;
+  color: #252525;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -2337,7 +2337,7 @@ output {
     background-color: transparent; }
   .form-control[disabled], .form-control[readonly],
   fieldset[disabled] .form-control {
-    background-color: #f8f8f8;
+    background-color: #ececec;
     opacity: 1; }
   .form-control[disabled],
   fieldset[disabled] .form-control {
@@ -2830,28 +2830,28 @@ fieldset[disabled] a.btn {
 
 .btn-default {
   color: #000;
-  background-color: #cccccc;
-  border-color: #cccccc; }
+  background-color: #c9c9c9;
+  border-color: #c9c9c9; }
   .btn-default:focus, .btn-default.focus {
     color: #000;
-    background-color: #b3b3b3;
-    border-color: #8c8c8c; }
+    background-color: #b0b0b0;
+    border-color: #898989; }
   .btn-default:hover {
     color: #000;
-    background-color: #b3b3b3;
-    border-color: #adadad; }
+    background-color: #b0b0b0;
+    border-color: #aaaaaa; }
   .btn-default:active, .btn-default.active,
   .open > .btn-default.dropdown-toggle {
     color: #000;
-    background-color: #b3b3b3;
-    border-color: #adadad; }
+    background-color: #b0b0b0;
+    border-color: #aaaaaa; }
     .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus,
     .open > .btn-default.dropdown-toggle:hover,
     .open > .btn-default.dropdown-toggle:focus,
     .open > .btn-default.dropdown-toggle.focus {
       color: #000;
-      background-color: #a1a1a1;
-      border-color: #8c8c8c; }
+      background-color: #9e9e9e;
+      border-color: #898989; }
   .btn-default:active, .btn-default.active,
   .open > .btn-default.dropdown-toggle {
     background-image: none; }
@@ -2859,10 +2859,10 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn-default:hover,
   fieldset[disabled] .btn-default:focus,
   fieldset[disabled] .btn-default.focus {
-    background-color: #cccccc;
-    border-color: #cccccc; }
+    background-color: #c9c9c9;
+    border-color: #c9c9c9; }
   .btn-default .badge {
-    color: #cccccc;
+    color: #c9c9c9;
     background-color: #000; }
 
 .btn-primary {
@@ -3068,7 +3068,7 @@ fieldset[disabled] a.btn {
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
   fieldset[disabled] .btn-link:focus {
-    color: #e6e6e6;
+    color: #dbdbdb;
     text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3163,8 +3163,8 @@ tbody.collapse.in {
   font-size: 16px;
   text-align: left;
   background-color: #fff;
-  border: 1px solid #f8f8f8;
-  border: 1px solid #f8f8f8;
+  border: 1px solid #ececec;
+  border: 1px solid #ececec;
   border-radius: 0px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -3183,13 +3183,13 @@ tbody.collapse.in {
     clear: both;
     font-weight: normal;
     line-height: 1.5;
-    color: #888888;
+    color: #2d2d2d;
     white-space: nowrap; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #000;
-  background-color: #f8f8f8; }
+  background-color: #ececec; }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   color: #fff;
@@ -3198,7 +3198,7 @@ tbody.collapse.in {
   background-color: #00B9FF; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
-  color: #e6e6e6; }
+  color: #dbdbdb; }
 
 .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
@@ -3226,7 +3226,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   font-size: 12.8px;
   line-height: 1.5;
-  color: #e6e6e6;
+  color: #dbdbdb;
   white-space: nowrap; }
 
 .dropdown-backdrop {
@@ -3470,9 +3470,9 @@ tbody.collapse.in {
   font-size: 16px;
   font-weight: normal;
   line-height: 1;
-  color: #404042;
+  color: #252525;
   text-align: center;
-  background-color: #f8f8f8;
+  background-color: #ececec;
   border: 1px solid #ccc;
   border-radius: 0px; }
   .input-group-addon.input-sm,
@@ -3553,16 +3553,16 @@ tbody.collapse.in {
       padding: 8px 16px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: #f8f8f8; }
+        background-color: #ececec; }
     .nav > li.disabled > a {
-      color: #e6e6e6; }
+      color: #dbdbdb; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-        color: #e6e6e6;
+        color: #dbdbdb;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #f8f8f8;
+    background-color: #ececec;
     border-color: #00B9FF; }
   .nav .nav-divider {
     height: 1px;
@@ -3583,9 +3583,9 @@ tbody.collapse.in {
       border: 1px solid transparent;
       border-radius: 0px 0px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #f8f8f8 #f8f8f8 #ddd; }
+        border-color: #ececec #ececec #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-      color: #cccccc;
+      color: #c9c9c9;
       background-color: #fff;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
@@ -3945,7 +3945,7 @@ tbody.collapse.in {
   .navbar-default .navbar-text {
     color: #000; }
   .navbar-default .navbar-nav > li > a {
-    color: #888888; }
+    color: #2d2d2d; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #000;
       background-color: transparent; }
@@ -3958,7 +3958,7 @@ tbody.collapse.in {
   .navbar-default .navbar-toggle {
     border-color: transparent; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-      background-color: #cccccc; }
+      background-color: #c9c9c9; }
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #000; }
   .navbar-default .navbar-collapse,
@@ -3969,7 +3969,7 @@ tbody.collapse.in {
     color: #000; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #888888; }
+      color: #2d2d2d; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #000;
         background-color: transparent; }
@@ -3980,11 +3980,11 @@ tbody.collapse.in {
       color: #ccc;
       background-color: transparent; } }
   .navbar-default .navbar-link {
-    color: #888888; }
+    color: #2d2d2d; }
     .navbar-default .navbar-link:hover {
       color: #000; }
   .navbar-default .btn-link {
-    color: #888888; }
+    color: #2d2d2d; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
       color: #000; }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
@@ -4067,7 +4067,7 @@ tbody.collapse.in {
       padding: 0 5px;
       color: #ccc; }
   .breadcrumb > .active {
-    color: #e6e6e6; }
+    color: #dbdbdb; }
 
 .pagination {
   display: inline-block;
@@ -4101,7 +4101,7 @@ tbody.collapse.in {
   .pagination > li > span:focus {
     z-index: 2;
     color: #33c7ff;
-    background-color: #f8f8f8;
+    background-color: #ececec;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
   .pagination > .active > span,
@@ -4118,7 +4118,7 @@ tbody.collapse.in {
   .pagination > .disabled > a,
   .pagination > .disabled > a:hover,
   .pagination > .disabled > a:focus {
-    color: #e6e6e6;
+    color: #dbdbdb;
     background-color: #fff;
     border-color: #ddd;
     cursor: not-allowed; }
@@ -4177,7 +4177,7 @@ tbody.collapse.in {
     .pager li > a:hover,
     .pager li > a:focus {
       text-decoration: none;
-      background-color: #f8f8f8; }
+      background-color: #ececec; }
   .pager .next > a,
   .pager .next > span {
     float: right; }
@@ -4188,7 +4188,7 @@ tbody.collapse.in {
   .pager .disabled > a:hover,
   .pager .disabled > a:focus,
   .pager .disabled > span {
-    color: #e6e6e6;
+    color: #dbdbdb;
     background-color: #fff;
     cursor: not-allowed; }
 
@@ -4215,9 +4215,9 @@ a.label:hover, a.label:focus {
   cursor: pointer; }
 
 .label-default {
-  background-color: #e6e6e6; }
+  background-color: #dbdbdb; }
   .label-default[href]:hover, .label-default[href]:focus {
-    background-color: #cdcdcd; }
+    background-color: #c2c2c2; }
 
 .label-primary {
   background-color: #00B9FF; }
@@ -4287,7 +4287,7 @@ a.badge:hover, a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #f8f8f8; }
+  background-color: #ececec; }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
@@ -4296,7 +4296,7 @@ a.badge:hover, a.badge:focus {
     font-size: 24px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #dfdfdf; }
+    border-top-color: lightgray; }
   .container .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 0px;
@@ -4565,13 +4565,13 @@ button.list-group-item {
   text-align: left; }
 
 .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
-  background-color: #f8f8f8;
-  color: #e6e6e6;
+  background-color: #ececec;
+  color: #dbdbdb;
   cursor: not-allowed; }
   .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading {
     color: inherit; }
   .list-group-item.disabled .list-group-item-text, .list-group-item.disabled:hover .list-group-item-text, .list-group-item.disabled:focus .list-group-item-text {
-    color: #e6e6e6; }
+    color: #dbdbdb; }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
@@ -4910,14 +4910,14 @@ button.list-group-item-danger {
 .panel-default {
   border-color: #ddd; }
   .panel-default > .panel-heading {
-    color: #888888;
+    color: #2d2d2d;
     background-color: #f5f5f5;
     border-color: #ddd; }
     .panel-default > .panel-heading + .panel-collapse > .panel-body {
       border-top-color: #ddd; }
     .panel-default > .panel-heading .badge {
       color: #f5f5f5;
-      background-color: #888888; }
+      background-color: #2d2d2d; }
   .panel-default > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ddd; }
 
@@ -5895,7 +5895,7 @@ h6, .h6 {
   margin-bottom: 0; }
 
 small {
-  color: #888888; }
+  color: #2d2d2d; }
 
 h1, .h1 {
   font-size: 26.28851px;
@@ -5999,7 +5999,7 @@ hr.hr-small {
 .page-header {
   margin-top: 0.4em;
   margin-bottom: 0.75em;
-  border-bottom: 1px solid #e6e6e6; }
+  border-bottom: 1px solid #dbdbdb; }
 
 .strong {
   font-weight: 700; }
@@ -6133,7 +6133,7 @@ h4.context--copy, .h4.context--copy,
 h5.context--copy,
 .form-group label.context--copy, .h5.context--copy, .context--copy.btn,
 h6.context--copy, .h6.context--copy {
-  color: #404042; }
+  color: #252525; }
 
 img.context--copy {
   display: block;
@@ -6167,7 +6167,7 @@ img.context--copy {
     text-decoration: none; }
 
 .text-default {
-  color: #e6e6e6; }
+  color: #dbdbdb; }
 
 .text-primary {
   color: #00B9FF; }
@@ -6256,7 +6256,7 @@ ol.fancy-list {
     ol.fancy-list > li:before {
       font-size: 25px;
       line-height: 1;
-      color: #cccccc;
+      color: #c9c9c9;
       display: inline-block;
       vertical-align: middle;
       text-align: left;
@@ -6286,14 +6286,14 @@ ol.fancy-list {
     padding-right: 40px; } }
 
 .container-bordered {
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid #f8f8f8; }
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec; }
 
 .container-bordered-top {
-  border-top: 1px solid #f8f8f8; }
+  border-top: 1px solid #ececec; }
 
 .container-bordered-bottom {
-  border-bottom: 1px solid #f8f8f8; }
+  border-bottom: 1px solid #ececec; }
 
 .container-indented {
   position: relative; }
@@ -6364,21 +6364,21 @@ ol.fancy-list {
   color: white; }
 
 .bg-gray-darker {
-  background-color: #404042;
+  background-color: #252525;
   color: white; }
 
 .bg-gray-dark {
-  background-color: #888888;
+  background-color: #2d2d2d;
   color: white; }
 
 .bg-gray {
-  background-color: #cccccc; }
+  background-color: #c9c9c9; }
 
 .bg-gray-light {
-  background-color: #e6e6e6; }
+  background-color: #dbdbdb; }
 
 .bg-gray-lighter {
-  background-color: #f8f8f8; }
+  background-color: #ececec; }
 
 .bg-white {
   background-color: white;
@@ -6389,7 +6389,7 @@ ol.fancy-list {
   color: white; }
 
 .bg-half-n-half {
-  background: linear-gradient(to bottom, #f8f8f8 0%, #f8f8f8 50%, white 50%, white 100%); }
+  background: linear-gradient(to bottom, #ececec 0%, #ececec 50%, white 50%, white 100%); }
 
 .bg-half-n-half-horizontal {
   position: relative; }
@@ -6464,7 +6464,7 @@ ol.fancy-list {
     bottom: 0;
     left: 0;
     width: 83.33%;
-    background-color: #f8f8f8; }
+    background-color: #ececec; }
   @media (min-width: 768px) {
     .bg-offset-left:before {
       left: 16px; } }
@@ -6479,7 +6479,7 @@ ol.fancy-list {
     bottom: 0;
     right: 0;
     width: 83.33%;
-    background-color: #f8f8f8; }
+    background-color: #ececec; }
   @media (min-width: 768px) {
     .bg-offset-right:before {
       right: 16px; } }
@@ -6490,7 +6490,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-1 {
-    background-image: linear-gradient(to right, transparent 0, transparent 91.667%, #f8f8f8 91.667%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 91.667%, #ececec 91.667%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6506,7 +6506,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-2 {
-    background-image: linear-gradient(to right, transparent 0, transparent 83.334%, #f8f8f8 83.334%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 83.334%, #ececec 83.334%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6522,7 +6522,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-3 {
-    background-image: linear-gradient(to right, transparent 0, transparent 75.001%, #f8f8f8 75.001%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 75.001%, #ececec 75.001%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6538,7 +6538,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-4 {
-    background-image: linear-gradient(to right, transparent 0, transparent 66.668%, #f8f8f8 66.668%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 66.668%, #ececec 66.668%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6554,7 +6554,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-5 {
-    background-image: linear-gradient(to right, transparent 0, transparent 58.335%, #f8f8f8 58.335%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 58.335%, #ececec 58.335%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6570,7 +6570,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-6 {
-    background-image: linear-gradient(to right, transparent 0, transparent 50.002%, #f8f8f8 50.002%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 50.002%, #ececec 50.002%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6586,7 +6586,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-7 {
-    background-image: linear-gradient(to right, transparent 0, transparent 41.669%, #f8f8f8 41.669%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 41.669%, #ececec 41.669%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6602,7 +6602,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-8 {
-    background-image: linear-gradient(to right, transparent 0, transparent 33.336%, #f8f8f8 33.336%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 33.336%, #ececec 33.336%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6618,7 +6618,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-9 {
-    background-image: linear-gradient(to right, transparent 0, transparent 25.003%, #f8f8f8 25.003%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 25.003%, #ececec 25.003%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6634,7 +6634,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-10 {
-    background-image: linear-gradient(to right, transparent 0, transparent 16.67%, #f8f8f8 16.67%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 16.67%, #ececec 16.67%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6650,7 +6650,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-11 {
-    background-image: linear-gradient(to right, transparent 0, transparent 8.337%, #f8f8f8 8.337%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 8.337%, #ececec 8.337%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6666,7 +6666,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-right-12 {
-    background-image: linear-gradient(to right, transparent 0, transparent 0.004%, #f8f8f8 0.004%, #f8f8f8 100%), linear-gradient(to right, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to right, transparent 0, transparent 0.004%, #ececec 0.004%, #ececec 100%), linear-gradient(to right, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, right center; }
@@ -6682,7 +6682,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-1 {
-    background-image: linear-gradient(to left, transparent 0, transparent 91.667%, #f8f8f8 91.667%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 91.667%, #ececec 91.667%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6698,7 +6698,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-2 {
-    background-image: linear-gradient(to left, transparent 0, transparent 83.334%, #f8f8f8 83.334%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 83.334%, #ececec 83.334%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6714,7 +6714,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-3 {
-    background-image: linear-gradient(to left, transparent 0, transparent 75.001%, #f8f8f8 75.001%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 75.001%, #ececec 75.001%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6730,7 +6730,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-4 {
-    background-image: linear-gradient(to left, transparent 0, transparent 66.668%, #f8f8f8 66.668%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 66.668%, #ececec 66.668%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6746,7 +6746,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-5 {
-    background-image: linear-gradient(to left, transparent 0, transparent 58.335%, #f8f8f8 58.335%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 58.335%, #ececec 58.335%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6762,7 +6762,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-6 {
-    background-image: linear-gradient(to left, transparent 0, transparent 50.002%, #f8f8f8 50.002%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 50.002%, #ececec 50.002%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6778,7 +6778,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-7 {
-    background-image: linear-gradient(to left, transparent 0, transparent 41.669%, #f8f8f8 41.669%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 41.669%, #ececec 41.669%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6794,7 +6794,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-8 {
-    background-image: linear-gradient(to left, transparent 0, transparent 33.336%, #f8f8f8 33.336%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 33.336%, #ececec 33.336%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6810,7 +6810,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-9 {
-    background-image: linear-gradient(to left, transparent 0, transparent 25.003%, #f8f8f8 25.003%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 25.003%, #ececec 25.003%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6826,7 +6826,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-10 {
-    background-image: linear-gradient(to left, transparent 0, transparent 16.67%, #f8f8f8 16.67%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 16.67%, #ececec 16.67%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6842,7 +6842,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-11 {
-    background-image: linear-gradient(to left, transparent 0, transparent 8.337%, #f8f8f8 8.337%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 8.337%, #ececec 8.337%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6858,7 +6858,7 @@ ol.fancy-list {
 
 @supports (background-size: calc(50%)) {
   .bg-gray-lighter-left-12 {
-    background-image: linear-gradient(to left, transparent 0, transparent 0.004%, #f8f8f8 0.004%, #f8f8f8 100%), linear-gradient(to left, #f8f8f8 100%, #f8f8f8 100%);
+    background-image: linear-gradient(to left, transparent 0, transparent 0.004%, #ececec 0.004%, #ececec 100%), linear-gradient(to left, #ececec 100%, #ececec 100%);
     background-size: 100%, 100%;
     background-repeat: repeat-y;
     background-position: center center, left center; }
@@ -6921,19 +6921,19 @@ ol.fancy-list {
   border-color: white; }
 
 .bordered-light {
-  border-color: #e6e6e6; }
+  border-color: #dbdbdb; }
 
 .bordered-lighter {
-  border-color: #f8f8f8; }
+  border-color: #ececec; }
 
 .bordered-gray {
-  border-color: #cccccc; }
+  border-color: #c9c9c9; }
 
 .bordered-dark {
-  border-color: #888888; }
+  border-color: #2d2d2d; }
 
 .bordered-darker {
-  border-color: #404042; }
+  border-color: #252525; }
 
 .bordered-info {
   border-color: #39C9FF; }
@@ -8492,7 +8492,7 @@ img.pos-bottom-left {
     height: 40px; }
   .navbar-form-search .form-control {
     padding-right: 56px;
-    border-color: #e6e6e6; }
+    border-color: #dbdbdb; }
     .navbar-form-search .form-control:focus {
       box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
       background-color: white; }
@@ -8593,41 +8593,41 @@ img.pos-bottom-left {
     min-height: auto; } }
 
 .navbar-default {
-  border-color: #f8f8f8; }
+  border-color: #ececec; }
   @media (min-width: 768px) {
     .navbar-default .main-nav-items > li > a:after {
       background-color: #000; }
     .navbar-default .main-nav-items > li > a:active, .navbar-default .main-nav-items > li > a:focus {
       color: #39C9FF; }
     .navbar-default .main-nav-items .active a:hover:after {
-      background-color: #cccccc; } }
+      background-color: #c9c9c9; } }
 
 .navbar-inverse {
   border: none; }
   @media (min-width: 768px) {
     .navbar-inverse .main-nav-items > li > a:after {
-      background-color: #f8f8f8;
+      background-color: #ececec;
       height: 3px;
       bottom: -1px;
       z-index: 10; } }
   @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu {
-      background-color: #e6e6e6;
+      background-color: #dbdbdb;
       margin-bottom: 16px; }
     .navbar-inverse .navbar-collapse {
-      background-color: #888888;
+      background-color: #2d2d2d;
       border: none; } }
 
 .navbar-sub {
   border: none;
   min-height: auto;
-  background-color: #f8f8f8; }
+  background-color: #ececec; }
   .navbar-sub .navbar-nav li a:after {
     display: none; }
   .navbar-sub .navbar-nav .active a {
     color: #00B9FF; }
   .navbar-sub .navbar-collapse {
-    border-top-color: #e6e6e6; }
+    border-top-color: #dbdbdb; }
   @media (min-width: 768px) {
     .navbar-sub li a {
       padding-top: 24px;
@@ -8658,21 +8658,21 @@ img.pos-bottom-left {
         display: table-cell;
         vertical-align: middle; } }
     .sub-menu > li.active a {
-      background-color: #e6e6e6;
-      color: #404042;
+      background-color: #dbdbdb;
+      color: #252525;
       font-weight: 700; }
       .sub-menu > li.active a:hover {
-        background-color: #e6e6e6;
-        color: #404042; }
+        background-color: #dbdbdb;
+        color: #252525; }
     .sub-menu > li a {
-      color: #404042;
+      color: #252525;
       font-weight: 400;
       padding: 10px 10px; }
       @media (min-width: 768px) {
         .sub-menu > li a {
           padding: 16px 16px; } }
       .sub-menu > li a:hover {
-        background-color: #e6e6e6; }
+        background-color: #dbdbdb; }
 
 .promo-bar-item {
   display: none; }
@@ -8705,7 +8705,7 @@ img.pos-bottom-left {
       position: absolute;
       left: 12px;
       bottom: 0;
-      background-color: #e6e6e6;
+      background-color: #dbdbdb;
       transform: translate(-50%, 0); }
     .panel-theme-accordion .panel-body:after {
       content: "";
@@ -8714,7 +8714,7 @@ img.pos-bottom-left {
       position: absolute;
       left: 6px;
       bottom: 0;
-      background-color: #e6e6e6; }
+      background-color: #dbdbdb; }
     .panel-theme-accordion .panel-body ul {
       padding-left: 1em; }
 
@@ -8722,7 +8722,7 @@ img.pos-bottom-left {
   display: block;
   width: 24px;
   height: 24px;
-  background: #e6e6e6;
+  background: #dbdbdb;
   position: absolute;
   left: 0;
   top: 50%;
@@ -8810,15 +8810,15 @@ img.pos-bottom-left {
 .breadcrumb {
   border-radius: 0;
   background-color: transparent;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #c9c9c9;
   padding-left: 0;
   padding-right: 0; }
   .breadcrumb a {
     color: black; }
   .breadcrumb .active {
-    color: #404042; }
+    color: #252525; }
   .breadcrumb > li + li:before {
-    color: #404042; }
+    color: #252525; }
 
 blockquote {
   border: none;
@@ -8837,7 +8837,7 @@ blockquote {
   blockquote small:before, blockquote .small:before {
     content: ""; }
   blockquote footer, blockquote cite {
-    color: #888888; }
+    color: #2d2d2d; }
     blockquote footer:before, blockquote cite:before {
       content: "";
       width: 32px;
@@ -8868,7 +8868,7 @@ blockquote {
   padding: 16px; }
 
 .table > thead > tr > th {
-  border-bottom: 1px solid #404042; }
+  border-bottom: 1px solid #252525; }
 
 .table-naked tbody > tr > th,
 .table-naked tbody > tr > td {
@@ -8878,7 +8878,7 @@ blockquote {
   vertical-align: middle; }
 
 .table > tbody + tbody {
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #c9c9c9; }
 
 .spinner-container {
   display: table;
@@ -9013,7 +9013,7 @@ img.link-img {
     z-index: -1;
     backface-visibility: hidden; }
   .panel-link:before {
-    background-color: #f8f8f8;
+    background-color: #ececec;
     transform: scaleX(1);
     will-change: transform;
     transform-origin: right top; }
@@ -9056,7 +9056,7 @@ textarea, select {
   padding-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
-  color: #404042;
+  color: #252525;
   font-size: 12.8px;
   height: 46px;
   background-color: transparent;
@@ -9065,7 +9065,7 @@ textarea, select {
 .checkbox {
   margin: 0; }
   .checkbox label {
-    color: #404042;
+    color: #252525;
     font-size: 12.8px; }
 
 textarea.form-control {
@@ -9214,7 +9214,7 @@ select.form-control {
 
 .modal-header,
 .modal-footer {
-  background-color: #f8f8f8; }
+  background-color: #ececec; }
 
 .modal-header,
 .modal-footer,
