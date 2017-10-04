@@ -5899,9 +5899,7 @@ small {
 
 h1, .h1 {
   font-size: 26.28851px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: .01em; }
+  font-weight: 300; }
 
 h2, .h2 {
   font-size: 22.2784px; }
@@ -5938,6 +5936,10 @@ h6, .h6 {
     font-size: 12.003px; }
   h6, .h6 {
     font-size: 9.0045px; } }
+
+@media (min-width: 1280px) {
+  h1, .h1 {
+    font-size: 50.51735px; } }
 
 @media (min-width: 1600px) {
   h1.h1-lg,

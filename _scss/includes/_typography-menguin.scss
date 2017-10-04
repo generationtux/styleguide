@@ -49,8 +49,6 @@ $ms6:  $ms5 * $ms-scale;
 h1, .h1 {
   font-size: $ms3;
   font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: .01em;
 }
 h2, .h2 {
   font-size: $ms2;
@@ -111,6 +109,11 @@ $ms7:  $ms6 * $ms-scale;
   }
 } // headline screen sm-min
 
+@media(min-width: $screen-lg-min) {
+  h1, .h1 {
+    font-size: $ms4;
+  }
+}
 
 h1.h1-lg,
 h1 > .h1-lg {
