@@ -8830,12 +8830,12 @@ blockquote {
     display: block; }
   blockquote q:before {
     content: "\201C";
-    font-family: "DomD Reg", georgia, serif;
+    font-family: "Roboto", sans-serif;
     position: absolute;
     transform: translate(-120%, 0); }
   blockquote q:after {
     content: "\201D";
-    font-family: "DomD Reg", georgia, serif; }
+    font-family: "Roboto", sans-serif; }
   blockquote small:before, blockquote .small:before {
     content: ""; }
   blockquote footer, blockquote cite {
