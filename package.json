@@ -1,6 +1,6 @@
 {
   "name": "gentux-style-guide",
-  "version": "7.5.2",
+  "version": "7.5.3",
   "dependencies": {
     "bootstrap": "^4.0.0-beta"
   },
