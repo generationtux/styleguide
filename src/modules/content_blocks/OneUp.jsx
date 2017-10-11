@@ -12,8 +12,8 @@ type props = {
 const OneUp = ({ heading, content, btnCtaText, btnCtaUrl, imgUrl }: props) => (
   <div className="
         container
-        buffer-xs-top-xl buffer-md-top-xxl
-        buffer-xs-btm-xl buffer-md-btm-xxl
+        pt-4 pt-md-6
+        pb-4 pb-md-6
       ">
     <div className="row align-vertical">
       <div className="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">

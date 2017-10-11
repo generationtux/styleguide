@@ -18,8 +18,8 @@ const HeroNoImg = ({
   <div className="bg-gray-lighter">
     <section className="
           container
-          buffer-xs-top-lg buffer-md-top-xl
-          buffer-xs-btm-xl buffer-sm-btm-xl buffer-lg-btm-xxl
+          pt-4 pt-md-5
+          pb-5 pb-lg-6
         ">
       <div className="row align-vertical">
         <div className="col-sm-11 col-sm-offset-1 col-md-8">

@@ -22,8 +22,8 @@ const HeroTwoUpImgLeft = ({
     <section className="
           container-fluid
           bg-offset-base bg-offset-leftbottom-5-2
-          buffer-xs-top-lg buffer-md-top-xl
-          buffer-xs-btm-lg buffer-sm-btm-xl buffer-lg-btm-xxl
+          pt-4 pt-md-5
+          pb-4 pb-sm-5 pb-lg-6
         ">
       <div className="row align-vertical">
         <div className="col-sm-8 col-md-5 col-lg-4 col-lg-offset-1">
@@ -36,7 +36,7 @@ const HeroTwoUpImgLeft = ({
             />
         }
         </div>
-        <div className="col-sm-12 col-md-7 col-lg-6 buffer-lg-left-xl">
+        <div className="col-sm-12 col-md-7 col-lg-6 pl-lg-5">
           <h1 className="domd">
             {heading &&
               <div className="h5 pusher-xs-top-lg pusher-sm-top-clear pusher-xs-btm-xs">

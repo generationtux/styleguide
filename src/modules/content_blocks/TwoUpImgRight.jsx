@@ -18,8 +18,8 @@ const TwoUpImgRight = ({
 }: props) => (
   <div className="
         container
-        buffer-xs-top-xl buffer-md-top-xxl
-        buffer-xs-btm-xl buffer-md-btm-xxl
+        pt-4 bt-md-6
+        pb-4 pb-md-6
       ">
     <div className="row align-vertical">
       <div className="col-sm-6 col-sm-push-6 text-center">
