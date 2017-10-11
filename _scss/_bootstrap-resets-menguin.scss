@@ -1,3 +1,38 @@
+//////////////
+// Bootstrap 4 variables - required from boostrap 4 so we can add the bootstrap 4 spacing utility
+/////////////
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px
+);
+
+// these spacing sizes match the legacy buffer/pusher classes for better transition
+$spacer: 16px; // match grid gutter/2
+$spacers: (
+  0: 0,
+  1:   ($spacer/4),   //legacy: xs
+  2:   ($spacer/2),   //legacy: sm
+  3:   ($spacer),     //legacy: md
+  4:   ($spacer * 2), //legacy: lg
+  5:   ($spacer * 4), //legacy: xl
+  6:   ($spacer * 8), //legacy: xxl
+  n1: -($spacer/4),
+  n2: -($spacer/2),
+  n3: -($spacer),
+  n4: -($spacer * 2),
+  n5: -($spacer * 4),
+  n6: -($spacer * 8),
+);
+
+
+//////////////
+// Bootstrap 3 variables resets
+/////////////
+
 // $bootstrap-sass-asset-helper: false;
 // //
 // // Variables
