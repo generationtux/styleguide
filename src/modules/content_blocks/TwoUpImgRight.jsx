@@ -34,7 +34,7 @@ const TwoUpImgRight = ({
       </div>
       <div className="col-sm-4 col-sm-pull-5">
         {heading &&
-          <h2 className="h3 pusher-xs-top-lg pusher-sm-top-md pusher-xs-btm-sm">{heading}</h2>}
+          <h2 className="h3 mt-4 mt-sm-3 mb-2">{heading}</h2>}
         {content &&
           <p dangerouslySetInnerHTML={{__html: content}} />}
         {btnCtaText &&

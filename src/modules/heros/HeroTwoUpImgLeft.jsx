@@ -39,7 +39,7 @@ const HeroTwoUpImgLeft = ({
         <div className="col-sm-12 col-md-7 col-lg-6 pl-lg-5">
           <h1 className="domd">
             {heading &&
-              <div className="h5 pusher-xs-top-lg pusher-sm-top-clear pusher-xs-btm-xs">
+              <div className="h5 mt-3 mt-sm-0 mb-1">
                 {heading}
               </div>}
              {
@@ -48,7 +48,7 @@ const HeroTwoUpImgLeft = ({
               }
           </h1>
           {content &&
-            <p className="pusher-xs-top-md" dangerouslySetInnerHTML={{__html: content}} />}
+            <p className="mt-3" dangerouslySetInnerHTML={{__html: content}} />}
           {btnCtaText &&
             <p>
               <a href={btnCtaUrl} className="btn btn-primary">{btnCtaText}</a>

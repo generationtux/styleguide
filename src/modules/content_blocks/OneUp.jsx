@@ -26,7 +26,7 @@ const OneUp = ({ heading, content, btnCtaText, btnCtaUrl, imgUrl }: props) => (
             />
         }
         {heading &&
-          <h2 className="h3 pusher-xs-top-lg pusher-xs-btm-sm">{heading}</h2>}
+          <h2 className="h3 mt-4 mb-2">{heading}</h2>}
         {content &&
           <p dangerouslySetInnerHTML={{__html: content}} />}
         {btnCtaText &&

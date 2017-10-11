@@ -25,12 +25,12 @@ const HeroCarouselSlide = ({
   <div className="container container-callout">
     <div className="row">
       <div className="col-sm-4 col-sm-push-1 lift-1">
-        {heading && <div className="h5 pusher-xs-btm-sm">{heading}</div>}
+        {heading && <div className="h5 mb-2">{heading}</div>}
         {
           subHeading &&
             <h1
               dangerouslySetInnerHTML={{__html: subHeading}}
-              className="domd pusher-xs-top-md pusher-xs-btm-md pusher-sm-btm-lg"
+              className="domd mt-3 mb-3 mb-sm-4"
             />
         }
         {(content || btnCtaText) &&
@@ -41,7 +41,7 @@ const HeroCarouselSlide = ({
           </div>}
         {btnCtaText &&
           <a
-            className="btn btn-hollow-primary pusher-xs-btm-lg"
+            className="btn btn-hollow-primary mb-4"
             href={btnCtaUrl || '/'}
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +59,7 @@ const HeroCarouselSlide = ({
             />
         }
         {imgCtaText &&
-          <a className="btn btn-link pusher-xs-btm-lg" href={imgCtaUrl || '/'}>
+          <a className="btn btn-link mb-4" href={imgCtaUrl || '/'}>
             {imgCtaText}
           </a>}
       </div>
