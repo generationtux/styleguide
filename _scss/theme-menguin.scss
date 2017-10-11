@@ -8,6 +8,9 @@
 @import "mixins/shadows";
 @import "mixins/buttons";
 @import "mixins/backgrounds";
+// bootstrap 4 spacing mixins
+@import "mixins/breakpoints";
+@import "mixins/spacing-v2";
 
 // grab our includes where we override and/or extend bootstrap
 @import "includes/fonts-menguin";

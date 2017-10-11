@@ -10,15 +10,11 @@
 // ---------------------------
 @import "includes/bootstrap-resets";
 
-// ---------------------------
-// Import Bootstrap 4 files
-// ---------------------------
-@import "../node_modules/bootstrap/scss/mixins/breakpoints"; // required for spacing utility to work
-@import "../node_modules/bootstrap/scss/utilities/spacing";
+
 
 
 // ---------------------------
-// Import Bootstrap 3 files
+// Import Bootstrap files
 // ---------------------------
 // pick and choose what components you want by commenting them out below
 
