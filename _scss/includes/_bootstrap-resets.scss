@@ -14,12 +14,12 @@ $grid-breakpoints: (
 $spacer: 16px; // match grid gutter/2
 $spacers: (
   0: 0,
-  1:   ($spacer/4),
-  2:   ($spacer/2),
-  3:   ($spacer),
-  4:   ($spacer * 2),
-  5:   ($spacer * 4),
-  6:   ($spacer * 8),
+  1:   ($spacer/4),   //legacy: xs
+  2:   ($spacer/2),   //legacy: sm
+  3:   ($spacer),     //legacy: md
+  4:   ($spacer * 2), //legacy: lg
+  5:   ($spacer * 4), //legacy: xl
+  6:   ($spacer * 8), //legacy: xxl
   n1: -($spacer/4),
   n2: -($spacer/2),
   n3: -($spacer),
