@@ -10,23 +10,22 @@ $grid-breakpoints: (
   xxl: 1440px
 );
 
+// these spacing sizes match the legacy buffer/pusher classes for better transition
 $spacer: 16px; // match grid gutter/2
 $spacers: (
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 2),
-  5: ($spacer * 3),
-  6: ($spacer * 4),
-  7: ($spacer * 8),
-  n1: -($spacer * .25),
-  n2: -($spacer * .5),
-  n3: -$spacer,
+  1:   ($spacer/4),
+  2:   ($spacer/2),
+  3:   ($spacer),
+  4:   ($spacer * 2),
+  5:   ($spacer * 4),
+  6:   ($spacer * 8),
+  n1: -($spacer/4),
+  n2: -($spacer/2),
+  n3: -($spacer),
   n4: -($spacer * 2),
-  n5: -($spacer * 3),
-  n6: -($spacer * 4),
-  n7: -($spacer * 8),
+  n5: -($spacer * 4),
+  n6: -($spacer * 8),
 );
 
 
