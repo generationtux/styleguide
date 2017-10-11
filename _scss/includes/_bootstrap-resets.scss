@@ -3,10 +3,9 @@
 /////////////
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1280px,
+  sm: 768px,
+  md: 992px,
+  lg: 1280px,
   xxl: 1440px
 );
 
@@ -339,21 +338,21 @@ $dropdown-link-hover-bg:         $gray-lighter;
 
 // // Small screen / tablet
 // //** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  map-get($grid-breakpoints, md);
+$screen-sm:                  map-get($grid-breakpoints, sm);
 // $screen-sm-min:              $screen-sm;
 // //** Deprecated `$screen-tablet` as of v3.0.1
 // $screen-tablet:              $screen-sm-min;
 
 // // Medium screen / desktop
 // //** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  map-get($grid-breakpoints, lg);
+$screen-md:                  map-get($grid-breakpoints, md);
 // $screen-md-min:              $screen-md;
 // //** Deprecated `$screen-desktop` as of v3.0.1
 // $screen-desktop:             $screen-md-min;
 
 // // Large screen / wide desktop
 // //** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  map-get($grid-breakpoints, xl);
+$screen-lg:                  map-get($grid-breakpoints, lg);
 $screen-lg-min:              $screen-lg;
 // //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min;
