@@ -7,7 +7,7 @@ permalink: /modules/
 <div class="bordered-bottom bordered-light
   pt-5 pt-md-6
   pb-4 pb-md-5
-  pusher-xs-btm-xl pusher-md-btm-xl">
+  mb-5 mb-md-5">
 <div class="container-fluid">
   <div class="row">
     <div class="
@@ -15,7 +15,7 @@ permalink: /modules/
       col-lg-6 col-lg-offset-2
       readable-line
     ">
-      <h1 class="domd pusher-xs-btm-md">Modules</h1>
+      <h1 class="domd mb-3">Modules</h1>
 
       <p>
         Modules are content blocks built up of atoms.
@@ -37,8 +37,8 @@ permalink: /modules/
       sticky
     ">
         <div class="row">
-          <div class="col-sm-12 pusher-xs-top-xl">
-            <h5 class="pusher-xs-btm-sm">Module Types:</h5>
+          <div class="col-sm-12 mt-5">
+            <h5 class="mb-2">Module Types:</h5>
             <ul>
               {% for page in site.modules %}
                 <li class="small"><a href="#{{ page.title }}">{{ page.title }}</a></li>
@@ -71,22 +71,22 @@ permalink: /modules/
                 <div class="p-4">
                   <div class="row">
 
-                    <div class="col-sm-12 pusher-xs-btm-md">
+                    <div class="col-sm-12 mb-3">
                       <h3>Reference</h3>
                     </div>
 
                     <div class="col-sm-7">
-                      <h4 class="pusher-xs-btm-md">Markup:</h4>
+                      <h4 class="mb-3">Markup:</h4>
                       <div class="copy-to-clipboard">
                         <div class="clipboard-content">
                           {% highlight html %} {{ page.content }} {% endhighlight %}
                         </div>
-                        <div class="clipboard-init btn btn-primary pusher-xs-top-md">Copy to Clipboard</div>
+                        <div class="clipboard-init btn btn-primary mt-3">Copy to Clipboard</div>
                       </div>
                     </div><!-- /col -->
 
                     <div class="col-sm-5">
-                      <h4 class="pusher-xs-btm-md">View Module on it's own&nbsp;page:</h4>
+                      <h4 class="mb-3">View Module on it's own&nbsp;page:</h4>
                       <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-primary">Open Module</a>
                     </div><!-- /col -->
 
@@ -115,8 +115,8 @@ permalink: /modules/
       col-lg-6 col-lg-offset-3
     ">
       <h2 class="domd
-        pusher-xs-top-xl pusher-md-top-xl
-        pusher-xs-btm-lg
+        mt-5 mt-md-5
+        mb-4
       ">Next Steps
       </h2>
     </div><!-- /col -->
@@ -131,7 +131,7 @@ permalink: /modules/
         panel-link
         link-style-clear d-block
         p-4
-        pusher-xs-btm-lg
+        mb-4
       ">
         <h3 class="h4">Atoms</h3>
         <p>The core building blocks. Think typography, colors, buttons, etc.</p>
