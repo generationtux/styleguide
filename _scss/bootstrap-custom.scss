@@ -1,7 +1,7 @@
 // ---------------------------
 // This file will create a custom version of bootstrap for handoff to client.
-// We can also use the bootstrap-resets file, referenced below, 
-// for creating a bootstap config.json file which can also 
+// We can also use the bootstrap-resets file, referenced below,
+// for creating a bootstap config.json file which can also
 // uploaded to getbootstrap.com/customize/
 // ---------------------------
 
@@ -10,11 +10,15 @@
 // ---------------------------
 @import "includes/bootstrap-resets";
 
-
+// ---------------------------
+// Import Bootstrap 4 files
+// ---------------------------
+@import "../node_modules/bootstrap/scss/mixins/breakpoints"; // required for spacing utility to work
+@import "../node_modules/bootstrap/scss/utilities/spacing";
 
 
 // ---------------------------
-// Import Bootstrap files
+// Import Bootstrap 3 files
 // ---------------------------
 // pick and choose what components you want by commenting them out below
 
