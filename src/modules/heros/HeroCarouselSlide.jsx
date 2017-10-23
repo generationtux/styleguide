@@ -24,7 +24,7 @@ const HeroCarouselSlide = ({
 }: props) => (
   <div className="container container-callout">
     <div className="row">
-      <div className="col-sm-4 col-sm-push-1 lift-1">
+      <div className="col-sm-4 col-sm-push-1 z-index-100">
         {heading && <div className="h5 mb-2">{heading}</div>}
         {
           subHeading &&

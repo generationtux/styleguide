@@ -15944,6 +15944,36 @@ select.form-control {
     position: sticky;
     top: 0; } }
 
+.z-index-100 {
+  z-index: 100; }
+
+.z-index-200 {
+  z-index: 200; }
+
+.z-index-300 {
+  z-index: 300; }
+
+.z-index-400 {
+  z-index: 400; }
+
+.z-index-500 {
+  z-index: 500; }
+
+.z-index-600 {
+  z-index: 600; }
+
+.z-index-700 {
+  z-index: 700; }
+
+.z-index-800 {
+  z-index: 800; }
+
+.z-index-900 {
+  z-index: 900; }
+
+.z-index-1000 {
+  z-index: 1000; }
+
 .styleguide-label {
   opacity: .2; }
   @media (min-width: 768px) {
@@ -16000,6 +16030,3 @@ pre {
   padding: 32px;
   max-height: 200px;
   border-radius: 0; }
-
-.lift-1 {
-  z-index: 10; }
