@@ -30,4 +30,5 @@
 
 # Todo
 
-- [ ] update hosting
+- [ ] update hosting to use <https://www.netlify.com>
+- [ ] migrate to <https://github.com/nozzle/react-static>
