@@ -15974,6 +15974,11 @@ select.form-control {
 .z-index-1000 {
   z-index: 1000; }
 
+pre {
+  padding: 32px;
+  max-height: 200px;
+  border-radius: 0; }
+
 .styleguide-label {
   opacity: .2; }
   @media (min-width: 768px) {
@@ -16025,8 +16030,3 @@ select.form-control {
 
 .clr-brand-uppercase {
   line-height: 1.32; }
-
-pre {
-  padding: 32px;
-  max-height: 200px;
-  border-radius: 0; }
