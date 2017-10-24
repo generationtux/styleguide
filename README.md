@@ -32,3 +32,4 @@
 
 - [ ] update hosting to use <https://www.netlify.com>
 - [ ] migrate to <https://github.com/nozzle/react-static>
+- [ ] change dns to point at the new new
