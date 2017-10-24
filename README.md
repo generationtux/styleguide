@@ -26,3 +26,8 @@
 * log into NPM from terminal with `npm login`
 * use gentux creds
 * run `npm publish`
+
+
+# Todo
+
+- [ ] update hosting
