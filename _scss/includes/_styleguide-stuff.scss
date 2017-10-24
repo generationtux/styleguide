@@ -1,0 +1,39 @@
+//// stuff just for the style guide layout
+
+.styleguide-label {
+  opacity: .2;
+  @media(min-width: $grid-float-breakpoint) {
+  	position: absolute;
+	  left: 0;
+	  transform: rotate(-90deg) translate(-100%,0%);
+	  transform-origin: left top;
+  }
+}
+
+.color-swatch {
+	width: 100%;
+	height: 100px;
+}
+
+.bg-brand-gold  { background-color: $brand-info; }
+.bg-brand-gold-dark  { background-color: #b0893a; }
+.bg-brand-green  { background-color: $brand-success; }
+.bg-brand-red  { background-color: $brand-danger; }
+.bg-brand-yellow  { background-color: $brand-warning; }
+.bg-brand-black  { background-color: $gray-base; }
+.bg-brand-gray-darker  { background-color: $gray-darker; }
+.bg-brand-gray-dark  { background-color: $gray-dark; }
+.bg-brand-gray  { background-color: $gray; }
+.bg-brand-gray-light  { background-color: $gray-light; }
+.bg-brand-gray-lighter { background-color: $gray-lighter; }
+.bg-brand-white { background-color: white; }
+
+.clr-brand-uppercase {
+	line-height: 1.32;
+}
+
+pre {
+	padding: 32px;
+	max-height: 200px;
+	border-radius: 0;
+}
