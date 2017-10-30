@@ -26,3 +26,10 @@
 * log into NPM from terminal with `npm login`
 * use gentux creds
 * run `npm publish`
+
+
+# Todo
+
+- [ ] update hosting to use <https://www.netlify.com>
+- [ ] migrate to <https://github.com/nozzle/react-static>
+- [ ] change dns to point at the new new
