@@ -15939,10 +15939,52 @@ select.form-control {
   .modal .close:hover {
     opacity: 1; }
 
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0; }
+
 @media (min-width: 768px) {
-  .sticky {
+  .sticky-sm {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     position: sticky;
     top: 0; } }
+
+@media (min-width: 992px) {
+  .sticky-md {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0; } }
+
+@media (min-width: 1280px) {
+  .sticky-lg {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0; } }
+
+@media (min-width: 768px) {
+  .sticky-sm-clear {
+    position: static; } }
+
+@media (min-width: 992px) {
+  .sticky-md-clear {
+    position: static; } }
+
+@media (min-width: 1280px) {
+  .sticky-lg-clear {
+    position: static; } }
 
 .z-index-100 {
   z-index: 100; }
