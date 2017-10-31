@@ -86,18 +86,18 @@ $link-hover-color:      lighten($link-color, 10%);
 // $font-family-base:        $font-family-sans-serif;
 
 $font-size-large:  20px;
-$font-size-base:   16px;
-$font-size-small:  12.8px;
+$font-size-base:   14px;
+$font-size-small:  11.2px;
 
-$font-size-h1:     39.0625px;
-$font-size-h2:     25px;
-$font-size-h3:     20px;
-$font-size-h4:     16px;
-$font-size-h5:     12.8px;
-$font-size-h6:     10.24px;
+$font-size-h1:     69.4614px;
+$font-size-h2:     52.1091px;
+$font-size-h3:     39.0916px;
+$font-size-h4:     29.326px;
+$font-size-h5:     22px;
+$font-size-h6:     16.5041px;
 
 // //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.5;
+$line-height-base:        1.8;
 // //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 // $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 $line-height-computed:    $font-size-base;
@@ -188,7 +188,7 @@ $border-radius-small:       0px;
 // //
 // //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                600;
+$btn-font-weight:                500;
 
 $btn-default-color:              #000;
 $btn-default-bg:                 $gray;
