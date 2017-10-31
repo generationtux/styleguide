@@ -1139,8 +1139,8 @@ hr {
 
 h1, h2, h3, h4, h5, .form-group label, h6,
 .h1, .h2, .h3, .h4, .h5, .btn, .h6 {
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "Druk Web", Helvetica, sans-serif;
+  font-weight: 500;
   line-height: 1.2;
   color: inherit; }
   h1 small,
@@ -7866,10 +7866,12 @@ button.close {
     margin-left: auto !important; } }
 
 @font-face {
-  font-family: 'DomD Reg';
-  src: url("../fonts/DomDWeb-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/DomDWeb-Regular.woff2") format("woff2"), url("../fonts/DomDWeb-Regular.woff") format("woff"); }
+  font-family: 'Druk Web';
+  src: url("../fonts/Druk-Medium-Web.eot");
+  src: url("../fonts/Druk-Medium-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/Druk-Medium-Web.woff2") format("woff2"), url("../fonts/Druk-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal; }
 
 @font-face {
   font-family: 'icomoon-20161125';
@@ -7921,73 +7923,71 @@ h4, .h4,
 h5,
 .form-group label, .h5, .btn,
 h6, .h6 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  line-height: 1.2;
+  font-family: "Druk Web", sans-serif;
+  line-height: 1.1;
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  letter-spacing: .03em;
+  text-transform: uppercase; }
 
 small {
   color: #2d2d2d; }
 
 h1, .h1 {
-  font-size: 26.28851px;
-  font-weight: 300; }
+  font-size: 42.65311px; }
 
 h2, .h2 {
-  font-size: 22.2784px; }
+  font-size: 36.1467px; }
 
 h3, .h3 {
-  font-size: 18.88px;
-  line-height: 1.3; }
+  font-size: 30.6328px;
+  line-height: 1.2; }
 
 h4, .h4 {
-  font-size: 16px;
-  letter-spacing: .04em;
-  line-height: 1.3; }
+  font-size: 25.96px;
+  letter-spacing: .03em;
+  line-height: 1.2; }
 
 h5, .form-group label, .h5, .btn {
-  font-size: 13.55932px;
-  letter-spacing: .06em;
-  line-height: 1.35; }
+  font-size: 22px;
+  letter-spacing: .04em;
+  line-height: 1.25; }
 
 h6, .h6 {
-  font-size: 11.49095px;
-  letter-spacing: .08em;
-  line-height: 1.45; }
+  font-size: 18.64407px;
+  letter-spacing: .05em;
+  line-height: 1.35; }
 
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 37.89749px; }
+    font-size: 69.46136px; }
   h2, .h2 {
-    font-size: 28.43022px; }
+    font-size: 52.10905px; }
   h3, .h3 {
-    font-size: 21.328px; }
+    font-size: 39.09156px; }
   h4, .h4 {
-    font-size: 16px; }
+    font-size: 29.326px; }
   h5, .form-group label, .h5, .btn {
-    font-size: 12.003px; }
+    font-size: 22px; }
   h6, .h6 {
-    font-size: 9.0045px; } }
-
-@media (min-width: 1280px) {
-  h1, .h1 {
-    font-size: 50.51735px; } }
+    font-size: 16.50413px; } }
 
 @media (min-width: 1600px) {
   h1.h1-lg,
   h1 > .h1-lg {
-    font-size: 89.76373px; } }
+    font-size: 92.59199px; } }
+
+h3.lowercase, h3.normalcase, .h3.lowercase, .h3.normalcase {
+  letter-spacing: .02em; }
 
 h4.lowercase, h4.normalcase, .h4.lowercase, .h4.normalcase {
-  letter-spacing: .01em; }
+  letter-spacing: .02em; }
 
 h5.lowercase, .form-group label.lowercase, h5.normalcase, .form-group label.normalcase, .h5.lowercase, .lowercase.btn, .h5.normalcase, .normalcase.btn {
   letter-spacing: .03em; }
 
 h6.lowercase, h6.normalcase, .h6.lowercase, .h6.normalcase {
-  letter-spacing: .04em;
-  line-height: 1.3; }
+  letter-spacing: .04em; }
 
 p {
   margin-bottom: 16px; }
@@ -8176,7 +8176,8 @@ img.context--copy {
   margin-bottom: 32px; }
 
 .uppercase {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: .03em; }
 
 .lowercase {
   text-transform: lowercase;

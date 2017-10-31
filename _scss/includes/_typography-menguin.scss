@@ -5,6 +5,7 @@
 $roboto-font-stack: "Roboto", sans-serif;
 $roboto-condensed-font-stack: 'Roboto', sans-serif;
 $domain-font-stack: 'DomD Reg', georgia, serif;
+$druk-font-stack: 'Druk Web', sans-serif;
 $line-height: 1.642;
 
 body {
@@ -20,11 +21,12 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-    font-family: $roboto-condensed-font-stack;
-    font-weight: 600;
-    line-height: 1.2;
+    font-family: $druk-font-stack;
+    line-height: 1.1;
     margin-top: 0;
     margin-bottom: 0;
+    letter-spacing: .03em;
+    text-transform: uppercase;
 }
 
 small {
@@ -36,7 +38,7 @@ small {
 // type setting - Mobile first
 ////////////////////////////////////
 $ms-scale: 1.18;
-$ms0:  16px;
+$ms0:  22px;
 $ms-1: $ms0 / $ms-scale;
 $ms-2: $ms-1 / $ms-scale;
 $ms1:  $ms0 * $ms-scale;
@@ -47,37 +49,36 @@ $ms5:  $ms4 * $ms-scale;
 $ms6:  $ms5 * $ms-scale;
 
 h1, .h1 {
-  font-size: $ms3;
-  font-weight: 300;
+  font-size: $ms4;
 }
 h2, .h2 {
-  font-size: $ms2;
+  font-size: $ms3;
 }
 h3, .h3 {
-  font-size: $ms1;
-  line-height: 1.3;
+  font-size: $ms2;
+  line-height: 1.2;
 }
 h4, .h4 {
-  font-size: $ms0;
-  letter-spacing: .04em;
-  line-height: 1.3;
+  font-size: $ms1;
+  letter-spacing: .03em;
+  line-height: 1.2;
 }
 h5, .h5 {
-  font-size: $ms-1;
-  letter-spacing: .06em;
-  line-height: 1.35;
+  font-size: $ms0;
+  letter-spacing: .04em;
+  line-height: 1.25;
 }
 h6, .h6 {
-  font-size: $ms-2;
-  letter-spacing: .08em;
-  line-height: 1.45;
+  font-size: $ms-1;
+  letter-spacing: .05em;
+  line-height: 1.35;
 }
 
 ////////////////////////////////////
 // type setting - larger than mobile
 ////////////////////////////////////
 $ms-scale: 1.333;
-$ms0:  16px;
+$ms0:  22px;
 $ms-1: $ms0 / $ms-scale;
 $ms-2: $ms-1 / $ms-scale;
 $ms1:  $ms0 * $ms-scale;
@@ -90,41 +91,40 @@ $ms7:  $ms6 * $ms-scale;
 
 @media(min-width: $screen-sm-min) {
   h1, .h1 {
-    font-size: $ms3;
-  }
-  h2, .h2 {
-    font-size: $ms2;
-  }
-  h3, .h3 {
-    font-size: $ms1;
-  }
-  h4, .h4 {
-    font-size: $ms0;
-  }
-  h5, .h5 {
-    font-size: $ms-1;
-  }
-  h6, .h6 {
-    font-size: $ms-2;
-  }
-} // headline screen sm-min
-
-@media(min-width: $screen-lg-min) {
-  h1, .h1 {
     font-size: $ms4;
   }
-}
+  h2, .h2 {
+    font-size: $ms3;
+  }
+  h3, .h3 {
+    font-size: $ms2;
+  }
+  h4, .h4 {
+    font-size: $ms1;
+  }
+  h5, .h5 {
+    font-size: $ms0;
+  }
+  h6, .h6 {
+    font-size: $ms-1;
+  }
+} // headline screen sm-min
 
 h1.h1-lg,
 h1 > .h1-lg {
   @media(min-width:1600px) {
-    font-size: $ms6;
+    font-size: $ms5;
   }
 }
 
+h3,.h3 {
+  &.lowercase, &.normalcase {
+    letter-spacing: .02em;
+  }
+}
 h4,.h4 {
   &.lowercase, &.normalcase {
-    letter-spacing: .01em;
+    letter-spacing: .02em;
   }
 }
 h5,.h5 {
@@ -135,7 +135,6 @@ h5,.h5 {
 h6,.h6 {
   &.lowercase, &.normalcase {
     letter-spacing: .04em;
-    line-height: 1.3;
   }
 }
 
@@ -243,6 +242,7 @@ img {
 // -----------------------------------------------------------------------------
 .uppercase {
     text-transform: uppercase;
+    letter-spacing: .03em;
 }
 
 .lowercase {
