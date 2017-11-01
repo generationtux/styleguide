@@ -144,10 +144,17 @@ h6,.h6 {
 p {
   margin-bottom: $type-spacing-md;
 }
-
-p.small {
-  font-size: 11.2px;
-  letter-spacing: .01em;
+.p {
+  font-family: $roboto-mono-font-stack;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: $font-size-base;
+  text-transform: none;
+}
+p.small,
+.p.small {
+  font-size: $font-size-small;
   line-height: 1.8;
 }
 p.large {

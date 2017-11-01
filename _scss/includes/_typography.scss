@@ -41,7 +41,7 @@ small {
   letter-spacing: 0;
 }
 
-/// Domaine headline needs to be a littler large to visually pair with Roboto Bold 
+/// Domaine headline needs to be a littler large to visually pair with Roboto Bold
 $domd-size-adjust: 1.2;
 
 ////////////////////////////////////
@@ -61,20 +61,20 @@ $ms6:  $ms5 * $ms-scale;
 h1, .h1 {
     font-size: $ms3;
     &.domd, & > .domd {
-      font-size: $ms3 * $domd-size-adjust; 
+      font-size: $ms3 * $domd-size-adjust;
     }
 }
 h2, .h2 {
     font-size: $ms2;
     &.domd, & > .domd {
-      font-size: $ms2 * $domd-size-adjust; 
+      font-size: $ms2 * $domd-size-adjust;
     }
 }
 h3, .h3 {
     font-size: $ms1;
     line-height: 1.3;
     &.domd, & > .domd {
-      font-size: $ms1 * $domd-size-adjust; 
+      font-size: $ms1 * $domd-size-adjust;
     }
 }
 h4, .h4 {
@@ -82,7 +82,7 @@ h4, .h4 {
     letter-spacing: .04em;
     line-height: 1.3;
     &.domd, & > .domd {
-      font-size: $ms0 * $domd-size-adjust; 
+      font-size: $ms0 * $domd-size-adjust;
       letter-spacing: 0;
     }
 }
@@ -124,25 +124,25 @@ $ms7:  $ms6 * $ms-scale;
   h1, .h1 {
     font-size: $ms3;
     &.domd, & > .domd {
-      font-size: $ms3 * $domd-size-adjust; 
+      font-size: $ms3 * $domd-size-adjust;
     }
   }
   h2, .h2 {
     font-size: $ms2;
     &.domd, & > .domd {
-      font-size: $ms2 * $domd-size-adjust; 
+      font-size: $ms2 * $domd-size-adjust;
     }
   }
   h3, .h3 {
     font-size: $ms1;
     &.domd, & > .domd {
-      font-size: $ms1 * $domd-size-adjust; 
+      font-size: $ms1 * $domd-size-adjust;
     }
   }
   h4, .h4 {
     font-size: $ms0;
     &.domd, & > .domd {
-      font-size: $ms0 * $domd-size-adjust; 
+      font-size: $ms0 * $domd-size-adjust;
     }
   }
   h5, .h5 {
@@ -163,7 +163,7 @@ $ms7:  $ms6 * $ms-scale;
   h1, .h1 {
     font-size: $ms4;
     &.domd, & > .domd {
-      font-size: $ms4 * $domd-size-adjust; 
+      font-size: $ms4 * $domd-size-adjust;
     }
   }
 }
@@ -195,9 +195,17 @@ h6,.h6 {
 p {
   margin-bottom: $type-spacing-md;
 }
-
-p.small {
-  font-size: 12.8px;
+.p {
+  font-family: $roboto-font-stack;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: $font-size-base;
+  text-transform: none;
+}
+p.small,
+.p.small {
+  font-size: $font-size-small;
   letter-spacing: .01em;
   line-height: 1.7;
 }

@@ -7994,9 +7994,17 @@ h6.lowercase, h6.normalcase, .h6.lowercase, .h6.normalcase {
 p {
   margin-bottom: 14px; }
 
-p.small {
+.p {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 14px;
+  text-transform: none; }
+
+p.small,
+.p.small {
   font-size: 11.2px;
-  letter-spacing: .01em;
   line-height: 1.8; }
 
 p.large {

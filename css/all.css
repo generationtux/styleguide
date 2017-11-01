@@ -8028,7 +8028,16 @@ h6.lowercase, h6.normalcase, .h6.lowercase, .h6.normalcase {
 p {
   margin-bottom: 16px; }
 
-p.small {
+.p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 16px;
+  text-transform: none; }
+
+p.small,
+.p.small {
   font-size: 12.8px;
   letter-spacing: .01em;
   line-height: 1.7; }
