@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Roboto:500|Roboto+Mono:400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -10423,7 +10423,6 @@ img.pos-bottom-left {
   z-index: 0; }
 
 .btn {
-  font-family: "Roboto", sans-serif;
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: .04em;
