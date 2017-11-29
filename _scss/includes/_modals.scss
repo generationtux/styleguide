@@ -15,6 +15,12 @@
   @include shadow-level(4);
 }
 
+.modal-dialog {
+  @media (max-width: $screen-sm-max) {
+    margin: 0px;
+  }
+}
+
 .modal-content {
   border: none;
   @include shadow-level(4);
@@ -58,13 +64,26 @@
   text-align: left;
 }
 
-
 .modal .close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 0px;
+  right: 0px;
   opacity: .5;
   &:hover {
       opacity: 1;
+  }
+}
+
+// need to make new class instead of using .modal .close because bootstrap defaults are getting in the way
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  @media (min-width: $screen-sm-min) {
+    top: -16px;
+    right: -16px;
   }
 }
