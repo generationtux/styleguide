@@ -8465,7 +8465,10 @@ ol.fancy-list {
   color: black; }
 
 .bg-info {
-  background-color: #E6CE9A;
+  background-color: #E6CE9A; }
+
+.bg-success {
+  background-color: #519281;
   color: white; }
 
 .bg-half-n-half {
@@ -15904,6 +15907,10 @@ select.form-control {
   padding: 16px 32px 32px;
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3); }
 
+@media (max-width: 991px) {
+  .modal-dialog {
+    margin: 0px; } }
+
 .modal-content {
   border: none;
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3); }
@@ -15942,11 +15949,23 @@ select.form-control {
 
 .modal .close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 0px;
+  right: 0px;
   opacity: .5; }
   .modal .close:hover {
     opacity: 1; }
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .modal-close {
+      top: -16px;
+      right: -16px; } }
 
 .sticky {
   position: -webkit-sticky;
