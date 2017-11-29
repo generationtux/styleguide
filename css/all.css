@@ -15907,7 +15907,7 @@ select.form-control {
   padding: 16px 32px 32px;
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3); }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .modal-dialog {
     margin: 0px; } }
 
