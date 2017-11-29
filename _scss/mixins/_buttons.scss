@@ -131,6 +131,7 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
+    opacity: .3;
     &:hover,
     &:focus,
     &.focus {
