@@ -28,6 +28,7 @@
     background-color: $background;
     border-color: $border;
   }
+
   &:hover {
     color: black;
     @include shadow-level(2);
@@ -148,6 +149,27 @@
     color: $background;
     background-color: $color;
   }
+
+
+  // disable hover effects for mobile devices
+  @media (any-hover: none) {
+    &:hover {
+      color: $color;
+      background-color: $background;
+      border-color: $border !important;
+      box-shadow: none !important;
+      &:active {
+        border-color: transparent;
+        background-color: $gray-lighter;
+        box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
+        color: black;
+      }
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+
 
 }
 
