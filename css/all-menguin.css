@@ -8426,10 +8426,10 @@ ol.fancy-list {
   color: black; }
 
 .bg-info {
-  background-color: #39C9FF; }
+  background-color: #39C9FF !important; }
 
 .bg-success {
-  background-color: #03DAA0;
+  background-color: #03DAA0 !important;
   color: white; }
 
 .bg-half-n-half {

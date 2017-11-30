@@ -34,10 +34,10 @@
 }
 
 .bg-info {
-    background-color: $brand-info;
+    background-color: $brand-info !important;
 }
 .bg-success {
-    background-color: $brand-success;
+    background-color: $brand-success !important;
     color: white;
 }
 

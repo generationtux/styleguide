@@ -8465,10 +8465,10 @@ ol.fancy-list {
   color: black; }
 
 .bg-info {
-  background-color: #E6CE9A; }
+  background-color: #E6CE9A !important; }
 
 .bg-success {
-  background-color: #519281;
+  background-color: #519281 !important;
   color: white; }
 
 .bg-half-n-half {
