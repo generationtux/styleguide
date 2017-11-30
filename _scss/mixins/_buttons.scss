@@ -155,15 +155,18 @@
   @media (any-hover: none) {
     &:hover {
       color: $color;
-      background-color: $background;
+
+      // lightness 0-100 scale
+      @if (lightness($background) > 90) {
+        background-color: darken($background, 5%);
+      } @else if (lightness($background) < 10) {
+        background-color: lighten($background, 20%);
+      } @else {
+        background-color: darken($background, 8%);
+      }
+
       border-color: $border !important;
       box-shadow: none !important;
-      &:active {
-        border-color: transparent;
-        background-color: $gray-lighter;
-        box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
-        color: black;
-      }
       &:after {
         opacity: 0;
       }
