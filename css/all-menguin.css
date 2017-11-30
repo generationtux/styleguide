@@ -8930,16 +8930,12 @@ ol.fancy-list {
   border-bottom: 1px solid #000; }
 
 .bordered-right {
-  border-right: none; }
-  @media (min-width: 768px) {
-    .bordered-right {
-      border-right: 1px solid #000; } }
+  border-right: none;
+  border-right: 1px solid #000; }
 
 .bordered-left {
-  border-left: none; }
-  @media (min-width: 768px) {
-    .bordered-left {
-      border-left: 1px solid #000; } }
+  border-left: none;
+  border-left: 1px solid #000; }
 
 .bordered-vertical-xs {
   border-top: 1px solid #000;

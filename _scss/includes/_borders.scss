@@ -20,18 +20,12 @@
 
 .bordered-right {
     border-right: none;
-
-    @media (min-width: $screen-sm-min) {
-        border-right: 1px solid $gray-base;
-    }
+    border-right: 1px solid $gray-base;
 }
 
 .bordered-left {
     border-left: none;
-
-    @media (min-width: $screen-sm-min) {
-        border-left: 1px solid $gray-base;
-    }
+    border-left: 1px solid $gray-base;
 }
 
 .bordered-vertical-xs {
