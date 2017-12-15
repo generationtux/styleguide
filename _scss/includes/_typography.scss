@@ -346,6 +346,14 @@ img {
 .text-warning { color: $brand-warning; }
 .text-danger  { color: $brand-danger; }
 
+.text-black { color: white; }
+.text-gray-darker { color: $gray-darker; }
+.text-gray-dark { color: $gray-dark; }
+.text-gray { color: $gray; }
+.text-gray-light { color: $gray-light; }
+.text-gray-lighter { color: $gray-lighter; }
+.text-white { color: white; }
+
 // -----------------------------------------------------------------------------
 // Text truncation
 // -----------------------------------------------------------------------------

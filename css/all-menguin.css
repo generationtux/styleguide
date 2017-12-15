@@ -8195,6 +8195,9 @@ img.context--copy {
   text-transform: none !important;
   letter-spacing: 0; }
 
+.text-monospaced {
+  font-family: 'Roboto Mono', monospace; }
+
 .link-style {
   color: #00B9FF;
   cursor: pointer; }
@@ -8224,6 +8227,27 @@ img.context--copy {
 
 .text-danger {
   color: #b45250; }
+
+.text-black {
+  color: white; }
+
+.text-gray-darker {
+  color: #161616; }
+
+.text-gray-dark {
+  color: #4A4A4A; }
+
+.text-gray {
+  color: #969696; }
+
+.text-gray-light {
+  color: #E6E6E6; }
+
+.text-gray-lighter {
+  color: #F5F5F5; }
+
+.text-white {
+  color: white; }
 
 .text-truncate,
 .text-overflow {

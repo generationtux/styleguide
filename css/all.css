@@ -8264,6 +8264,27 @@ img.context--copy {
 .text-danger {
   color: #b45250; }
 
+.text-black {
+  color: white; }
+
+.text-gray-darker {
+  color: #404042; }
+
+.text-gray-dark {
+  color: #888888; }
+
+.text-gray {
+  color: #cccccc; }
+
+.text-gray-light {
+  color: #e6e6e6; }
+
+.text-gray-lighter {
+  color: #f8f8f8; }
+
+.text-white {
+  color: white; }
+
 .text-truncate,
 .text-overflow {
   text-overflow: clip;
