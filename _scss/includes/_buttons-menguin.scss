@@ -44,3 +44,63 @@
   @include button-size($padding-xs-vertical, $padding-xs-horizontal,  $font-size-small, $line-height-small, $btn-border-radius-small);
   letter-spacing: .04em;
 }
+
+
+// Alternate buttons style
+// --------------------------------------------------
+.btn-alt {
+  $btn-size: 40px;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: black;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  padding-left: $btn-size + 16px;
+  &:before {
+
+  }
+  &:before {
+    content: "";
+    width: $btn-size;
+    height: $btn-size;
+    line-height: $btn-size;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: $btn-size;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    z-index: -1;
+    transition: all .3s ease;
+  }
+  &:after {
+    content:"\2192";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate3d(1px,-3px,0);
+    width: $btn-size;
+    line-height: 0;
+    text-align: center;
+    transition: all .3s ease;
+    font-size: 18px;
+    color: black;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+    &:after {
+      transform: translate3d(8px,-3px,0);
+    }
+  }
+}
+.btn-alt.btn-info {
+  &:before {
+    background-color: $brand-info;
+  }
+}

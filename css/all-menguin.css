@@ -10141,6 +10141,50 @@ img.pos-bottom-left {
   border-radius: 20px;
   letter-spacing: .04em; }
 
+.btn-alt {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: black;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  padding-left: 56px; }
+  .btn-alt:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 40px;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    z-index: -1;
+    transition: all .3s ease; }
+  .btn-alt:after {
+    content: "\2192";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate3d(1px, -3px, 0);
+    width: 40px;
+    line-height: 0;
+    text-align: center;
+    transition: all .3s ease;
+    font-size: 18px;
+    color: black; }
+  .btn-alt:hover:before {
+    width: 100%; }
+  .btn-alt:hover:after {
+    transform: translate3d(8px, -3px, 0); }
+
+.btn-alt.btn-info:before {
+  background-color: #39C9FF; }
+
 .navbar-with-columns .navbar-collapse,
 .navbar-with-columns .navbar-nav,
 .navbar-with-columns .main-nav-items {
