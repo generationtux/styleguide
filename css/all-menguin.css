@@ -8432,43 +8432,6 @@ ol.fancy-list {
   background-color: #03DAA0 !important;
   color: white; }
 
-.bg-half-n-half {
-  background: linear-gradient(to bottom, #F5F5F5 0%, #F5F5F5 50%, white 50%, white 100%); }
-
-.bg-half-n-half-horizontal {
-  position: relative; }
-  .bg-half-n-half-horizontal:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 75%;
-    background-color: white;
-    z-index: -1; }
-  @media (min-width: 768px) {
-    .bg-half-n-half-horizontal:after {
-      width: calc(50% - 16px); } }
-
-.bg-offset-base {
-  position: relative;
-  z-index: 0;
-  overflow: hidden; }
-  .bg-offset-base:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: white;
-    z-index: -1; }
-
-.bg-offset-leftbottom-5-2:after {
-  left: -16px;
-  right: 45.815%;
-  top: 20%; }
-
 .bg-texture, .bg-texture-inverted {
   color: white;
   background-color: #000;
@@ -8498,423 +8461,122 @@ ol.fancy-list {
   .bg-texture-no-lg {
     background-image: none !important; } }
 
-.bg-offset-left {
-  position: relative; }
-  .bg-offset-left:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 83.33%;
-    background-color: #F5F5F5; }
-  @media (min-width: 768px) {
-    .bg-offset-left:before {
-      left: 16px; } }
-
-.bg-offset-right {
-  position: relative; }
-  .bg-offset-right:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 83.33%;
-    background-color: #F5F5F5; }
-  @media (min-width: 768px) {
-    .bg-offset-right:before {
-      right: 16px; } }
-
 .bg-striped {
   background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPG9l/btqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5ZUJ7zWQizKAAAAAElFTkSuQmCC") repeat center center;
   background-size: 8px; }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-1 {
-    background-image: linear-gradient(to right, transparent 0, transparent 91.667%, #F5F5F5 91.667%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-1 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-1 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-1 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel {
+  position: relative;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-image: linear-gradient(to right, #E6E6E6 100%, #E6E6E6 100%); }
+  .bg-panel:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right, #E6E6E6 100%, #E6E6E6 100%); }
+  @media (min-width: 768px) {
+    .bg-panel {
+      background-size: calc(((100% - 720px)/2) + 10px) 100%; }
+      .bg-panel:before {
+        width: 720px; } }
+  @media (min-width: 992px) {
+    .bg-panel {
+      background-size: calc(((100% - 944px)/2) + 10px) 100%; }
+      .bg-panel:before {
+        width: 944px; } }
+  @media (min-width: 1280px) {
+    .bg-panel {
+      background-size: calc(((100% - 1232px)/2) + 10px) 100%; }
+      .bg-panel:before {
+        width: 1232px; } }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-2 {
-    background-image: linear-gradient(to right, transparent 0, transparent 83.334%, #F5F5F5 83.334%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-2 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-2 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-2 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-gray-darker {
+  color: white;
+  background-image: linear-gradient(to right, #161616 100%, #161616 100%); }
+  .bg-panel-gray-darker:before {
+    background-image: linear-gradient(to right, #161616 100%, #161616 100%); }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-3 {
-    background-image: linear-gradient(to right, transparent 0, transparent 75.001%, #F5F5F5 75.001%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-3 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-3 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-3 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-gray-dark {
+  color: white;
+  background-image: linear-gradient(to right, #4A4A4A 100%, #4A4A4A 100%); }
+  .bg-panel-gray-dark:before {
+    background-image: linear-gradient(to right, #4A4A4A 100%, #4A4A4A 100%); }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-4 {
-    background-image: linear-gradient(to right, transparent 0, transparent 66.668%, #F5F5F5 66.668%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-4 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-4 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-4 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-gray {
+  color: black;
+  background-image: linear-gradient(to right, #969696 100%, #969696 100%); }
+  .bg-panel-gray:before {
+    background-image: linear-gradient(to right, #969696 100%, #969696 100%); }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-5 {
-    background-image: linear-gradient(to right, transparent 0, transparent 58.335%, #F5F5F5 58.335%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-5 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-5 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-5 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-gray-light {
+  color: black;
+  background-image: linear-gradient(to right, #E6E6E6 100%, #E6E6E6 100%); }
+  .bg-panel-gray-light:before {
+    background-image: linear-gradient(to right, #E6E6E6 100%, #E6E6E6 100%); }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-6 {
-    background-image: linear-gradient(to right, transparent 0, transparent 50.002%, #F5F5F5 50.002%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-6 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-6 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-6 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-gray-lighter {
+  color: black;
+  background-image: linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%); }
+  .bg-panel-gray-lighter:before {
+    background-image: linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%); }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-7 {
-    background-image: linear-gradient(to right, transparent 0, transparent 41.669%, #F5F5F5 41.669%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-7 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-7 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-7 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-white {
+  color: black;
+  background-image: linear-gradient(to right, white 100%, white 100%); }
+  .bg-panel-white:before {
+    background-image: linear-gradient(to right, white 100%, white 100%); }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-8 {
-    background-image: linear-gradient(to right, transparent 0, transparent 33.336%, #F5F5F5 33.336%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-8 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-8 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-8 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-left-10 {
+  background-position: left center; }
+  .bg-panel-left-10:before {
+    background-position: left center;
+    background-size: calc(100% * 0.83333) 100%; }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-9 {
-    background-image: linear-gradient(to right, transparent 0, transparent 25.003%, #F5F5F5 25.003%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-9 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-9 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-9 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-left-9 {
+  background-position: left center; }
+  .bg-panel-left-9:before {
+    background-position: left center;
+    background-size: calc(100% * 0.75) 100%; }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-10 {
-    background-image: linear-gradient(to right, transparent 0, transparent 16.67%, #F5F5F5 16.67%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-10 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-10 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-10 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-left-2 {
+  background-position: left center; }
+  .bg-panel-left-2:before {
+    background-position: left center;
+    background-size: calc(100% * 0.16667) 100%; }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-11 {
-    background-image: linear-gradient(to right, transparent 0, transparent 8.337%, #F5F5F5 8.337%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-11 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-11 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-11 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-right-8 {
+  background-position: right center; }
+  .bg-panel-right-8:before {
+    background-position: right center;
+    background-size: calc(100% * 0.66667) 100%; }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-right-12 {
-    background-image: linear-gradient(to right, transparent 0, transparent 0.004%, #F5F5F5 0.004%, #F5F5F5 100%), linear-gradient(to right, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, right center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-right-12 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-right-12 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-right-12 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-right-9 {
+  background-position: right center; }
+  .bg-panel-right-9:before {
+    background-position: right center;
+    background-size: calc(100% * 0.75) 100%; }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-1 {
-    background-image: linear-gradient(to left, transparent 0, transparent 91.667%, #F5F5F5 91.667%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-1 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-1 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-1 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-right-10 {
+  background-position: right center; }
+  .bg-panel-right-10:before {
+    background-position: right center;
+    background-size: calc(100% * 0.83333) 100%; }
 
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-2 {
-    background-image: linear-gradient(to left, transparent 0, transparent 83.334%, #F5F5F5 83.334%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-2 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-2 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-2 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-3 {
-    background-image: linear-gradient(to left, transparent 0, transparent 75.001%, #F5F5F5 75.001%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-3 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-3 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-3 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-4 {
-    background-image: linear-gradient(to left, transparent 0, transparent 66.668%, #F5F5F5 66.668%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-4 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-4 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-4 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-5 {
-    background-image: linear-gradient(to left, transparent 0, transparent 58.335%, #F5F5F5 58.335%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-5 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-5 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-5 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-6 {
-    background-image: linear-gradient(to left, transparent 0, transparent 50.002%, #F5F5F5 50.002%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-6 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-6 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-6 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-7 {
-    background-image: linear-gradient(to left, transparent 0, transparent 41.669%, #F5F5F5 41.669%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-7 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-7 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-7 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-8 {
-    background-image: linear-gradient(to left, transparent 0, transparent 33.336%, #F5F5F5 33.336%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-8 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-8 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-8 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-9 {
-    background-image: linear-gradient(to left, transparent 0, transparent 25.003%, #F5F5F5 25.003%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-9 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-9 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-9 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-10 {
-    background-image: linear-gradient(to left, transparent 0, transparent 16.67%, #F5F5F5 16.67%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-10 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-10 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-10 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-11 {
-    background-image: linear-gradient(to left, transparent 0, transparent 8.337%, #F5F5F5 8.337%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-11 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-11 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-11 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
-
-@supports (background-size: calc(50%)) {
-  .bg-gray-lighter-left-12 {
-    background-image: linear-gradient(to left, transparent 0, transparent 0.004%, #F5F5F5 0.004%, #F5F5F5 100%), linear-gradient(to left, #F5F5F5 100%, #F5F5F5 100%);
-    background-size: 100%, 100%;
-    background-repeat: repeat-y;
-    background-position: center center, left center; }
-    @media (min-width: 768px) {
-      .bg-gray-lighter-left-12 {
-        background-size: 720px, calc( 50% - (768px/2 - 24px)); } }
-    @media (min-width: 992px) {
-      .bg-gray-lighter-left-12 {
-        background-size: 944px, calc( 50% - (992px/2 - 24px)); } }
-    @media (min-width: 1280px) {
-      .bg-gray-lighter-left-12 {
-        background-size: 1232px, calc( 50% - (1280px/2 - 24px)); } } }
+.bg-panel-right-11 {
+  background-position: right center; }
+  .bg-panel-right-11:before {
+    background-position: right center;
+    background-size: calc(100% * 0.91667) 100%; }
 
 .bordered {
   border: 1px solid #000; }
