@@ -129,14 +129,14 @@
 // Color Swatch Btn Filters
 // -----------------------------------------------------------------------------
 // color, bg, border
-.btn-color-swatch-black  {@include button-variant(white, #222, #222);}
-.btn-color-swatch-white  {@include button-variant(black, white, $gray-light);}
-.btn-color-swatch-red    {@include button-variant(white, #c4383f, #c4383f);}
-.btn-color-swatch-grey   {@include button-variant(white, #818085, #818085);}
-.btn-color-swatch-purple {@include button-variant(white, #8559c8, #8559c8);}
-.btn-color-swatch-pink   {@include button-variant(white, #e04ea7, #e04ea7);}
-.btn-color-swatch-blue   {@include button-variant(white, #6779de, #6779de);}
-.btn-color-swatch-green  {@include button-variant(white, #2bb18f, #2bb18f);}
-.btn-color-swatch-yellow {@include button-variant(black, #f6eaab, #f6eaab);}
-.btn-color-swatch-orange {@include button-variant(white, #f9905b, #f9905b);}
-.btn-color-swatch-tan  {@include button-variant(black, #d1bea0, #d1bea0);}
+.btn-color-swatch-black  {background-color:#222;}
+.btn-color-swatch-white  {background-color:$gray-light;}
+.btn-color-swatch-red    {background-color:#c4383f;}
+.btn-color-swatch-grey   {background-color:#818085;}
+.btn-color-swatch-purple {background-color:#8559c8;}
+.btn-color-swatch-pink   {background-color:#e04ea7;}
+.btn-color-swatch-blue   {background-color:#6779de;}
+.btn-color-swatch-green  {background-color:#2bb18f;}
+.btn-color-swatch-yellow {background-color:#f6eaab;}
+.btn-color-swatch-orange {background-color:#f9905b;}
+.btn-color-swatch-tan    {background-color:#d1bea0;}
