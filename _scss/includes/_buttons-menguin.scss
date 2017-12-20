@@ -20,6 +20,10 @@
 
 }
 
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  opacity: .3;
+}
+
 
 // Button Sizes
 // --------------------------------------------------

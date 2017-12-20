@@ -10118,6 +10118,9 @@ img.pos-bottom-left {
   .btn:active, .btn.active {
     box-shadow: none; }
 
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  opacity: .3; }
+
 .btn-lg, .btn-group-lg > .btn {
   padding: 24px 48px;
   font-size: 20px;
