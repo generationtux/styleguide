@@ -37,7 +37,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack -p",
     "build-babel": "./node_modules/.bin/babel ./src --out-dir lib",
-    "prepare": "npm run build && npm run build-babel"
+    "prepublish": "npm run build && npm run build-babel"
   },
   "main": "./lib/modules"
 }
