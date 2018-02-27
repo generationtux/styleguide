@@ -1,32 +1,42 @@
 .align-vertical {
-    @media (min-width: $grid-float-breakpoint) {
-        display: flex;
-        align-items: center;
-    }
+  @media (min-width: $grid-float-breakpoint) {
+    display: flex;
+    align-items: center;
+  }
 }
+
+.align-vertical-xs {
+  display: flex;
+  align-items: center;
+}
+
+.align-end-xs {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .align-bottom {
-    @media(min-width:$screen-sm) {
-        display: flex;
-        align-items: flex-end;
-    }
+  @media (min-width: $screen-sm) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .row.row-eq-height {
-    @media(min-width: $grid-float-breakpoint) {
-        display: flex;
+  @media (min-width: $grid-float-breakpoint) {
+    display: flex;
 
-        > [class*='col-'] {
-            display: flex;
-            flex-direction: column;
+    > [class*="col-"] {
+      display: flex;
+      flex-direction: column;
 
-            > .panel {
-                // width: 100%;
-                flex-grow: 1;
-            }
-        }
+      > .panel {
+        // width: 100%;
+        flex-grow: 1;
+      }
     }
+  }
 }
-
 
 // -----------------------------------------------------------------------------
 // Absolution Pos
@@ -35,27 +45,27 @@
 .pos-top-left,
 .pos-bottom-right,
 .pos-bottom-left {
-    position: absolute;
+  position: absolute;
 }
 
 .pos-top-right {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 }
 
 .pos-top-left {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 
 .pos-bottom-right {
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .pos-bottom-left {
-    bottom: 0;
-    left: 0;
+  bottom: 0;
+  left: 0;
 }
 
 // keep images from stretching to massive sizes
@@ -63,25 +73,39 @@ img.pos-top-right,
 img.pos-top-left,
 img.pos-bottom-right,
 img.pos-bottom-left {
-    width: auto;
-    max-width: 100%;
+  width: auto;
+  max-width: 100%;
 }
 
 // -----------------------------------------------------------------------------
 // Z index layers
 // -----------------------------------------------------------------------------
 .layer-parent {
-    position: relative;
+  position: relative;
 }
 
-[class^='layer-'] { 
-    position: relative; 
+[class^="layer-"] {
+  position: relative;
 }
 
-.layer-top { z-index: 500; }
-.layer-4 { z-index: 400; }
-.layer-3 { z-index: 300; }
-.layer-2 { z-index: 200; }
-.layer-1 { z-index: 100; }
-.layer-0 { z-index: 0; }
-.layer-0 { z-index: 0; }
+.layer-top {
+  z-index: 500;
+}
+.layer-4 {
+  z-index: 400;
+}
+.layer-3 {
+  z-index: 300;
+}
+.layer-2 {
+  z-index: 200;
+}
+.layer-1 {
+  z-index: 100;
+}
+.layer-0 {
+  z-index: 0;
+}
+.layer-0 {
+  z-index: 0;
+}

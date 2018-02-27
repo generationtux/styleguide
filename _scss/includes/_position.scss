@@ -1,18 +1,27 @@
 // -----------------------------------------------------------------------------
 // Positioning
 // -----------------------------------------------------------------------------
+.static {
+  position: static !important;
+}
+
+.relative-sm {
+  @media (min-width: $screen-sm-min) {
+    position: relative !important;
+  }
+}
 
 .sticky {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    top: 0;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .sticky-sm {
-  @media(min-width: $screen-sm-min) {
+  @media (min-width: $screen-sm-min) {
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -23,7 +32,7 @@
 }
 
 .sticky-md {
-  @media(min-width: $screen-md-min) {
+  @media (min-width: $screen-md-min) {
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -34,7 +43,7 @@
 }
 
 .sticky-lg {
-  @media(min-width: $screen-lg-min) {
+  @media (min-width: $screen-lg-min) {
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
@@ -45,17 +54,17 @@
 }
 
 .sticky-sm-clear {
-  @media(min-width: $screen-sm-min) {
+  @media (min-width: $screen-sm-min) {
     position: static;
   }
 }
 .sticky-md-clear {
-  @media(min-width: $screen-md-min) {
+  @media (min-width: $screen-md-min) {
     position: static;
   }
 }
 .sticky-lg-clear {
-  @media(min-width: $screen-lg-min) {
+  @media (min-width: $screen-lg-min) {
     position: static;
   }
 }

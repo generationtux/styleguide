@@ -10327,7 +10327,7 @@ img.pos-bottom-left {
 .navbar-brand {
   line-height: 16px;
   font-weight: 900;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   position: relative;
   white-space: nowrap; }
   .navbar-brand img {
@@ -10340,23 +10340,23 @@ img.pos-bottom-left {
       .navbar-brand img.navbar-brand-logo-gt {
         transform: translate(0%, 0) scale(1);
         transform-origin: left 30%;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         width: 48px; }
       .navbar-brand img.navbar-brand-logo-full {
         position: absolute;
         top: 50%;
         transform: translate(-10%, -50%);
         opacity: 0;
-        transition-duration: .1s;
+        transition-duration: 0.1s;
         width: 117px; }
       .navbar-brand:hover img.navbar-brand-logo-gt {
         opacity: 0;
         transform: translate(-20%, 0) scale(0.8);
-        transition-duration: .15s; }
+        transition-duration: 0.15s; }
       .navbar-brand:hover img.navbar-brand-logo-full {
         opacity: 1;
         transform: translate(0, -50%);
-        transition-duration: .4s; } }
+        transition-duration: 0.4s; } }
   @media (max-width: 767px) {
     .navbar-brand {
       padding-top: 16px;
@@ -10376,7 +10376,7 @@ img.pos-bottom-left {
       left: 16px;
       right: 16px;
       transform: scaleX(0) translateZ(0);
-      transition: all .2s ease;
+      transition: all 0.2s ease;
       transform-origin: left center; }
     .navbar .main-nav-items > li > a:hover:after {
       transform: scaleX(1) translateZ(0);

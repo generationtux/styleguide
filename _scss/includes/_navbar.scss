@@ -7,7 +7,7 @@
   .navbar-nav,
   .main-nav-items {
     // undo boostrap default margin so aligns with grid
-    margin-left: -$grid-gutter-width/2; 
+    margin-left: -$grid-gutter-width/2;
     margin-right: -$grid-gutter-width/2;
   }
   .navbar-toggle {
@@ -18,7 +18,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  @media(max-width:$screen-xs-max) {
+  @media (max-width: $screen-xs-max) {
     .navbar-form {
       margin-left: 0;
       margin-right: 0;
@@ -27,7 +27,7 @@
   // use main-nav-items-offset sm and md for reducing vertical spacing when subnav goes full width
   .main-nav-items.main-nav-items-offset {
     @media (min-width: $screen-sm) and (max-width: $screen-md-max) {
-      &.navbar-nav>li>a {
+      &.navbar-nav > li > a {
         padding-top: 16px;
         padding-bottom: 32px;
         margin-top: -8px;
@@ -42,60 +42,63 @@
 .navbar-form {
   padding-top: 16px;
   padding-bottom: 16px;
-  @media(min-width:$screen-sm) {
+  @media (min-width: $screen-sm) {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 }
 .navbar-form-search {
-    $form-height: 40px;
+  $form-height: 40px;
 
-    position: relative;
-    margin-top: ($navbar-height - $form-height)/2;
-    margin-bottom: ($navbar-height - $form-height)/2;
-    .form-control,
-    .btn {
-        border-radius: $form-height !important;
-        height: $form-height;
+  position: relative;
+  margin-top: ($navbar-height - $form-height)/2;
+  margin-bottom: ($navbar-height - $form-height)/2;
+  .form-control,
+  .btn {
+    border-radius: $form-height !important;
+    height: $form-height;
+  }
+  .form-control {
+    padding-right: $form-height + 16;
+    border-color: $gray-light;
+    &:focus {
+      @include shadow-level(3);
+      background-color: white;
     }
-    .form-control {
-        padding-right: $form-height + 16;
-        border-color: $gray-light;
-        &:focus {
-            @include shadow-level(3);
-            background-color: white;
-        }
+  }
+  .input-group-btn {
+    left: $form-height - 8;
+    z-index: 500;
+  }
+  .btn {
+    padding: 0;
+    width: $form-height;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    &:focus {
+      outline: none;
+      // color: $gray-dark;
+      @include shadow-level(3);
+      background-color: white;
     }
-    .input-group-btn {
-        left: $form-height - 8;
-        z-index: 500;
+    &:active {
+      color: $brand-info;
     }
-    .btn {
-        padding: 0;
-        width: $form-height;
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        &:focus { 
-            outline: none;
-            // color: $gray-dark;
-            @include shadow-level(3);
-            background-color: white;
-        }
-        &:active {
-            color: $brand-info;
-        }
-        @media(min-width:$screen-sm) {
-            top: 0;
-        }
+    @media (min-width: $screen-sm) {
+      top: 0;
     }
+  }
 }
 .navbar-toggle {
+  float: left;
+
   .icon-bar {
     width: 16px;
     border-radius: 0;
   }
-  @media(max-width: $grid-float-breakpoint-max) {
+
+  @media (max-width: $grid-float-breakpoint-max) {
     margin-top: 12px;
     margin-bottom: 12px;
   }
@@ -108,44 +111,44 @@
 .navbar-brand {
   line-height: 16px;
   font-weight: 900;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   position: relative;
   white-space: nowrap;
   img {
-    transition: all .15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
     max-height: 100%;
     max-width: 100%;
   }
-  @media(min-width: $screen-sm-min) {
+  @media (min-width: $screen-sm-min) {
     width: 100%;
     img.navbar-brand-logo-gt {
-      transform: translate(0%,0) scale(1);
+      transform: translate(0%, 0) scale(1);
       transform-origin: left 30%;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       width: 48px;
     }
     img.navbar-brand-logo-full {
       position: absolute;
       top: 50%;
-      transform: translate(-10%,-50%);
+      transform: translate(-10%, -50%);
       opacity: 0;
-      transition-duration: .1s;
+      transition-duration: 0.1s;
       width: 117px;
     }
     &:hover {
       img.navbar-brand-logo-gt {
         opacity: 0;
-        transform: translate(-20%,0) scale(.8);
-        transition-duration: .15s;
+        transform: translate(-20%, 0) scale(0.8);
+        transition-duration: 0.15s;
       }
       img.navbar-brand-logo-full {
         opacity: 1;
-        transform: translate(0,-50%);
-        transition-duration: .4s;
+        transform: translate(0, -50%);
+        transition-duration: 0.4s;
       }
     }
   }
-  @media(max-width: $grid-float-breakpoint-max) {
+  @media (max-width: $grid-float-breakpoint-max) {
     padding-top: 16px;
     padding-bottom: 16px;
     height: auto;
@@ -156,7 +159,7 @@
 }
 
 .navbar {
-  @media(min-width: $grid-float-breakpoint) {
+  @media (min-width: $grid-float-breakpoint) {
     .main-nav-items {
       & > li > a {
         position: relative;
@@ -168,7 +171,7 @@
           left: 16px;
           right: 16px;
           transform: scaleX(0) translateZ(0);
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           transform-origin: left center;
         }
         &:hover {
@@ -187,20 +190,21 @@
       }
     }
   }
-  @media(max-width: $grid-float-breakpoint-max) {
+  @media (max-width: $grid-float-breakpoint-max) {
     min-height: auto;
   }
 }
 
 .navbar-default {
   border-color: $gray-lighter;
-  @media(min-width: $grid-float-breakpoint) {
+  @media (min-width: $grid-float-breakpoint) {
     .main-nav-items {
       & > li > a {
         &:after {
           background-color: $gray-base;
         }
-        &:active,&:focus {
+        &:active,
+        &:focus {
           color: $brand-info;
         }
       }
@@ -214,7 +218,7 @@
 }
 .navbar-inverse {
   border: none;
-  @media(min-width: $grid-float-breakpoint) {
+  @media (min-width: $grid-float-breakpoint) {
     .main-nav-items {
       & > li > a {
         &:after {
@@ -226,10 +230,23 @@
       }
     }
   }
-  @media(max-width: $grid-float-breakpoint-max) {
+  @media (max-width: $grid-float-breakpoint-max) {
     .navbar-nav .open .dropdown-menu {
       background-color: $gray-light;
       margin-bottom: 16px;
+
+      &.full-screen {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        margin-top: 0px;
+        margin-top: 78px !important;
+        overflow: hidden;
+        background-color: transparentize($color: $gray-light, $amount: 0.01);
+      }
     }
     .navbar-collapse {
       background-color: $gray-dark;
@@ -244,6 +261,8 @@
   min-height: auto;
   background-color: $gray-lighter;
   .navbar-nav {
+    width: 100%;
+
     li a {
       &:after {
         display: none;
@@ -258,15 +277,13 @@
   .navbar-collapse {
     border-top-color: $gray-light;
   }
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     li a {
       padding-top: 24px;
       padding-bottom: 24px;
     }
   }
 }
-
-
 
 // -----------------------------------------------------------------------------
 // Dropdowns
@@ -282,9 +299,16 @@
   }
 }
 .secondary-menu {
+  width: 100%;
+
   .open {
     .dropdown-menu {
       min-width: 320px;
+
+      &.full-screen {
+        right: 0;
+        left: auto;
+      }
     }
   }
 }
@@ -338,7 +362,6 @@
     }
   }
 }
-
 
 // -----------------------------------------------------------------------------
 // Promo Bar
