@@ -234,19 +234,6 @@
     .navbar-nav .open .dropdown-menu {
       background-color: $gray-light;
       margin-bottom: 16px;
-
-      &.full-screen {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: 0;
-        margin-top: 0px;
-        margin-top: 78px !important;
-        overflow: hidden;
-        background-color: transparentize($color: $gray-light, $amount: 0.01);
-      }
     }
     .navbar-collapse {
       background-color: $gray-dark;
@@ -298,6 +285,7 @@
     }
   }
 }
+
 .secondary-menu {
   width: 100%;
 
@@ -306,8 +294,16 @@
       min-width: 320px;
 
       &.full-screen {
+        position: absolute;
+        left: 0;
+        top: 0;
         right: 0;
-        left: auto;
+        bottom: 0;
+        margin: 0;
+        margin-top: 0px;
+        margin-top: 78px !important;
+        overflow: hidden;
+        background-color: transparentize($color: $gray-light, $amount: 0.01);
       }
     }
   }
