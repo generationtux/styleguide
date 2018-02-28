@@ -294,16 +294,23 @@
       min-width: 320px;
 
       &.full-screen {
-        position: absolute;
-        left: 0;
-        top: 0;
         right: 0;
-        bottom: 0;
-        margin: 0;
-        margin-top: 0px;
-        margin-top: 78px !important;
-        overflow: hidden;
-        background-color: transparentize($color: $gray-light, $amount: 0.01);
+        left: auto;
+      }
+
+      @media (max-width: $grid-float-breakpoint-max) {
+        &.full-screen {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: 0;
+          margin-top: 0px;
+          margin-top: 78px !important;
+          overflow: hidden;
+          background-color: transparentize($color: $gray-light, $amount: 0.01);
+        }
       }
     }
   }
