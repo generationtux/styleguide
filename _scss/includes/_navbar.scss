@@ -215,6 +215,12 @@
       }
     }
   }
+
+  @media (max-width: $grid-float-breakpoint-max) {
+    .navbar-nav .open .dropdown-menu.full-screen {
+      background-color: transparentize($color: #ffffff, $amount: 0.02);
+    }
+  }
 }
 .navbar-inverse {
   border: none;
@@ -230,10 +236,15 @@
       }
     }
   }
+
   @media (max-width: $grid-float-breakpoint-max) {
     .navbar-nav .open .dropdown-menu {
       background-color: $gray-light;
       margin-bottom: 16px;
+
+      &.full-screen {
+        background-color: transparentize($color: $gray-light, $amount: 0.02);
+      }
     }
     .navbar-collapse {
       background-color: $gray-dark;
@@ -309,7 +320,6 @@
           margin-top: 0px;
           margin-top: 78px !important;
           overflow: hidden;
-          background-color: transparentize($color: $gray-light, $amount: 0.01);
         }
       }
     }
