@@ -207,7 +207,11 @@ p.small,
 .p.small {
   font-size: $font-size-small;
   letter-spacing: .01em;
-  line-height: 1.7;
+}
+p.xsmall,
+.p.xsmall {
+  font-size: $font-size-xsmall;
+  letter-spacing: .01em; 
 }
 p.large {
   font-size: 18px;
