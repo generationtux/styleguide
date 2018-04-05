@@ -8007,6 +8007,11 @@ p.small,
   font-size: 11.2px;
   line-height: 1.8; }
 
+p.xsmall,
+.p.xsmall {
+  font-size: 10.24px;
+  letter-spacing: .01em; }
+
 p.large {
   font-size: 18px; }
 
