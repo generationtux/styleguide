@@ -16066,6 +16066,33 @@ pre {
   max-height: 200px;
   border-radius: 0; }
 
+.data-label {
+  color: #cccccc;
+  position: absolute;
+  left: -16px;
+  line-height: 26px;
+  transform: translate(-100%, 0); }
+
+.data-label-list {
+  counter-reset: li;
+  list-style-type: none;
+  padding-left: 2em;
+  margin-left: 0; }
+  .data-label-list li {
+    position: relative; }
+    .data-label-list li:before {
+      counter-increment: li;
+      content: counter(li) ".";
+      color: #cccccc;
+      position: absolute;
+      left: -2em; }
+  @media (min-width: 1280px) {
+    .data-label-list {
+      padding-left: 0; }
+      .data-label-list li:before {
+        transform: translate(-100%, 0);
+        left: -24px; } }
+
 .styleguide-label {
   opacity: .2; }
   @media (min-width: 768px) {

@@ -5,7 +5,7 @@
   color: $gray;
   position: absolute;
   left: -16px;
-  line-height: 30px; // set to corresponding headline line-height for better vertical alignment
+  line-height: 26px; // set to corresponding headline line-height for better vertical alignment
   transform: translate(-100%,0);
 }
 
@@ -13,7 +13,7 @@
 .data-label-list {
   counter-reset: li;
   list-style-type: none;
-  padding-left: 2.5em;
+  padding-left: 2em;
   margin-left: 0;
 
   li {
@@ -21,10 +21,10 @@
 
     &:before {
       counter-increment: li;
-      content: '0'  counter(li, decimal-leading-zero);
+      content: counter(li) ".";
       color: $gray;
       position: absolute;
-      left: -(2.5em);
+      left: -(2em);
     }
   }
   @media(min-width: $screen-lg) {
