@@ -31,6 +31,7 @@ collections:
   brand-guides:
   brand-assets:
   atoms:
+    output: true
   modules:
     output: true
 
@@ -39,6 +40,12 @@ defaults:
     scope:
       path: ""
       type: modules
+    values:
+      layout: modules
+  -
+    scope:
+      path: ""
+      type: atoms
     values:
       layout: modules
 
