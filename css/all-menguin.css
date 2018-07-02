@@ -3943,7 +3943,7 @@ tbody.collapse.in {
       color: black;
       background-color: transparent; }
   .navbar-default .navbar-text {
-    color: #000; }
+    color: transparent; }
   .navbar-default .navbar-nav > li > a {
     color: #4A4A4A; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
