@@ -8461,6 +8461,9 @@ ol.fancy-list {
   background-color: #03DAA0 !important;
   color: white; }
 
+.bg-transparent {
+  background-color: transparent; }
+
 .bg-texture, .bg-texture-inverted {
   color: white;
   background-color: #000;
