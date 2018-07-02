@@ -10435,8 +10435,7 @@ img.pos-bottom-left {
 
 .navbar-sub {
   border: none;
-  min-height: auto;
-  background-color: #F5F5F5; }
+  min-height: auto; }
   .navbar-sub .navbar-nav {
     width: 100%; }
     .navbar-sub .navbar-nav li a:after {

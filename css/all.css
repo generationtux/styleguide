@@ -15307,8 +15307,7 @@ img.pos-bottom-left {
 
 .navbar-sub {
   border: none;
-  min-height: auto;
-  background-color: #f8f8f8; }
+  min-height: auto; }
   .navbar-sub .navbar-nav {
     width: 100%; }
     .navbar-sub .navbar-nav li a:after {
