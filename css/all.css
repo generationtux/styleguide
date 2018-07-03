@@ -10098,6 +10098,12 @@ ol.fancy-list {
       .row.row-eq-height > [class*="col-"] > .panel {
         flex-grow: 1; } }
 
+.align-items-stretch {
+  align-items: stretch; }
+
+.align-items-center {
+  align-items: center; }
+
 .pos-top-right,
 .pos-top-left,
 .pos-bottom-right,
