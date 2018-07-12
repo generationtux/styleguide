@@ -19,8 +19,8 @@ h4,.h4,
 h5,.h5,
 h6,.h6 {
   font-family: $roboto-font-stack;
+  letter-spacing: 0;
   font-weight: 700;
-  line-height: 1.1;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -31,108 +31,50 @@ small {
 
 
 ////////////////////////////////////
-// type setting - Mobile first
+// type setting - desktop first
 ////////////////////////////////////
-$ms-scale: 1.18;
-$ms0:  22px;
-$ms-1: $ms0 / $ms-scale;
-$ms-2: $ms-1 / $ms-scale;
-$ms1:  $ms0 * $ms-scale;
-$ms2:  $ms1 * $ms-scale;
-$ms3:  $ms2 * $ms-scale;
-$ms4:  $ms3 * $ms-scale;
-$ms5:  $ms4 * $ms-scale;
-$ms6:  $ms5 * $ms-scale;
 
 h1, .h1 {
-  font-size: $ms4;
+  font-size: $font-size-h1;
+  line-height: 1;
 }
 h2, .h2 {
-  font-size: $ms3;
+  font-size: $font-size-h2;
+  line-height: 1.2;
 }
 h3, .h3 {
-  font-size: $ms2;
-  line-height: 1.2;
+  font-size: $font-size-h3;
+  line-height: 1.5;
 }
 h4, .h4 {
-  font-size: $ms1;
-  letter-spacing: .03em;
-  line-height: 1.2;
+  font-size: $font-size-h4;
+  line-height: 1.5;
 }
 h5, .h5 {
-  font-size: $ms0;
-  letter-spacing: .04em;
-  line-height: 1.25;
+  font-size: $font-size-h5;
+  line-height: 1.6;
 }
 h6, .h6 {
-  font-size: $ms-1;
-  letter-spacing: .05em;
-  line-height: 1.35;
+  font-size: $font-size-h6;
+  line-height: 1.5;
 }
 
-////////////////////////////////////
-// type setting - larger than mobile
-////////////////////////////////////
-$ms-scale: 1.333;
-$ms0:  22px;
-$ms-1: $ms0 / $ms-scale;
-$ms-2: $ms-1 / $ms-scale;
-$ms1:  $ms0 * $ms-scale;
-$ms2:  $ms1 * $ms-scale;
-$ms3:  $ms2 * $ms-scale;
-$ms4:  $ms3 * $ms-scale;
-$ms5:  $ms4 * $ms-scale;
-$ms6:  $ms5 * $ms-scale;
-$ms7:  $ms6 * $ms-scale;
-
-@media(min-width: $screen-sm-min) {
+@media(max-width:1600px) {
   h1, .h1 {
-    font-size: $ms4;
+    font-size: $font-size-h1*.7;
+  }
+}
+
+@media(max-width: $screen-sm-max) {
+  h1, .h1 {
+    font-size: $font-size-h1*.4;
   }
   h2, .h2 {
-    font-size: $ms3;
-  }
-  h3, .h3 {
-    font-size: $ms2;
-  }
-  h4, .h4 {
-    font-size: $ms1;
-  }
-  h5, .h5 {
-    font-size: $ms0;
-  }
-  h6, .h6 {
-    font-size: $ms-1;
-  }
-} // headline screen sm-min
-
-h1.h1-lg,
-h1 > .h1-lg {
-  @media(min-width:1600px) {
-    font-size: $ms5;
+    font-size: $font-size-h2*.7;
   }
 }
 
-h3,.h3 {
-  &.lowercase, &.normalcase {
-    letter-spacing: .01em;
-  }
-}
-h4,.h4 {
-  &.lowercase, &.normalcase {
-    letter-spacing: .02em;
-  }
-}
-h5,.h5 {
-  &.lowercase, &.normalcase {
-    letter-spacing: .03em;
-  }
-}
-h6,.h6 {
-  &.lowercase, &.normalcase {
-    letter-spacing: .04em;
-  }
-}
+
 
 p {
   margin-bottom: $type-spacing-md;
