@@ -3,18 +3,13 @@
 // -----------------------------------------------------------------------------
 
 $roboto-font-stack: "Roboto", sans-serif;
-$roboto-condensed-font-stack: 'Roboto', sans-serif;
-$roboto-mono-font-stack: 'Roboto Mono', monospace;
-$domain-font-stack: 'DomD Reg', georgia, serif;
-$druk-font-stack: 'Druk Web', sans-serif;
 $line-height: 1.642;
 
 body {
-    font-family: $roboto-mono-font-stack;
-    font-style: normal;
-    font-weight: 400;
-    word-spacing: -.1em;
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.65px;
 }
 
 h1,.h1,
@@ -23,13 +18,11 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-    font-family: $druk-font-stack;
-    line-height: 1.1;
-    margin-top: 0;
-    margin-bottom: 0;
-    letter-spacing: .03em;
-    text-transform: uppercase;
-    word-spacing: 0;
+  font-family: $roboto-font-stack;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 small {
@@ -145,7 +138,7 @@ p {
   margin-bottom: $type-spacing-md;
 }
 .p {
-  font-family: $roboto-mono-font-stack;
+  font-family: $roboto-font-stack;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;

@@ -1,16 +1,5 @@
 
 @font-face {
-  font-family: 'Druk Web';
-  src: url($font-url+'Druk-Medium-Web.eot');
-  src: url($font-url+'Druk-Medium-Web.eot?#iefix') format('embedded-opentype'),
-       url($font-url+'Druk-Medium-Web.woff2') format('woff2'),
-       url($font-url+'Druk-Medium-Web.woff') format('woff');
-  font-weight:  500;
-  font-style:   normal;
-  font-stretch: normal;
-}
-
-@font-face {
 	font-family: 'icomoon-20161125';
 	src:url($font-url+'icomoon-20161125.eot?byysie');
 	src:url($font-url+'icomoon-20161125.eot?#iefixbyysie') format('embedded-opentype'),
@@ -21,7 +10,4 @@
 	font-style: normal;
 }
 
-// loads roboto 400 and 700 from google font
-// loaded from:
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
