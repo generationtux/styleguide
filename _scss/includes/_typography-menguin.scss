@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 
 $roboto-font-stack: "Roboto", sans-serif;
-$line-height: 1.642;
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -48,15 +47,18 @@ h3, .h3 {
 }
 h4, .h4 {
   font-size: $font-size-h4;
+  letter-spacing: .25px;
   line-height: 1.5;
 }
 h5, .h5 {
   font-size: $font-size-h5;
+  letter-spacing: .32px;
   line-height: 1.6;
 }
 h6, .h6 {
   font-size: $font-size-h6;
   line-height: 1.5;
+  letter-spacing: .65px;
 }
 
 @media(max-width:1600px) {
@@ -90,12 +92,14 @@ p {
 p.small,
 .p.small {
   font-size: $font-size-small;
-  line-height: 1.8;
+  letter-spacing: 1px;
+  line-height: 1.69;
 }
 p.xsmall,
 .p.xsmall {
   font-size: $font-size-xsmall;
-  letter-spacing: .01em; 
+  letter-spacing: .8px;
+  line-height: 1.66;
 }
 p.large {
   font-size: 18px;
