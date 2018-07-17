@@ -8,17 +8,44 @@
 
 .btn {
   white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, 1, $btn-border-radius-base);
-
+  @extend h6;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, 13px, 1, $btn-border-radius-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   &:active,
   &.active {
     // @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
     box-shadow: none;
   }
-
+  &:before {
+    content:"";
+    font-size: 18px;
+    transition: all .3s ease;
+    color: white;
+    margin-right: 8px;
+    background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2012.21%208.71%22%3E%3Cline%20stroke%3D%22%23fff%22%20y1%3D%224.31%22%20x2%3D%2211%22%20y2%3D%224.31%22/%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20points%3D%227.5%200.35%2011.5%204.35%207.5%208.35%22/%3E%3C/svg%3E) no-repeat center center;
+    background-size: 12.21px 8.71px;
+    width: 12.21px;
+    height: 8.71px;
+  }
 }
+
+.btn-default,
+.btn-link {
+  &:before {
+    color: black;
+    background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2012.21%208.71%22%3E%3Cline%20stroke%3D%22%23000%22%20y1%3D%224.31%22%20x2%3D%2211%22%20y2%3D%224.31%22/%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000%22%20points%3D%227.5%200.35%2011.5%204.35%207.5%208.35%22/%3E%3C/svg%3E);
+  }
+}
+.btn-primary,
+.btn-primary:active,
+.btn-primary.active {
+  &:hover {
+    background-color: $gray-dark;
+  }
+}
+
 
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
   opacity: .3;
@@ -38,7 +65,7 @@
   letter-spacing: .04em;
 }
 .btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal,  $font-size-small, $line-height-small, $btn-border-radius-small);
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal,  $font-size-xsmall, $line-height-small, $btn-border-radius-small);
   letter-spacing: .04em;
 }
 
@@ -72,7 +99,7 @@
 
 // Alternate buttons style
 // --------------------------------------------------
-.btn-alt {
+.btn.btn-alt {
   $btn-size: 40px;
   background-color: transparent !important;
   border-color: transparent !important;
@@ -81,17 +108,25 @@
   position: relative;
   z-index: 0;
   padding-left: $btn-size + 16px;
+  transition: all .3s ease;
   &:before {
-
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate3d(1px,-50%,0);
+    width: $btn-size;
+    line-height: 0;
+    text-align: center;
+    transition: all .3s ease;
+    color: black;
   }
-  &:before {
+  &:after {
     content: "";
     width: $btn-size;
     height: $btn-size;
     line-height: $btn-size;
     display: inline-block;
     vertical-align: middle;
-    border-radius: $btn-size;
     margin-right: 8px;
     position: absolute;
     left: 0;
@@ -99,33 +134,46 @@
     transform: translateY(-50%);
     transform-origin: left center;
     z-index: -1;
-    transition: all .3s ease;
-  }
-  &:after {
-    content:"\2192";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate3d(1px,-3px,0);
-    width: $btn-size;
-    line-height: 0;
-    text-align: center;
-    transition: all .3s ease;
-    font-size: 18px;
-    color: black;
+    transition: all .2s ease;
   }
   &:hover {
-    &:before {
+    color: white; 
+    &:after {
       width: 100%;
     }
-    &:after {
-      transform: translate3d(8px,-3px,0);
+    &:before {
+      transform: translate3d(8px,-50%,0);
     }
   }
 }
+.btn-alt.btn-default {
+  &:after {
+    background-color: $brand-default;
+  }
+}
+.btn-alt.btn-primary {
+  &:after {
+    background-color: $brand-primary;
+  }
+}
 .btn-alt.btn-info {
-  &:before {
+  &:after {
     background-color: $brand-info;
+  }
+}
+.btn-alt.btn-success {
+  &:after {
+    background-color: $brand-success;
+  }
+}
+.btn-alt.btn-danger {
+  &:after {
+    background-color: $brand-danger;
+  }
+}
+.btn-alt.btn-link {
+  &:hover {
+    color: black;
   }
 }
 

@@ -50,9 +50,9 @@ $gray-light:             #E6E6E6;
 $gray-lighter:           #F5F5F5;
 
 $brand-default:         $gray-light;
-$brand-primary:         #00B9FF;
+$brand-primary:         #000000;
 $brand-success:         #03DAA0;
-$brand-info:            #39C9FF;
+$brand-info:            #00B9FF;
 
 $brand-warning:         #dccba8;
 $brand-danger:          #b45250;
@@ -189,7 +189,7 @@ $border-radius-small:       0px;
 // //
 // //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                500;
+$btn-font-weight:                700;
 
 $btn-default-color:              #000;
 $btn-default-bg:                 $brand-default;
@@ -218,9 +218,9 @@ $btn-danger-border:              darken($btn-danger-bg, 0%);
 $btn-link-disabled-color:        $gray-light;
 
 // // Allows for customizing button radius independently from global border radius
-$btn-border-radius-base:         40px;
-$btn-border-radius-large:        60px;
-$btn-border-radius-small:        20px;
+$btn-border-radius-base:         0;
+$btn-border-radius-large:        0;
+$btn-border-radius-small:        0;
 
 
 // //== Forms
