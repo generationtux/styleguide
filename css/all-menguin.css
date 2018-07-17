@@ -1196,7 +1196,7 @@ h6,
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 125px; }
+  font-size: 50px; }
 
 h2, .h2 {
   font-size: 50px; }
@@ -7926,9 +7926,13 @@ h6,
 small {
   color: #4A4A4A; }
 
-h1, .h1 {
+.display-1 {
   font-size: 125px;
   line-height: 1; }
+
+h1, .h1 {
+  font-size: 50px;
+  line-height: 1.2; }
 
 h2, .h2 {
   font-size: 50px;
@@ -7955,11 +7959,11 @@ h6, .btn, .h6 {
 
 @media (max-width: 1600px) {
   h1, .h1 {
-    font-size: 87.5px; } }
+    font-size: 35px; } }
 
 @media (max-width: 991px) {
   h1, .h1 {
-    font-size: 50px; }
+    font-size: 20px; }
   h2, .h2 {
     font-size: 35px; } }
 

@@ -33,9 +33,14 @@ small {
 // type setting - desktop first
 ////////////////////////////////////
 
+.display-1 {
+  font-size: $font-size-display-1;
+  line-height: 1;
+}
+
 h1, .h1 {
   font-size: $font-size-h1;
-  line-height: 1;
+  line-height: 1.2;
 }
 h2, .h2 {
   font-size: $font-size-h2;
