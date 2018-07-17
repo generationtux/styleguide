@@ -66,16 +66,8 @@ h6, .h6 {
   letter-spacing: .65px;
 }
 
-@media(max-width:1600px) {
-  h1, .h1 {
-    font-size: $font-size-h1*.7;
-  }
-}
-
 @media(max-width: $screen-sm-max) {
-  h1, .h1 {
-    font-size: $font-size-h1*.4;
-  }
+  h1, .h1,
   h2, .h2 {
     font-size: $font-size-h2*.7;
   }

@@ -7957,13 +7957,8 @@ h6, .btn, .h6 {
   line-height: 1.5;
   letter-spacing: .65px; }
 
-@media (max-width: 1600px) {
-  h1, .h1 {
-    font-size: 35px; } }
-
 @media (max-width: 991px) {
-  h1, .h1 {
-    font-size: 20px; }
+  h1, .h1,
   h2, .h2 {
     font-size: 35px; } }
 
