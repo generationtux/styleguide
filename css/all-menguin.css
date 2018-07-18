@@ -10127,16 +10127,18 @@ img.pos-bottom-left {
   justify-content: center; }
   .btn:active, .btn.active {
     box-shadow: none; }
-  .btn:before {
-    content: "";
-    font-size: 18px;
-    transition: all .3s ease;
-    color: white;
-    margin-right: 8px;
-    background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2012.21%208.71%22%3E%3Cline%20stroke%3D%22%23fff%22%20y1%3D%224.31%22%20x2%3D%2211%22%20y2%3D%224.31%22/%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20points%3D%227.5%200.35%2011.5%204.35%207.5%208.35%22/%3E%3C/svg%3E) no-repeat center center;
-    background-size: 12.21px 8.71px;
-    width: 12.21px;
-    height: 8.71px; }
+
+.btn-arrow:before,
+.btn-alt:before {
+  content: "";
+  font-size: 18px;
+  transition: all .3s ease;
+  color: white;
+  margin-right: 8px;
+  background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2012.21%208.71%22%3E%3Cline%20stroke%3D%22%23fff%22%20y1%3D%224.31%22%20x2%3D%2211%22%20y2%3D%224.31%22/%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20points%3D%227.5%200.35%2011.5%204.35%207.5%208.35%22/%3E%3C/svg%3E) no-repeat center center;
+  background-size: 12.21px 8.71px;
+  width: 12.21px;
+  height: 8.71px; }
 
 .btn-default:before,
 .btn-link:before {
@@ -10207,26 +10209,17 @@ img.pos-bottom-left {
   .btn.btn-alt:before {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translate3d(1px, -50%, 0);
     width: 40px;
-    line-height: 0;
-    text-align: center;
-    transition: all .3s ease;
-    color: black; }
+    transition: all .3s ease; }
   .btn.btn-alt:after {
     content: "";
     width: 40px;
     height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     z-index: -1;
     transition: all .2s ease; }
   .btn.btn-alt:hover {
@@ -10234,7 +10227,7 @@ img.pos-bottom-left {
     .btn.btn-alt:hover:after {
       width: 100%; }
     .btn.btn-alt:hover:before {
-      transform: translate3d(8px, -50%, 0); }
+      transform: translate3d(8px, 0, 0); }
 
 .btn-alt.btn-default:after {
   background-color: #E6E6E6; }
