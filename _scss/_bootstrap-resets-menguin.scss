@@ -68,7 +68,7 @@ $brand-danger:          #b45250;
 $text-color:            $gray-dark;
 
 // //** Global textual link color.
-$link-color:            $brand-primary; // brand gold darkened to meet AA accessibility standards
+$link-color:            $brand-info; // brand gold darkened to meet AA accessibility standards
 // //** Link hover color set via `darken()` function.
 $link-hover-color:      lighten($link-color, 10%);
 // //** Link hover decoration.
