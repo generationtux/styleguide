@@ -8064,17 +8064,9 @@ hr.hr-small {
       margin-top: 32px;
       margin-bottom: 32px; } }
 
-.readable-line {
-  max-width: 40em; }
-
 @media (min-width: 768px) {
   .t-indent {
     text-indent: -.21em; } }
-
-.text-center ul,
-.text-center ol {
-  text-align: left;
-  display: inline-block; }
 
 .page-header {
   margin-top: 0.4em;
@@ -8285,17 +8277,6 @@ img.context--copy {
 .text-white {
   color: white; }
 
-.text-truncate,
-.text-overflow {
-  text-overflow: clip;
-  text-overflow: ellipsis;
-  text-overflow: "…";
-  -webkit-text-overflow: clip;
-  -webkit-text-overflow: ellipsis;
-  -webkit-text-overflow: "…";
-  white-space: nowrap;
-  overflow: hidden; }
-
 .hero-title:after {
   content: '';
   width: 27%;
@@ -8380,6 +8361,34 @@ ol.fancy-list {
     margin-top: 6px; }
   ol.fancy-list ol ol li:last-child {
     margin-bottom: 0; }
+
+.readable-line {
+  max-width: 40em; }
+
+.text-center ul,
+.text-center ol {
+  text-align: left;
+  display: inline-block; }
+
+.line-clip-outer {
+  overflow: hidden;
+  display: block; }
+
+.line-clip-inner {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; }
+
+.text-truncate,
+.text-overflow {
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: "…";
+  -webkit-text-overflow: clip;
+  -webkit-text-overflow: ellipsis;
+  -webkit-text-overflow: "…";
+  white-space: nowrap;
+  overflow: hidden; }
 
 @media (min-width: 768px) {
   .container-fluid {

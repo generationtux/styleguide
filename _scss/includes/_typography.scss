@@ -232,23 +232,11 @@ hr.hr-small {
     margin-bottom: $type-spacing-lg;
   }
 }
-
-.readable-line {
-  max-width: 40em;
-}
-
 .t-indent {
   @media(min-width: $screen-sm-min) {
     text-indent:-.21em;
   }
 }
-
-.text-center ul,
-.text-center ol {
-    text-align: left;
-    display: inline-block;
-}
-
 .page-header {
     margin-top: 0.4em;
     margin-bottom: 0.75em;
@@ -353,20 +341,6 @@ img {
 .text-gray-lighter { color: $gray-lighter; }
 .text-white { color: white; }
 
-// -----------------------------------------------------------------------------
-// Text truncation
-// -----------------------------------------------------------------------------
-.text-truncate,
-.text-overflow {
-  text-overflow: clip;
-  text-overflow: ellipsis;
-  text-overflow: "…";
-  -webkit-text-overflow: clip;
-  -webkit-text-overflow: ellipsis;
-  -webkit-text-overflow: "…";
-  white-space: nowrap;
-  overflow: hidden;
-}
 
 
 // -----------------------------------------------------------------------------
