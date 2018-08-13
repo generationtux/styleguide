@@ -197,11 +197,61 @@ $col-9: $col-size * 9;
 $col-10: $col-size * 10;
 $col-11: $col-size * 11;
 $col-12: $col-size * 12;
-.bg-panel-left-10 {
+
+.bg-panel-left-1 {
   background-position: left center;
   &:before {
     background-position: left center;
-    background-size: calc(100% * #{$col-10}) 100%;
+    background-size: calc(100% * #{$col-1}) 100%;
+  }
+}
+.bg-panel-left-2 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-2}) 100%;
+  }
+}
+.bg-panel-left-3 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-3}) 100%;
+  }
+}
+.bg-panel-left-4 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-4}) 100%;
+  }
+}
+.bg-panel-left-5 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-5}) 100%;
+  }
+}
+.bg-panel-left-6 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-6}) 100%;
+  }
+}
+.bg-panel-left-7 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-7}) 100%;
+  }
+}
+.bg-panel-left-8 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-8}) 100%;
   }
 }
 .bg-panel-left-9 {
@@ -211,11 +261,68 @@ $col-12: $col-size * 12;
     background-size: calc(100% * #{$col-9}) 100%;
   }
 }
-.bg-panel-left-2 {
+.bg-panel-left-10 {
   background-position: left center;
   &:before {
     background-position: left center;
+    background-size: calc(100% * #{$col-10}) 100%;
+  }
+}
+.bg-panel-left-11 {
+  background-position: left center;
+  &:before {
+    background-position: left center;
+    background-size: calc(100% * #{$col-11}) 100%;
+  }
+}
+
+.bg-panel-right-1 {
+  background-position: right center;
+  &:before {
+    background-position: right center;
+    background-size: calc(100% * #{$col-1}) 100%;
+  }
+}
+.bg-panel-right-2 {
+  background-position: right center;
+  &:before {
+    background-position: right center;
     background-size: calc(100% * #{$col-2}) 100%;
+  }
+}
+.bg-panel-right-3 {
+  background-position: right center;
+  &:before {
+    background-position: right center;
+    background-size: calc(100% * #{$col-3}) 100%;
+  }
+}
+.bg-panel-right-4 {
+  background-position: right center;
+  &:before {
+    background-position: right center;
+    background-size: calc(100% * #{$col-4}) 100%;
+  }
+}
+.bg-panel-right-5 {
+  background-position: right center;
+  &:before {
+    background-position: right center;
+    background-size: calc(100% * #{$col-5}) 100%;
+  }
+}
+.bg-panel-right-6 {
+  background-position: right center;
+  &:before {
+    background-position: right center;
+    background-size: calc(100% * #{$col-6}) 100%;
+  }
+}
+.bg-panel-right-7 {
+  background-position: right center;
+  &:before {
+    background-position: right center;
+    background-size: calc(100% * #{$col-7}) 100%;
   }
 }
 .bg-panel-right-8 {

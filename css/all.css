@@ -8608,11 +8608,53 @@ ol.fancy-list {
   .bg-panel-white:before {
     background-image: linear-gradient(to right, white 100%, white 100%); }
 
-.bg-panel-left-10 {
+.bg-panel-left-1 {
   background-position: left center; }
-  .bg-panel-left-10:before {
+  .bg-panel-left-1:before {
     background-position: left center;
-    background-size: calc(100% * 0.83333) 100%; }
+    background-size: calc(100% * 0.08333) 100%; }
+
+.bg-panel-left-2 {
+  background-position: left center; }
+  .bg-panel-left-2:before {
+    background-position: left center;
+    background-size: calc(100% * 0.16667) 100%; }
+
+.bg-panel-left-3 {
+  background-position: left center; }
+  .bg-panel-left-3:before {
+    background-position: left center;
+    background-size: calc(100% * 0.25) 100%; }
+
+.bg-panel-left-4 {
+  background-position: left center; }
+  .bg-panel-left-4:before {
+    background-position: left center;
+    background-size: calc(100% * 0.33333) 100%; }
+
+.bg-panel-left-5 {
+  background-position: left center; }
+  .bg-panel-left-5:before {
+    background-position: left center;
+    background-size: calc(100% * 0.41667) 100%; }
+
+.bg-panel-left-6 {
+  background-position: left center; }
+  .bg-panel-left-6:before {
+    background-position: left center;
+    background-size: calc(100% * 0.5) 100%; }
+
+.bg-panel-left-7 {
+  background-position: left center; }
+  .bg-panel-left-7:before {
+    background-position: left center;
+    background-size: calc(100% * 0.58333) 100%; }
+
+.bg-panel-left-8 {
+  background-position: left center; }
+  .bg-panel-left-8:before {
+    background-position: left center;
+    background-size: calc(100% * 0.66667) 100%; }
 
 .bg-panel-left-9 {
   background-position: left center; }
@@ -8620,11 +8662,59 @@ ol.fancy-list {
     background-position: left center;
     background-size: calc(100% * 0.75) 100%; }
 
-.bg-panel-left-2 {
+.bg-panel-left-10 {
   background-position: left center; }
-  .bg-panel-left-2:before {
+  .bg-panel-left-10:before {
     background-position: left center;
+    background-size: calc(100% * 0.83333) 100%; }
+
+.bg-panel-left-11 {
+  background-position: left center; }
+  .bg-panel-left-11:before {
+    background-position: left center;
+    background-size: calc(100% * 0.91667) 100%; }
+
+.bg-panel-right-1 {
+  background-position: right center; }
+  .bg-panel-right-1:before {
+    background-position: right center;
+    background-size: calc(100% * 0.08333) 100%; }
+
+.bg-panel-right-2 {
+  background-position: right center; }
+  .bg-panel-right-2:before {
+    background-position: right center;
     background-size: calc(100% * 0.16667) 100%; }
+
+.bg-panel-right-3 {
+  background-position: right center; }
+  .bg-panel-right-3:before {
+    background-position: right center;
+    background-size: calc(100% * 0.25) 100%; }
+
+.bg-panel-right-4 {
+  background-position: right center; }
+  .bg-panel-right-4:before {
+    background-position: right center;
+    background-size: calc(100% * 0.33333) 100%; }
+
+.bg-panel-right-5 {
+  background-position: right center; }
+  .bg-panel-right-5:before {
+    background-position: right center;
+    background-size: calc(100% * 0.41667) 100%; }
+
+.bg-panel-right-6 {
+  background-position: right center; }
+  .bg-panel-right-6:before {
+    background-position: right center;
+    background-size: calc(100% * 0.5) 100%; }
+
+.bg-panel-right-7 {
+  background-position: right center; }
+  .bg-panel-right-7:before {
+    background-position: right center;
+    background-size: calc(100% * 0.58333) 100%; }
 
 .bg-panel-right-8 {
   background-position: right center; }
