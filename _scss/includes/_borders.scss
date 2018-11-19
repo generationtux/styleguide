@@ -57,21 +57,22 @@
 .bordered-white {
     border-color: white;
 }
-.bordered-light {
+.bordered-light, .bordered-gray-light {
     border-color: $gray-light;
 }
-.bordered-lighter {
+.bordered-lighter, .bordered-gray-lighter {
     border-color: $gray-lighter;
 }
 .bordered-gray {
     border-color: $gray;
 }
-.bordered-dark {
+.bordered-dark, .bordered-gray-dark {
     border-color: $gray-dark;
 }
-.bordered-darker {
+.bordered-darker, .bordered-gray-darker {
     border-color: $gray-darker;
 }
 .bordered-info {
   border-color: $brand-info;
 }
+
