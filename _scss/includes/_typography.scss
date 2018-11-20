@@ -60,20 +60,20 @@ $ms6:  $ms5 * $ms-scale;
 
 h1, .h1 {
     font-size: $ms3;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms3 * $domd-size-adjust;
     }
 }
 h2, .h2 {
     font-size: $ms2;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms2 * $domd-size-adjust;
     }
 }
 h3, .h3 {
     font-size: $ms1;
     line-height: 1.3;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms1 * $domd-size-adjust;
     }
 }
@@ -81,7 +81,7 @@ h4, .h4 {
     font-size: $ms0;
     letter-spacing: .04em;
     line-height: 1.3;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms0 * $domd-size-adjust;
       letter-spacing: 0;
     }
@@ -90,7 +90,7 @@ h5, .h5 {
     font-size: $ms-1;
     letter-spacing: .06em;
     line-height: 1.35;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms-1 * $domd-size-adjust;
       letter-spacing: .03em;
     }
@@ -99,7 +99,7 @@ h6, .h6 {
     font-size: $ms-2;
     letter-spacing: .08em;
     line-height: 1.45;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms-2 * $domd-size-adjust;
       letter-spacing: .03em;
     }
@@ -123,37 +123,37 @@ $ms7:  $ms6 * $ms-scale;
 @media(min-width: $screen-sm-min) {
   h1, .h1 {
     font-size: $ms3;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms3 * $domd-size-adjust;
     }
   }
   h2, .h2 {
     font-size: $ms2;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms2 * $domd-size-adjust;
     }
   }
   h3, .h3 {
     font-size: $ms1;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms1 * $domd-size-adjust;
     }
   }
   h4, .h4 {
     font-size: $ms0;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms0 * $domd-size-adjust;
     }
   }
   h5, .h5 {
     font-size: $ms-1;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms-1 * $domd-size-adjust;
     }
   }
   h6, .h6 {
     font-size: $ms-2;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms-2 * $domd-size-adjust;
     }
   }
@@ -162,7 +162,7 @@ $ms7:  $ms6 * $ms-scale;
 @media(min-width: $screen-lg-min) {
   h1, .h1 {
     font-size: $ms4;
-    &.domd, & > .domd {
+    &.domd {
       font-size: $ms4 * $domd-size-adjust;
     }
   }
