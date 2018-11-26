@@ -126,7 +126,14 @@
   color: #000;
 }
 
-
+.btn-transparent {
+  background-color: transparent;
+  border-color: transparent;
+  color: #000;
+  &:hover {
+    background-color: white;
+  }
+}
 
 
 

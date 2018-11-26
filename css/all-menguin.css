@@ -10415,6 +10415,13 @@ img.pos-bottom-left {
   background-color: transparent;
   color: #000; }
 
+.btn-transparent {
+  background-color: transparent;
+  border-color: transparent;
+  color: #000; }
+  .btn-transparent:hover {
+    background-color: white; }
+
 .btn.btn-alt {
   background-color: transparent !important;
   border-color: transparent !important;
