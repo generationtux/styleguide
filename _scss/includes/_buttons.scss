@@ -237,54 +237,54 @@ input[type="button"] {
 
 .btn-default {
   // @include button-variant($color, $background, $border);
-  @include button-variant(black, $brand-default, $brand-default);
+  @include button-variant(black, $btn-default-bg, $btn-default-bg);
 }
 .btn-primary {
-  @include button-variant(white, $brand-primary, $brand-primary);
+  @include button-variant(white, $btn-primary-bg, $btn-primary-bg);
 }
 .btn-info {
-  @include button-variant(black, $brand-info, $brand-info);
+  @include button-variant(black, $btn-info-bg, $btn-info-bg);
 }
 .btn-success {
-  @include button-variant(white, $brand-success, $brand-success);
+  @include button-variant(white, $btn-success-bg, $btn-success-bg);
 }
 .btn-danger {
-  @include button-variant(white, $brand-danger, $brand-danger);
+  @include button-variant(white, $btn-danger-bg, $btn-danger-bg);
 }
 
 // Alternate buttons
 // --------------------------------------------------
 
 .btn-hollow-default {
-  @include button-variant(black, white, $brand-default);
+  @include button-variant(black, white, $btn-default-bg);
 }
 .btn-hollow-primary {
-  @include button-variant($brand-primary, white, $brand-primary);
+  @include button-variant($btn-primary-bg, white, $btn-primary-bg);
 }
 .btn-hollow-info {
-  @include button-variant($link-color, white, $brand-info);
+  @include button-variant($link-color, white, $btn-info-bg);
 }
 .btn-hollow-success {
-  @include button-variant($brand-success, white, $brand-success);
+  @include button-variant($btn-success-bg, white, $btn-success-bg);
 }
 .btn-hollow-danger {
-  @include button-variant($brand-danger, white, $brand-danger);
+  @include button-variant($btn-danger-bg, white, $btn-danger-bg);
 }
 
 .btn-hollow-transparent-default {
-  @include button-variant(black, transparent, $brand-default);
+  @include button-variant(black, transparent, $btn-default-bg);
 }
 .btn-hollow-transparent-primary {
-  @include button-variant(black, transparent, $brand-primary);
+  @include button-variant(black, transparent, $btn-primary-bg);
 }
 .btn-hollow-transparent-info {
-  @include button-variant(black, transparent, $brand-info);
+  @include button-variant(black, transparent, $btn-info-bg);
 }
 .btn-hollow-transparent-success {
-  @include button-variant(black, transparent, $brand-success);
+  @include button-variant(black, transparent, $btn-success-bg);
 }
 .btn-hollow-transparent-danger {
-  @include button-variant(black, transparent, $brand-danger);
+  @include button-variant(black, transparent, $btn-danger-bg);
 }
 
 .btn-transparent,

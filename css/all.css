@@ -8735,19 +8735,19 @@ input[type="button"].btn-block {
 
 .btn-default {
   color: black;
-  background-color: #e6e6e6;
-  border-color: #e6e6e6; }
+  background-color: #cccccc;
+  border-color: #cccccc; }
   .btn-default:hover, .btn-default:focus {
-    border-bottom-color: #e6e6e6; }
+    border-bottom-color: #cccccc; }
   .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus,
   fieldset[disabled] .btn-default:hover,
   fieldset[disabled] .btn-default:focus {
-    background-color: #e6e6e6;
-    border-color: #e6e6e6;
+    background-color: #cccccc;
+    border-color: #cccccc;
     color: black;
     box-shadow: none; }
   .btn-default .badge {
-    color: #e6e6e6;
+    color: #cccccc;
     background-color: black; }
 
 .btn-primary {
@@ -8821,14 +8821,14 @@ input[type="button"].btn-block {
 .btn-hollow-default {
   color: black;
   background-color: white;
-  border-color: #e6e6e6; }
+  border-color: #cccccc; }
   .btn-hollow-default:hover, .btn-hollow-default:focus {
-    border-bottom-color: #e6e6e6; }
+    border-bottom-color: #cccccc; }
   .btn-hollow-default.disabled:hover, .btn-hollow-default.disabled:focus, .btn-hollow-default[disabled]:hover, .btn-hollow-default[disabled]:focus,
   fieldset[disabled] .btn-hollow-default:hover,
   fieldset[disabled] .btn-hollow-default:focus {
     background-color: white;
-    border-color: #e6e6e6;
+    border-color: #cccccc;
     color: black;
     box-shadow: none; }
   .btn-hollow-default .badge {
@@ -8906,14 +8906,14 @@ input[type="button"].btn-block {
 .btn-hollow-transparent-default {
   color: black;
   background-color: transparent;
-  border-color: #e6e6e6; }
+  border-color: #cccccc; }
   .btn-hollow-transparent-default:hover, .btn-hollow-transparent-default:focus {
-    border-bottom-color: #e6e6e6; }
+    border-bottom-color: #cccccc; }
   .btn-hollow-transparent-default.disabled:hover, .btn-hollow-transparent-default.disabled:focus, .btn-hollow-transparent-default[disabled]:hover, .btn-hollow-transparent-default[disabled]:focus,
   fieldset[disabled] .btn-hollow-transparent-default:hover,
   fieldset[disabled] .btn-hollow-transparent-default:focus {
     background-color: transparent;
-    border-color: #e6e6e6;
+    border-color: #cccccc;
     color: black;
     box-shadow: none; }
   .btn-hollow-transparent-default .badge {
