@@ -56,92 +56,92 @@
 // --------------------------------------------------
 
 .btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  // @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  // @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
 .bg-primary,
 .bg-black,
 .bg-texture {
   .btn-primary {
-    @include button-variant($btn-primary-color, $btn-primary-bg, $gray-dark);
+    // @include button-variant($btn-primary-color, $btn-primary-bg, $gray-dark);
   }
 }
 .btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  // @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
 }
 .btn-info {
-  @include button-variant(#000000, $btn-info-bg, $btn-info-border);
+  // @include button-variant(#000000, $btn-info-bg, $btn-info-border);
 }
 .btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+  // @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
 }
 .btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  // @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 .btn-white {
-  @include button-variant(black, white, white);
+  // @include button-variant(black, white, white);
 }
 .btn-transparent {
-  @include button-variant(black, transparent, transparent);
+  // @include button-variant(black, transparent, transparent);
 }
 .btn-link {
-  @include button-variant($link-color, transparent, transparent);
+  // @include button-variant($link-color, transparent, transparent);
 }
 
 
 .btn-hollow-default {
-  @include button-variant(black, white, $btn-default-bg);
+  // @include button-variant(black, white, $btn-default-bg);
 }
 .btn-hollow-primary {
-  @include button-variant($brand-primary, white, $brand-primary);
+  // @include button-variant($brand-primary, white, $brand-primary);
 }
 .bg-primary,
 .bg-black,
 .bg-texture {
   .btn-hollow-primary {
-    @include button-variant($brand-primary, white, $gray-dark);
+    // @include button-variant($brand-primary, white, $gray-dark);
   }
 }
 .btn-hollow-success {
-  @include button-variant($brand-success, white, $brand-success);
+  // @include button-variant($brand-success, white, $brand-success);
 }
 .btn-hollow-info    {
-  @include button-variant($link-color, white, $brand-info);
+  // @include button-variant($link-color, white, $brand-info);
 }
 .btn-hollow-warning {
-  @include button-variant($brand-warning, white, $brand-warning);
+  // @include button-variant($brand-warning, white, $brand-warning);
 }
 .btn-hollow-danger  {
-  @include button-variant($brand-danger, white, $brand-danger);
+  // @include button-variant($brand-danger, white, $brand-danger);
 }
 
 
 .btn-hollow-transparent-default { 
-  @include button-variant(black, transparent, $btn-default-bg);
+  // @include button-variant(black, transparent, $btn-default-bg);
 }
 .btn-hollow-transparent-primary { 
-  @include button-variant($brand-primary, transparent, $brand-primary);
+  // @include button-variant($brand-primary, transparent, $brand-primary);
 }
 .bg-primary,
 .bg-black,
 .bg-texture {
   .btn-hollow-transparent-primary {
-    @include button-variant($brand-primary, transparent, $gray-dark);
+    // @include button-variant($brand-primary, transparent, $gray-dark);
   }
 }
 .btn-hollow-transparent-success { 
-  @include button-variant($brand-success, transparent, $brand-success);
+  // @include button-variant($brand-success, transparent, $brand-success);
 }
 .btn-hollow-transparent-info    { 
-  @include button-variant($link-color, transparent, $brand-info);
+  // @include button-variant($link-color, transparent, $brand-info);
 }
 .btn-hollow-transparent-warning { 
-  @include button-variant($brand-warning, transparent, $brand-warning);
+  // @include button-variant($brand-warning, transparent, $brand-warning);
 }
 .btn-hollow-transparent-danger  { 
-  @include button-variant($brand-danger, transparent, $brand-danger);
+  // @include button-variant($brand-danger, transparent, $brand-danger);
 }
 
 
@@ -170,57 +170,5 @@
     display: inline !important;
     line-height: 0;
     visibility: visible;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Color Swatch Btn Filters
-// -----------------------------------------------------------------------------
-// color, bg, border
-.btn-color-swatch-black  {@include button-variant(white, #222, #222);}
-.btn-color-swatch-white  {@include button-variant(black, white, $gray-light);}
-.btn-color-swatch-red    {@include button-variant(white, #c4383f, #c4383f);}
-.btn-color-swatch-grey   {@include button-variant(white, #818085, #818085);}
-.btn-color-swatch-purple {@include button-variant(white, #8559c8, #8559c8);}
-.btn-color-swatch-pink   {@include button-variant(white, #e04ea7, #e04ea7);}
-.btn-color-swatch-blue   {@include button-variant(white, #6779de, #6779de);}
-.btn-color-swatch-green  {@include button-variant(white, #2bb18f, #2bb18f);}
-.btn-color-swatch-yellow {@include button-variant(black, #f6eaab, #f6eaab);}
-.btn-color-swatch-orange {@include button-variant(white, #f9905b, #f9905b);}
-.btn-color-swatch-tan  {@include button-variant(black, #d1bea0, #d1bea0);}
-
-
-// -----------------------------------------------------------------------------
-// Facboook
-// -----------------------------------------------------------------------------
-.btn-primary-fb {
-  background-color: #3b5998;
-  color: white;
-
-  &:hover {
-    color: #3b5998;
-    background-color: white;
-    border-color: #3b5998;
-  }
-
-  &:active,
-  &:focus {
-    background-color: #3b5998;
-    color: white;
-    outline: none;
-  }
-
-  &:before {
-      font-family: 'icomoon-20161125';
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: "\e900";
-      padding-right: 0.4em;
   }
 }
