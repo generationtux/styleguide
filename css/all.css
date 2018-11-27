@@ -8992,53 +8992,51 @@ img.pos-bottom-left {
 
 .btn-hollow-default {
   border-color: #e6e6e6;
-  background-color: white;
-  color: #000; }
+  background-color: white; }
 
 .btn-hollow-primary {
   border-color: #000;
-  background-color: white;
-  color: #000; }
+  color: #000;
+  background-color: white; }
 
 .btn-hollow-info {
   border-color: #E6CE9A;
-  background-color: white;
-  color: #000; }
+  color: #b0893a;
+  background-color: white; }
 
 .btn-hollow-success {
   border-color: #519281;
-  background-color: white;
-  color: #000; }
+  color: #519281;
+  background-color: white; }
 
 .btn-hollow-danger {
   border-color: #b45250;
-  background-color: white;
-  color: #000; }
+  color: #b45250;
+  background-color: white; }
 
 .btn-hollow-transparent-default {
   border-color: #e6e6e6;
-  background-color: transparent;
-  color: #000; }
+  background-color: transparent; }
 
 .btn-hollow-transparent-primary {
   border-color: #000;
-  background-color: transparent;
-  color: #000; }
+  color: #000;
+  background-color: transparent; }
 
 .btn-hollow-transparent-info {
   border-color: #E6CE9A;
-  background-color: transparent;
-  color: #000; }
+  color: #b0893a;
+  background-color: transparent; }
 
 .btn-hollow-transparent-success {
   border-color: #519281;
-  background-color: transparent;
-  color: #000; }
+  color: #519281;
+  background-color: transparent; }
 
 .btn-hollow-transparent-danger {
   border-color: #b45250;
-  background-color: transparent;
-  color: #000; }
+  color: #b45250;
+  background-color: transparent; }
 
 .btn-transparent {
   background-color: transparent;

@@ -149,62 +149,60 @@
   // @extend .btn-default;
   border-color: $brand-default;
   background-color: white;
-  color: #000;
 }
 .btn-hollow-primary {
   // @extend .btn-primary;
   border-color: $brand-primary;
+  color: $brand-primary;
   background-color: white;
-  color: #000;
 }
 .btn-hollow-info {
   // @extend .btn-info;
   border-color: $brand-info;
+  color: $link-color;
   background-color: white;
-  color: #000;
 }
 .btn-hollow-success {
   // @extend .btn-success;
   border-color: $brand-success;
+  color: $brand-success;
   background-color: white;
-  color: #000;
 }
 .btn-hollow-danger {
   // @extend .btn-danger;
   border-color: $brand-danger;
+  color: $brand-danger;
   background-color: white;
-  color: #000;
 }
 
 .btn-hollow-transparent-default {
   // @extend .btn-default;
   border-color: $brand-default;
   background-color: transparent;
-  color: #000;
 }
 .btn-hollow-transparent-primary {
   // @extend .btn-primary;
   border-color: $brand-primary;
+  color: $brand-primary;
   background-color: transparent;
-  color: #000;
 }
 .btn-hollow-transparent-info {
   // @extend .btn-info;
   border-color: $brand-info;
+  color: $link-color;
   background-color: transparent;
-  color: #000;
 }
 .btn-hollow-transparent-success {
   // @extend .btn-success;
   border-color: $brand-success;
+  color: $brand-success;
   background-color: transparent;
-  color: #000;
 }
 .btn-hollow-transparent-danger {
   // @extend .btn-danger;
   border-color: $brand-danger;
+  color: $brand-danger;
   background-color: transparent;
-  color: #000;
 }
 
 .btn-transparent {
