@@ -13,6 +13,10 @@
   transition: all .2s ease;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
 
+  &.btn-info {
+    color: black;
+  }
+
   &:hover,
   &:focus,
   &.focus {
@@ -20,6 +24,9 @@
     background-color: white;
     @include shadow-level(2);
     text-decoration: none;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
   }
 
   &:active,
@@ -43,18 +50,15 @@
     color: black;
     background-color: white;
 
+    &:hover,
     &:focus,
     &.focus {
-      color: black;
+      color: $btn-default-color;
       background-color: white;
-      border-color: $gray;
-    }
-
-    &:hover {
-      color: black;
       @include shadow-level(2);
-      background: white;
-      border-color: transparent;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-right-color: transparent;
     }
   }
   &.active {

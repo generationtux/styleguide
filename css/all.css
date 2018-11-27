@@ -8899,11 +8899,16 @@ img.pos-bottom-left {
   font-size: 12.8px;
   line-height: 1;
   border-radius: 0; }
+  .btn.btn-info {
+    color: black; }
   .btn:hover, .btn:focus, .btn.focus {
     color: #000;
     background-color: white;
     box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
-    text-decoration: none; }
+    text-decoration: none;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent; }
   .btn:active, .btn.active {
     box-shadow: none; }
   .btn.disabled, .btn[disabled],
@@ -8913,18 +8918,16 @@ img.pos-bottom-left {
   .open > .btn.dropdown-toggle {
     color: black;
     background-color: white; }
-    .btn.active:focus, .btn.active.focus,
+    .btn.active:hover, .btn.active:focus, .btn.active.focus,
+    .open > .btn.dropdown-toggle:hover,
     .open > .btn.dropdown-toggle:focus,
     .open > .btn.dropdown-toggle.focus {
-      color: black;
+      color: #000;
       background-color: white;
-      border-color: #cccccc; }
-    .btn.active:hover,
-    .open > .btn.dropdown-toggle:hover {
-      color: black;
       box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
-      background: white;
-      border-color: transparent; }
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-right-color: transparent; }
   .btn.active {
     text-align: right;
     padding-left: 40px;
