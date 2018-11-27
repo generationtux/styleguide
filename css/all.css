@@ -8629,7 +8629,6 @@ fieldset[disabled] a.btn {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
     color: #c7a256;
-    text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
