@@ -9041,11 +9041,13 @@ img.pos-bottom-left {
   color: #b45250;
   background-color: transparent; }
 
-.btn-transparent {
+.btn-transparent,
+.btn-transparent.active {
   background-color: transparent;
   border-color: transparent;
   color: #000; }
-  .btn-transparent:hover {
+  .btn-transparent:hover,
+  .btn-transparent.active:hover {
     background-color: white; }
 
 .nav-pills .btn-warning:hover, .nav-pills .btn-warning:focus {
