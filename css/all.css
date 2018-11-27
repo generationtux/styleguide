@@ -8991,29 +8991,10 @@ input[type="button"].btn-block {
 
 .btn-transparent,
 .btn-transparent.active {
-  background-color: transparent;
-  border-color: transparent;
-  color: #000; }
+  background-color: transparent; }
   .btn-transparent:hover,
   .btn-transparent.active:hover {
     background-color: white; }
-
-.nav-pills .btn-warning:hover, .nav-pills .btn-warning:focus {
-  background-color: #dccba8; }
-
-.nav-pills .btn-warning:active, .nav-pills .btn-warning.active {
-  background-color: #cab17c; }
-
-.btn.pull-left {
-  margin-right: 1em; }
-
-.btn.pull-right {
-  margin-left: 1em; }
-
-.btn-filter.active .glyphicon {
-  display: inline !important;
-  line-height: 0;
-  visibility: visible; }
 
 .navbar-with-columns .navbar-collapse,
 .navbar-with-columns .navbar-nav,

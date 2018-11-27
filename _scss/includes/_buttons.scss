@@ -130,25 +130,9 @@ input[type="button"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-//
-//
-//
 //
 // Our overrides 
-//
-//
-//
-//
+// -------------
 
 
 .btn {
@@ -307,38 +291,7 @@ input[type="button"] {
 .btn-transparent,
 .btn-transparent.active {
   background-color: transparent;
-  border-color: transparent;
-  color: #000;
   &:hover {
     background-color: white;
-  }
-}
-
-
-.nav-pills .btn-warning {
-  &:hover,
-  &:focus  {
-    background-color: $brand-warning;
-  }
-
-  &:active,
-  &.active {
-    background-color: darken($brand-warning, 12%);
-  }
-}
-
-.btn.pull-left {
-  margin-right: 1em;
-}
-
-.btn.pull-right {
-  margin-left: 1em;
-}
-
-.btn-filter.active {
-  .glyphicon {
-    display: inline !important;
-    line-height: 0;
-    visibility: visible;
   }
 }
