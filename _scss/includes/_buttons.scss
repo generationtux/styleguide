@@ -10,7 +10,7 @@
   @extend .h5;
   white-space: nowrap;
   position: relative;
-  transition: all .18s cubic-bezier(0,.5,1,1);
+  transition: all .15s cubic-bezier(0,.5,1,1);
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
 
   &.btn-info {
@@ -23,11 +23,13 @@
     color: $btn-default-color;
     background-color: white;
     @include shadow-level(2);
+    transition-duration: .2s;
     text-decoration: none;
     border-left-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
     &:active {
+      transition-duration: .08s;
       color: black !important;
       background-color: $gray-lighter !important;
       box-shadow: none !important;

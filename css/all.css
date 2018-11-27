@@ -8894,7 +8894,7 @@ img.pos-bottom-left {
 .btn {
   white-space: nowrap;
   position: relative;
-  transition: all 0.18s cubic-bezier(0, 0.5, 1, 1);
+  transition: all 0.15s cubic-bezier(0, 0.5, 1, 1);
   padding: 16px 32px;
   font-size: 12.8px;
   line-height: 1;
@@ -8905,11 +8905,13 @@ img.pos-bottom-left {
     color: #000;
     background-color: white;
     box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15);
+    transition-duration: .2s;
     text-decoration: none;
     border-left-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent; }
     .btn:hover:active, .btn:focus:active, .btn.focus:active {
+      transition-duration: .08s;
       color: black !important;
       background-color: #f8f8f8 !important;
       box-shadow: none !important;
