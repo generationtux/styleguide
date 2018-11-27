@@ -8894,7 +8894,7 @@ img.pos-bottom-left {
 .btn {
   white-space: nowrap;
   position: relative;
-  transition: all 0.2s cubic-bezier(0, 0.5, 1, 1);
+  transition: all 0.18s cubic-bezier(0, 0.5, 1, 1);
   padding: 16px 32px;
   font-size: 12.8px;
   line-height: 1;
@@ -8909,15 +8909,21 @@ img.pos-bottom-left {
     border-left-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent; }
-  .btn:active, .btn.active {
-    box-shadow: none; }
+    .btn:hover:active, .btn:focus:active, .btn.focus:active {
+      color: black !important;
+      background-color: #f8f8f8 !important;
+      box-shadow: none !important;
+      border-left-color: #e6e6e6 !important;
+      border-top-color: #e6e6e6 !important;
+      border-right-color: #e6e6e6 !important; }
   .btn.disabled, .btn[disabled],
   fieldset[disabled] .btn {
     opacity: .3; }
   .btn.active,
   .open > .btn.dropdown-toggle {
     color: black;
-    background-color: white; }
+    background-color: white;
+    box-shadow: none; }
     .btn.active:hover, .btn.active:focus, .btn.active.focus,
     .open > .btn.dropdown-toggle:hover,
     .open > .btn.dropdown-toggle:focus,
@@ -8932,9 +8938,6 @@ img.pos-bottom-left {
     text-align: right;
     padding-left: 40px;
     padding-right: 24px; }
-    .btn.active:active {
-      background-color: #f8f8f8;
-      box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1); }
     .btn.active:before {
       content: "\e013";
       font-family: 'Glyphicons Halflings';
@@ -8972,6 +8975,8 @@ img.pos-bottom-left {
   .btn.btn-link:hover {
     background-color: transparent;
     box-shadow: none; }
+  .btn.btn-link.active:hover {
+    color: #b0893a; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 24px 48px;

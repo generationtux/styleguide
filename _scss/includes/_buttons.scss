@@ -10,7 +10,7 @@
   @extend .h5;
   white-space: nowrap;
   position: relative;
-  transition: all .2s cubic-bezier(0,.5,1,1);
+  transition: all .18s cubic-bezier(0,.5,1,1);
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
 
   &.btn-info {
@@ -27,12 +27,14 @@
     border-left-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
-  }
-
-  &:active,
-  &.active {
-    // @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-    box-shadow: none;
+    &:active {
+      color: black !important;
+      background-color: $gray-lighter !important;
+      box-shadow: none !important;
+      border-left-color: $gray-light !important;
+      border-top-color: $gray-light !important;
+      border-right-color: $gray-light !important;
+    }
   }
 
   &.disabled,
@@ -49,6 +51,7 @@
   .open > &.dropdown-toggle {
     color: black;
     background-color: white;
+    box-shadow: none;
 
     &:hover,
     &:focus,
@@ -65,10 +68,6 @@
     text-align: right;
     padding-left: $padding-base-horizontal + 8;
     padding-right: $padding-base-horizontal - 8;
-    &:active {
-      background-color: $gray-lighter;
-      box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
-    }
     &:before {
       content: "\e013";
       font-family: 'Glyphicons Halflings';
@@ -120,7 +119,7 @@
       box-shadow: none;
     }
     &.active:hover {
-      // color: $color
+      color: $link-color;
     }
   }
 
