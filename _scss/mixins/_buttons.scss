@@ -9,33 +9,8 @@
   border-color: $border;
 
   &:hover,
-  &:focus,
-  &:active,
-  &.active,
-  &.active,
-  .open > &.dropdown-toggle {
-    color: black;
-    background-color: white;
-    border-color: $border;
-    box-shadow: none;
-
-    &:hover,
-    &:focus {
-      color: black;
-      border-color: $border;
-      background-color: white;
-      border-left-color: transparent;
-      border-top-color: transparent;
-      border-right-color: transparent;
-      @include shadow-level(2);
-    }
-  }
-
-  &:active {
-    &:hover {
-      background-color: $gray-lighter;
-      box-shadow: inset 0 0 0 1px $gray-light;
-    }
+  &:focus {
+    border-bottom-color: $border;
   }
   
   &.disabled,
