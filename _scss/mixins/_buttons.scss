@@ -1,147 +1,52 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
 @mixin button-variant($color, $background, $border) {
   color: $color;
   background-color: $background;
   border-color: $border;
-  position: relative;
-  @include transition(all .13s ease);
-  backface-visibility: hidden;
 
-  &:after {
-    content:"";
-    position: absolute;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    height: 100%;
-    background-color: $border;
-    transform-origin: left bottom;
-    z-index: 10;
-    opacity: 0;
-    transition: all .13s ease-out;
-    backface-visibility: hidden;
-    transform: scaleY(1);
-  }
-
+  &:hover,
   &:focus,
-  &.focus {
-    color: $color;
-    background-color: $background;
+  &:active,
+  &.active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: black;
+    background-color: white;
     border-color: $border;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      color: black;
+      border-color: $border;
+      background-color: white;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      @include shadow-level(2);
+    }
   }
 
-  &:hover {
-    color: black;
-    @include shadow-level(2);
-    background-color: white;
-    border-color: transparent;
-    &:active {
-      border-color: transparent;
+  &:active {
+    &:hover {
       background-color: $gray-lighter;
-      box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
-      color: black;
-    }
-    &:after {
-      opacity: 1;
-      transform: scaleY(.1);
+      box-shadow: inset 0 0 0 1px $gray-light;
     }
   }
   
-  // &.active,
-  // .open > &.dropdown-toggle {
-  //   color: black;
-  //   background-color: white;
-  //   border-color: $border;
-
-  //   &:focus,
-  //   &.focus {
-  //     color: black;
-  //     background-color: white;
-  //     border-color: $border;
-  //   }
-
-  //   &:hover {
-  //     color: black;
-  //     @include shadow-level(2);
-  //     background: white;
-  //     border-color: transparent;
-  //   }
-  // }
-  // &.active {
-  //   text-align: right;
-  //   padding-left: $padding-base-horizontal + 8;
-  //   padding-right: $padding-base-horizontal - 8;
-  //   &:active {
-  //     background-color: $gray-lighter;
-  //     box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
-  //   }
-  //   &:before {
-  //     content: "\e013";
-  //     font-family: 'Glyphicons Halflings';
-  //     margin-right: 4px;
-  //     position: absolute;
-  //     left: 20px;
-  //     color: $gray-darker;
-  //     font-size: .9em;
-  //   }
-  // }
-  // &.btn-lg.active {
-  //   padding-left: $padding-large-horizontal + 16;
-  //   padding-right: $padding-large-horizontal - 16;
-  //   &:before {
-  //     left: $padding-large-horizontal - 14;
-  //   }
-  // }
-  // &.btn-sm.active {
-  //   padding-left: $padding-small-horizontal + 4;
-  //   padding-right: $padding-small-horizontal - 4;
-  //   &:before {
-  //     left: 8px;
-  //     font-size: .8em;
-  //     line-height: 1.8;
-  //   }
-  // }
-  // &.btn-xs.active {
-  //   padding-left: $padding-xs-horizontal;
-  //   padding-right: $padding-xs-horizontal;
-  //   &:before {
-  //     left: 0px;
-  //     position: relative;
-  //     font-size: .8em;
-  //   }
-  // }
-
-  // &.btn-block.active {
-  //   text-align: center;
-  //   padding-left: $padding-base-horizontal;
-  //   padding-right: $padding-base-horizontal;
-  //   &:before {
-  //     position: relative;
-  //     left: 0;
-  //   }
-  // }
-  // &.btn-link {
-  //   &:hover {
-  //     background-color: transparent;
-  //     box-shadow: none;
-  //   }
-  //   &.active:hover {
-  //     color: $color
-  //   }
-  // }
-
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
     &:hover,
-    &:focus,
-    &.focus {
-      color: $color;
+    &:focus {
       background-color: $background;
-      border-color: $border;
-      box-shadow: none;
-      &:after {
-        opacity: 0;
-      }
+          border-color: $border;
+                 color: $color;
+            box-shadow: none;
     }
   }
 
@@ -149,31 +54,4 @@
     color: $background;
     background-color: $color;
   }
-
-
-  // disable hover effects for mobile devices
-  @media (any-hover: none) {
-    &:hover {
-      color: $color;
-
-      // lightness 0-100 scale
-      @if (lightness($background) > 90) {
-        background-color: darken($background, 5%);
-      } @else if (lightness($background) < 10) {
-        background-color: lighten($background, 20%);
-      } @else {
-        background-color: darken($background, 8%);
-      }
-
-      border-color: $border !important;
-      box-shadow: none !important;
-      &:after {
-        opacity: 0;
-      }
-    }
-  }
-
-
 }
-
-
