@@ -8921,7 +8921,7 @@ input[type="button"].btn-block {
     background-color: black; }
 
 .btn-hollow-transparent-primary {
-  color: black;
+  color: #000;
   background-color: transparent;
   border-color: black; }
   .btn-hollow-transparent-primary:hover, .btn-hollow-transparent-primary:focus {
@@ -8931,14 +8931,14 @@ input[type="button"].btn-block {
   fieldset[disabled] .btn-hollow-transparent-primary:focus {
     background-color: transparent;
     border-color: black;
-    color: black;
+    color: #000;
     box-shadow: none; }
   .btn-hollow-transparent-primary .badge {
     color: transparent;
-    background-color: black; }
+    background-color: #000; }
 
 .btn-hollow-transparent-info {
-  color: black;
+  color: #b0893a;
   background-color: transparent;
   border-color: #e6ce9a; }
   .btn-hollow-transparent-info:hover, .btn-hollow-transparent-info:focus {
@@ -8948,14 +8948,14 @@ input[type="button"].btn-block {
   fieldset[disabled] .btn-hollow-transparent-info:focus {
     background-color: transparent;
     border-color: #e6ce9a;
-    color: black;
+    color: #b0893a;
     box-shadow: none; }
   .btn-hollow-transparent-info .badge {
     color: transparent;
-    background-color: black; }
+    background-color: #b0893a; }
 
 .btn-hollow-transparent-success {
-  color: black;
+  color: #519281;
   background-color: transparent;
   border-color: #519281; }
   .btn-hollow-transparent-success:hover, .btn-hollow-transparent-success:focus {
@@ -8965,14 +8965,14 @@ input[type="button"].btn-block {
   fieldset[disabled] .btn-hollow-transparent-success:focus {
     background-color: transparent;
     border-color: #519281;
-    color: black;
+    color: #519281;
     box-shadow: none; }
   .btn-hollow-transparent-success .badge {
     color: transparent;
-    background-color: black; }
+    background-color: #519281; }
 
 .btn-hollow-transparent-danger {
-  color: black;
+  color: #b45250;
   background-color: transparent;
   border-color: #b45250; }
   .btn-hollow-transparent-danger:hover, .btn-hollow-transparent-danger:focus {
@@ -8982,11 +8982,11 @@ input[type="button"].btn-block {
   fieldset[disabled] .btn-hollow-transparent-danger:focus {
     background-color: transparent;
     border-color: #b45250;
-    color: black;
+    color: #b45250;
     box-shadow: none; }
   .btn-hollow-transparent-danger .badge {
     color: transparent;
-    background-color: black; }
+    background-color: #b45250; }
 
 .btn-transparent,
 .btn-transparent.active {

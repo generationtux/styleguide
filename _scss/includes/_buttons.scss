@@ -275,16 +275,16 @@ input[type="button"] {
   @include button-variant(black, transparent, $btn-default-border);
 }
 .btn-hollow-transparent-primary {
-  @include button-variant(black, transparent, $btn-primary-border);
+  @include button-variant($btn-primary-bg, transparent, $btn-primary-border);
 }
 .btn-hollow-transparent-info {
-  @include button-variant(black, transparent, $btn-info-border);
+  @include button-variant($link-color, transparent, $btn-info-border);
 }
 .btn-hollow-transparent-success {
-  @include button-variant(black, transparent, $btn-success-border);
+  @include button-variant($btn-success-bg, transparent, $btn-success-border);
 }
 .btn-hollow-transparent-danger {
-  @include button-variant(black, transparent, $btn-danger-border);
+  @include button-variant($btn-danger-bg, transparent, $btn-danger-border);
 }
 
 .btn-transparent,
