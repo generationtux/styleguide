@@ -46,88 +46,88 @@
     }
   }
   
-  &.active,
-  .open > &.dropdown-toggle {
-    color: black;
-    background-color: white;
-    border-color: $border;
+  // &.active,
+  // .open > &.dropdown-toggle {
+  //   color: black;
+  //   background-color: white;
+  //   border-color: $border;
 
-    &:focus,
-    &.focus {
-      color: black;
-      background-color: white;
-      border-color: $border;
-    }
+  //   &:focus,
+  //   &.focus {
+  //     color: black;
+  //     background-color: white;
+  //     border-color: $border;
+  //   }
 
-    &:hover {
-      color: black;
-      @include shadow-level(2);
-      background: white;
-      border-color: transparent;
-    }
-  }
-  &.active {
-    text-align: right;
-    padding-left: $padding-base-horizontal + 8;
-    padding-right: $padding-base-horizontal - 8;
-    &:active {
-      background-color: $gray-lighter;
-      box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
-    }
-    &:before {
-      content: "\e013";
-      font-family: 'Glyphicons Halflings';
-      margin-right: 4px;
-      position: absolute;
-      left: 20px;
-      color: $gray-darker;
-      font-size: .9em;
-    }
-  }
-  &.btn-lg.active {
-    padding-left: $padding-large-horizontal + 16;
-    padding-right: $padding-large-horizontal - 16;
-    &:before {
-      left: $padding-large-horizontal - 14;
-    }
-  }
-  &.btn-sm.active {
-    padding-left: $padding-small-horizontal + 4;
-    padding-right: $padding-small-horizontal - 4;
-    &:before {
-      left: 8px;
-      font-size: .8em;
-      line-height: 1.8;
-    }
-  }
-  &.btn-xs.active {
-    padding-left: $padding-xs-horizontal;
-    padding-right: $padding-xs-horizontal;
-    &:before {
-      left: 0px;
-      position: relative;
-      font-size: .8em;
-    }
-  }
+  //   &:hover {
+  //     color: black;
+  //     @include shadow-level(2);
+  //     background: white;
+  //     border-color: transparent;
+  //   }
+  // }
+  // &.active {
+  //   text-align: right;
+  //   padding-left: $padding-base-horizontal + 8;
+  //   padding-right: $padding-base-horizontal - 8;
+  //   &:active {
+  //     background-color: $gray-lighter;
+  //     box-shadow: inset 0 1px 4px rgba(0,0,0,.1);
+  //   }
+  //   &:before {
+  //     content: "\e013";
+  //     font-family: 'Glyphicons Halflings';
+  //     margin-right: 4px;
+  //     position: absolute;
+  //     left: 20px;
+  //     color: $gray-darker;
+  //     font-size: .9em;
+  //   }
+  // }
+  // &.btn-lg.active {
+  //   padding-left: $padding-large-horizontal + 16;
+  //   padding-right: $padding-large-horizontal - 16;
+  //   &:before {
+  //     left: $padding-large-horizontal - 14;
+  //   }
+  // }
+  // &.btn-sm.active {
+  //   padding-left: $padding-small-horizontal + 4;
+  //   padding-right: $padding-small-horizontal - 4;
+  //   &:before {
+  //     left: 8px;
+  //     font-size: .8em;
+  //     line-height: 1.8;
+  //   }
+  // }
+  // &.btn-xs.active {
+  //   padding-left: $padding-xs-horizontal;
+  //   padding-right: $padding-xs-horizontal;
+  //   &:before {
+  //     left: 0px;
+  //     position: relative;
+  //     font-size: .8em;
+  //   }
+  // }
 
-  &.btn-block.active {
-    text-align: center;
-    padding-left: $padding-base-horizontal;
-    padding-right: $padding-base-horizontal;
-    &:before {
-      position: relative;
-      left: 0;
-    }
-  }
-  &.btn-link {
-    &:hover {
-      background-color: transparent;
-      box-shadow: none;
-    }
-    &.active:hover {
-      color: $color
-    }
-  }
+  // &.btn-block.active {
+  //   text-align: center;
+  //   padding-left: $padding-base-horizontal;
+  //   padding-right: $padding-base-horizontal;
+  //   &:before {
+  //     position: relative;
+  //     left: 0;
+  //   }
+  // }
+  // &.btn-link {
+  //   &:hover {
+  //     background-color: transparent;
+  //     box-shadow: none;
+  //   }
+  //   &.active:hover {
+  //     color: $color
+  //   }
+  // }
 
   &.disabled,
   &[disabled],
