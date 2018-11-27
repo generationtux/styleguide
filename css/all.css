@@ -8587,14 +8587,16 @@ img.pos-bottom-left {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 16px 32px;
-  font-size: 16px;
-  line-height: 1.5;
-  border-radius: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  position: relative;
+  transition: all 0.15s cubic-bezier(0, 0.5, 1, 1);
+  padding: 16px 32px;
+  font-size: 12.8px;
+  line-height: 1;
+  border-radius: 0; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
@@ -8607,9 +8609,7 @@ img.pos-bottom-left {
   .btn.disabled, .btn[disabled],
   fieldset[disabled] .btn {
     cursor: not-allowed;
-    opacity: 0.65;
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
+    opacity: .3;
     box-shadow: none; }
 
 a.btn.disabled,
@@ -8649,72 +8649,70 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-.btn {
-  white-space: nowrap;
-  position: relative;
-  transition: all 0.15s cubic-bezier(0, 0.5, 1, 1);
-  padding: 16px 32px;
-  font-size: 12.8px;
-  line-height: 1;
-  border-radius: 0; }
-  .btn.btn-info {
-    color: black; }
-  .btn:hover, .btn:focus {
-    color: black;
-    background-color: white;
-    border-left-color: transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15); }
-  .btn:active, .btn.active:active {
-    background-color: #f8f8f8;
-    box-shadow: inset 0 0 0 1px #e6e6e6; }
-  .btn.active {
-    color: black;
-    background-color: white;
-    text-align: right;
-    padding-left: 40px;
-    padding-right: 24px; }
-    .btn.active:before {
-      content: "\e013";
-      font-family: 'Glyphicons Halflings';
-      margin-right: 4px;
-      position: absolute;
-      left: 20px;
-      color: #404042;
-      font-size: .9em; }
-  .btn.btn-lg.active, .btn-group-lg > .btn.active {
-    padding-left: 64px;
-    padding-right: 32px; }
-    .btn.btn-lg.active:before, .btn-group-lg > .btn.active:before {
-      left: 34px; }
-  .btn.btn-sm.active, .btn-group-sm > .btn.active {
-    padding-left: 20px;
-    padding-right: 12px; }
-    .btn.btn-sm.active:before, .btn-group-sm > .btn.active:before {
-      left: 8px;
-      font-size: .8em;
-      line-height: 1.8; }
-  .btn.btn-xs.active, .btn-group-xs > .btn.active {
-    padding-left: 8px;
-    padding-right: 8px; }
-    .btn.btn-xs.active:before, .btn-group-xs > .btn.active:before {
-      left: 0px;
-      position: relative;
-      font-size: .8em; }
-  .btn.btn-block.active {
-    text-align: center;
-    padding-left: 32px;
-    padding-right: 32px; }
-    .btn.btn-block.active:before {
-      position: relative;
-      left: 0; }
-  .btn.btn-link:hover {
-    background-color: transparent;
-    box-shadow: none; }
-  .btn.btn-link.active:hover {
-    color: #b0893a;
-    box-shadow: none; }
+.btn:hover, .btn:focus {
+  color: black;
+  background-color: white;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15); }
+
+.btn:active, .btn.active:active {
+  background-color: #f8f8f8;
+  box-shadow: inset 0 0 0 1px #e6e6e6; }
+
+.btn.active {
+  color: black;
+  background-color: white;
+  text-align: right;
+  padding-left: 40px;
+  padding-right: 24px; }
+  .btn.active:before {
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    margin-right: 4px;
+    position: absolute;
+    left: 20px;
+    color: #404042;
+    font-size: .9em; }
+
+.btn.btn-lg.active, .btn-group-lg > .btn.active {
+  padding-left: 64px;
+  padding-right: 32px; }
+  .btn.btn-lg.active:before, .btn-group-lg > .btn.active:before {
+    left: 34px; }
+
+.btn.btn-sm.active, .btn-group-sm > .btn.active {
+  padding-left: 20px;
+  padding-right: 12px; }
+  .btn.btn-sm.active:before, .btn-group-sm > .btn.active:before {
+    left: 8px;
+    font-size: .8em;
+    line-height: 1.8; }
+
+.btn.btn-xs.active, .btn-group-xs > .btn.active {
+  padding-left: 8px;
+  padding-right: 8px; }
+  .btn.btn-xs.active:before, .btn-group-xs > .btn.active:before {
+    left: 0px;
+    position: relative;
+    font-size: .8em; }
+
+.btn.btn-block.active {
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px; }
+  .btn.btn-block.active:before {
+    position: relative;
+    left: 0; }
+
+.btn.btn-link:hover {
+  background-color: transparent;
+  box-shadow: none; }
+
+.btn.btn-link.active:hover {
+  color: #b0893a;
+  box-shadow: none; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 24px 48px;

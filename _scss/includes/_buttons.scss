@@ -20,8 +20,12 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
   @include user-select(none);
+  
+  @extend .h5;
+  position: relative;
+  transition: all .15s cubic-bezier(0,.5,1,1);
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
 
   &,
   &:active,
@@ -49,8 +53,8 @@
   &[disabled],
   fieldset[disabled] & {
     cursor: $cursor-disabled;
-    @include opacity(.65);
-    @include box-shadow(none);
+    opacity: .3;
+    box-shadow: none;
   }
 
   // [converter] extracted a& to a.btn
@@ -148,15 +152,6 @@ input[type="button"] {
 
 
 .btn {
-  @extend .h5;
-  white-space: nowrap;
-  position: relative;
-  transition: all .15s cubic-bezier(0,.5,1,1);
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
-
-  &.btn-info {
-    color: black;
-  }
 
   &:hover,
   &:focus {
