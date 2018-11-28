@@ -1,15 +1,40 @@
+// -------------------------------
+// base button style copied from bootstrap
+// -------------------------------
+
 //
 // Buttons
 // --------------------------------------------------
-
 
 // Base styles
 // --------------------------------------------------
 
 .btn {
-  @extend .h5;
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
   white-space: nowrap;
+  @include user-select(none);
+  
+  @extend .h5;
+  position: relative;
+  transition: all .15s cubic-bezier(0,.5,1,1);
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, 1, $btn-border-radius-base);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
 
   &:hover,
   &:focus,
@@ -20,14 +45,173 @@
 
   &:active,
   &.active {
-    // @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
-    box-shadow: none;
+    outline: 0;
+    background-image: none;
   }
 
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
+    cursor: $cursor-disabled;
     opacity: .3;
+    box-shadow: none;
+  }
+
+  // [converter] extracted a& to a.btn
+}
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+}
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  color: $link-color;
+  font-weight: normal;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+
+
+
+//
+// Our overrides 
+// -------------
+
+
+.btn {
+
+  &:hover,
+  &:focus {
+    color: black;
+    background-color: white;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    @include shadow-level(2);
+  }
+
+  &:active,
+  &.active:active {
+    background-color: $gray-lighter;
+    box-shadow: inset 0 0 0 1px $gray-light;
+  }
+
+  &.active {
+    color: black;
+    background-color: white;
+    text-align: right;
+    padding-left: $padding-base-horizontal + 8;
+    padding-right: $padding-base-horizontal - 8;
+    &:before {
+      content: "\e013";
+      font-family: 'Glyphicons Halflings';
+      margin-right: 4px;
+      position: absolute;
+      left: 20px;
+      color: $gray-darker;
+      font-size: .9em;
+    }
+  }
+  &.btn-lg.active {
+    padding-left: $padding-large-horizontal + 16;
+    padding-right: $padding-large-horizontal - 16;
+    &:before {
+      left: $padding-large-horizontal - 14;
+    }
+  }
+  &.btn-sm.active {
+    padding-left: $padding-small-horizontal + 4;
+    padding-right: $padding-small-horizontal - 4;
+    &:before {
+      left: 8px;
+      font-size: .8em;
+      line-height: 1.8;
+    }
+  }
+  &.btn-xs.active {
+    padding-left: $padding-xs-horizontal;
+    padding-right: $padding-xs-horizontal;
+    &:before {
+      left: 0px;
+      position: relative;
+      font-size: .8em;
+    }
+  }
+
+  &.btn-block.active {
+    text-align: center;
+    padding-left: $padding-base-horizontal;
+    padding-right: $padding-base-horizontal;
+    &:before {
+      position: relative;
+      left: 0;
+    }
+  }
+  &.btn-link {
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    &.active:hover {
+      color: $link-color;
+      box-shadow: none;
+    }
   }
 
 }
@@ -51,176 +235,62 @@
 }
 
 
-
-// Alternate buttons
-// --------------------------------------------------
-
 .btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  // @include button-variant($color, $background, $bordborder);
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-bg);
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
-.bg-primary,
-.bg-black,
-.bg-texture {
-  .btn-primary {
-    @include button-variant($btn-primary-color, $btn-primary-bg, $gray-dark);
-  }
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
 }
 .btn-success {
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
 }
-.btn-info {
-  @include button-variant(#000000, $btn-info-bg, $btn-info-border);
-}
-.btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
-}
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
-.btn-white {
-  @include button-variant(black, white, white);
-}
-.btn-transparent {
-  @include button-variant(black, transparent, transparent);
-}
-.btn-link {
-  @include button-variant($link-color, transparent, transparent);
-}
 
+// Alternate buttons
+// --------------------------------------------------
 
 .btn-hollow-default {
-  @include button-variant(black, white, $btn-default-bg);
+  @include button-variant(black, white, $btn-default-border);
 }
 .btn-hollow-primary {
-  @include button-variant($brand-primary, white, $brand-primary);
+  @include button-variant($btn-primary-bg, white, $btn-primary-border);
 }
-.bg-primary,
-.bg-black,
-.bg-texture {
-  .btn-hollow-primary {
-    @include button-variant($brand-primary, white, $gray-dark);
-  }
+.btn-hollow-info {
+  @include button-variant($link-color, white, $btn-info-border);
 }
 .btn-hollow-success {
-  @include button-variant($brand-success, white, $brand-success);
+  @include button-variant($btn-success-bg, white, $btn-success-border);
 }
-.btn-hollow-info    {
-  @include button-variant($link-color, white, $brand-info);
-}
-.btn-hollow-warning {
-  @include button-variant($brand-warning, white, $brand-warning);
-}
-.btn-hollow-danger  {
-  @include button-variant($brand-danger, white, $brand-danger);
+.btn-hollow-danger {
+  @include button-variant($btn-danger-bg, white, $btn-danger-border);
 }
 
-
-.btn-hollow-transparent-default { 
-  @include button-variant(black, transparent, $btn-default-bg);
+.btn-hollow-transparent-default {
+  @include button-variant(black, transparent, $btn-default-border);
 }
-.btn-hollow-transparent-primary { 
-  @include button-variant($brand-primary, transparent, $brand-primary);
+.btn-hollow-transparent-primary {
+  @include button-variant($btn-primary-bg, transparent, $btn-primary-border);
 }
-.bg-primary,
-.bg-black,
-.bg-texture {
-  .btn-hollow-transparent-primary {
-    @include button-variant($brand-primary, transparent, $gray-dark);
-  }
+.btn-hollow-transparent-info {
+  @include button-variant($link-color, transparent, $btn-info-border);
 }
-.btn-hollow-transparent-success { 
-  @include button-variant($brand-success, transparent, $brand-success);
+.btn-hollow-transparent-success {
+  @include button-variant($btn-success-bg, transparent, $btn-success-border);
 }
-.btn-hollow-transparent-info    { 
-  @include button-variant($link-color, transparent, $brand-info);
-}
-.btn-hollow-transparent-warning { 
-  @include button-variant($brand-warning, transparent, $brand-warning);
-}
-.btn-hollow-transparent-danger  { 
-  @include button-variant($brand-danger, transparent, $brand-danger);
+.btn-hollow-transparent-danger {
+  @include button-variant($btn-danger-bg, transparent, $btn-danger-border);
 }
 
-
-.nav-pills .btn-warning {
-  &:hover,
-  &:focus  {
-    background-color: $brand-warning;
-  }
-
-  &:active,
-  &.active {
-    background-color: darken($brand-warning, 12%);
-  }
-}
-
-.btn.pull-left {
-  margin-right: 1em;
-}
-
-.btn.pull-right {
-  margin-left: 1em;
-}
-
-.btn-filter.active {
-  .glyphicon {
-    display: inline !important;
-    line-height: 0;
-    visibility: visible;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Color Swatch Btn Filters
-// -----------------------------------------------------------------------------
-// color, bg, border
-.btn-color-swatch-black  {@include button-variant(white, #222, #222);}
-.btn-color-swatch-white  {@include button-variant(black, white, $gray-light);}
-.btn-color-swatch-red    {@include button-variant(white, #c4383f, #c4383f);}
-.btn-color-swatch-grey   {@include button-variant(white, #818085, #818085);}
-.btn-color-swatch-purple {@include button-variant(white, #8559c8, #8559c8);}
-.btn-color-swatch-pink   {@include button-variant(white, #e04ea7, #e04ea7);}
-.btn-color-swatch-blue   {@include button-variant(white, #6779de, #6779de);}
-.btn-color-swatch-green  {@include button-variant(white, #2bb18f, #2bb18f);}
-.btn-color-swatch-yellow {@include button-variant(black, #f6eaab, #f6eaab);}
-.btn-color-swatch-orange {@include button-variant(white, #f9905b, #f9905b);}
-.btn-color-swatch-tan  {@include button-variant(black, #d1bea0, #d1bea0);}
-
-
-// -----------------------------------------------------------------------------
-// Facboook
-// -----------------------------------------------------------------------------
-.btn-primary-fb {
-  background-color: #3b5998;
-  color: white;
-
+.btn-transparent,
+.btn-transparent.active {
+  background-color: transparent;
   &:hover {
-    color: #3b5998;
     background-color: white;
-    border-color: #3b5998;
-  }
-
-  &:active,
-  &:focus {
-    background-color: #3b5998;
-    color: white;
-    outline: none;
-  }
-
-  &:before {
-      font-family: 'icomoon-20161125';
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      content: "\e900";
-      padding-right: 0.4em;
   }
 }

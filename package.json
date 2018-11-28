@@ -1,6 +1,6 @@
 {
   "name": "gentux-style-guide",
-  "version": "9.0.0",
+  "version": "9.1.0",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
