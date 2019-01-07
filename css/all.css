@@ -9392,25 +9392,25 @@ input[type="button"].btn-block {
   .breadcrumb > li + li:before {
     color: #404042; }
 
-blockquote {
+.blockquote {
   border: none;
   padding: 0;
   margin: 0; }
-  blockquote q, blockquote cite {
+  .blockquote q, .blockquote cite {
     display: block; }
-  blockquote q:before {
+  .blockquote q:before {
     content: "\201C";
     font-family: "DomD Reg", georgia, serif;
     position: absolute;
     transform: translate(-120%, 0); }
-  blockquote q:after {
+  .blockquote q:after {
     content: "\201D";
     font-family: "DomD Reg", georgia, serif; }
-  blockquote small:before, blockquote .small:before {
+  .blockquote small:before, .blockquote .small:before {
     content: ""; }
-  blockquote footer, blockquote cite {
+  .blockquote footer, .blockquote cite {
     color: #888888; }
-    blockquote footer:before, blockquote cite:before {
+    .blockquote footer:before, .blockquote cite:before {
       content: "";
       width: 32px;
       height: 0px;
@@ -9560,10 +9560,6 @@ img.link-img {
     opacity: 0.3; }
   to {
     opacity: 1; } }
-
-.badge {
-  margin: -3px 0;
-  transform: translate(0, -1px); }
 
 .panel-link {
   position: relative;
