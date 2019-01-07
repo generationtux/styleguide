@@ -9392,6 +9392,12 @@ input[type="button"].btn-block {
   .breadcrumb > li + li:before {
     color: #404042; }
 
+blockquote {
+  padding: unset;
+  margin: unset;
+  border: unset;
+  font-size: unset; }
+
 .blockquote {
   border: none;
   padding: 0;
