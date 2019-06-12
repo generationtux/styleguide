@@ -1,6 +1,6 @@
 # Generation Tux Style Guide
 
-<http://gentuxdesign.com>
+<http://design.generationtux.com>
 
 ## Setup
 
@@ -11,6 +11,10 @@
 * run `bundle install`
 * run `npm install -g gulp` (if you don't have gulp installed globally)
 * run `bundle exec gulp`
+
+## Hosted
+
+<https://www.netlify.com> under the helmsmen@generationtux.com account.
 
 ## Know Issues
 
@@ -23,13 +27,7 @@
 		* then re-run `bundle exec gulp`
 
 ## Updating NPM
+
 * log into NPM from terminal with `npm login`
 * use gentux creds
 * run `npm publish`
-
-
-# Todo
-
-- [ ] update hosting to use <https://www.netlify.com>
-- [ ] migrate to <https://github.com/nozzle/react-static>
-- [ ] change dns to point at the new new
