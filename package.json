@@ -14,7 +14,7 @@
   },
   "author": "Gentux",
   "license": "MIT",
-  "homepage": "http://gentuxdesign.com",
+  "homepage": "http://design.generationtux.com",
   "scripts": {
     "build": "./node_modules/.bin/webpack -p",
     "build-babel": "./node_modules/.bin/babel ./src --out-dir lib",
