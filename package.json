@@ -1,6 +1,6 @@
 {
   "name": "gentux-style-guide",
-  "version": "9.2.2",
+  "version": "9.3.0",
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
     "jquery": "^2.1.4",
@@ -16,9 +16,7 @@
   "license": "MIT",
   "homepage": "http://design.generationtux.com",
   "scripts": {
-    "build": "./node_modules/.bin/webpack -p",
-    "build-babel": "./node_modules/.bin/babel ./src --out-dir lib",
-    "prepublish": "npm run build && npm run build-babel"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "./lib/modules"
+  "main": "index.html"
 }
