@@ -1,6 +1,6 @@
 {
   "name": "gentux-style-guide",
-  "version": "9.3.0",
+  "version": "9.3.1",
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
     "jquery": "^2.1.4",
