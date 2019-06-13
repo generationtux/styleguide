@@ -26,7 +26,7 @@ $(function () {
     documentationWrappers.each(function(index, el) {
       // get contents & str replace < and > so it don't render
       var documentContent = el.innerHTML.replace(/[<>]/g, function(m) { return {'<':'&lt;','>':'&gt;'}[m]})
-      
+
       // append .doc-source after .doc-wrap with cloned contents
       $(el).append('<div class="container"><button class="btn btn-xs btn-hollow-default doc-toggle" data-toggle="' + index + '">Toggle Source</button><pre class="doc-source hidden" data-toggle="' + index + '"><code>' + documentContent + '</code></pre></div>');
     });
@@ -39,7 +39,7 @@ $(function () {
         event.preventDefault();
         var toggleItemIndex = $(this).attr('data-toggle'); // get index of item
         $('.doc-source[data-toggle=' + toggleItemIndex + ']').toggleClass('hidden'); // toggle its matching pre
-      }); 
+      });
     });
   }
 
@@ -61,7 +61,7 @@ $(function () {
       componentDropdown.append(listElement); // add a nav item to the drop down
     });
   }
-  
+
   makeDocTOC();
   makeDocSource();
   // -----------------------------------------------------------------------------
@@ -78,20 +78,20 @@ $(function () {
   // -----------------------------------------------------------------------------
   $('.no-widow').each(function(){
     var replace_str = '&nbsp;'
-    
+
     // use this to help troublshoot
     //var replace_str = '<mark>&nbsp;</mark>'
-    
+
     var string = $(this).html();
     // drop trailing whitespace
-    string = string.trim(); 
+    string = string.trim();
 
-    // add a non-breaking space between last 2 words 
+    // add a non-breaking space between last 2 words
     string = string.replace(/\s([\w]+[.,!\:;\\"-?]{0,1})$/,replace_str + '$1');
     $(this).html(string);
   });
 
-  
+
   // -----------------------------------------------------------------------------
   // Scrolly stuff
   // -----------------------------------------------------------------------------
@@ -127,9 +127,9 @@ $(function () {
     var stickyNavData = $(stickyNav).clone()[0];
     var stickyNavClone = document.createElement("div");
     stickyNavClone.setAttribute("class", "subMenuClone hidden-xs");
-    stickyNavClone.appendChild(stickyNavData); 
+    stickyNavClone.appendChild(stickyNavData);
     $(stickyNavClone).appendTo( "body" );
-    
+
     // yank duplicate ids after the clone
     var stickyNavCloneToggle = stickyNavData.querySelectorAll('.subMenuClone #nav-toggle')[0];
     stickyNavCloneToggle.setAttribute("id", "");
@@ -144,7 +144,7 @@ $(function () {
   // -----------------------------------------------------------------------------
   // play gifs with ScrollMagic
   // -----------------------------------------------------------------------------
-  // gif image needs .gify class to work 
+  // gif image needs .gify class to work
 
   function gifPlay(elem) {
     // console.log(elem);
@@ -201,40 +201,32 @@ $(function () {
     var copyInit = codeCopy[i].querySelector(".clipboard-init");
     copyInit.addEventListener('click', function(){
       var copyContent = this.parentNode.querySelector(".clipboard-content");
-      copyToClipboardCode(copyContent); 
-    }, true); 
+      copyToClipboardCode(copyContent);
+    }, true);
   }
 
   function copyToClipboardCode(copyContent) {
     // sometime the ranges don't get cleared properly
     // so we make sure they are clear before making a new one
-    window.getSelection().removeAllRanges();  
+    window.getSelection().removeAllRanges();
 
-    var range = document.createRange();  
-    range.selectNode(copyContent);  
-    window.getSelection().addRange(range);  
+    var range = document.createRange();
+    range.selectNode(copyContent);
+    window.getSelection().addRange(range);
 
-    try {  
-      // Now that we've selected the anchor text, execute the copy command  
-      var successful = document.execCommand('copy');  
-      var msg = successful ? 'successful' : 'unsuccessful';  
-      console.log('Copy text command was ' + msg);  
-    } catch(err) {  
-      console.log('Oops, unable to copy');  
-    }  
+    try {
+      // Now that we've selected the anchor text, execute the copy command
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copy text command was ' + msg);
+    } catch(err) {
+      console.log('Oops, unable to copy');
+    }
 
     // Remove the selections - NOTE: Should use
-    // removeRange(range) when it is supported  
-    window.getSelection().removeAllRanges();  
+    // removeRange(range) when it is supported
+    window.getSelection().removeAllRanges();
   }
-
-
-
-
-
-
-
-
 });
 
 })(jQuery, window, document);

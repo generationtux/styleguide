@@ -1,6 +1,0 @@
-export { default as OneUp } from './content_blocks/OneUp'
-export { default as TwoUpImgLeft } from './content_blocks/TwoUpImgLeft'
-export { default as TwoUpImgRight } from './content_blocks/TwoUpImgRight'
-export { default as HeroCarouselSlide } from './heros/HeroCarouselSlide'
-export { default as HeroNoImg } from './heros/HeroNoImg'
-export { default as HeroTwoUpImgLeft } from './heros/HeroTwoUpImgLeft'

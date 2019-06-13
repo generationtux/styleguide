@@ -13,19 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: GenTux Style Guide
+title: Generation Tux Style Guide
 email: patrick.hill@generationtux.com
 description: > # this means to ignore newlines until "baseurl:"
   Brand Standards and Pattern Library for the Generation Tux website.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gentuxdesign.com" # the base hostname & protocol for your site
-twitter_username: 
-github_username: 
+url: "https://design.generationtux.com" # the base hostname & protocol for your site
+twitter_username:
+github_username:
 
 # Build settings
 markdown: kramdown
 # theme: minima
-
 
 collections:
   brand-guides:
@@ -49,12 +48,14 @@ defaults:
     values:
       layout: modules
 
-
-exclude: 
+exclude:
+  - docker-compose.yml
   - node_modules
   - gulpfile.js
   - package.json
+  - package-lock.json
   - npm-debug.log
   - readme.md
+  - README.md
   - Gemfile
   - Gemfile.lock
