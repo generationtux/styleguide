@@ -1,167 +1,31 @@
----
-layout: default-noheader
-title: Generation Tux Style Guide Intro
----
-<style>
-  .container-home-hero {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .home-hero-logo {
-    max-width: 400px;
-  }
-  @media (min-width: 992px) {
-    .home-hero-logo {
-      max-width: 100%;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Generation Tux Brand Guidelines</title>
+  <meta name="description" content="A introduction to the Generation Tux design language.">
+
+  <style>
+    body, html, h1,h2,h3,h4,h5,h6 p {
+      margin: 0;
+      padding: 0;
     }
-  }
-  @media (min-width: 992px) {
-    .container-home-hero > .row {
-      min-height: 100vh;
-      display: flex;
-      align-items: stretch;
+    body {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      place-items: center;
+      padding: 64px;
     }
-    .container-home-hero > .row > [class*='col-']{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-
-  /*.container-home-hero > .row {
-    overflow: hidden;
-  }*/
-  .container-home-hero > .row > [class*='col-']:first-child{
-    animation: fade-in 1.8s ease;
-    background-image:
-      linear-gradient(to right, black 0%, black 50%, rgba(0,0,0,.5) 100% );
-    background-repeat: no-repeat;
-    background-size: 200% 100%, cover;
-    background-position: left center, center center;
-    transition-timing-function: ease;
-    transition-duration: 3s;
-    transition-property: opacity, background-position;
-  }
-  .container-home-hero > .row > [class*='col-']:first-child:hover {
-    background-position: right center, center center;
-    transition-timing-function: ease-out;
-    transition-duration: .7s;
-  }
-
-
-  .container-home-hero > .row > [class*='col-']:last-child{
-    animation: fade-in-slide 1.6s ease;
-  }
-  .panel-link:nth-child(1n) {
-    animation: fade-in-slide 1.8s ease;
-  }
-  .panel-link:nth-child(2n) {
-    animation: fade-in-slide 2s ease;
-  }
-  .panel-link:nth-child(3n) {
-    animation: fade-in-slide 2.2s ease;
-  }
-
-  @keyframes fade-in {
-    0% {opacity: 0;}
-    10% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  @keyframes fade-in-slide {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    40% {
-      opacity: 0;
-      transform: translateY(100%);
-      animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-      animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-    }
-  }
-</style>
-
-<section class="
-  container-fluid
-  container-home-hero
-  bg-black
-">
-<div class="row">
-  <div class="
-    col-md-6
-    py-5
-  ">
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-
-        <h1 class="domd">
-          <img class="home-hero-logo" src="{{ site.baseurl }}/images/brand-assets/brand-assets-svg/white-wordmark.svg" width="100%">
-        </h1>
-        <div class="row">
-          <div class="col-xs-8 col-xs-offset-4">
-            <div class="
-                h1
-                mb-2 mb-md-0
-              ">Design</div>
-            <p>
-              Brand&nbsp;standards, interactive&nbsp;style&nbsp;guide <br>and&nbsp;asset&nbsp;resources.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div><!-- /col -->
-
-  <div class="
-    col-md-6
-    py-5
-    bg-white
-  ">
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-        <h2 class="mb-4 domd"> Get Started</h2>
-
-        <div>
-          <a href="{{ site.baseurl }}/brand-guidelines/" class="
-            panel-link
-            link-style-clear d-block
-            p-4
-            mb-4
-          ">
-            <h3 class="h4">Brand guidelines</h3>
-            <p>Brand foundation, usage guidelines and examples.</p>
-            <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
-          </a>
-          <a href="{{ site.baseurl }}/brand-assets/" class="
-            panel-link
-            link-style-clear d-block
-            p-4
-            mb-4
-          ">
-            <h3 class="h4">Assets</h3>
-            <p>Logos, graphic elements, images, etc.</p>
-            <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
-          </a>
-          <a href="{{ site.baseurl }}/dev-intro/" class="
-            panel-link
-            link-style-clear d-block
-            p-4
-            mb-4
-          ">
-            <h3 class="h4">Developer Resources</h3>
-            <p>Interactive styleguide, code samples and implementation details.</p>
-            <div class="text-right"><span class="glyphicon glyphicon-arrow-right"></span></div>
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</div><!-- /row -->
-</section>
+  </style>
+</head>
+<body>
+  <h1>Brand Guidelines</h1>
+  <p>A introduction to the Generation Tux design language.</p>
+  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmWJlvLluOWhpZNNcvEcS4Z%2FGentux-Styleguide%3Fnode-id%3D1%253A308" allowfullscreen></iframe>
+</body>
+</html>
