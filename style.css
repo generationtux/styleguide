@@ -1,0 +1,18 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  place-items: center;
+  padding: 64px;
+}
