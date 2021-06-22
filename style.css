@@ -1,3 +1,10 @@
+:root {
+  --brand-gold: #e6ce9a;
+  --brand-gold-light: #faf0df;
+  --brand-gold-lighter: #fcfaf4;
+  --brand-gold-dark: #9a6700;
+}
+
 @font-face {
   font-family: "DomD Reg";
   font-display: swap;
@@ -46,8 +53,21 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Roboto Condensed", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.header-alt {
   font-family: "DomD Reg", Georgia, serif;
   font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+a {
+  color: var(--brand-gold-dark);
 }
 
 iframe {
