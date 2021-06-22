@@ -49,3 +49,8 @@ h6 {
   font-family: "DomD Reg", Georgia, serif;
   font-weight: 400;
 }
+
+iframe {
+  width: 100%;
+  max-width: 900px;
+}
